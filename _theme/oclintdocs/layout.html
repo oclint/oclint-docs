@@ -1,0 +1,132 @@
+{% extends "basic/layout.html" %}
+
+{%- block doctype -%}
+<!DOCTYPE html>
+{%- endblock %}
+
+{%- block htmltitle %}
+<title>OCLint - {{ release }} Documentation -  {{ title|striptags|e }}</title>
+{%- endblock %}
+
+{%- block extrahead %}
+<meta charset='utf-8'>
+<style type='text/css'>
+/*<![CDATA[*/
+  body { padding-top: 20px; padding-bottom: 40px; }
+  .container-narrow { margin: 0 auto; max-width: 990px; }
+  .container-narrow > hr { margin: 30px 0 6px; }
+  .content { clear: both; overflow: hidden; }
+  h1 { font-size: 31.5px; }
+  h2 { font-size: 24.5px; }
+  h3 { font-size: 17.5px; }
+  h4 { font-size: 14px; }
+  h5 { font-size: 11.9px; }
+  h1 small { font-size: 17.5px; }
+  h2 small { font-size: 14px; }
+  a.headerlink { color: #E3E3E3; font-size: 0.8em; padding: 0 4px 0 9px; text-decoration: none; }
+  a.headerlink:hover { color: #08C; }
+/*]]>*/
+</style>
+
+<script type="text/javascript">
+//<![CDATA[
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-26647611-1']);
+  _gaq.push(['_setDomainName', 'oclint.org']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+//]]>
+</script>
+{% endblock %}
+
+{%- block content %}
+<div class='container-narrow'>
+  <div class='masthead'>
+    <ul class='nav nav-pills pull-right'>
+      <li>
+        <a href='http://oclint.org/'>Home</a>
+      </li>
+      <li>
+        <a href='http://oclint.org/news.html'>News</a>
+      </li>
+      <li>
+        <a href='http://oclint.org/downloads.html'>Downloads</a>
+      </li>
+      <li>
+        <a href='{{ pathto('index') }}'>Documentation</a>
+      </li>
+      <li>
+        <a href='http://oclint.org/community.html'>Community</a>
+      </li>
+      <li>
+        <a href='http://github.com/oclint'>GitHub</a>
+      </li>
+    </ul>
+    <h2 class='muted'>OCLint</h2>
+  </div>
+  <div class='content'>
+    <div class='row-fluid'>
+        <div class='span9'>
+          {% block body %}{% endblock %}
+        </div>
+        <div class='span3'>
+          <div class="well sidebar-nav">
+            {%- if pagename != "search" %}
+              <div id="searchbox" style="display: none">
+                <h3>{{ _('Search') }}</h3>
+                  <form class="search" action="{{ pathto('search') }}" method="get">
+                    <div class="input-append">
+                      <input type="text" name="q" placeholder="search keywords" class="span9" id="appendedInputButton" />
+                      <input type="submit" value="{{ _('Go!') }}" class="btn" />
+                    </div>
+                    <input type="hidden" name="check_keywords" value="yes" />
+                    <input type="hidden" name="area" value="default" />
+                  </form>
+              </div>
+              <script type="text/javascript">$('#searchbox').show(0);</script>
+            {%- endif %}
+            <h3>Contents</h3>
+            {{ toc }}
+            <h3>Hierarchy</h3>
+            <ul>
+                <li>
+                  <a href="{{ pathto('index') }}">{{ docstitle }}</a>
+                  {% for p in parents %}
+                    <ul><li><a href="{{ p.link }}">{{ p.title }}</a>
+                  {% endfor %}
+                  <ul><li>{{ title }}</li></ul>
+                  {% for p in parents %}</li></ul>{% endfor %}
+                </li>
+            </ul>
+            <h3>Navigation</h3>
+            <ul>
+              {% if prev %}
+                <li>Prev: <a href="{{ prev.link }}">{{ prev.title }}</a></li>
+              {% endif %}
+              {% if next %}
+                <li>Next: <a href="{{ next.link }}">{{ next.title }}</a></li>
+              {% endif %}
+              <li><a title="Home page" href="{{ pathto('index') }}">Index</a></li>
+              <li><a title="Table of contents" href="{{ pathto('contents') }}">Table of Contents</a></li>
+            </ul>
+          </div>
+        </div>
+  </div>
+  <hr />
+  <div class='footer'>
+    OCLint {{ release }} Documentation &copy; 2010-2012 <a href='http://www.longyiqi.com/' target='_BLANK'>Longyi Qi</a>. All Rights Reserved.
+    {%- if show_sphinx %}
+      {% trans sphinx_version=sphinx_version|e %}Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> {{ sphinx_version }}.{% endtrans %}<br/>
+    {%- endif %}
+  </div>
+</div>
+{%- endblock %}
+
+{% block footer %}{% endblock %}
+{% block relbar1 %}{% endblock %}
+{% block relbar2 %}{% endblock %}
