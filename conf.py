@@ -245,7 +245,7 @@ texinfo_documents = [
 # -- Options for Epub output ---------------------------------------------------
 
 # Bibliographic Dublin Core info.
-epub_title = u'OCLint'
+epub_title = u'OCLint ' + release + ' Documentation'
 epub_author = u'Longyi Qi'
 epub_publisher = u'Longyi Qi'
 epub_copyright = u'Longyi Qi'
