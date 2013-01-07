@@ -1,5 +1,5 @@
-Get Started
-===========
+Introduction
+============
 
 .. toctree::
    :maxdepth: 2
