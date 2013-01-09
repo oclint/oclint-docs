@@ -33,7 +33,7 @@ Create a sample.cpp file with the content below:
 Building Sample Code (Optional)
 -------------------------------
 
-There is **no need** to build the code prior to run OCLint against it. However, since finding the correct arguments becomes one of the most frequently asked questions, this step is trying to help you convert your compiler flags to the ones that OCLint requires. 
+There is **no need** to build the code prior to run OCLint against it. However, since finding the correct arguments becomes one of the most frequently asked questions, this step is trying to help you convert your compiler flags to the ones that OCLint requires.
 
 This step, however, doesn't teach you how to find the correct compiler flags, thus, some level of knowledge about compiler flags is a prerequisite.
 
@@ -49,7 +49,7 @@ This step, however, doesn't teach you how to find the correct compiler flags, th
 
 We just took two sequential steps to generate the binary, step 1 compiles the code, and step 2 links. We are only interested in step 1 because that's all compiler flags you need to give to OCLint. Here in this case, remember the compiler flag is ``-c``, and inspected source file is ``sample.cpp``.
 
-If you cannot pass through this step, don't give up, there are two helper programs `oclint-json-compilation-database <../usage/oclint-json-compilation-database.html>`_ and `oclint-xcodebuild <../usage/oclint-xcodebuild.html>`_ (for Mac Xcode users) could help find the arguments for you. 
+If you cannot pass through this step, don't give up, there are two helper programs `oclint-json-compilation-database <../usage/oclint-json-compilation-database.html>`_ and `oclint-xcodebuild <../usage/oclint-xcodebuild.html>`_ (for Mac Xcode users) could help find the arguments for you.
 
 Checking Single File
 --------------------
@@ -72,7 +72,7 @@ To change OCLint behavior, change the ``[options]`` before the source; to alter 
 
     $ oclint -html -o report.html sample.cpp -- -D__STDC_CONSTANT_MACROS -D__STDC_LIMIT_MACROS -I/usr/include -I/usr/local/include -c
 
-For detail about OCLint options and inspect multiple files, see `oclint usage <../usage/oclint.html>`_. 
+For detail about OCLint options and inspect multiple files, see `oclint usage <../usage/oclint.html>`_.
 
 Some Thoughts
 ^^^^^^^^^^^^^
@@ -83,7 +83,7 @@ This approach works perfectly if you want to apply OCLint against one single fil
 
     oclint [options]  <source0> [... <sourceN>] -- [compiler flags]
 
-Now, each source file may have different compiler flags. In this case, OCLint uses the **compilation database** to know which source files to parse with which compiler flags. It can be considered as a condensed Makefile. So, you can do 
+Now, each source file may have different compiler flags. In this case, OCLint uses the **compilation database** to know which source files to parse with which compiler flags. It can be considered as a condensed Makefile. So, you can do
 
 .. code-block:: none
 
@@ -101,11 +101,11 @@ In the example above, we got the output is like this::
     Processing: /path/to/sample.cpp.
     OCLint Report
 
-    Summary: TotalFiles=1 FilesWithViolations=1 P1=0 P2=2 P3=1 
+    Summary: TotalFiles=1 FilesWithViolations=1 P1=0 P2=2 P3=1
 
-    /path/to/sample.cpp:4:9: collapsible if statements P3 
-    /path/to/sample.cpp:13:9: empty else block P2 
-    /path/to/sample.cpp:9:17: dead code P2 
+    /path/to/sample.cpp:4:9: collapsible if statements P3
+    /path/to/sample.cpp:13:9: empty else block P2
+    /path/to/sample.cpp:9:17: dead code P2
 
     [OCLint (http://oclint.org) v0.6]
 
