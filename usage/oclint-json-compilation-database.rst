@@ -1,7 +1,7 @@
 Using oclint-json-compilation-database
 ======================================
 
-OCLint needs a compilation database to figure out the compiler options for parsing each file, so that it can run more accurate analysis on an intermediate representation of the source code. This document provides instructions about generaing ``compile_commands.json`` (JSON Compilation Database), and use ``oclint-json-compilation-database`` for code analysis.
+OCLint needs a compilation database to figure out the compiler options for parsing each file, so that it can run more accurate analysis on an intermediate representation of the source code. This document provides instructions about generating ``compile_commands.json`` (JSON Compilation Database), and use ``oclint-json-compilation-database`` for code analysis.
 
 JSON Compilation Database
 -------------------------
@@ -33,12 +33,12 @@ See `JSON Compilation Database Format Specification`_ with more precise definati
 Generating JSON Compilation Database
 ------------------------------------
 
-There are three approaches for generating JSON Compilation Database - writing your own, using CMake, and using OCLint Xcodebuild helper program.
+There are three approaches for generating JSON Compilation Database - writing your own, using CMake, and using OCLint xcodebuild helper program.
 
 Writing Your Own
 ^^^^^^^^^^^^^^^^
 
-You can follow the format defined in `JSON Compilation Database Format Specification`_, and write your own ``compile_commands.json`` file. It is convenient when you have few sources to inspect.
+You can follow the format defined in `JSON Compilation Database Format Specification`_, and write your own ``compile_commands.json`` file. It is convenient when you have a few sources to inspect.
 
 You certainly need some tools' help if you have a large project.
 
@@ -49,7 +49,7 @@ Using CMake
 
 Read `CMake Documentation`_ about how to use CMake as your build system.
 
-You need to tell CMake that you are expecting a ``compile_commands.json``, so that when CMake converts its ``CMakeLists.txt`` to regular ``Makefile``, it will generate ``compile_commands.json`` file for you. To do this, add one extra option to you CMake command like:
+You need to tell CMake that you are expecting ``compile_commands.json`` to be generated, so that when CMake converts its ``CMakeLists.txt`` to regular ``Makefile``, it outputs ``compile_commands.json`` file for you along the way. To do this, add one extra option to you CMake command, for example:
 
 .. code-block:: bash
 
@@ -65,7 +65,7 @@ But in order to use ``oclint-json-compilation-database``, it's required to copy 
 
     ln -s `pwd`/compile_commands.json /path/to/source-root
 
-Using OCLint Xcodebuild Helper Program
+Using OCLint xcodebuild Helper Program
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 If you are a Xcode user, then we have a helper program that extracts adequate compiler options and convert them into ``compile_commands.json`` file. Read `how to use oclint-xcodebuild <oclint-xcodebuild.html>`_ for instructions.
@@ -73,7 +73,7 @@ If you are a Xcode user, then we have a helper program that extracts adequate co
 oclint-json-compilation-database Usage
 --------------------------------------
 
-Since you have ``compile_commands.json`` file copied or linked, you can simply run ``oclint-json-compilation-database`` in your source directory. It reads the ``compile_commands.json`` file, and get the list of every source files, pass through them to ``oclint`` for analysis.
+Since you have ``compile_commands.json`` file copied or linked, you can now simply run ``oclint-json-compilation-database`` in your source directory. It reads the ``compile_commands.json`` file, get the list of all source files, and pass them to ``oclint`` for analysis.
 
 See the usage by typing ``oclint-json-complication-database -help``::
 
@@ -97,9 +97,9 @@ Filter Options
 ^^^^^^^^^^^^^^
 
 \-i INCLUDES, -include INCLUDES, --include INCLUDES
-    Extract files matching pattern from ``compile_commands.json``
+    Extract files matching pattern from ``compile_commands.json`` or prior matching result
 \-e EXCLUDES, -exclude EXCLUDES, --exclude EXCLUDES
-    Remove files matching pattern from ``compile_commands.json``
+    Remove files matching pattern from ``compile_commands.json`` or prior matching result
 
 Sometimes, you may be interested in a subset of entire codebase defined in ``compile_commands.json``, and just want to inspect these sources. To do that, you can use filter options to get this subset. Since ``oclint-json-compilation-database`` is written in Python, so the matching pattern needs to follow `Python regular expression syntax`_. In addition, multiple filters can be chained to get the file set you need for analysis.
 
@@ -108,7 +108,7 @@ OCLint Options
 
 Remember there are `many options <oclint.html>`_ that you can use to change the behavior of OCLint itself? Sure, you can ask ``oclint-json-compilation-database`` to pass through these options when it invokes ``oclint`` under the hook.
 
-Since you have all compiler options in ``compile_commands.json`` file, so you don't need to tell ``oclint`` about them. But follow the same idea, now, these OCLint options can be given directly to ``oclint-json-compilation-database`` by appending ``--`` separator following by all OCLint options:
+Since you have all compiler options in ``compile_commands.json`` file, so this time you don't need to tell ``oclint`` about them. But by following the same idea, now, these OCLint options can be given directly to ``oclint-json-compilation-database`` by appending ``--`` separator followed by all OCLint options:
 
 .. code-block:: none
 
@@ -120,7 +120,7 @@ Debug Options
 \-v
     show invocation command with arguments
 
-Debug options are used for you to see the final ``oclint`` invocation according to your settings of all filters and OCLint options. If you run the generated ``oclint`` command directly in the console, you should get the identical result as using ``oclint-json-compilation-database``.
+Debug options are used for you to see the final ``oclint`` invocation command according to your settings of all filters and OCLint options. If you run the generated ``oclint`` command directly in the console, you should get the identical result as using ``oclint-json-compilation-database``.
 
 
 .. _JSON Compilation Database Format Specification: http://clang.llvm.org/docs/JSONCompilationDatabase.html

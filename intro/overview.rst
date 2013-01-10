@@ -16,21 +16,21 @@ Static code analysis is a critical technique to detect defects that aren't visib
 Current Status
 --------------
 
-OCLint is far from finished, it is continuously improved to make it better. ``Better`` here means accuracy, performance, and usability.
+OCLint is far from finished but is being continuously improved in many aspects, e.g. accuracy, performance and usability.
 
-OCLint started as a research project (`defense poster`_) at the `University of Houston`_. Since then, OCLint has grown to be a 100% open source project. OCLint is designed to serve both academia and industry, and our goal is to make it a must-have tool when you program in C, C++ and Objective-C language.
+OCLint started as a research project (`defense poster`_) at the `University of Houston`_. Since then, OCLint has been rewritten and grown to be a 100% open source project. OCLint is designed to serve both academia and industry. Our goal is to make it a must-have tool for developers who program in C, C++ and Objective-C languages.
 
 OCLint is compatible with Mac OS X and various Linux distributions.
 
 Get Started
 -----------
 
-Start with `getting the release code <download.html>`_ and `building it <build.html>`_. There are large changes that pre-compiled binaries are ready for you to `download <download.html>`_. You can then `install <installation.html>`_ and `run <tutorial.html>`_ OCLint.
+There is a large change that pre-compiled binaries are ready for you to `download <download.html>`_. It's also recommended to start with `getting the release code <download.html>`_ and `building it <build.html>`_. You can then `install <installation.html>`_ and `run <tutorial.html>`_ OCLint.
 
 Get Involved
 ------------
 
-Please also consider `getting involved`_ in the OCLint community.
+Please also consider `getting involved`_ in the OCLint community. All kinds of contributions, like giving feedback, start a discussion, filing bug reports, request new features, best of all, submitting a patch or two, are appreciated.
 
 .. _static code analysis: http://en.wikipedia.org/wiki/Static_program_analysis
 .. _abstract syntax tree: http://en.wikipedia.org/wiki/Abstract_syntax_tree

@@ -8,15 +8,15 @@ OCLint recognizes a file called ``compile_commands.json`` to figure out the comp
 Run xcodebuild
 --------------
 
-First of all, you have to help yourself a little bit. ``xcodebuild`` is a command line tool that Apple provides along with your Xcode application to let you build Xcode workspace/project in the terminal.
+First of all, you need to help yourself a little bit. ``xcodebuild`` is a command line tool that Apple provides along with your Xcode application to let you build Xcode workspace/project in the terminal.
 
-Read Apple's official `xcodebuild Manual Page`_ from Mac Developer Library is a good starting point if you haven't done any tasks about ``xcodebuild``. 
+Read Apple's official `xcodebuild Manual Page`_ from Mac Developer Library is a good starting point if you haven't done any tasks about ``xcodebuild``.
 
-It is a quite simple task to some people by figuring out the correct options for ``xcodebuild``. However, some people may feel it's not intuitive, so be patient, and take you time. You may find many tutorials and blog posts that help.
+It is a quite simple task to some people by figuring out the correct options for ``xcodebuild``. However, some people may feel it's not intuitive, so be patient, and take you time. You may find many online tutorials and blog posts that may help.
 
 Okay, we believe you are quite confidence of running ``xcodebuild`` to build your Xcode project. Now, there are two things please pay attention:
 
-* You need to save the ``xcodebuild`` output to a log file, by convention, name it ``xcodebuild.log``. You can use ``xcodebuild <options> | tee xcodebuild.log`` to pipe every line of output to ``xcodebuild.log`` file.
+* You need to save the ``xcodebuild`` output to a log file, by convention, name it ``xcodebuild.log``. You can use ``xcodebuild <options> | tee xcodebuild.log`` to pipe every line of the output to ``xcodebuild.log`` file.
 * If a source file has been built by Xcode, and it's not modified since last build, then it might not be built again when you invoke ``xcodebuild``. In other words, if it happens, this file won't be shown in the log. So you won't see it in ``compile_commands.json``. To avoid that, use clean build by removing all build products and intermediate files from the build directory. (Hope you understand what *clean build* means after spending the time on learning ``xcodebuild``.)
 
 Run oclint-xcodebuild
@@ -33,8 +33,8 @@ The ``compile_commands.json`` will be generated to the same folder.
 What's next
 -----------
 
-Now you have ``compile_command.json`` file for your Xcode project, you can move on to `use oclint-json-compilation-database <oclint-json-compilation-database.html>`_ and use OCLint to inspect your codebase.
+Now you have ``compile_command.json`` file for your Xcode project, you can move onto `use oclint-json-compilation-database <oclint-json-compilation-database.html>`_ and use OCLint to inspect your codebase.
 
-``oclint-xcodebuild`` is still an experimental project. The success of it depends various things, e.g. Mac OS X version, the Xcode version and project settings. However, since developers who use Xcode are familiar with Apple's manner of supporting only the latest version and one previous version, so ``oclint-xcodebuild`` tries to follow this convention. Your feedback is warmly welcome to help improve this helper program. 
+.. note:: ``oclint-xcodebuild`` is still an experimental project. The success of it depends various things, e.g. Mac OS X version, the Xcode version and project settings. However, since developers who use Xcode are familiar with Apple's manner of supporting only the latest version and one previous version, so ``oclint-xcodebuild`` tries to follow this convention. Your feedback is warmly welcome to help improve this helper program.
 
 .. _xcodebuild Manual Page: https://developer.apple.com/library/mac/#documentation/Darwin/Reference/ManPages/man1/xcodebuild.1.html

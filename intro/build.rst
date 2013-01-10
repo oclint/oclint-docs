@@ -8,8 +8,8 @@ This page presents you a shortcut of building OCLint release version.
 System Requirements
 -------------------
 
-#. See `LLVM System Requirements`_.
-#. `Apache Subversion`_.
+#. See `LLVM System Requirements`_
+#. `Apache Subversion`_
 #. `CMake`_
 
 .. Release build doesn't need git, but subversion is needed to checkout llvm/clang source code, and it's written in LLVM's requirements
