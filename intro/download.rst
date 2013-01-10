@@ -18,7 +18,7 @@ Previous
 Unsupported
     Choosing archived versions without supports.
 
-This documentation is updated for OCLint version |version|.
+This documentation is updated for OCLint version |release|.
 
 Choosing Pre-Compiled Binaries
 ------------------------------

@@ -3,7 +3,7 @@ Customizing Reports
 
 OCLint currently supports plain text report and HTML report.
 
-Report module will be extracted from core module to make it easier for developing custom report renderers. In addition, some report types are under development for largely used continuous integration system, and they are high priority tasks in the next release cycle (version 0.7).
+Report module will be extracted from core module to make it easier for developing custom report renderers. In addition, some report types are under development for largely used continuous integration system, and they are high priority tasks in the current release cycle.
 
 Report Options
 --------------

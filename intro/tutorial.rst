@@ -109,7 +109,7 @@ By applying OCLint against the above sample, we got the output like this::
     /path/to/sample.cpp:13:9: empty else block P2
     /path/to/sample.cpp:9:17: dead code P2
 
-    [OCLint (http://oclint.org) v0.6]
+    [OCLint (http://oclint.org) v0.7]
 
 Basically, you can find the following information in the report:
 
