@@ -1,5 +1,5 @@
-Customizing OCLint
-==================
+Customization
+=============
 
 .. toctree::
    :maxdepth: 2

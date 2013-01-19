@@ -9,3 +9,6 @@ OCLint Documentation Contents
    usage/index
    customizing/index
    rules/index
+   devel/index
+   devel/releasenotes
+   devel/license

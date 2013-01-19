@@ -29,3 +29,22 @@ Rules
 -----
 
 * `Rule Index <rules/index.html>`_
+
+Development
+-----------
+
+* `System Requirements <devel/requirements.html>`_
+* `Checking Out Code <devel/checkout.html>`_
+* `Compiling and Testing Code <devel/compiletest.html>`_
+* `Dogfooding <devel/dogfooding.html>`_
+
+Release Notes
+-------------
+
+* `Release Notes <devel/releasenotes.html>`_
+
+License
+-------
+
+* `Modified BSD License <devel/license.html>`_
+

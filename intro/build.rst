@@ -3,7 +3,7 @@ Building OCLint
 
 This page presents you a shortcut of building OCLint release version.
 
-.. If you are looking for compiling and testing OCLint with other options, read tje details in Development section.
+.. note:: If you are looking for compiling and testing OCLint in debug mode for development purposes, please move onto `development <../devel/index.html>`_ section.
 
 System Requirements
 -------------------
