@@ -7,4 +7,12 @@ Development
    requirements
    checkout
    compiletest
+   rules
+   reporters
    dogfooding
+   openings
+   clang
+   codingstandard
+   patches
+   release
+

@@ -28,6 +28,12 @@ So a ``xcodebuild.log`` file should be there properly on the root folder of your
 
     oclint-xcodebuild
 
+In case your xcodebuild log is stored in a file name other than ``xcodebuild.log``, append the path to the log file like
+
+.. code-block:: bash
+
+    oclint-xcodebuild /path/to/xcodebuild/log
+
 The ``compile_commands.json`` will be generated to the same folder.
 
 What's next
@@ -36,5 +42,7 @@ What's next
 Now you have ``compile_command.json`` file for your Xcode project, you can move onto `use oclint-json-compilation-database <oclint-json-compilation-database.html>`_ and use OCLint to inspect your codebase.
 
 .. note:: ``oclint-xcodebuild`` is still an experimental project. The success of it depends various things, e.g. Mac OS X version, the Xcode version and project settings. However, since developers who use Xcode are familiar with Apple's manner of supporting only the latest version and one previous version, so ``oclint-xcodebuild`` tries to follow this convention. Your feedback is warmly welcome to help improve this helper program.
+
+.. warning:: It's highly recommended to avoid having spaces in your file name or file path. It's a good practice, meanwhile, even though ``oclint`` itself supports spaces in path, ``oclint-json-compilation-database`` and ``oclint-xcodebuild`` still have issues handling spaces in path.
 
 .. _xcodebuild Manual Page: https://developer.apple.com/library/mac/#documentation/Darwin/Reference/ManPages/man1/xcodebuild.1.html
