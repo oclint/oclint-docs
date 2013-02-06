@@ -12,7 +12,5 @@ Development
    dogfooding
    openings
    clang
-   codingstandard
-   patches
-   release
+   codingstandards
 

@@ -29,7 +29,7 @@ Development
 
 * Preparation: `System Requirements <devel/requirements.html>`_ | `Checking Out Code <devel/checkout.html>`_
 * Getting Your Hands Dirty: `Compiling and Testing Code <devel/compiletest.html>`_ | `Writing Rules <devel/rules.html>`_ | `Writing Reporters <devel/reporters.html>`_
-* Others: `Open Projects <devel/openings.html>`_ | `Coding Standard <devel/codingstandard.html>`_ | `Dogfooding <devel/dogfooding.html>`_ | `Submitting Patches <devel/patches.html>`_ | `Release Proess <devel/release.html>`_
+* Others: `Open Projects <devel/openings.html>`_ | `Coding Standards <devel/codingstandards.html>`_ | `Dogfooding <devel/dogfooding.html>`_
 * `Release Notes <devel/releasenotes.html>`_
 
 License
