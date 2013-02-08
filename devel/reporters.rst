@@ -20,6 +20,6 @@ Lastly, there is one small extra effort that is not defined in the interface, bu
       return new YourNewReporter();
     }
 
-That's it. Now compile your new reporter and link it against ``OCLintCore`` library into a new dynamic library. We have a CMake macro ``BUILD_DYNAMIC_REPORTER`` to have this part easier.
+That's it. Now compile your new reporter and link it against ``OCLintCore`` library into a new dynamic library. We have a CMake macro ``BUILD_DYNAMIC_REPORTER`` to make this part easier.
 
 Put the generated dynamic library into ``$(/path/to/bin/oclint)/../lib/oclint/reporters`` along with other reporter libraries. Done!
