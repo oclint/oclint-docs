@@ -25,7 +25,7 @@ OCLint is compatible with Mac OS X and various Linux distributions.
 Get Started
 -----------
 
-There is a large change that pre-compiled binaries are ready for you to `download <download.html>`_. It's also recommended to start with `getting the release code <download.html>`_ and `building it <build.html>`_. You can then `install <installation.html>`_ and `run <tutorial.html>`_ OCLint.
+There is a large change that pre-compiled binaries are ready for you to `download <download.html>`_. It's also recommended to start with `getting the release code <download.html>`_ and `building it <build.html>`_. We can then `install <installation.html>`_ and `run <tutorial.html>`_ OCLint.
 
 Get Involved
 ------------

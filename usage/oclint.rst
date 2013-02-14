@@ -1,7 +1,7 @@
 Using oclint
 ============
 
-When you invoke OCLint, it normally does rule loading, compilation, analysis, and report generation. The options allow you to change the behavior of each step to certain ways that meet your requirement.
+When we invoke OCLint, it normally does rule loading, compilation, analysis, and report generation. The options allow us to change the behavior of each step to certain ways that meet our requirements.
 
 See all supported options in OCLint |release| by typing ``oclint -help``::
 
@@ -68,7 +68,7 @@ Compiler options can be given directly to OCLint for compilation process. It's s
 
     oclint [oclint options] <source0> [... <sourceN>] -- [compiler options]
 
-For example, if you are compiling a file named by following command:
+For example, if we are compiling a file named by following command:
 
 .. code-block:: bash
 
@@ -76,7 +76,7 @@ For example, if you are compiling a file named by following command:
 
 (Wow, it's longer than expectation.)
 
-Then when you analyze this code, your OCLint command will be:
+Then when we analyze this code, our OCLint command will be:
 
 .. code-block:: bash
 
@@ -88,12 +88,12 @@ Compile Commands Database
 \-p <build-path>
     Choose the build directory in which a file named compile_commands.json exists. When no build path is specified, a search for compile_commands.json will be attempted through all parent paths of the first input file.
 
-OCLint requires this compilation database to understand specific build options for each file. Currently it supports ``compile_commands.json`` file. See `oclint-json-compilation-database <oclint-json-compilation-database.html>`_ for detail. If you are working with Xcode, `oclint-xcodebuild <oclint-xcodebuild.html>`_ can generate the required compile_database.json file for you with your little help.
+OCLint requires this compilation database to understand specific build options for each file. Currently it supports ``compile_commands.json`` file. See `oclint-json-compilation-database <oclint-json-compilation-database.html>`_ for detail. If we are working with Xcode, `oclint-xcodebuild <oclint-xcodebuild.html>`_ can generate the required compile_database.json file with a little of our help.
 
 Inspection Options
 ------------------
 
-Of course, specify all the source files you want to inspect. Multiple files can be analyzed with one invocation.
+Of course, specify all the source files we want to inspect. Multiple files can be analyzed with one invocation.
 
 Report Options
 --------------

@@ -8,7 +8,7 @@ Report module will be extracted from core module to make it easier for developin
 Report Options
 --------------
 
-Usually you don't need to explicit specify ``-text`` flag as plain text report is the default. In order to see HTML report, add ``-html`` to ``oclint`` command.
+Usually we don't need to explicit specify ``-text`` flag as plain text report is the default. In order to see HTML report, add ``-html`` to ``oclint`` command.
 
 Since browser is a good place to view HTML report. HTML report is better to be redirected to a file instead of console. It's easy to achieve this with ``-o <path>`` option.
 
