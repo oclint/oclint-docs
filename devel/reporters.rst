@@ -1,17 +1,17 @@
-Writing Your Own Reporters
-==========================
+Writing Custom Reporters
+========================
 
-Currently we have text and HTML format reporters, custom reporters are easily implemented to support your own need.
+Currently we have text and HTML format reporters. To enable extended capabilities, custom reporters are easily implemented for your own supports.
 
-We have a ``oclint-reporters`` module, and all reporters is recommended to add to this module.
+We have a ``oclint-reporters`` module, and all reporters are recommended to add to this module.
 
-Your reporters need to inherent ``Reporter`` interface and implement two methods that it defines.
+New reporters need to inherit ``Reporter`` interface and implement two methods that it defines.
 
-First of all, give your reporter an identifier in ``name`` method. Then give the same name with ``-report-type`` option to ``oclint`` main program in order to use this new reporter later.
+First of all, give the new reporter an identifier in ``name`` method. Then give the same name with ``-report-type`` option to ``oclint`` main program in order to use this new reporter later.
 
-Then implement your reporter in ``report`` method. You will be given a ``outstream`` as a output stream. In addition, all the information your reporter needs is in the ``Results`` class.
+Then implement logic in ``report`` method. We have a ``outstream`` as a output stream on hand. In addition, all the information the new reporter needs is in the ``Results`` class.
 
-Lastly, there is one small extra effort that is not defined in the interface, but is required when OCLint tries to load your reporter. Please copy and paste the code below, and replace ``YourNewReporter`` with your class name.
+Lastly, there is one small extra effort that is not defined in the interface, but is required when OCLint tries to load this reporter. Please copy and paste the code below, and replace ``YourNewReporter`` with your class name.
 
 .. code-block:: c++
 

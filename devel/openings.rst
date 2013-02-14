@@ -27,7 +27,7 @@ OCLint's metrics module is actually a cohesive library, it can be reused in your
 Better Build System
 -------------------
 
-Using bash scripts to organize the build system is not as good as letting the build system handles this by itself. We already use CMake in every modules, so now, we need to figure out a way to let CMake handle all projects under the OCLint umbrella. 
+Using bash scripts to organize the build system is not as good as letting the build system handles this by itself. We already use CMake in every modules, so now, we need to figure out a way to let CMake handle all projects under the OCLint umbrella.
 
 Xcode Plugin/Addon/Extension
 ----------------------------

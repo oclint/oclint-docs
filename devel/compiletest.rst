@@ -10,21 +10,21 @@ We will go through some steps to build dependencies, compile and test OCLint in 
 Building LLVM/Clang
 -------------------
 
-You could build LLVM/Clang in debug mode with assertions by
+We could build LLVM/Clang in debug mode with assertions by
 
 .. code-block:: bash
 
     ./buildClang.sh
 
-Debug mode binaries contain additional data to aid debugging, but lowers program performances. It's recommended to build Clang in debug mode when you work on the analysis engine, metrics, and rules. These debug information may help to some extents.
+Debug mode binaries contain additional data to aid debugging, but lowers program performances. It's recommended to build Clang in debug mode when we work on the analysis engine, metrics, and rules. These debug information may help a lot in some circumstances.
 
-On the other side, if your work is related to violations, reporters, and surrounding submodules, you can still use debug mode, and you can choose release mode that enables optimizations for better performance. To build LLVM/Clang in release mode, append ``release`` to the script as
+On the other side, if our work is related to violations, reporters, and surrounding submodules, we can still use debug mode, and we can also choose release mode that enables optimizations for better performance. To build LLVM/Clang in release mode, append ``release`` to the script as
 
 .. code-block:: bash
 
     ./buildClang.sh release
 
-It takes a while to build LLVM/Clang (probably longer than a cup of coffee time). You can try to specify ``make -j <number_of_jobs>`` to run simultaneously.
+It takes a while to build LLVM/Clang (probably longer than a cup of coffee time). We can specify ``make -j <number_of_jobs>`` to compile simultaneously.
 
 The LLVM/Clang build can be found at ``oclint/build/llvm`` directory, and its installation is located at ``oclint/build/llvm-install`` folder.
 
@@ -40,9 +40,9 @@ Building Google C++ Testing and Mocking Frameworks is easy:
 Compiling and Testing OCLint
 ----------------------------
 
-OCLint uses CMake as build system. You can find CMakeLists.txt in each module and its include sub-folders.
+OCLint uses CMake as build system. We can find CMakeLists.txt in each module and its include sub-folders.
 
-There are three scripts, ``testCore.sh``, ``testMetrics.sh``, and ``testRules.sh`` for compiling and testing OCLint core module, metrics module, and rules module respectively. Core module and metrics module can be compiled independently. However, rules module depends on both core and metrics modules.
+There are four scripts, ``testCore.sh``, ``testMetrics.sh``, ``testRules.sh``, and ``testReporters.sh`` for compiling and testing OCLint core module, metrics module, rules module, and reporters module respectively. Core module and metrics module can be compiled independently. However, rules module depends on both core and metrics modules, and reporters module depends on core module.
 
 Each script has a ``clean`` option to remove old build intermediate files.
 
@@ -68,7 +68,7 @@ Test core module with clean build:
 
     ./testCore.sh clean
 
-In addition to the test results, code coverage report can be found in ``oclint/build/oclint-core-test/coveragereport`` folder. You can read the report by opening ``index.html`` with your browser.
+In addition to the test results, code coverage report can be found in ``oclint/build/oclint-core-test/coveragereport`` folder. Please read the report by opening ``index.html`` with your browser.
 
 Testing Metrics Module
 ^^^^^^^^^^^^^^^^^^^^^^
@@ -100,12 +100,27 @@ Test rules module with clean build:
 
     ./testRules.sh clean
 
+Testing Reporters Module
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+Test reporters module:
+
+.. code-block:: bash
+
+    ./testReporters.sh
+
+Test reporters module with clean build:
+
+.. code-block:: bash
+
+    ./testReporters.sh clean
+
 Reviewing Test Results
 ^^^^^^^^^^^^^^^^^^^^^^
 
-You could always go back and review your test results (unless you have cleaned test directory with ``clean`` option or delete that folder manually). There is an easy way to do it with ``showTestResults.sh`` script. It uses ``less`` utility to display the test results on terminal.
+We could always go back and review our test results (unless we have cleaned test directory with ``clean`` option or delete that folder manually). There is an easy way to do it with ``showTestResults.sh`` script. It uses ``less`` utility to display the test results on terminal.
 
-By default, it shows the test results for core module. You can also explicitly specify ``core`` as an option to it, like
+By default, it shows the test results for core module. We can also explicitly specify ``core`` as an option to it, like
 
 .. code-block:: bash
 
@@ -123,6 +138,12 @@ Show test results for rules module:
 .. code-block:: bash
 
     ./showTestResults.sh rules
+
+Show test results for reporters module:
+
+.. code-block:: bash
+
+    ./showTestResults.sh reporters
 
 
 

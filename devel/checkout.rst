@@ -19,14 +19,14 @@ This repository hosts the OCLint source code, which consists of core, metrics, r
 
     git clone https://github.com/oclint/oclint.git
 
-It will create a ``oclint`` folder in current directory, let's give it an alias name ``oclint-root``.
+It will create a ``oclint`` folder in current directory, let's give it an alias name ``OCLINT_HOME``.
 
 oclint/oclint-json-compilation-database
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 This repository contains the Python code for ``oclint-json-compilation-database``.
 
-Go into the ``oclint-root`` folder, and check out this repository in there:
+Go into the ``OCLINT_HOME`` folder, and check out this repository in there:
 
 .. code-block:: bash
 
@@ -35,7 +35,7 @@ Go into the ``oclint-root`` folder, and check out this repository in there:
 oclint/oclint-xcodebuild
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-Code for ``ocling-xcodebuild`` has been pushed to this repository. Go to the ``oclint-root`` folder, and check out the code:
+Code for ``ocling-xcodebuild`` has been pushed to this repository. Go to the ``OCLINT_HOME`` folder, and check out the code:
 
 .. code-block:: bash
 
@@ -46,7 +46,7 @@ Code for ``ocling-xcodebuild`` has been pushed to this repository. Go to the ``o
 LLVM/Clang Codebase
 -------------------
 
-LLVM/Clang has its own code structure, and you could find the detail information at Clang's `Get Started <http://clang.llvm.org/get_started.html>`_ page. We also provide a script that checks out all LLVM/Clang repositories into correct location.
+LLVM/Clang has its own code structure, and the detail information can be found at Clang's `Get Started <http://clang.llvm.org/get_started.html>`_ page. We also provide a script that checks out all LLVM/Clang repositories into correct location.
 
 .. code-block:: bash
 
@@ -56,15 +56,15 @@ LLVM/Clang has its own code structure, and you could find the detail information
 
 In addition, ``checkoutLLVMClang.sh`` script does more than that:
 
-* First, ``./checkoutLLVMClang.sh update`` can update your existing LLVM/Clang checkout.
+* First, ``./checkoutLLVMClang.sh update`` can update the existing LLVM/Clang checkout.
 * Second, you can check out a branch codebase other than the trunk codebase by ``./checkoutLLVMClang.sh <branch_name>``
 
-  * You can find the current supported list of branches by ``./checkoutLLVMClang.sh branch``.
+  * We can find the current supported list of branches by ``./checkoutLLVMClang.sh branch``.
 
 googltest/googlemock
 --------------------
 
-Google C++ Testing and Mocking Frameworks are used for testing OCLint. OCLint follows `Test Driven Development <http://en.wikipedia.org/wiki/Test-driven_development>`_ (TDD), so checkout them when you work on this codebase and want to make sure your modifications do not break the other pieces of code.
+Google C++ Testing and Mocking Frameworks are used for testing OCLint. OCLint follows `Test Driven Development <http://en.wikipedia.org/wiki/Test-driven_development>`_ (TDD), so checkout them before we work on this codebase and want to make sure the modifications do not break the other pieces of code.
 
 We also provide a script ``checkoutGoogleTest.sh`` with two functions:
 
@@ -74,7 +74,7 @@ We also provide a script ``checkoutGoogleTest.sh`` with two functions:
 Summary
 -------
 
-Sum up, to check out all OCLint modules and dependencies, you could execute the following commands:
+Sum up, to check out all OCLint modules and dependencies, we could execute the following commands:
 
 .. code-block:: bash
 
@@ -87,7 +87,7 @@ Sum up, to check out all OCLint modules and dependencies, you could execute the 
     ./checkoutGoogleTest.sh
     cd .. # back to the root folder of OCLint codebase
 
-To update the entire codebase, you can do:
+To update the entire codebase, we can do:
 
 .. code-block:: bash
 
@@ -102,7 +102,7 @@ To update the entire codebase, you can do:
     ./checkoutGoogleTest.sh update
     cd .. # back to OCLint root directory
 
-So now, your OCLint directory might be like this::
+So now, we OCLint directory might be like this::
 
     oclint
     |-README
@@ -124,8 +124,6 @@ So now, your OCLint directory might be like this::
     |---rules
     |---test
     |-oclint-reporters
-    |---include
-    |---lib
     |---reporters
     |---test
     |-oclint-scripts

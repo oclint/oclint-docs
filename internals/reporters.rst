@@ -5,4 +5,4 @@ After the analysis process, for each of the violations detected, we know the det
 
 .. note::
 
-    In some cases, the outputs are not directly read by people, instead they will be rendered by other tools for better representation. For example, continuous integration systems can understand a specific type of output, and convert it into graphic interface on its dashboard.
+    In some cases, the outputs are not directly readable for people, instead they will be rendered by other tools for better representations. For example, continuous integration systems can understand a specific type of output, and convert it into graphic interface on its dashboard.

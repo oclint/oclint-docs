@@ -1,17 +1,17 @@
 Metrics Module
 ==============
 
-Metrics module is an isolated library that actually doesn't depend on any other OCLint modules. It means you can use this module separately in your project for metric measurements.
+Metrics module is an isolated library. THis module actually doesn't depend on any other OCLint modules. It means we can use this module separately in other projects that also measure the metrics of the source code.
 
 Cyclomatic Complexity
 ---------------------
 
-Cyclomatic complexity was introduced by Thomas McCabe [25]. It is determined based on the number of decision points in a method.
+Cyclomatic complexity was introduced by Thomas McCabe. It is determined based on the number of decision points in a method.
 
 NPath Complexity
 ----------------
 
-NPath complexity measures the number of acyclic execution paths in a method [27]. It differs from cyclomatic complexity as it takes into account the nesting of conditional statements and multi-part boolean expressions.
+NPath complexity measures the number of acyclic execution paths in a method. It differs from cyclomatic complexity as it takes into account the nesting of conditional statements and multi-part boolean expressions.
 
 Non Commenting Source Statements
 --------------------------------

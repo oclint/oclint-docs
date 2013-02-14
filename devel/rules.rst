@@ -10,7 +10,7 @@ Rules must implement ``RuleBase`` class or its derived abstract classes. Differe
 Generic Rules
 -------------
 
-Writing a generic rule, we need to implement ``RuleBase`` interface. 
+Writing a generic rule, we need to implement ``RuleBase`` interface.
 
 We name the new rule and set the priority to it. Name will be shown in the report along with the violations. Priority stands for how severe when something breaks the rule. Priorities are defined in number, the less number has a higher priority, meaning, people needs to pay more attention to them.
 
@@ -20,18 +20,20 @@ When we find the nodes we need in the ``ASTContext``, throw those nodes into the
 
 For all rules, we use static constructor to register the rules. A static attribute is a variable that has been allocated statically, the lifetime of static variable extends across the entire execution of the program. So, each rule implementation has a static member ``rules``, and we need to make sure our rule can be collected by it when being loaded.
 
-Writing generic rules is very flexible, we can do everything we want from the ``ASTContext`` we have. However, since the most of our rules can reuse certain logic to have the work done better, so we recommend the new rules inherent from the abstract classes described below instead of using ``RuleBase`` directly. Don't worry of losing the flexibility, all abstract classes are subclasses of ``RuleBase``, so when we need this type of flexibility, we can still have it. Certain methods are still pure in these abstract classes, like ``name`` and ``priority`` methods. Plus the static ``RuleSet`` constructor, we still need to implement them in all rules. [Thinking about the paragraph to make it goes smotthier to the next paragraph.] Now, let's look at some abstract rule classes.
+Writing generic rules is very flexible, we can do everything we want from the ``ASTContext`` we have. However, since the most of our rules can reuse certain logic to have the work done better, so we recommend the new rules inherent from the abstract classes described below instead of using ``RuleBase`` directly. Don't worry of losing the flexibility, all abstract classes are subclasses of ``RuleBase``, so when we need this type of flexibility, we can still have it.
+
+In addition, certain methods are still pure in these abstract classes, like ``name`` and ``priority`` methods. Plus the static ``RuleSet`` constructor, we still need to implement them in all rules. [Thinking about the paragraph to make it goes smotthier to the next paragraph.] Now, let's look at some abstract rule classes.
 
 Source Code Reader Rules
 ------------------------
 
-``AbstractSourceCodeReaderRule`` provides a ``eachLine`` method. We can have the text of each line and the current line number. We can then work around with the text. For example, we can know the length of the text, we can understand if it is a comment, we can find out if there is a mix use of spaces and tabs, and so on.
+``AbstractSourceCodeReaderRule`` provides a ``eachLine`` method. We can have the text of each line and the current line number. We can then work around with the text. For example, we can calculate the length of the text, we can understand if it is a comment, we can find out if there is a mix use of spaces and tabs, and so on.
 
 
 AST Visitor Rules
 -----------------
 
-The majority of the existing rules implement ``AbstractASTVisitorRule``. It's powerful. It follows the `visitor pattern <http://en.wikipedia.org/wiki/Visitor_pattern>`_. In our rules, we only write methods for the type of nodes that we are interested. For example, when we want to inspect a if statement, we should write
+The majority of the existing rules inherit ``AbstractASTVisitorRule`` class. It follows the `visitor pattern <http://en.wikipedia.org/wiki/Visitor_pattern>`_. In our rules, we only write methods for the type of nodes that we are interested. For example, when we want to inspect all if statement, we should write
 
 .. code-block:: c++
 
@@ -60,13 +62,13 @@ The return boolean value of these ``visit`` methods are used to control the trav
 AST Matcher Rules
 -----------------
 
-If possible, we are more willing to write AST matcher rules (unless performance is a big issue), in order to achieve the great readability that comes along with the AST matcher, because we always prefer simple and concise.
+If possible, we are more willing to write AST matcher rules (unless performance is a big issue), in order to achieve the great readability that comes along with the AST matcher. We always prefer simple and concise.
 
 All AST matcher rules inherit from ``AbstractASTMatcherRule`` class.
 
 We need to add all matchers in ``setUpMatcher`` method. With each matcher, we bind a unique (within the scope of current rule) name for that in matcher.
 
-Then whenever a match is found, ``callback`` method is called with that AST node. So we can get that node with the name we have binded in previous step. We then add this node with other information into violation set.
+Then whenever a match is found, ``callback`` method is called with that AST node as a parameter. So we can get that node with the name we have binded in previous step. We then add this node with other information into violation set.
 
 .. seealso::
     Again, ``LibASTMatcher`` is provided by Clang, and we would like to suggest you by reading some `related Clang knowledge <clang.html>`_ to have a better understanding.
@@ -89,13 +91,13 @@ We have a series of convenient methods for rules' unit testing. They are ``testR
     {
         testRuleOnCode(new BitwiseOperatorInConditionalRule(), "void m() { while (1 | 0) {;} }", 0, 1, 19, 1, 23);
         // testRuleOnCode(
-        //     new RuleToBeTested(), 
-        //     "source code", 
-        //     violationIndex, 
-        //     expectStartLine, 
-        //     expectStartColumn, 
-        //     expectEndLine, 
-        //     expectEndColumn, 
+        //     new RuleToBeTested(),
+        //     "source code",
+        //     violationIndex,
+        //     expectStartLine,
+        //     expectStartColumn,
+        //     expectEndLine,
+        //     expectEndColumn,
         //     optionalExpectMessage);
         // When we expect the code has no violation, simple write
         // testRuleOnCode(new RuleToBeTested(), "source code");
