@@ -63,7 +63,10 @@ Notes for FreeBSD
 
 The dependencies can be found in the follow ports folders:
 
-* ``/usr/ports/devel/subversion16``  # LLVM codebase is not compatible with 1.7 version yet
+* ``/usr/ports/devel/subversion16``
+
+  * LLVM codebase is not compatible with 1.7 version yet
+
 * ``/usr/ports/devel/git``
 * ``/usr/ports/devel/cmake``
 * ``/usr/ports/devel/lcov``

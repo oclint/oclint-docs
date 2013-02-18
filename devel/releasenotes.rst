@@ -13,6 +13,14 @@ oclint:
 * Update build system settings to support more unix-list platforms, including FreeBSD
 * Redesign the RuleBase interface and introduce RuleCarrier
 
+oclint-rules:
+
+* Introduce AST matcher rules
+
+oclint-reporters:
+
+* Extract reporters module from core module
+
 oclint-xcodebuild:
 
 * Support more major compilers

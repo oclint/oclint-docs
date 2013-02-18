@@ -7,11 +7,12 @@ No matter you have downloaded a pre-compiled binary distribution or have built O
     |-bin
     |-lib
     |---clang
-    |-----3.2
+    |-----3.3
     |-------include
     |-------lib
     |---oclint
     |-----rules
+    |-----reporters
 
 In fact, you can execute ``oclint`` from ``bin`` directory now.
 
@@ -35,7 +36,7 @@ You can also copy OCLint to system ``PATH``. There is an example that presumes `
 #. ``sudo cp bin/oclint* /usr/local/bin/`` (require root permission)
 #. ``sudo cp -rp lib/* /usr/local/lib/`` (require root permission)
 
-Dependency libraries are required to be put into correct directory, because ``oclint`` executable searches ``$(/path/to/bin/oclint)/../lib/clang`` and ``$(/path/to/bin/oclint)/../lib/oclint/rules`` for required builtin headers and dynamic libraries.
+Dependency libraries are required to be put into correct directory, because ``oclint`` executable searches ``$(/path/to/bin/oclint)/../lib/clang``, ``$(/path/to/bin/oclint)/../lib/oclint/rules`` and ``$(/path/to/bin/oclint)/../lib/oclint/reporters`` for required builtin headers and dynamic libraries.
 
 Verify Installation
 -------------------

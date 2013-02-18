@@ -1,11 +1,11 @@
 Open Projects
 =============
 
-This page contains a TODO list in a large picture. You can understand it as a road map. Some of them are small, but some are infinitely big (read: getting a doctoral degree). Implementation schedule of these projects are very flexible, we also release partial progress of some big projects if they look good and provide benefits to users.
+This page contains a TODO list in a large picture. You can understand it as a road map. Some of them are small, but some are infinitely big. Implementation schedule of these projects are very flexible, we also release partial progress of some big projects if they look good and provide benefits to users.
 
 OCLint started as a research project, so in addition to the features that are designed for industrial usage, there are some projects here that could be very interesting research projects in their own right. Users can leverage the research results for higher accuracy, better performance, more reasonable software metrics, and so on.
 
-In any case, we welcome all contributions. If you are thinking one of them, please send an email to oclint-dev mailing list, so that we know this is being worked on. Please use the same mailing list to suggest more projects to this page.
+In any case, we welcome all contributions. If you are thinking one of them, please send an email to `oclint-dev mailing list <https://groups.google.com/group/oclint-dev>`_, so that we know this is being worked on. Please use the same mailing list to suggest more projects to this page.
 
 More Rules
 ----------
@@ -100,7 +100,7 @@ In addition to detecting code defects that break our defined rule set, we hope t
 Design Patterns Extraction
 --------------------------
 
-It's helpful to know the design patterns you have applied in your codebase, so that you can
+It's helpful to know the design patterns we have applied in our codebase.
 
 Type Inference
 --------------

@@ -85,7 +85,7 @@ Unit Testing
 
 We have a series of convenient methods for rules' unit testing. They are ``testRuleOnCode`` method for regular C code, ``testRuleOnCXXCode`` method for C++ code, and ``testRuleOnObjCCode`` method to test Objective-C code. By giving the code we want to apply the rule on and our expectation result, this method will parse the code and run only current rule, and compare the expectation. It fails the test when the rule doesn't meet expecting behaviors. A quick sample usage is like this
 
-.. code-block:: C++
+.. code-block:: c++
 
     TEST(BitwiseOperatorInConditionalRuleTest, BitwiseOrInWhile)
     {

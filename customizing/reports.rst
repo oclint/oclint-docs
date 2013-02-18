@@ -3,12 +3,12 @@ Customizing Reports
 
 OCLint currently supports plain text report and HTML report.
 
-Report module will be extracted from core module to make it easier for developing custom report renderers. In addition, some report types are under development for largely used continuous integration system, and they are high priority tasks in the current release cycle.
+Report module is extracted from core module to make it easier for developing custom report renderers.
 
 Report Options
 --------------
 
-Usually we don't need to explicit specify ``-text`` flag as plain text report is the default. In order to see HTML report, add ``-html`` to ``oclint`` command.
+Usually we don't need to explicit specify ``-report-type text`` flag as plain text report is the default. In order to see HTML report, add ``-report-type html`` to ``oclint`` command.
 
 Since browser is a good place to view HTML report. HTML report is better to be redirected to a file instead of console. It's easy to achieve this with ``-o <path>`` option.
 
@@ -25,3 +25,7 @@ HTML Report
 -----------
 
 HTML reporter is browser friendly with better readability. The entire report follows the same order as the text report, but with a nicer structure of sections, paragraphs, and annotations. Violations are highlighted with different colors according to the priority.
+
+.. seealso::
+
+    You can `write your own reporters <../devel/reporters.html>`_ to extend OCLint with more capabilities.

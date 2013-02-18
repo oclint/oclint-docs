@@ -16,11 +16,9 @@ See all supported options in OCLint |release| by typing ``oclint -help``::
       -max-priority-3=<threshold> - The max allowed number of priority 3 violations
       -o=<path>                   - Write output to <path>
       -p=<string>                 - Build path
-      -rc=<paramemter>=<value>    - Override the default baheviour of rules
+      -rc=<parameter>=<value>     - Override the default behavior of rules
+      -report-type=<name>         - Change output report type
       -stats                      - Enable statistics output from program
-      Choose report type:
-        -text                     - Plain text report
-        -html                     - HTML formatted report
       -version                    - Display the version of this program
 
     -p <build-path> is used to read a compile command database.
@@ -100,10 +98,8 @@ Report Options
 
 \-o <path>
     Instead of piping output to console, ``-o`` will redirect the report to the <path> you specified.
-\-text
-    Use plain text report, this is the default
-\-html
-    Use HTML report for better readability
+\-report-type <name>
+    Change output report type, by default, plain text report is used
 
 See `customizing reports <../customizing/reports.html>`_ for detail.
 
@@ -119,12 +115,13 @@ Exit Status Options
 
 This option helps in continuous integration and other build systems. When the number of violations in one of these priorities is larger than the maximum tolerance, OCLint will return with an exit status code other than 0 (code zero means normal termination) to notify a high volume of violations. By default, less than 20 priority 3 violations are allowed, 10 violations is maximum for priority 2, and no priority 1 violation can be tolerated. Too many violations result in bad code quality, if that happens, OCLint return with an exit code of 3.
 
-OCLint returns with one of the four exit codes below
+OCLint returns with one of the five exit codes below
 
 * **0** - SUCCESS
 * **1** - RULE_NOT_FOUND
-* **2** - ERROR_WHILE_PROCESSING
-* **3** - VIOLATIONS_EXCEED_THRESHOLD
+* **2** - REPORTER_NOT_FOUND
+* **3** - ERROR_WHILE_PROCESSING
+* **4** - VIOLATIONS_EXCEED_THRESHOLD
 
 Other Options
 -------------

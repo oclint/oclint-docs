@@ -23,3 +23,4 @@ LibASTMatchers
 
 * `http://clang.llvm.org/docs/LibASTMatchers.html <http://clang.llvm.org/docs/LibASTMatchers.html>`_
 * `http://clang.llvm.org/docs/LibASTMatchersTutorial.html <http://clang.llvm.org/docs/LibASTMatchersTutorial.html>`_
+* `http://clang.llvm.org/docs/LibASTMatchersReference.html <http://clang.llvm.org/docs/LibASTMatchersReference.html>`_
