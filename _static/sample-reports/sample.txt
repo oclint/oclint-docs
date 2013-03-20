@@ -1,0 +1,1285 @@
+OCLint Report
+
+Summary: TotalFiles=133 FilesWithViolations=119 P1=0 P2=220 P3=1059 
+
+/sample-project/PopupWindow.m:92:22: empty if statement P2 
+/sample-project/PopupWindow.m:92:9: inverted logic P3 
+/sample-project/PopupWindow.m:18:1: long line P3 Line with 115 characters exceeds limit of 100
+/sample-project/PopupWindow.m:32:1: long line P3 Line with 251 characters exceeds limit of 100
+/sample-project/PopupWindow.m:57:1: long line P3 Line with 101 characters exceeds limit of 100
+/sample-project/PopupWindow.m:74:1: long line P3 Line with 132 characters exceeds limit of 100
+/sample-project/PopupWindow.m:78:1: long line P3 Line with 117 characters exceeds limit of 100
+/sample-project/PopupWindow.m:79:1: long line P3 Line with 103 characters exceeds limit of 100
+/sample-project/PopupWindow.m:83:1: long line P3 Line with 214 characters exceeds limit of 100
+/sample-project/PopupWindow.m:107:1: long line P3 Line with 109 characters exceeds limit of 100
+/sample-project/PopupWindow.m:119:1: long line P3 Line with 110 characters exceeds limit of 100
+/sample-project/PopupWindow.m:128:1: long line P3 Line with 119 characters exceeds limit of 100
+/sample-project/PopupWindow.m:170:1: long line P3 Line with 118 characters exceeds limit of 100
+/sample-project/PopupWindow.m:67:1: long method P3 Method with 70 lines exceeds limit of 50
+/sample-project/PopupWindow.m:67:1: high ncss method P2 Method of 33 non-commenting source statements exceeds limit of 30
+/sample-project/PopupWindow.m:30:9: parameter reassignment P3 
+/sample-project/SettingsCell.m:32:1: long line P3 Line with 122 characters exceeds limit of 100
+/sample-project/SettingsCell.m:33:1: long line P3 Line with 266 characters exceeds limit of 100
+/sample-project/SettingsCell.m:36:1: long line P3 Line with 103 characters exceeds limit of 100
+/sample-project/SettingsCell.m:52:1: long line P3 Line with 106 characters exceeds limit of 100
+/sample-project/SettingsCell.m:54:1: long line P3 Line with 107 characters exceeds limit of 100
+/sample-project/ViewAllHoldingsViewController.m:39:1: long line P3 Line with 111 characters exceeds limit of 100
+/sample-project/ViewAllHoldingsViewController.m:44:1: long line P3 Line with 152 characters exceeds limit of 100
+/sample-project/ViewAllHoldingsViewController.m:46:1: long line P3 Line with 107 characters exceeds limit of 100
+/sample-project/ViewAllHoldingsViewController.m:133:1: long line P3 Line with 126 characters exceeds limit of 100
+/sample-project/ViewAllHoldingsViewController.m:140:1: long line P3 Line with 184 characters exceeds limit of 100
+/sample-project/ViewAllHoldingsViewController.m:145:1: long line P3 Line with 180 characters exceeds limit of 100
+/sample-project/ViewAllHoldingsViewController.m:150:1: long line P3 Line with 190 characters exceeds limit of 100
+/sample-project/ViewAllHoldingsViewController.m:117:26: unused method parameter P2 
+/sample-project/RootViewController.m:60:1: long line P3 Line with 133 characters exceeds limit of 100
+/sample-project/RootViewController.m:97:1: long line P3 Line with 124 characters exceeds limit of 100
+/sample-project/RootViewController.m:167:1: long line P3 Line with 144 characters exceeds limit of 100
+/sample-project/RootViewController.m:246:1: long line P3 Line with 106 characters exceeds limit of 100
+/sample-project/RootViewController.m:247:1: long line P3 Line with 103 characters exceeds limit of 100
+/sample-project/RootViewController.m:250:1: long line P3 Line with 156 characters exceeds limit of 100
+/sample-project/RootViewController.m:261:1: long line P3 Line with 102 characters exceeds limit of 100
+/sample-project/RootViewController.m:262:1: long line P3 Line with 113 characters exceeds limit of 100
+/sample-project/RootViewController.m:263:1: long line P3 Line with 118 characters exceeds limit of 100
+/sample-project/RootViewController.m:264:1: long line P3 Line with 106 characters exceeds limit of 100
+/sample-project/RootViewController.m:343:1: long line P3 Line with 133 characters exceeds limit of 100
+/sample-project/RootViewController.m:349:1: long line P3 Line with 134 characters exceeds limit of 100
+/sample-project/RootViewController.m:360:1: long line P3 Line with 111 characters exceeds limit of 100
+/sample-project/RootViewController.m:361:1: long line P3 Line with 144 characters exceeds limit of 100
+/sample-project/RootViewController.m:362:1: long line P3 Line with 141 characters exceeds limit of 100
+/sample-project/RootViewController.m:371:1: long line P3 Line with 157 characters exceeds limit of 100
+/sample-project/RootViewController.m:372:1: long line P3 Line with 127 characters exceeds limit of 100
+/sample-project/RootViewController.m:382:1: long line P3 Line with 116 characters exceeds limit of 100
+/sample-project/RootViewController.m:389:1: long line P3 Line with 173 characters exceeds limit of 100
+/sample-project/RootViewController.m:402:1: long line P3 Line with 175 characters exceeds limit of 100
+/sample-project/RootViewController.m:427:1: long line P3 Line with 107 characters exceeds limit of 100
+/sample-project/RootViewController.m:429:1: long line P3 Line with 103 characters exceeds limit of 100
+/sample-project/RootViewController.m:431:1: long line P3 Line with 108 characters exceeds limit of 100
+/sample-project/RootViewController.m:432:1: long line P3 Line with 121 characters exceeds limit of 100
+/sample-project/RootViewController.m:436:1: long line P3 Line with 112 characters exceeds limit of 100
+/sample-project/RootViewController.m:453:1: long line P3 Line with 104 characters exceeds limit of 100
+/sample-project/RootViewController.m:459:1: long line P3 Line with 102 characters exceeds limit of 100
+/sample-project/RootViewController.m:460:1: long line P3 Line with 109 characters exceeds limit of 100
+/sample-project/RootViewController.m:471:1: long line P3 Line with 125 characters exceeds limit of 100
+/sample-project/RootViewController.m:475:1: long line P3 Line with 148 characters exceeds limit of 100
+/sample-project/RootViewController.m:332:1: long method P3 Method with 54 lines exceeds limit of 50
+/sample-project/RootViewController.m:332:1: high ncss method P2 Method of 46 non-commenting source statements exceeds limit of 30
+/sample-project/RootViewController.m:452:24: unused method parameter P2 
+/sample-project/AppDelegate.m:38:1: long line P3 Line with 105 characters exceeds limit of 100
+/sample-project/AppDelegate.m:45:1: long line P3 Line with 108 characters exceeds limit of 100
+/sample-project/AppDelegate.m:50:1: long line P3 Line with 120 characters exceeds limit of 100
+/sample-project/AppDelegate.m:53:1: long line P3 Line with 120 characters exceeds limit of 100
+/sample-project/AppDelegate.m:66:1: long line P3 Line with 281 characters exceeds limit of 100
+/sample-project/AppDelegate.m:67:1: long line P3 Line with 151 characters exceeds limit of 100
+/sample-project/AppDelegate.m:72:1: long line P3 Line with 215 characters exceeds limit of 100
+/sample-project/AppDelegate.m:73:1: long line P3 Line with 137 characters exceeds limit of 100
+/sample-project/AppDelegate.m:82:1: long line P3 Line with 190 characters exceeds limit of 100
+/sample-project/AppDelegate.m:87:1: long line P3 Line with 124 characters exceeds limit of 100
+/sample-project/SplashViewController.m:22:15: empty if statement P2 
+/sample-project/SplashViewController.m:41:1: long line P3 Line with 165 characters exceeds limit of 100
+/sample-project/SplashViewController.m:42:1: long line P3 Line with 164 characters exceeds limit of 100
+/sample-project/SplashViewController.m:77:5: missing break in switch statement P3 
+/sample-project/SplashViewController.m:77:5: too few branches in switch statement P3 
+/sample-project/FundListViewController.m:64:1: long line P3 Line with 152 characters exceeds limit of 100
+/sample-project/FundListViewController.m:66:1: long line P3 Line with 163 characters exceeds limit of 100
+/sample-project/FundListViewController.m:86:1: long line P3 Line with 103 characters exceeds limit of 100
+/sample-project/FundListViewController.m:89:1: long line P3 Line with 111 characters exceeds limit of 100
+/sample-project/FundListViewController.m:92:1: long line P3 Line with 132 characters exceeds limit of 100
+/sample-project/FundListViewController.m:103:1: long line P3 Line with 112 characters exceeds limit of 100
+/sample-project/FundListViewController.m:166:1: long line P3 Line with 118 characters exceeds limit of 100
+/sample-project/FundListViewController.m:197:1: long line P3 Line with 206 characters exceeds limit of 100
+/sample-project/FundListViewController.m:219:1: long line P3 Line with 120 characters exceeds limit of 100
+/sample-project/FundListViewController.m:225:1: long line P3 Line with 116 characters exceeds limit of 100
+/sample-project/FundListViewController.m:229:1: long line P3 Line with 122 characters exceeds limit of 100
+/sample-project/FundListViewController.m:232:1: long line P3 Line with 157 characters exceeds limit of 100
+/sample-project/FundListViewController.m:235:1: long line P3 Line with 123 characters exceeds limit of 100
+/sample-project/FundListViewController.m:243:1: long line P3 Line with 131 characters exceeds limit of 100
+/sample-project/FundListViewController.m:247:1: long line P3 Line with 123 characters exceeds limit of 100
+/sample-project/FundListViewController.m:250:1: long line P3 Line with 159 characters exceeds limit of 100
+/sample-project/FundListViewController.m:254:1: long line P3 Line with 109 characters exceeds limit of 100
+/sample-project/FundListViewController.m:307:1: long line P3 Line with 136 characters exceeds limit of 100
+/sample-project/FundListViewController.m:310:1: long line P3 Line with 128 characters exceeds limit of 100
+/sample-project/FundListViewController.m:313:1: long line P3 Line with 236 characters exceeds limit of 100
+/sample-project/FundListViewController.m:381:1: long line P3 Line with 139 characters exceeds limit of 100
+/sample-project/FundListViewController.m:289:34: unused method parameter P2 
+/sample-project/FundListViewController.m:295:33: unused method parameter P2 
+/sample-project/FundListViewController.m:310:38: unused method parameter P2 
+/sample-project/ProductListingService.m:44:13: inverted logic P3 
+/sample-project/ProductListingService.m:31:1: long line P3 Line with 248 characters exceeds limit of 100
+/sample-project/ProductListingService.m:33:1: long line P3 Line with 124 characters exceeds limit of 100
+/sample-project/ProductListingService.m:36:1: long line P3 Line with 282 characters exceeds limit of 100
+/sample-project/ProductListingService.m:40:1: long line P3 Line with 208 characters exceeds limit of 100
+/sample-project/ProductListingService.m:45:1: long line P3 Line with 112 characters exceeds limit of 100
+/sample-project/ProductListingService.m:48:1: long line P3 Line with 103 characters exceeds limit of 100
+/sample-project/ProductListingService.m:49:1: long line P3 Line with 118 characters exceeds limit of 100
+/sample-project/ProductListingService.m:50:1: long line P3 Line with 118 characters exceeds limit of 100
+/sample-project/ProductListingService.m:62:1: long line P3 Line with 124 characters exceeds limit of 100
+/sample-project/ProductListingService.m:64:1: long line P3 Line with 154 characters exceeds limit of 100
+/sample-project/ProductListingService.m:71:1: long line P3 Line with 176 characters exceeds limit of 100
+/sample-project/ProductListingService.m:72:1: long line P3 Line with 163 characters exceeds limit of 100
+/sample-project/ProductListingService.m:79:1: long line P3 Line with 114 characters exceeds limit of 100
+/sample-project/ProductListingService.m:80:1: long line P3 Line with 114 characters exceeds limit of 100
+/sample-project/ProductListingService.m:31:116: unused method parameter P2 
+/sample-project/ProductListingService.m:31:151: unused method parameter P2 
+/sample-project/ProductListingService.m:31:196: unused method parameter P2 
+/sample-project/ProductListingService.m:32:54: unused method parameter P2 
+/sample-project/ProductListingService.m:36:150: unused method parameter P2 
+/sample-project/ProductListingService.m:36:185: unused method parameter P2 
+/sample-project/ProductListingService.m:36:230: unused method parameter P2 
+/sample-project/ProductListingService.m:37:52: unused method parameter P2 
+/sample-project/ProductListingService.m:71:43: unused method parameter P2 
+/sample-project/ProductListingService.m:71:78: unused method parameter P2 
+/sample-project/ProductListingService.m:71:123: unused method parameter P2 
+/sample-project/FundListTableViewController.m:29:15: empty if statement P2 
+/sample-project/FundListTableViewController.m:23:1: long line P3 Line with 129 characters exceeds limit of 100
+/sample-project/FundListTableViewController.m:63:1: long line P3 Line with 150 characters exceeds limit of 100
+/sample-project/FundListTableViewController.m:64:1: long line P3 Line with 114 characters exceeds limit of 100
+/sample-project/FundListTableViewController.m:65:1: long line P3 Line with 138 characters exceeds limit of 100
+/sample-project/FundListTableViewController.m:66:1: long line P3 Line with 124 characters exceeds limit of 100
+/sample-project/FundListTableViewController.m:76:1: long line P3 Line with 104 characters exceeds limit of 100
+/sample-project/FundListTableViewController.m:80:1: long line P3 Line with 127 characters exceeds limit of 100
+/sample-project/FundListTableViewController.m:83:1: long line P3 Line with 126 characters exceeds limit of 100
+/sample-project/FundListTableViewController.m:91:1: long line P3 Line with 106 characters exceeds limit of 100
+/sample-project/FundListTableViewController.m:113:1: long line P3 Line with 126 characters exceeds limit of 100
+/sample-project/FundListTableViewController.m:114:1: long line P3 Line with 156 characters exceeds limit of 100
+/sample-project/FundListTableViewController.m:117:1: long line P3 Line with 124 characters exceeds limit of 100
+/sample-project/FundListTableViewController.m:135:1: long line P3 Line with 118 characters exceeds limit of 100
+/sample-project/FundListTableViewController.m:143:1: long line P3 Line with 167 characters exceeds limit of 100
+/sample-project/FundListTableViewController.m:161:1: long line P3 Line with 167 characters exceeds limit of 100
+/sample-project/FundListTableViewController.m:166:1: long line P3 Line with 201 characters exceeds limit of 100
+/sample-project/FundListTableViewController.m:170:1: long line P3 Line with 211 characters exceeds limit of 100
+/sample-project/FundListTableViewController.m:177:1: long line P3 Line with 171 characters exceeds limit of 100
+/sample-project/FundListTableViewController.m:184:1: long line P3 Line with 167 characters exceeds limit of 100
+/sample-project/FundListTableViewController.m:186:1: long line P3 Line with 135 characters exceeds limit of 100
+/sample-project/FundListTableViewController.m:191:1: long line P3 Line with 175 characters exceeds limit of 100
+/sample-project/FundListTableViewController.m:192:1: long line P3 Line with 119 characters exceeds limit of 100
+/sample-project/FundListTableViewController.m:198:1: long line P3 Line with 172 characters exceeds limit of 100
+/sample-project/FundListTableViewController.m:128:1: long method P3 Method with 78 lines exceeds limit of 50
+/sample-project/FundListTableViewController.m:128:1: high ncss method P2 Method of 62 non-commenting source statements exceeds limit of 30
+/sample-project/FundDetailViewController.m:462:9: bitwise operator in conditional P2 
+/sample-project/FundDetailViewController.m:462:9: bitwise operator in conditional P2 
+/sample-project/FundDetailViewController.m:462:9: bitwise operator in conditional P2 
+/sample-project/FundDetailViewController.m:462:9: bitwise operator in conditional P2 
+/sample-project/FundDetailViewController.m:462:9: bitwise operator in conditional P2 
+/sample-project/FundDetailViewController.m:462:9: bitwise operator in conditional P2 
+/sample-project/FundDetailViewController.m:462:9: bitwise operator in conditional P2 
+/sample-project/FundDetailViewController.m:462:9: bitwise operator in conditional P2 
+/sample-project/FundDetailViewController.m:462:9: bitwise operator in conditional P2 
+/sample-project/FundDetailViewController.m:462:9: bitwise operator in conditional P2 
+/sample-project/FundDetailViewController.m:462:9: bitwise operator in conditional P2 
+/sample-project/FundDetailViewController.m:468:5: collapsible if statements P3 
+/sample-project/FundDetailViewController.m:69:15: empty if statement P2 
+/sample-project/FundDetailViewController.m:84:1: long line P3 Line with 156 characters exceeds limit of 100
+/sample-project/FundDetailViewController.m:85:1: long line P3 Line with 157 characters exceeds limit of 100
+/sample-project/FundDetailViewController.m:86:1: long line P3 Line with 170 characters exceeds limit of 100
+/sample-project/FundDetailViewController.m:134:1: long line P3 Line with 103 characters exceeds limit of 100
+/sample-project/FundDetailViewController.m:139:1: long line P3 Line with 205 characters exceeds limit of 100
+/sample-project/FundDetailViewController.m:141:1: long line P3 Line with 211 characters exceeds limit of 100
+/sample-project/FundDetailViewController.m:143:1: long line P3 Line with 207 characters exceeds limit of 100
+/sample-project/FundDetailViewController.m:145:1: long line P3 Line with 175 characters exceeds limit of 100
+/sample-project/FundDetailViewController.m:147:1: long line P3 Line with 104 characters exceeds limit of 100
+/sample-project/FundDetailViewController.m:148:1: long line P3 Line with 143 characters exceeds limit of 100
+/sample-project/FundDetailViewController.m:164:1: long line P3 Line with 101 characters exceeds limit of 100
+/sample-project/FundDetailViewController.m:182:1: long line P3 Line with 200 characters exceeds limit of 100
+/sample-project/FundDetailViewController.m:196:1: long line P3 Line with 105 characters exceeds limit of 100
+/sample-project/FundDetailViewController.m:209:1: long line P3 Line with 105 characters exceeds limit of 100
+/sample-project/FundDetailViewController.m:211:1: long line P3 Line with 165 characters exceeds limit of 100
+/sample-project/FundDetailViewController.m:214:1: long line P3 Line with 127 characters exceeds limit of 100
+/sample-project/FundDetailViewController.m:222:1: long line P3 Line with 120 characters exceeds limit of 100
+/sample-project/FundDetailViewController.m:231:1: long line P3 Line with 120 characters exceeds limit of 100
+/sample-project/FundDetailViewController.m:239:1: long line P3 Line with 198 characters exceeds limit of 100
+/sample-project/FundDetailViewController.m:250:1: long line P3 Line with 103 characters exceeds limit of 100
+/sample-project/FundDetailViewController.m:272:1: long line P3 Line with 197 characters exceeds limit of 100
+/sample-project/FundDetailViewController.m:277:1: long line P3 Line with 195 characters exceeds limit of 100
+/sample-project/FundDetailViewController.m:282:1: long line P3 Line with 196 characters exceeds limit of 100
+/sample-project/FundDetailViewController.m:303:1: long line P3 Line with 103 characters exceeds limit of 100
+/sample-project/FundDetailViewController.m:312:1: long line P3 Line with 110 characters exceeds limit of 100
+/sample-project/FundDetailViewController.m:316:1: long line P3 Line with 123 characters exceeds limit of 100
+/sample-project/FundDetailViewController.m:323:1: long line P3 Line with 159 characters exceeds limit of 100
+/sample-project/FundDetailViewController.m:402:1: long line P3 Line with 134 characters exceeds limit of 100
+/sample-project/FundDetailViewController.m:407:1: long line P3 Line with 150 characters exceeds limit of 100
+/sample-project/FundDetailViewController.m:424:1: long line P3 Line with 128 characters exceeds limit of 100
+/sample-project/FundDetailViewController.m:430:1: long line P3 Line with 150 characters exceeds limit of 100
+/sample-project/FundDetailViewController.m:449:1: long line P3 Line with 140 characters exceeds limit of 100
+/sample-project/FundDetailViewController.m:452:1: long line P3 Line with 114 characters exceeds limit of 100
+/sample-project/FundDetailViewController.m:462:1: long line P3 Line with 123 characters exceeds limit of 100
+/sample-project/FundDetailViewController.m:128:20: unused method parameter P2 
+/sample-project/FundDetailViewController.m:290:31: unused method parameter P2 
+/sample-project/FundDetailViewController.m:326:35: unused method parameter P2 
+/sample-project/FundDetailViewController.m:344:30: unused method parameter P2 
+/sample-project/FundDetailViewController.m:348:31: unused method parameter P2 
+/sample-project/FundDetailViewController.m:352:29: unused method parameter P2 
+/sample-project/FundDetailViewController.m:356:32: unused method parameter P2 
+/sample-project/External/CHPathHelpers.m:17:1: long line P3 Line with 107 characters exceeds limit of 100
+/sample-project/External/CHPathHelpers.m:33:1: long line P3 Line with 121 characters exceeds limit of 100
+/sample-project/API/MobileAPIClient.m:28:1: long line P3 Line with 166 characters exceeds limit of 100
+/sample-project/API/MobileAPIClient.m:46:1: long line P3 Line with 117 characters exceeds limit of 100
+/sample-project/API/ProductListingAPIClient.m:34:1: long line P3 Line with 151 characters exceeds limit of 100
+/sample-project/API/ProductListingAPIClient.m:37:1: long line P3 Line with 141 characters exceeds limit of 100
+/sample-project/API/ProductListingAPIClient.m:38:1: long line P3 Line with 154 characters exceeds limit of 100
+/sample-project/API/ProductListingAPIClient.m:41:1: long line P3 Line with 218 characters exceeds limit of 100
+/sample-project/API/ProductListingAPIClient.m:42:1: long line P3 Line with 154 characters exceeds limit of 100
+/sample-project/API/ProductListingAPIClient.m:45:1: long line P3 Line with 287 characters exceeds limit of 100
+/sample-project/API/ProductListingAPIClient.m:47:1: long line P3 Line with 138 characters exceeds limit of 100
+/sample-project/API/ProductListingAPIClient.m:50:1: long line P3 Line with 321 characters exceeds limit of 100
+/sample-project/API/ProductListingAPIClient.m:59:1: long line P3 Line with 113 characters exceeds limit of 100
+/sample-project/API/ProductListingAPIClient.m:60:1: long line P3 Line with 121 characters exceeds limit of 100
+/sample-project/API/ProductListingAPIClient.m:37:79: unused method parameter P2 
+/sample-project/API/ProductListingAPIClient.m:37:114: unused method parameter P2 
+/sample-project/API/ProductListingAPIClient.m:41:79: unused method parameter P2 
+/sample-project/API/ProductListingAPIClient.m:41:114: unused method parameter P2 
+/sample-project/API/ProductListingAPIClient.m:41:150: unused method parameter P2 
+/sample-project/API/ProductListingAPIClient.m:41:159: unused method parameter P2 
+/sample-project/API/ProductListingAPIClient.m:41:194: unused method parameter P2 
+/sample-project/API/ProductListingAPIClient.m:45:148: unused method parameter P2 
+/sample-project/API/ProductListingAPIClient.m:45:183: unused method parameter P2 
+/sample-project/API/ProductListingAPIClient.m:45:219: unused method parameter P2 
+/sample-project/API/ProductListingAPIClient.m:45:228: unused method parameter P2 
+/sample-project/API/ProductListingAPIClient.m:45:263: unused method parameter P2 
+/sample-project/API/ProductListingAPIClient.m:50:182: unused method parameter P2 
+/sample-project/API/ProductListingAPIClient.m:50:217: unused method parameter P2 
+/sample-project/API/ProductListingAPIClient.m:50:262: unused method parameter P2 
+/sample-project/API/ProductListingAPIClient.m:50:297: unused method parameter P2 
+/sample-project/ProductDetailService.m:52:13: inverted logic P3 
+/sample-project/ProductDetailService.m:37:1: long line P3 Line with 131 characters exceeds limit of 100
+/sample-project/ProductDetailService.m:41:1: long line P3 Line with 216 characters exceeds limit of 100
+/sample-project/ProductDetailService.m:42:1: long line P3 Line with 147 characters exceeds limit of 100
+/sample-project/ProductDetailService.m:45:1: long line P3 Line with 241 characters exceeds limit of 100
+/sample-project/ProductDetailService.m:48:1: long line P3 Line with 168 characters exceeds limit of 100
+/sample-project/ProductDetailService.m:53:1: long line P3 Line with 112 characters exceeds limit of 100
+/sample-project/ProductDetailService.m:55:1: long line P3 Line with 115 characters exceeds limit of 100
+/sample-project/ProductDetailService.m:56:1: long line P3 Line with 111 characters exceeds limit of 100
+/sample-project/ProductDetailService.m:66:1: long line P3 Line with 247 characters exceeds limit of 100
+/sample-project/ProductDetailService.m:69:1: long line P3 Line with 159 characters exceeds limit of 100
+/sample-project/ProductDetailService.m:72:1: long line P3 Line with 107 characters exceeds limit of 100
+/sample-project/ProductDetailService.m:105:1: long line P3 Line with 116 characters exceeds limit of 100
+/sample-project/ProductDetailService.m:107:1: long line P3 Line with 150 characters exceeds limit of 100
+/sample-project/ProductDetailService.m:35:56: unused method parameter P2 
+/sample-project/ProductDetailService.m:36:55: unused method parameter P2 
+/sample-project/ProductDetailService.m:41:131: unused method parameter P2 
+/sample-project/ProductDetailService.m:41:189: unused method parameter P2 
+/sample-project/ProductDetailService.m:45:122: unused method parameter P2 
+/sample-project/ProductDetailService.m:45:156: unused method parameter P2 
+/sample-project/ProductDetailService.m:45:214: unused method parameter P2 
+/sample-project/ProductDetailService.m:66:128: unused method parameter P2 
+/sample-project/ProductDetailService.m:66:162: unused method parameter P2 
+/sample-project/ProductDetailService.m:66:220: unused method parameter P2 
+/sample-project/API/ProductDetailAPIClient.m:37:1: long line P3 Line with 115 characters exceeds limit of 100
+/sample-project/API/ProductDetailAPIClient.m:38:1: long line P3 Line with 113 characters exceeds limit of 100
+/sample-project/API/ProductDetailAPIClient.m:47:1: long line P3 Line with 115 characters exceeds limit of 100
+/sample-project/API/ProductDetailAPIClient.m:48:1: long line P3 Line with 121 characters exceeds limit of 100
+/sample-project/API/ProductDetailAPIClient.m:37:54: unused method parameter P2 
+/sample-project/API/ProductDetailAPIClient.m:37:89: unused method parameter P2 
+/sample-project/API/ProductDetailAPIClient.m:38:54: unused method parameter P2 
+/sample-project/API/ProductDetailAPIClient.m:38:89: unused method parameter P2 
+/sample-project/NAVView.m:18:15: empty if statement P2 
+/sample-project/ProductListingItem.m:110:10: unnecessary else statement P3 
+/sample-project/ProductDetail.m:82:1: high cyclomatic complexity P2 Cyclomatic Complexity Number 25 exceeds limit of 10
+/sample-project/ProductDetail.m:148:66: empty if statement P2 
+/sample-project/ProductDetail.m:150:67: empty if statement P2 
+/sample-project/ProductDetail.m:88:1: long line P3 Line with 114 characters exceeds limit of 100
+/sample-project/ProductDetail.m:91:1: long line P3 Line with 105 characters exceeds limit of 100
+/sample-project/ProductDetail.m:101:1: long line P3 Line with 104 characters exceeds limit of 100
+/sample-project/ProductDetail.m:107:1: long line P3 Line with 103 characters exceeds limit of 100
+/sample-project/ProductDetail.m:117:1: long line P3 Line with 116 characters exceeds limit of 100
+/sample-project/ProductDetail.m:120:1: long line P3 Line with 119 characters exceeds limit of 100
+/sample-project/ProductDetail.m:123:1: long line P3 Line with 128 characters exceeds limit of 100
+/sample-project/ProductDetail.m:126:1: long line P3 Line with 131 characters exceeds limit of 100
+/sample-project/ProductDetail.m:129:1: long line P3 Line with 131 characters exceeds limit of 100
+/sample-project/ProductDetail.m:132:1: long line P3 Line with 107 characters exceeds limit of 100
+/sample-project/ProductDetail.m:135:1: long line P3 Line with 116 characters exceeds limit of 100
+/sample-project/ProductDetail.m:138:1: long line P3 Line with 122 characters exceeds limit of 100
+/sample-project/ProductDetail.m:141:1: long line P3 Line with 150 characters exceeds limit of 100
+/sample-project/ProductDetail.m:146:1: long line P3 Line with 115 characters exceeds limit of 100
+/sample-project/ProductDetail.m:82:1: long method P3 Method with 74 lines exceeds limit of 50
+/sample-project/ProductDetail.m:82:1: high ncss method P2 Method of 87 non-commenting source statements exceeds limit of 30
+/sample-project/ObjectiveStrategy.m:38:1: long line P3 Line with 104 characters exceeds limit of 100
+/sample-project/ObjectiveStrategy.m:42:1: long line P3 Line with 122 characters exceeds limit of 100
+/sample-project/TopTenHoldings.m:46:1: long line P3 Line with 106 characters exceeds limit of 100
+/sample-project/TopTenHoldings.m:57:1: long line P3 Line with 104 characters exceeds limit of 100
+/sample-project/TopTenHoldings.m:61:1: long line P3 Line with 122 characters exceeds limit of 100
+/sample-project/StyleMap.m:25:1: long line P3 Line with 104 characters exceeds limit of 100
+/sample-project/StyleMap.m:44:1: long line P3 Line with 116 characters exceeds limit of 100
+/sample-project/StyleMap.m:45:1: long line P3 Line with 112 characters exceeds limit of 100
+/sample-project/StyleMap.m:50:1: long line P3 Line with 104 characters exceeds limit of 100
+/sample-project/StyleMap.m:54:1: long line P3 Line with 112 characters exceeds limit of 100
+/sample-project/ThridContentTableViewController.m:21:15: empty if statement P2 
+/sample-project/ThridContentTableViewController.m:77:1: long line P3 Line with 104 characters exceeds limit of 100
+/sample-project/Nav.m:50:32: dead code P2 
+/sample-project/Nav.m:17:1: long line P3 Line with 115 characters exceeds limit of 100
+/sample-project/Nav.m:26:1: long line P3 Line with 115 characters exceeds limit of 100
+/sample-project/Nav.m:43:1: long line P3 Line with 116 characters exceeds limit of 100
+/sample-project/Nav.m:53:1: long line P3 Line with 104 characters exceeds limit of 100
+/sample-project/Nav.m:57:1: long line P3 Line with 112 characters exceeds limit of 100
+/sample-project/Nav.m:59:1: long line P3 Line with 115 characters exceeds limit of 100
+/sample-project/Nav.m:64:1: long line P3 Line with 122 characters exceeds limit of 100
+/sample-project/Nav.m:21:12: unnecessary else statement P3 
+/sample-project/Nav.m:30:12: unnecessary else statement P3 
+/sample-project/FundFacts.m:44:1: long line P3 Line with 101 characters exceeds limit of 100
+/sample-project/FundFacts.m:46:1: long line P3 Line with 153 characters exceeds limit of 100
+/sample-project/FundFacts.m:63:1: long line P3 Line with 104 characters exceeds limit of 100
+/sample-project/FundFacts.m:67:1: long line P3 Line with 123 characters exceeds limit of 100
+/sample-project/FundFacts.m:81:1: long line P3 Line with 106 characters exceeds limit of 100
+/sample-project/Morningstar.m:46:1: long line P3 Line with 177 characters exceeds limit of 100
+/sample-project/Morningstar.m:48:1: long line P3 Line with 108 characters exceeds limit of 100
+/sample-project/Morningstar.m:51:1: long line P3 Line with 150 characters exceeds limit of 100
+/sample-project/Morningstar.m:52:1: long line P3 Line with 120 characters exceeds limit of 100
+/sample-project/Morningstar.m:64:1: long line P3 Line with 110 characters exceeds limit of 100
+/sample-project/Morningstar.m:72:1: long line P3 Line with 104 characters exceeds limit of 100
+/sample-project/Morningstar.m:74:1: long line P3 Line with 103 characters exceeds limit of 100
+/sample-project/Morningstar.m:76:1: long line P3 Line with 128 characters exceeds limit of 100
+/sample-project/Morningstar.m:98:1: long line P3 Line with 108 characters exceeds limit of 100
+/sample-project/Morningstar.m:100:1: long line P3 Line with 146 characters exceeds limit of 100
+/sample-project/Morningstar.m:103:1: long line P3 Line with 102 characters exceeds limit of 100
+/sample-project/Morningstar.m:106:1: long line P3 Line with 117 characters exceeds limit of 100
+/sample-project/Morningstar.m:134:1: long line P3 Line with 127 characters exceeds limit of 100
+/sample-project/Morningstar.m:135:1: long line P3 Line with 146 characters exceeds limit of 100
+/sample-project/Morningstar.m:27:12: unnecessary else statement P3 
+/sample-project/SectionHeaderView.m:48:1: long line P3 Line with 106 characters exceeds limit of 100
+/sample-project/SectionHeaderView.m:57:1: long line P3 Line with 107 characters exceeds limit of 100
+/sample-project/SectionHeaderView.m:59:1: long line P3 Line with 113 characters exceeds limit of 100
+/sample-project/SectionHeaderView.m:72:1: long line P3 Line with 147 characters exceeds limit of 100
+/sample-project/SectionHeaderView.m:79:1: long line P3 Line with 166 characters exceeds limit of 100
+/sample-project/SectionHeaderView.m:82:1: long line P3 Line with 103 characters exceeds limit of 100
+/sample-project/SectionHeaderView.m:86:1: long line P3 Line with 106 characters exceeds limit of 100
+/sample-project/SectionHeaderView.m:87:1: long line P3 Line with 170 characters exceeds limit of 100
+/sample-project/SectionHeaderView.m:90:1: long line P3 Line with 101 characters exceeds limit of 100
+/sample-project/SectionHeaderView.m:96:1: long line P3 Line with 126 characters exceeds limit of 100
+/sample-project/SectionHeaderView.m:101:1: long line P3 Line with 110 characters exceeds limit of 100
+/sample-project/SectionHeaderView.m:106:1: long line P3 Line with 204 characters exceeds limit of 100
+/sample-project/SectionHeaderView.m:107:1: long line P3 Line with 164 characters exceeds limit of 100
+/sample-project/SectionHeaderView.m:110:1: long line P3 Line with 134 characters exceeds limit of 100
+/sample-project/SectionHeaderView.m:62:1: long method P3 Method with 57 lines exceeds limit of 50
+/sample-project/SectionHeaderView.m:62:1: high ncss method P2 Method of 45 non-commenting source statements exceeds limit of 30
+/sample-project/SectionHeaderView.m:53:24: unused method parameter P2 
+/sample-project/TabViewController.m:42:15: empty if statement P2 
+/sample-project/TabViewController.m:53:1: long line P3 Line with 118 characters exceeds limit of 100
+/sample-project/TabViewController.m:55:1: long line P3 Line with 134 characters exceeds limit of 100
+/sample-project/TabViewController.m:56:1: long line P3 Line with 107 characters exceeds limit of 100
+/sample-project/TabViewController.m:58:1: long line P3 Line with 136 characters exceeds limit of 100
+/sample-project/TabViewController.m:59:1: long line P3 Line with 146 characters exceeds limit of 100
+/sample-project/TabViewController.m:61:1: long line P3 Line with 158 characters exceeds limit of 100
+/sample-project/TabViewController.m:63:1: long line P3 Line with 161 characters exceeds limit of 100
+/sample-project/TabViewController.m:65:1: long line P3 Line with 150 characters exceeds limit of 100
+/sample-project/TabViewController.m:68:1: long line P3 Line with 114 characters exceeds limit of 100
+/sample-project/TabViewController.m:70:1: long line P3 Line with 174 characters exceeds limit of 100
+/sample-project/TabViewController.m:72:1: long line P3 Line with 176 characters exceeds limit of 100
+/sample-project/TabViewController.m:73:1: long line P3 Line with 217 characters exceeds limit of 100
+/sample-project/TabViewController.m:81:1: long line P3 Line with 177 characters exceeds limit of 100
+/sample-project/TabViewController.m:86:1: long line P3 Line with 144 characters exceeds limit of 100
+/sample-project/TabViewController.m:87:1: long line P3 Line with 119 characters exceeds limit of 100
+/sample-project/TabViewController.m:89:1: long line P3 Line with 152 characters exceeds limit of 100
+/sample-project/TabViewController.m:90:1: long line P3 Line with 115 characters exceeds limit of 100
+/sample-project/TabViewController.m:215:1: long line P3 Line with 107 characters exceeds limit of 100
+/sample-project/TabViewController.m:220:1: long line P3 Line with 102 characters exceeds limit of 100
+/sample-project/TabViewController.m:221:1: long line P3 Line with 102 characters exceeds limit of 100
+/sample-project/TabViewController.m:241:1: long line P3 Line with 102 characters exceeds limit of 100
+/sample-project/TabViewController.m:244:1: long line P3 Line with 148 characters exceeds limit of 100
+/sample-project/TabViewController.m:248:1: long line P3 Line with 103 characters exceeds limit of 100
+/sample-project/TabViewController.m:48:1: high ncss method P2 Method of 33 non-commenting source statements exceeds limit of 30
+/sample-project/TabViewController.m:141:25: unused method parameter P2 
+/sample-project/TabViewController.m:147:26: unused method parameter P2 
+/sample-project/TabViewController.m:151:35: unused method parameter P2 
+/sample-project/TabViewController.m:158:29: unused method parameter P2 
+/sample-project/TabViewController.m:164:26: unused method parameter P2 
+/sample-project/TabViewController.m:170:32: unused method parameter P2 
+/sample-project/TabViewController.m:176:31: unused method parameter P2 
+/sample-project/TabViewController.m:201:28: unused method parameter P2 
+/sample-project/TabViewController.m:240:42: unused method parameter P2 
+/sample-project/SectionModel.m:28:1: long line P3 Line with 131 characters exceeds limit of 100
+/sample-project/SectionModel.m:29:1: long line P3 Line with 169 characters exceeds limit of 100
+/sample-project/SectionModel.m:32:1: long line P3 Line with 189 characters exceeds limit of 100
+/sample-project/SectionModel.m:37:1: long line P3 Line with 141 characters exceeds limit of 100
+/sample-project/SectionModel.m:38:1: long line P3 Line with 113 characters exceeds limit of 100
+/sample-project/SectionModel.m:41:1: long line P3 Line with 126 characters exceeds limit of 100
+/sample-project/SectionModel.m:42:1: long line P3 Line with 114 characters exceeds limit of 100
+/sample-project/SectionModel.m:69:1: long line P3 Line with 139 characters exceeds limit of 100
+/sample-project/SectionModel.m:70:1: long line P3 Line with 128 characters exceeds limit of 100
+/sample-project/SectionModel.m:80:1: long line P3 Line with 104 characters exceeds limit of 100
+/sample-project/SectionModel.m:84:1: long line P3 Line with 114 characters exceeds limit of 100
+/sample-project/SectionModel.m:107:1: long line P3 Line with 108 characters exceeds limit of 100
+/sample-project/SectionModel.m:109:1: long line P3 Line with 146 characters exceeds limit of 100
+/sample-project/SectionModel.m:129:1: long line P3 Line with 127 characters exceeds limit of 100
+/sample-project/SectionModel.m:130:1: long line P3 Line with 146 characters exceeds limit of 100
+/sample-project/InsightsViewController.m:38:15: empty if statement P2 
+/sample-project/InsightsViewController.m:64:1: long line P3 Line with 103 characters exceeds limit of 100
+/sample-project/InsightsViewController.m:120:1: long line P3 Line with 116 characters exceeds limit of 100
+/sample-project/InsightsViewController.m:151:1: long line P3 Line with 130 characters exceeds limit of 100
+/sample-project/InsightsViewController.m:152:1: long line P3 Line with 143 characters exceeds limit of 100
+/sample-project/InsightsViewController.m:164:1: long line P3 Line with 114 characters exceeds limit of 100
+/sample-project/InsightsViewController.m:177:1: long line P3 Line with 104 characters exceeds limit of 100
+/sample-project/InsightsViewController.m:196:1: long line P3 Line with 127 characters exceeds limit of 100
+/sample-project/InsightsViewController.m:198:1: long line P3 Line with 107 characters exceeds limit of 100
+/sample-project/InsightsViewController.m:202:1: long line P3 Line with 124 characters exceeds limit of 100
+/sample-project/InsightsViewController.m:207:1: long line P3 Line with 105 characters exceeds limit of 100
+/sample-project/InsightsViewController.m:101:1: high ncss method P2 Method of 37 non-commenting source statements exceeds limit of 30
+/sample-project/AboutViewController.m:22:1: long line P3 Line with 105 characters exceeds limit of 100
+/sample-project/AboutViewController.m:34:1: long line P3 Line with 103 characters exceeds limit of 100
+/sample-project/AboutViewController.m:66:1: long line P3 Line with 144 characters exceeds limit of 100
+/sample-project/AboutViewController.m:67:5: too few branches in switch statement P3 
+/sample-project/AboutViewController.m:72:20: unnecessary else statement P3 
+/sample-project/NavCell.m:12:1: long line P3 Line with 117 characters exceeds limit of 100
+/sample-project/NavCell.m:62:1: long line P3 Line with 155 characters exceeds limit of 100
+/sample-project/NavCell.m:66:1: long line P3 Line with 152 characters exceeds limit of 100
+/sample-project/NavCell.m:67:1: long line P3 Line with 126 characters exceeds limit of 100
+/sample-project/NavCell.m:73:1: long line P3 Line with 132 characters exceeds limit of 100
+/sample-project/NavCell.m:85:1: long line P3 Line with 153 characters exceeds limit of 100
+/sample-project/NavCell.m:86:1: long line P3 Line with 167 characters exceeds limit of 100
+/sample-project/NavCell.m:90:1: long line P3 Line with 158 characters exceeds limit of 100
+/sample-project/NavCell.m:91:1: long line P3 Line with 149 characters exceeds limit of 100
+/sample-project/NavCell.m:95:1: long line P3 Line with 147 characters exceeds limit of 100
+/sample-project/NavCell.m:52:1: high ncss method P2 Method of 38 non-commenting source statements exceeds limit of 30
+/sample-project/DisclaimerFooterView.m:27:1: long line P3 Line with 108 characters exceeds limit of 100
+/sample-project/FundFactCell.m:41:1: long line P3 Line with 115 characters exceeds limit of 100
+/sample-project/FundFactCell.m:67:1: long line P3 Line with 147 characters exceeds limit of 100
+/sample-project/FundFactCell.m:68:1: long line P3 Line with 132 characters exceeds limit of 100
+/sample-project/FundFactCell.m:71:1: long line P3 Line with 130 characters exceeds limit of 100
+/sample-project/FundFactCell.m:72:1: long line P3 Line with 132 characters exceeds limit of 100
+/sample-project/FundFactCell.m:79:1: long line P3 Line with 166 characters exceeds limit of 100
+/sample-project/FundFactCell.m:88:1: long line P3 Line with 126 characters exceeds limit of 100
+/sample-project/FundFactCell.m:101:1: long line P3 Line with 147 characters exceeds limit of 100
+/sample-project/FundFactCell.m:102:1: long line P3 Line with 127 characters exceeds limit of 100
+/sample-project/FundFactCell.m:104:1: long line P3 Line with 130 characters exceeds limit of 100
+/sample-project/FundFactCell.m:105:1: long line P3 Line with 128 characters exceeds limit of 100
+/sample-project/FundFactCell.m:37:1: high ncss method P2 Method of 39 non-commenting source statements exceeds limit of 30
+/sample-project/ShareClassViewController.m:24:15: empty if statement P2 
+/sample-project/ShareClassViewController.m:71:1: long line P3 Line with 104 characters exceeds limit of 100
+/sample-project/ShareClassViewController.m:73:1: long line P3 Line with 101 characters exceeds limit of 100
+/sample-project/ShareClassViewController.m:75:1: long line P3 Line with 126 characters exceeds limit of 100
+/sample-project/MorningstarCell.m:12:1: long line P3 Line with 101 characters exceeds limit of 100
+/sample-project/MorningstarCell.m:42:1: long line P3 Line with 102 characters exceeds limit of 100
+/sample-project/MorningstarCell.m:46:1: long line P3 Line with 146 characters exceeds limit of 100
+/sample-project/MorningstarCell.m:49:1: long line P3 Line with 246 characters exceeds limit of 100
+/sample-project/StyleMapCell.m:38:1: long line P3 Line with 130 characters exceeds limit of 100
+/sample-project/StyleMapCell.m:39:1: long line P3 Line with 131 characters exceeds limit of 100
+/sample-project/StyleMapCell.m:42:1: long line P3 Line with 202 characters exceeds limit of 100
+/sample-project/FundManagers.m:33:1: long line P3 Line with 104 characters exceeds limit of 100
+/sample-project/FundManagers.m:35:1: long line P3 Line with 112 characters exceeds limit of 100
+/sample-project/FundManagers.m:37:1: long line P3 Line with 130 characters exceeds limit of 100
+/sample-project/FundManagersCell.m:58:1: long line P3 Line with 162 characters exceeds limit of 100
+/sample-project/FundManagersCell.m:44:12: useless parentheses P3 
+/sample-project/ManagerView.m:53:1: long line P3 Line with 131 characters exceeds limit of 100
+/sample-project/ManagerView.m:63:1: long line P3 Line with 106 characters exceeds limit of 100
+/sample-project/ManagerView.m:126:1: long line P3 Line with 241 characters exceeds limit of 100
+/sample-project/ManagerView.m:132:1: long line P3 Line with 131 characters exceeds limit of 100
+/sample-project/ManagerView.m:133:1: long line P3 Line with 127 characters exceeds limit of 100
+/sample-project/ManagerView.m:71:12: unnecessary else statement P3 
+/sample-project/ManagerView.m:61:21: unused method parameter P2 
+/sample-project/TopTenHoldingCell.m:47:1: long line P3 Line with 103 characters exceeds limit of 100
+/sample-project/TopTenHoldingCell.m:63:1: long line P3 Line with 117 characters exceeds limit of 100
+/sample-project/TopTenHoldingCell.m:64:1: long line P3 Line with 166 characters exceeds limit of 100
+/sample-project/TopTenHoldingCell.m:66:1: long line P3 Line with 103 characters exceeds limit of 100
+/sample-project/TopTenHoldingCell.m:67:1: long line P3 Line with 192 characters exceeds limit of 100
+/sample-project/TopTenHoldingCell.m:68:1: long line P3 Line with 149 characters exceeds limit of 100
+/sample-project/MidPaneSectionHeader.m:16:15: empty if statement P2 
+/sample-project/MidPanelDisclaimerFooterView.m:21:15: empty if statement P2 
+/sample-project/MidPanelDisclaimerFooterView.m:29:1: long line P3 Line with 107 characters exceeds limit of 100
+/sample-project/WebBrowserViewController.m:115:15: empty if statement P2 
+/sample-project/WebBrowserViewController.m:86:8: inverted logic P3 
+/sample-project/WebBrowserViewController.m:185:8: inverted logic P3 
+/sample-project/WebBrowserViewController.m:194:12: inverted logic P3 
+/sample-project/WebBrowserViewController.m:69:1: long line P3 Line with 105 characters exceeds limit of 100
+/sample-project/WebBrowserViewController.m:107:1: long line P3 Line with 116 characters exceeds limit of 100
+/sample-project/WebBrowserViewController.m:196:1: long line P3 Line with 122 characters exceeds limit of 100
+/sample-project/WebBrowserViewController.m:200:1: long line P3 Line with 121 characters exceeds limit of 100
+/sample-project/WebBrowserViewController.m:203:1: long line P3 Line with 123 characters exceeds limit of 100
+/sample-project/WebBrowserViewController.m:207:1: long line P3 Line with 152 characters exceeds limit of 100
+/sample-project/WebBrowserViewController.m:226:1: long line P3 Line with 144 characters exceeds limit of 100
+/sample-project/WebBrowserViewController.m:235:1: long line P3 Line with 120 characters exceeds limit of 100
+/sample-project/WebBrowserViewController.m:311:1: long line P3 Line with 266 characters exceeds limit of 100
+/sample-project/WebBrowserViewController.m:313:1: long line P3 Line with 160 characters exceeds limit of 100
+/sample-project/WebBrowserViewController.m:315:1: long line P3 Line with 111 characters exceeds limit of 100
+/sample-project/WebBrowserViewController.m:316:1: long line P3 Line with 136 characters exceeds limit of 100
+/sample-project/WebBrowserViewController.m:325:1: long line P3 Line with 140 characters exceeds limit of 100
+/sample-project/WebBrowserViewController.m:328:5: missing break in switch statement P3 
+/sample-project/WebBrowserViewController.m:228:5: too few branches in switch statement P3 
+/sample-project/WebBrowserViewController.m:238:20: unnecessary else statement P3 
+/sample-project/WebBrowserViewController.m:179:33: unused method parameter P2 
+/sample-project/WebBrowserViewController.m:214:31: unused method parameter P2 
+/sample-project/WebBrowserViewController.m:219:34: unused method parameter P2 
+/sample-project/WebBrowserViewController.m:263:26: unused method parameter P2 
+/sample-project/WebBrowserViewController.m:267:30: unused method parameter P2 
+/sample-project/WebBrowserViewController.m:286:24: unused method parameter P2 
+/sample-project/FundDetailTabTableViewController.m:34:15: empty if statement P2 
+/sample-project/FundDetailTabTableViewController.m:24:1: long line P3 Line with 127 characters exceeds limit of 100
+/sample-project/FundDetailTabTableViewController.m:69:1: long line P3 Line with 173 characters exceeds limit of 100
+/sample-project/FundDetailTabTableViewController.m:81:1: long line P3 Line with 134 characters exceeds limit of 100
+/sample-project/FundDetailTabTableViewController.m:118:1: long line P3 Line with 104 characters exceeds limit of 100
+/sample-project/AssetMix.m:24:1: long line P3 Line with 104 characters exceeds limit of 100
+/sample-project/AssetMix.m:27:1: long line P3 Line with 127 characters exceeds limit of 100
+/sample-project/AssetMix.m:28:1: long line P3 Line with 118 characters exceeds limit of 100
+/sample-project/FundListTableCell.m:115:1: long line P3 Line with 191 characters exceeds limit of 100
+/sample-project/FundListTableCell.m:124:1: long line P3 Line with 161 characters exceeds limit of 100
+/sample-project/FundListTableCell.m:127:1: long line P3 Line with 200 characters exceeds limit of 100
+/sample-project/FundListTableCell.m:131:1: long line P3 Line with 177 characters exceeds limit of 100
+/sample-project/FundListTableCell.m:135:1: long line P3 Line with 173 characters exceeds limit of 100
+/sample-project/FundListTableCell.m:139:1: long line P3 Line with 170 characters exceeds limit of 100
+/sample-project/FundListTableCell.m:26:1: high ncss method P2 Method of 33 non-commenting source statements exceeds limit of 30
+/sample-project/TrayViewController.m:29:15: empty if statement P2 
+/sample-project/TrayViewController.m:78:1: long line P3 Line with 232 characters exceeds limit of 100
+/sample-project/TrayViewController.m:121:1: long line P3 Line with 104 characters exceeds limit of 100
+/sample-project/TrayViewController.m:125:1: long line P3 Line with 114 characters exceeds limit of 100
+/sample-project/TrayViewController.m:127:1: long line P3 Line with 144 characters exceeds limit of 100
+/sample-project/TrayViewController.m:142:1: long line P3 Line with 146 characters exceeds limit of 100
+/sample-project/TrayViewController.m:196:1: long line P3 Line with 246 characters exceeds limit of 100
+/sample-project/TrayTableCell.m:23:1: long line P3 Line with 106 characters exceeds limit of 100
+/sample-project/TrayTableCell.m:25:1: long line P3 Line with 105 characters exceeds limit of 100
+/sample-project/TrayTableCell.m:27:1: long line P3 Line with 109 characters exceeds limit of 100
+/sample-project/TrayTableCell.m:32:1: long line P3 Line with 109 characters exceeds limit of 100
+/sample-project/TrayTableCell.m:76:1: long line P3 Line with 196 characters exceeds limit of 100
+/sample-project/TrayTableCell.m:19:1: high ncss method P2 Method of 35 non-commenting source statements exceeds limit of 30
+/sample-project/AssetMixView.m:53:1: long line P3 Line with 128 characters exceeds limit of 100
+/sample-project/AssetMixView.m:70:1: long line P3 Line with 104 characters exceeds limit of 100
+/sample-project/AssetMixView.m:126:1: long line P3 Line with 115 characters exceeds limit of 100
+/sample-project/AssetMixView.m:127:1: long line P3 Line with 110 characters exceeds limit of 100
+/sample-project/AssetMixView.m:128:1: long line P3 Line with 117 characters exceeds limit of 100
+/sample-project/AssetMixView.m:129:1: long line P3 Line with 120 characters exceeds limit of 100
+/sample-project/AssetMixView.m:149:1: long line P3 Line with 156 characters exceeds limit of 100
+/sample-project/AssetMixView.m:156:1: long line P3 Line with 107 characters exceeds limit of 100
+/sample-project/AssetMixView.m:174:1: long line P3 Line with 751 characters exceeds limit of 100
+/sample-project/AssetMixView.m:208:1: long line P3 Line with 164 characters exceeds limit of 100
+/sample-project/AssetMixView.m:243:1: long line P3 Line with 114 characters exceeds limit of 100
+/sample-project/AssetMixView.m:261:1: long line P3 Line with 180 characters exceeds limit of 100
+/sample-project/AssetMixView.m:113:1: long method P3 Method with 52 lines exceeds limit of 50
+/sample-project/AssetMixView.m:113:1: high ncss method P2 Method of 40 non-commenting source statements exceeds limit of 30
+/sample-project/SectorBreakdown.m:25:1: long line P3 Line with 104 characters exceeds limit of 100
+/sample-project/SectorBreakdown.m:28:1: long line P3 Line with 127 characters exceeds limit of 100
+/sample-project/SectorBreakdown.m:29:1: long line P3 Line with 132 characters exceeds limit of 100
+/sample-project/TopTenIndustries.m:46:1: long line P3 Line with 104 characters exceeds limit of 100
+/sample-project/TopTenIndustries.m:50:1: long line P3 Line with 125 characters exceeds limit of 100
+/sample-project/SectorBreakdownView.m:66:1: long line P3 Line with 104 characters exceeds limit of 100
+/sample-project/SectorBreakdownView.m:122:1: long line P3 Line with 115 characters exceeds limit of 100
+/sample-project/SectorBreakdownView.m:123:1: long line P3 Line with 110 characters exceeds limit of 100
+/sample-project/SectorBreakdownView.m:124:1: long line P3 Line with 117 characters exceeds limit of 100
+/sample-project/SectorBreakdownView.m:125:1: long line P3 Line with 120 characters exceeds limit of 100
+/sample-project/SectorBreakdownView.m:145:1: long line P3 Line with 156 characters exceeds limit of 100
+/sample-project/SectorBreakdownView.m:154:1: long line P3 Line with 107 characters exceeds limit of 100
+/sample-project/SectorBreakdownView.m:173:1: long line P3 Line with 751 characters exceeds limit of 100
+/sample-project/SectorBreakdownView.m:207:1: long line P3 Line with 164 characters exceeds limit of 100
+/sample-project/SectorBreakdownView.m:242:1: long line P3 Line with 114 characters exceeds limit of 100
+/sample-project/SectorBreakdownView.m:260:1: long line P3 Line with 180 characters exceeds limit of 100
+/sample-project/SectorBreakdownView.m:109:1: long method P3 Method with 55 lines exceeds limit of 50
+/sample-project/SectorBreakdownView.m:109:1: high ncss method P2 Method of 41 non-commenting source statements exceeds limit of 30
+/sample-project/FundCharacteristics.m:52:1: long line P3 Line with 101 characters exceeds limit of 100
+/sample-project/FundCharacteristics.m:54:1: long line P3 Line with 102 characters exceeds limit of 100
+/sample-project/FundCharacteristics.m:65:1: long line P3 Line with 104 characters exceeds limit of 100
+/sample-project/FundCharacteristics.m:69:1: long line P3 Line with 124 characters exceeds limit of 100
+/sample-project/TopTenEquityHoldings.m:43:1: long line P3 Line with 104 characters exceeds limit of 100
+/sample-project/TopTenEquityHoldings.m:47:1: long line P3 Line with 124 characters exceeds limit of 100
+/sample-project/AverageAnnualReturns.m:50:1: long line P3 Line with 104 characters exceeds limit of 100
+/sample-project/AverageAnnualReturns.m:57:1: long line P3 Line with 214 characters exceeds limit of 100
+/sample-project/AverageAnnualReturns.m:78:1: long line P3 Line with 101 characters exceeds limit of 100
+/sample-project/AverageAnnualReturns.m:81:1: long line P3 Line with 108 characters exceeds limit of 100
+/sample-project/AverageAnnualReturns.m:83:1: long line P3 Line with 146 characters exceeds limit of 100
+/sample-project/AverageAnnualReturns.m:96:1: long line P3 Line with 140 characters exceeds limit of 100
+/sample-project/AverageAnnualReturns.m:98:1: long line P3 Line with 174 characters exceeds limit of 100
+/sample-project/AverageAnnualReturns.m:112:1: long line P3 Line with 133 characters exceeds limit of 100
+/sample-project/AverageAnnualReturns.m:50:1: long method P3 Method with 53 lines exceeds limit of 50
+/sample-project/AverageAnnualReturns.m:50:1: high ncss method P2 Method of 40 non-commenting source statements exceeds limit of 30
+/sample-project/AverageAnnualReturns.m:92:12: unnecessary else statement P3 
+/sample-project/AverageAnnualReturns.m:114:12: unnecessary else statement P3 
+/sample-project/AverageAnnualReturnsSectionHeaderView.m:61:1: long line P3 Line with 148 characters exceeds limit of 100
+/sample-project/AverageAnnualReturnsSectionHeaderView.m:70:1: long line P3 Line with 150 characters exceeds limit of 100
+/sample-project/AverageAnnualReturnsSectionHeaderView.m:76:1: long line P3 Line with 168 characters exceeds limit of 100
+/sample-project/AverageAnnualReturnsSectionHeaderView.m:79:1: long line P3 Line with 126 characters exceeds limit of 100
+/sample-project/AverageAnnualReturnsSectionHeaderView.m:80:1: long line P3 Line with 115 characters exceeds limit of 100
+/sample-project/AverageAnnualReturnsSectionHeaderView.m:81:1: long line P3 Line with 113 characters exceeds limit of 100
+/sample-project/AverageAnnualReturnsSectionHeaderView.m:82:1: long line P3 Line with 120 characters exceeds limit of 100
+/sample-project/AverageAnnualReturnsSectionHeaderView.m:89:1: long line P3 Line with 142 characters exceeds limit of 100
+/sample-project/AverageAnnualReturnsSectionHeaderView.m:90:1: long line P3 Line with 119 characters exceeds limit of 100
+/sample-project/AverageAnnualReturnsSectionHeaderView.m:91:1: long line P3 Line with 116 characters exceeds limit of 100
+/sample-project/AverageAnnualReturnsSectionHeaderView.m:92:1: long line P3 Line with 123 characters exceeds limit of 100
+/sample-project/AverageAnnualReturnsSectionHeaderView.m:105:1: long line P3 Line with 108 characters exceeds limit of 100
+/sample-project/AverageAnnualReturnsSectionHeaderView.m:122:1: long line P3 Line with 124 characters exceeds limit of 100
+/sample-project/AverageAnnualReturnsSectionHeaderView.m:133:1: long line P3 Line with 195 characters exceeds limit of 100
+/sample-project/AverageAnnualReturnsSectionHeaderView.m:151:1: long line P3 Line with 106 characters exceeds limit of 100
+/sample-project/AverageAnnualReturnsSectionHeaderView.m:221:1: long line P3 Line with 143 characters exceeds limit of 100
+/sample-project/AverageAnnualReturnsSectionHeaderView.m:246:1: long line P3 Line with 157 characters exceeds limit of 100
+/sample-project/AverageAnnualReturnsSectionHeaderView.m:252:1: long line P3 Line with 157 characters exceeds limit of 100
+/sample-project/AverageAnnualReturnsSectionHeaderView.m:42:1: long method P3 Method with 90 lines exceeds limit of 50
+/sample-project/AverageAnnualReturnsSectionHeaderView.m:42:1: high ncss method P2 Method of 62 non-commenting source statements exceeds limit of 30
+/sample-project/AverageAnnualReturnsSectionHeaderView.m:133:1: high ncss method P2 Method of 33 non-commenting source statements exceeds limit of 30
+/sample-project/AverageAnnualReturnsSectionFooterView.m:26:1: long line P3 Line with 102 characters exceeds limit of 100
+/sample-project/AverageAnnualReturnsSectionFooterView.m:71:1: long line P3 Line with 115 characters exceeds limit of 100
+/sample-project/AverageAnnualReturnsSectionFooterView.m:72:1: long line P3 Line with 113 characters exceeds limit of 100
+/sample-project/AverageAnnualReturnsSectionFooterView.m:73:1: long line P3 Line with 120 characters exceeds limit of 100
+/sample-project/AverageAnnualReturnsSectionFooterView.m:81:1: long line P3 Line with 119 characters exceeds limit of 100
+/sample-project/AverageAnnualReturnsSectionFooterView.m:82:1: long line P3 Line with 116 characters exceeds limit of 100
+/sample-project/AverageAnnualReturnsSectionFooterView.m:83:1: long line P3 Line with 123 characters exceeds limit of 100
+/sample-project/AverageAnnualReturnsCell.m:19:1: long line P3 Line with 155 characters exceeds limit of 100
+/sample-project/AverageAnnualReturnsCell.m:61:1: long line P3 Line with 107 characters exceeds limit of 100
+/sample-project/ShareDropDownListControllerViewController.m:23:15: empty if statement P2 
+/sample-project/ShareDropDownListControllerViewController.m:57:1: long line P3 Line with 104 characters exceeds limit of 100
+/sample-project/ShareDropDownListControllerViewController.m:59:1: long line P3 Line with 101 characters exceeds limit of 100
+/sample-project/ShareDropDownListControllerViewController.m:61:1: long line P3 Line with 126 characters exceeds limit of 100
+/sample-project/ShareDropDownListControllerViewController.m:63:1: long line P3 Line with 136 characters exceeds limit of 100
+/sample-project/ShareDropDownListControllerViewController.m:77:1: long line P3 Line with 103 characters exceeds limit of 100
+/sample-project/AssetDropDownViewController.m:22:15: empty if statement P2 
+/sample-project/AssetDropDownViewController.m:53:1: long line P3 Line with 104 characters exceeds limit of 100
+/sample-project/AssetDropDownViewController.m:57:1: long line P3 Line with 114 characters exceeds limit of 100
+/sample-project/AssetDropDownViewController.m:59:1: long line P3 Line with 145 characters exceeds limit of 100
+/sample-project/AssetDropDownViewController.m:77:1: long line P3 Line with 112 characters exceeds limit of 100
+/sample-project/AssetDropDownViewController.m:78:1: long line P3 Line with 110 characters exceeds limit of 100
+/sample-project/AssetDropDownViewController.m:79:1: long line P3 Line with 106 characters exceeds limit of 100
+/sample-project/ExpenseRatio.m:42:1: long line P3 Line with 101 characters exceeds limit of 100
+/sample-project/ExpenseRatio.m:44:1: long line P3 Line with 102 characters exceeds limit of 100
+/sample-project/ExpenseRatio.m:60:1: long line P3 Line with 104 characters exceeds limit of 100
+/sample-project/ExpenseRatio.m:64:1: long line P3 Line with 169 characters exceeds limit of 100
+/sample-project/ExpenseRatioCell.m:21:1: long line P3 Line with 123 characters exceeds limit of 100
+/sample-project/ExpenseRatioCell.m:32:1: long line P3 Line with 107 characters exceeds limit of 100
+/sample-project/ExpenseRatioCell.m:57:1: long line P3 Line with 103 characters exceeds limit of 100
+/sample-project/ExpenseRatioCell.m:76:1: long line P3 Line with 158 characters exceeds limit of 100
+/sample-project/ExpenseRatioCell.m:77:1: long line P3 Line with 151 characters exceeds limit of 100
+/sample-project/ExpenseRatioCell.m:21:106: unused method parameter P2 
+/sample-project/InsightsAPIClient.m:11:1: long line P3 Line with 132 characters exceeds limit of 100
+/sample-project/InsightsAPIClient.m:12:1: long line P3 Line with 120 characters exceeds limit of 100
+/sample-project/InsightsAPIClient.m:26:1: long line P3 Line with 192 characters exceeds limit of 100
+/sample-project/InsightsAPIClient.m:28:1: long line P3 Line with 117 characters exceeds limit of 100
+/sample-project/InsightsAPIClient.m:29:1: long line P3 Line with 127 characters exceeds limit of 100
+/sample-project/InsightsAPIClient.m:33:1: long line P3 Line with 258 characters exceeds limit of 100
+/sample-project/InsightsAPIClient.m:41:1: long line P3 Line with 127 characters exceeds limit of 100
+/sample-project/InsightsAPIClient.m:45:1: long line P3 Line with 124 characters exceeds limit of 100
+/sample-project/InsightsAPIClient.m:50:1: long line P3 Line with 128 characters exceeds limit of 100
+/sample-project/InsightsAPIClient.m:36:5: parameter reassignment P3 
+/sample-project/InsightsAPIClient.m:37:5: parameter reassignment P3 
+/sample-project/InsightsAPIClient.m:26:55: unused method parameter P2 
+/sample-project/InsightsAPIClient.m:26:90: unused method parameter P2 
+/sample-project/InsightsAPIClient.m:26:134: unused method parameter P2 
+/sample-project/InsightsAPIClient.m:26:169: unused method parameter P2 
+/sample-project/InsightsAPIClient.m:33:121: unused method parameter P2 
+/sample-project/InsightsAPIClient.m:33:156: unused method parameter P2 
+/sample-project/InsightsAPIClient.m:33:200: unused method parameter P2 
+/sample-project/InsightsAPIClient.m:33:235: unused method parameter P2 
+/sample-project/InsightsAPIClient.m:45:71: unused method parameter P2 
+/sample-project/InsightsAPIClient.m:45:106: unused method parameter P2 
+/sample-project/InsightsAPIClient.m:46:29: unused method parameter P2 
+/sample-project/InsightsAPIClient.m:46:64: unused method parameter P2 
+/sample-project/ContainerViewController.m:27:15: empty if statement P2 
+/sample-project/ContainerViewController.m:35:1: long line P3 Line with 111 characters exceeds limit of 100
+/sample-project/ContainerViewController.m:40:1: long line P3 Line with 151 characters exceeds limit of 100
+/sample-project/ContainerViewController.m:41:1: long line P3 Line with 151 characters exceeds limit of 100
+/sample-project/ContainerViewController.m:64:1: long line P3 Line with 106 characters exceeds limit of 100
+/sample-project/ContainerViewController.m:107:37: unused method parameter P2 
+/sample-project/ContainerViewController.m:150:36: unused method parameter P2 
+/sample-project/InsightsService.m:28:1: long line P3 Line with 134 characters exceeds limit of 100
+/sample-project/InsightsService.m:30:1: long line P3 Line with 110 characters exceeds limit of 100
+/sample-project/InsightsService.m:35:1: long line P3 Line with 131 characters exceeds limit of 100
+/sample-project/InsightsService.m:48:1: long line P3 Line with 140 characters exceeds limit of 100
+/sample-project/InsightsService.m:49:1: long line P3 Line with 105 characters exceeds limit of 100
+/sample-project/InsightsService.m:50:1: long line P3 Line with 166 characters exceeds limit of 100
+/sample-project/InsightsService.m:57:1: long line P3 Line with 206 characters exceeds limit of 100
+/sample-project/InsightsService.m:59:1: long line P3 Line with 150 characters exceeds limit of 100
+/sample-project/InsightsService.m:65:1: long line P3 Line with 131 characters exceeds limit of 100
+/sample-project/InsightsService.m:77:1: long line P3 Line with 213 characters exceeds limit of 100
+/sample-project/InsightsService.m:80:1: long line P3 Line with 132 characters exceeds limit of 100
+/sample-project/InsightsService.m:92:1: long line P3 Line with 170 characters exceeds limit of 100
+/sample-project/InsightsService.m:94:1: long line P3 Line with 114 characters exceeds limit of 100
+/sample-project/InsightsService.m:99:1: long line P3 Line with 157 characters exceeds limit of 100
+/sample-project/InsightsService.m:101:1: long line P3 Line with 153 characters exceeds limit of 100
+/sample-project/InsightsService.m:112:1: long line P3 Line with 124 characters exceeds limit of 100
+/sample-project/InsightsService.m:114:1: long line P3 Line with 150 characters exceeds limit of 100
+/sample-project/InsightsService.m:28:46: unused method parameter P2 
+/sample-project/InsightsService.m:28:108: unused method parameter P2 
+/sample-project/InsightsService.m:48:51: unused method parameter P2 
+/sample-project/InsightsService.m:48:105: unused method parameter P2 
+/sample-project/InsightsService.m:48:113: unused method parameter P2 
+/sample-project/InsightsService.m:57:118: unused method parameter P2 
+/sample-project/InsightsService.m:57:180: unused method parameter P2 
+/sample-project/InsightsService.m:77:75: unused method parameter P2 
+/sample-project/InsightsService.m:77:124: unused method parameter P2 
+/sample-project/InsightsService.m:77:178: unused method parameter P2 
+/sample-project/InsightsService.m:77:186: unused method parameter P2 
+/sample-project/InsightsService.m:92:74: unused method parameter P2 
+/sample-project/InsightsService.m:92:144: unused method parameter P2 
+/sample-project/InsightsListing.m:62:1: long line P3 Line with 110 characters exceeds limit of 100
+/sample-project/InsightsChannelViewController.m:74:15: empty if statement P2 
+/sample-project/InsightsChannelViewController.m:368:8: inverted logic P3 
+/sample-project/InsightsChannelViewController.m:84:1: long line P3 Line with 102 characters exceeds limit of 100
+/sample-project/InsightsChannelViewController.m:85:1: long line P3 Line with 103 characters exceeds limit of 100
+/sample-project/InsightsChannelViewController.m:92:1: long line P3 Line with 152 characters exceeds limit of 100
+/sample-project/InsightsChannelViewController.m:96:1: long line P3 Line with 104 characters exceeds limit of 100
+/sample-project/InsightsChannelViewController.m:104:1: long line P3 Line with 144 characters exceeds limit of 100
+/sample-project/InsightsChannelViewController.m:133:1: long line P3 Line with 104 characters exceeds limit of 100
+/sample-project/InsightsChannelViewController.m:138:1: long line P3 Line with 115 characters exceeds limit of 100
+/sample-project/InsightsChannelViewController.m:155:1: long line P3 Line with 147 characters exceeds limit of 100
+/sample-project/InsightsChannelViewController.m:180:1: long line P3 Line with 102 characters exceeds limit of 100
+/sample-project/InsightsChannelViewController.m:181:1: long line P3 Line with 104 characters exceeds limit of 100
+/sample-project/InsightsChannelViewController.m:191:1: long line P3 Line with 109 characters exceeds limit of 100
+/sample-project/InsightsChannelViewController.m:198:1: long line P3 Line with 112 characters exceeds limit of 100
+/sample-project/InsightsChannelViewController.m:199:1: long line P3 Line with 112 characters exceeds limit of 100
+/sample-project/InsightsChannelViewController.m:204:1: long line P3 Line with 143 characters exceeds limit of 100
+/sample-project/InsightsChannelViewController.m:209:1: long line P3 Line with 141 characters exceeds limit of 100
+/sample-project/InsightsChannelViewController.m:216:1: long line P3 Line with 180 characters exceeds limit of 100
+/sample-project/InsightsChannelViewController.m:225:1: long line P3 Line with 179 characters exceeds limit of 100
+/sample-project/InsightsChannelViewController.m:226:1: long line P3 Line with 120 characters exceeds limit of 100
+/sample-project/InsightsChannelViewController.m:235:1: long line P3 Line with 173 characters exceeds limit of 100
+/sample-project/InsightsChannelViewController.m:236:1: long line P3 Line with 131 characters exceeds limit of 100
+/sample-project/InsightsChannelViewController.m:241:1: long line P3 Line with 159 characters exceeds limit of 100
+/sample-project/InsightsChannelViewController.m:259:1: long line P3 Line with 138 characters exceeds limit of 100
+/sample-project/InsightsChannelViewController.m:261:1: long line P3 Line with 117 characters exceeds limit of 100
+/sample-project/InsightsChannelViewController.m:263:1: long line P3 Line with 112 characters exceeds limit of 100
+/sample-project/InsightsChannelViewController.m:286:1: long line P3 Line with 126 characters exceeds limit of 100
+/sample-project/InsightsChannelViewController.m:294:1: long line P3 Line with 226 characters exceeds limit of 100
+/sample-project/InsightsChannelViewController.m:306:1: long line P3 Line with 108 characters exceeds limit of 100
+/sample-project/InsightsChannelViewController.m:308:1: long line P3 Line with 138 characters exceeds limit of 100
+/sample-project/InsightsChannelViewController.m:313:1: long line P3 Line with 108 characters exceeds limit of 100
+/sample-project/InsightsChannelViewController.m:315:1: long line P3 Line with 138 characters exceeds limit of 100
+/sample-project/InsightsChannelViewController.m:327:1: long line P3 Line with 118 characters exceeds limit of 100
+/sample-project/InsightsChannelViewController.m:328:1: long line P3 Line with 133 characters exceeds limit of 100
+/sample-project/InsightsChannelViewController.m:329:1: long line P3 Line with 207 characters exceeds limit of 100
+/sample-project/InsightsChannelViewController.m:333:1: long line P3 Line with 104 characters exceeds limit of 100
+/sample-project/InsightsChannelViewController.m:346:1: long line P3 Line with 123 characters exceeds limit of 100
+/sample-project/InsightsChannelViewController.m:347:1: long line P3 Line with 141 characters exceeds limit of 100
+/sample-project/InsightsChannelViewController.m:355:1: long line P3 Line with 113 characters exceeds limit of 100
+/sample-project/InsightsChannelViewController.m:370:1: long line P3 Line with 114 characters exceeds limit of 100
+/sample-project/InsightsChannelViewController.m:371:1: long line P3 Line with 115 characters exceeds limit of 100
+/sample-project/InsightsChannelViewController.m:376:1: long line P3 Line with 112 characters exceeds limit of 100
+/sample-project/InsightsChannelViewController.m:377:1: long line P3 Line with 112 characters exceeds limit of 100
+/sample-project/InsightsChannelViewController.m:387:1: long line P3 Line with 131 characters exceeds limit of 100
+/sample-project/InsightsChannelViewController.m:388:1: long line P3 Line with 216 characters exceeds limit of 100
+/sample-project/InsightsChannelViewController.m:392:1: long line P3 Line with 156 characters exceeds limit of 100
+/sample-project/InsightsChannelViewController.m:393:1: long line P3 Line with 215 characters exceeds limit of 100
+/sample-project/InsightsChannelViewController.m:399:1: long line P3 Line with 140 characters exceeds limit of 100
+/sample-project/InsightsChannelViewController.m:402:1: long line P3 Line with 132 characters exceeds limit of 100
+/sample-project/InsightsChannelViewController.m:441:1: long line P3 Line with 112 characters exceeds limit of 100
+/sample-project/InsightsChannelViewController.m:455:1: long line P3 Line with 145 characters exceeds limit of 100
+/sample-project/InsightsChannelViewController.m:190:1: long method P3 Method with 57 lines exceeds limit of 50
+/sample-project/InsightsChannelViewController.m:190:1: high ncss method P2 Method of 43 non-commenting source statements exceeds limit of 30
+/sample-project/InsightsChannelViewController.m:322:1: high ncss method P2 Method of 33 non-commenting source statements exceeds limit of 30
+/sample-project/InsightsChannelViewController.m:367:37: unused method parameter P2 
+/sample-project/InsightsContentViewController.m:57:1: long line P3 Line with 107 characters exceeds limit of 100
+/sample-project/InsightsContentViewController.m:89:1: long line P3 Line with 105 characters exceeds limit of 100
+/sample-project/InsightsContentViewController.m:96:1: long line P3 Line with 107 characters exceeds limit of 100
+/sample-project/InsightsContentViewController.m:99:1: long line P3 Line with 103 characters exceeds limit of 100
+/sample-project/InsightsContentViewController.m:102:1: long line P3 Line with 125 characters exceeds limit of 100
+/sample-project/InsightsContentViewController.m:103:1: long line P3 Line with 103 characters exceeds limit of 100
+/sample-project/InsightsContentViewController.m:112:1: long line P3 Line with 109 characters exceeds limit of 100
+/sample-project/InsightsContentViewController.m:119:1: long line P3 Line with 111 characters exceeds limit of 100
+/sample-project/InsightsContentViewController.m:120:1: long line P3 Line with 112 characters exceeds limit of 100
+/sample-project/InsightsContentViewController.m:124:1: long line P3 Line with 143 characters exceeds limit of 100
+/sample-project/InsightsContentViewController.m:128:1: long line P3 Line with 141 characters exceeds limit of 100
+/sample-project/InsightsContentViewController.m:135:1: long line P3 Line with 138 characters exceeds limit of 100
+/sample-project/InsightsContentViewController.m:145:1: long line P3 Line with 146 characters exceeds limit of 100
+/sample-project/InsightsContentViewController.m:146:1: long line P3 Line with 120 characters exceeds limit of 100
+/sample-project/InsightsContentViewController.m:154:1: long line P3 Line with 140 characters exceeds limit of 100
+/sample-project/InsightsContentViewController.m:155:1: long line P3 Line with 131 characters exceeds limit of 100
+/sample-project/InsightsContentViewController.m:160:1: long line P3 Line with 159 characters exceeds limit of 100
+/sample-project/InsightsContentViewController.m:177:1: long line P3 Line with 138 characters exceeds limit of 100
+/sample-project/InsightsContentViewController.m:179:1: long line P3 Line with 117 characters exceeds limit of 100
+/sample-project/InsightsContentViewController.m:183:1: long line P3 Line with 112 characters exceeds limit of 100
+/sample-project/InsightsContentViewController.m:229:1: long line P3 Line with 112 characters exceeds limit of 100
+/sample-project/InsightsContentViewController.m:111:1: long method P3 Method with 55 lines exceeds limit of 50
+/sample-project/InsightsContentViewController.m:111:1: high ncss method P2 Method of 45 non-commenting source statements exceeds limit of 30
+/sample-project/InsightsFeaturesListing.m:98:1: long line P3 Line with 104 characters exceeds limit of 100
+/sample-project/InsightsFeaturesListing.m:120:1: long line P3 Line with 130 characters exceeds limit of 100
+/sample-project/InsightsFeaturesListing.m:122:1: long line P3 Line with 157 characters exceeds limit of 100
+/sample-project/InsightsFeaturesListing.m:133:10: unnecessary else statement P3 
+/sample-project/FeatureDetailViewController.m:26:1: long line P3 Line with 103 characters exceeds limit of 100
+/sample-project/FeatureDetailViewController.m:27:1: long line P3 Line with 102 characters exceeds limit of 100
+/sample-project/MaterialsAndResourcesCell.m:40:1: long line P3 Line with 102 characters exceeds limit of 100
+/sample-project/MaterialsAndResourcesCell.m:41:1: long line P3 Line with 150 characters exceeds limit of 100
+/sample-project/MaterialsAndResourcesCell.m:47:1: long line P3 Line with 134 characters exceeds limit of 100
+/sample-project/MaterialsAndResourcesCell.m:49:1: long line P3 Line with 112 characters exceeds limit of 100
+/sample-project/MaterialsAndResourcesCell.m:51:1: long line P3 Line with 190 characters exceeds limit of 100
+/sample-project/MaterialsAndResourcesCell.m:68:1: long line P3 Line with 101 characters exceeds limit of 100
+/sample-project/MaterialsAndResourcesCell.m:69:1: long line P3 Line with 117 characters exceeds limit of 100
+/sample-project/LegendsView.m:67:1: long line P3 Line with 157 characters exceeds limit of 100
+/sample-project/LegendsView.m:70:1: long line P3 Line with 137 characters exceeds limit of 100
+/sample-project/LegendsView.m:27:1: high ncss method P2 Method of 40 non-commenting source statements exceeds limit of 30
+/sample-project/BarViewController.m:25:15: empty if statement P2 
+/sample-project/BarViewController.m:33:1: long line P3 Line with 141 characters exceeds limit of 100
+/sample-project/BarViewController.m:34:1: long line P3 Line with 162 characters exceeds limit of 100
+/sample-project/BarViewController.m:35:1: long line P3 Line with 164 characters exceeds limit of 100
+/sample-project/BarViewController.m:50:1: long line P3 Line with 138 characters exceeds limit of 100
+/sample-project/BarViewController.m:51:1: long line P3 Line with 108 characters exceeds limit of 100
+/sample-project/BarViewController.m:69:1: long line P3 Line with 134 characters exceeds limit of 100
+/sample-project/BarViewController.m:74:1: long line P3 Line with 151 characters exceeds limit of 100
+/sample-project/BarViewController.m:49:29: unused method parameter P2 
+/sample-project/BarViewController.m:54:30: unused method parameter P2 
+/sample-project/InformationViewController.m:19:1: long line P3 Line with 105 characters exceeds limit of 100
+/sample-project/InformationViewController.m:36:1: long line P3 Line with 151 characters exceeds limit of 100
+/sample-project/InformationViewController.m:56:1: long line P3 Line with 129 characters exceeds limit of 100
+/sample-project/InformationViewController.m:57:1: long line P3 Line with 110 characters exceeds limit of 100
+/sample-project/InformationViewController.m:57:5: redundant local variable P3 
+/sample-project/ObjectiveStrategyCell.m:34:1: long line P3 Line with 117 characters exceeds limit of 100
+/sample-project/ObjectiveStrategyCell.m:50:1: long line P3 Line with 127 characters exceeds limit of 100
+/sample-project/Utility.m:33:1: long line P3 Line with 103 characters exceeds limit of 100
+/sample-project/LimitedOffering.m:24:1: long line P3 Line with 104 characters exceeds limit of 100
+/sample-project/LimitedOffering.m:28:1: long line P3 Line with 122 characters exceeds limit of 100
+/sample-project/DataUtils.m:17:5: collapsible if statements P3 
+/sample-project/DataUtils.m:40:5: collapsible if statements P3 
+/sample-project/DataUtils.m:41:9: collapsible if statements P3 
+/sample-project/DataUtils.m:13:1: long line P3 Line with 136 characters exceeds limit of 100
+/sample-project/DataUtils.m:37:1: long line P3 Line with 203 characters exceeds limit of 100
+/sample-project/DataUtils.m:37:121: unused method parameter P2 
+/sample-project/MaterialsAndResources.m:65:1: long line P3 Line with 104 characters exceeds limit of 100
+/sample-project/MaterialsAndResources.m:67:1: long line P3 Line with 101 characters exceeds limit of 100
+/sample-project/MaterialsAndResources.m:69:1: long line P3 Line with 126 characters exceeds limit of 100
+/sample-project/MaterialsAndResources.m:93:1: long line P3 Line with 136 characters exceeds limit of 100
+/sample-project/MaterialsAndResources.m:40:5: redundant local variable P3 
+/sample-project/AnnualizedBenchmarkReturns.m:63:1: long line P3 Line with 104 characters exceeds limit of 100
+/sample-project/AnnualizedBenchmarkReturns.m:67:1: long line P3 Line with 221 characters exceeds limit of 100
+/sample-project/AnnualizedBenchmarkReturns.m:86:1: long line P3 Line with 117 characters exceeds limit of 100
+/sample-project/AnnualizedBenchmarkReturns.m:89:1: long line P3 Line with 112 characters exceeds limit of 100
+/sample-project/AnnualizedBenchmarkReturns.m:91:1: long line P3 Line with 150 characters exceeds limit of 100
+/sample-project/AnnualizedBenchmarkReturns.m:103:1: long line P3 Line with 211 characters exceeds limit of 100
+/sample-project/AnnualizedBenchmarkReturns.m:104:1: long line P3 Line with 186 characters exceeds limit of 100
+/sample-project/AnnualizedBenchmarkReturns.m:118:1: long line P3 Line with 133 characters exceeds limit of 100
+/sample-project/AnnualizedBenchmarkReturns.m:121:1: long line P3 Line with 220 characters exceeds limit of 100
+/sample-project/AnnualizedBenchmarkReturns.m:127:1: long line P3 Line with 146 characters exceeds limit of 100
+/sample-project/AnnualizedBenchmarkReturns.m:147:1: long line P3 Line with 139 characters exceeds limit of 100
+/sample-project/AnnualizedBenchmarkReturns.m:63:1: high ncss method P2 Method of 40 non-commenting source statements exceeds limit of 30
+/sample-project/AnnualizedBenchmarkReturns.m:99:12: unnecessary else statement P3 
+/sample-project/AnnualizedBenchmarkReturns.m:120:12: unnecessary else statement P3 
+/sample-project/AnnualizedBenchmarkReturns.m:130:16: unnecessary else statement P3 
+/sample-project/AnnualizedBenchmarkReturnsCell.m:21:1: long line P3 Line with 155 characters exceeds limit of 100
+/sample-project/AnnualizedBenchmarkReturnsCell.m:52:1: long line P3 Line with 117 characters exceeds limit of 100
+/sample-project/AnnualizedBenchmarkReturnsCell.m:60:1: long line P3 Line with 102 characters exceeds limit of 100
+/sample-project/AnnualizedBenchmarkReturnsCell.m:70:1: long line P3 Line with 106 characters exceeds limit of 100
+/sample-project/AnnualizedBenchmarkReturnsCell.m:81:1: long line P3 Line with 133 characters exceeds limit of 100
+/sample-project/AnnualizedBenchmarkReturnsCell.m:82:1: long line P3 Line with 108 characters exceeds limit of 100
+/sample-project/AnnualizedBenchmarkReturnsCell.m:87:1: long line P3 Line with 211 characters exceeds limit of 100
+/sample-project/AnnualizedBenchmarkReturnsCell.m:46:1: high ncss method P2 Method of 36 non-commenting source statements exceeds limit of 30
+/sample-project/BriefcaseTableViewController.m:129:65: empty if statement P2 
+/sample-project/BriefcaseTableViewController.m:27:1: long line P3 Line with 128 characters exceeds limit of 100
+/sample-project/BriefcaseTableViewController.m:60:1: long line P3 Line with 104 characters exceeds limit of 100
+/sample-project/BriefcaseTableViewController.m:87:1: long line P3 Line with 104 characters exceeds limit of 100
+/sample-project/BriefcaseTableViewController.m:92:1: long line P3 Line with 113 characters exceeds limit of 100
+/sample-project/BriefcaseTableViewController.m:94:1: long line P3 Line with 138 characters exceeds limit of 100
+/sample-project/BriefcaseTableViewController.m:96:1: long line P3 Line with 116 characters exceeds limit of 100
+/sample-project/BriefcaseTableViewController.m:102:1: long line P3 Line with 108 characters exceeds limit of 100
+/sample-project/BriefcaseTableViewController.m:104:1: long line P3 Line with 133 characters exceeds limit of 100
+/sample-project/BriefcaseTableViewController.m:106:1: long line P3 Line with 121 characters exceeds limit of 100
+/sample-project/BriefcaseTableViewController.m:116:1: long line P3 Line with 148 characters exceeds limit of 100
+/sample-project/BriefcaseTableViewController.m:122:1: long line P3 Line with 101 characters exceeds limit of 100
+/sample-project/BriefcaseTableViewController.m:125:1: long line P3 Line with 124 characters exceeds limit of 100
+/sample-project/BriefcaseTableViewController.m:127:1: long line P3 Line with 132 characters exceeds limit of 100
+/sample-project/BriefcaseTableViewController.m:130:1: long line P3 Line with 120 characters exceeds limit of 100
+/sample-project/BriefcaseTableViewController.m:140:1: long line P3 Line with 160 characters exceeds limit of 100
+/sample-project/BriefcaseTableViewController.m:143:1: long line P3 Line with 136 characters exceeds limit of 100
+/sample-project/BriefcaseTableViewController.m:148:1: long line P3 Line with 112 characters exceeds limit of 100
+/sample-project/BriefcaseTableViewController.m:82:12: unnecessary else statement P3 
+/sample-project/BriefcaseTableViewController.m:101:12: unnecessary else statement P3 
+/sample-project/BriefcaseTableViewController.m:162:25: unused method parameter P2 
+/sample-project/BriefcaseTableViewController.m:168:25: unused method parameter P2 
+/sample-project/AnnualizedBenchmarkReturnsSectionFooterView.m:32:1: long line P3 Line with 102 characters exceeds limit of 100
+/sample-project/AnnualizedBenchmarkReturnsSectionFooterView.m:95:1: long line P3 Line with 115 characters exceeds limit of 100
+/sample-project/AnnualizedBenchmarkReturnsSectionFooterView.m:96:1: long line P3 Line with 113 characters exceeds limit of 100
+/sample-project/AnnualizedBenchmarkReturnsSectionFooterView.m:97:1: long line P3 Line with 120 characters exceeds limit of 100
+/sample-project/AnnualizedBenchmarkReturnsSectionFooterView.m:105:1: long line P3 Line with 119 characters exceeds limit of 100
+/sample-project/AnnualizedBenchmarkReturnsSectionFooterView.m:106:1: long line P3 Line with 116 characters exceeds limit of 100
+/sample-project/AnnualizedBenchmarkReturnsSectionFooterView.m:107:1: long line P3 Line with 123 characters exceeds limit of 100
+/sample-project/AnnualizedBenchmarkReturnsSectionHeaderView.m:71:1: long line P3 Line with 148 characters exceeds limit of 100
+/sample-project/AnnualizedBenchmarkReturnsSectionHeaderView.m:82:1: long line P3 Line with 168 characters exceeds limit of 100
+/sample-project/AnnualizedBenchmarkReturnsSectionHeaderView.m:86:1: long line P3 Line with 150 characters exceeds limit of 100
+/sample-project/AnnualizedBenchmarkReturnsSectionHeaderView.m:90:1: long line P3 Line with 126 characters exceeds limit of 100
+/sample-project/AnnualizedBenchmarkReturnsSectionHeaderView.m:91:1: long line P3 Line with 115 characters exceeds limit of 100
+/sample-project/AnnualizedBenchmarkReturnsSectionHeaderView.m:92:1: long line P3 Line with 113 characters exceeds limit of 100
+/sample-project/AnnualizedBenchmarkReturnsSectionHeaderView.m:93:1: long line P3 Line with 120 characters exceeds limit of 100
+/sample-project/AnnualizedBenchmarkReturnsSectionHeaderView.m:100:1: long line P3 Line with 142 characters exceeds limit of 100
+/sample-project/AnnualizedBenchmarkReturnsSectionHeaderView.m:101:1: long line P3 Line with 119 characters exceeds limit of 100
+/sample-project/AnnualizedBenchmarkReturnsSectionHeaderView.m:102:1: long line P3 Line with 116 characters exceeds limit of 100
+/sample-project/AnnualizedBenchmarkReturnsSectionHeaderView.m:103:1: long line P3 Line with 123 characters exceeds limit of 100
+/sample-project/AnnualizedBenchmarkReturnsSectionHeaderView.m:111:1: long line P3 Line with 168 characters exceeds limit of 100
+/sample-project/AnnualizedBenchmarkReturnsSectionHeaderView.m:112:1: long line P3 Line with 121 characters exceeds limit of 100
+/sample-project/AnnualizedBenchmarkReturnsSectionHeaderView.m:113:1: long line P3 Line with 111 characters exceeds limit of 100
+/sample-project/AnnualizedBenchmarkReturnsSectionHeaderView.m:114:1: long line P3 Line with 118 characters exceeds limit of 100
+/sample-project/AnnualizedBenchmarkReturnsSectionHeaderView.m:120:1: long line P3 Line with 173 characters exceeds limit of 100
+/sample-project/AnnualizedBenchmarkReturnsSectionHeaderView.m:124:1: long line P3 Line with 190 characters exceeds limit of 100
+/sample-project/AnnualizedBenchmarkReturnsSectionHeaderView.m:125:1: long line P3 Line with 121 characters exceeds limit of 100
+/sample-project/AnnualizedBenchmarkReturnsSectionHeaderView.m:126:1: long line P3 Line with 111 characters exceeds limit of 100
+/sample-project/AnnualizedBenchmarkReturnsSectionHeaderView.m:127:1: long line P3 Line with 118 characters exceeds limit of 100
+/sample-project/AnnualizedBenchmarkReturnsSectionHeaderView.m:133:1: long line P3 Line with 195 characters exceeds limit of 100
+/sample-project/AnnualizedBenchmarkReturnsSectionHeaderView.m:140:1: long line P3 Line with 119 characters exceeds limit of 100
+/sample-project/AnnualizedBenchmarkReturnsSectionHeaderView.m:141:1: long line P3 Line with 126 characters exceeds limit of 100
+/sample-project/AnnualizedBenchmarkReturnsSectionHeaderView.m:152:1: long line P3 Line with 126 characters exceeds limit of 100
+/sample-project/AnnualizedBenchmarkReturnsSectionHeaderView.m:165:1: long line P3 Line with 195 characters exceeds limit of 100
+/sample-project/AnnualizedBenchmarkReturnsSectionHeaderView.m:184:1: long line P3 Line with 106 characters exceeds limit of 100
+/sample-project/AnnualizedBenchmarkReturnsSectionHeaderView.m:292:1: long line P3 Line with 213 characters exceeds limit of 100
+/sample-project/AnnualizedBenchmarkReturnsSectionHeaderView.m:315:1: long line P3 Line with 153 characters exceeds limit of 100
+/sample-project/AnnualizedBenchmarkReturnsSectionHeaderView.m:51:1: long method P3 Method with 113 lines exceeds limit of 50
+/sample-project/AnnualizedBenchmarkReturnsSectionHeaderView.m:165:1: long method P3 Method with 58 lines exceeds limit of 50
+/sample-project/AnnualizedBenchmarkReturnsSectionHeaderView.m:51:1: high ncss method P2 Method of 89 non-commenting source statements exceeds limit of 30
+/sample-project/AnnualizedBenchmarkReturnsSectionHeaderView.m:165:1: high ncss method P2 Method of 43 non-commenting source statements exceeds limit of 30
+/sample-project/CommentaryWebViewController.m:22:1: long line P3 Line with 137 characters exceeds limit of 100
+/sample-project/CommentaryWebViewController.m:65:1: long line P3 Line with 157 characters exceeds limit of 100
+/sample-project/CommentaryWebViewController.m:83:1: long line P3 Line with 144 characters exceeds limit of 100
+/sample-project/CommentaryWebViewController.m:84:5: too few branches in switch statement P3 
+/sample-project/CommentaryWebViewController.m:89:20: unnecessary else statement P3 
+/sample-project/ColumnChartDataSource.m:16:15: empty if statement P2 
+/sample-project/ColumnChartDataSource.m:64:1: long line P3 Line with 101 characters exceeds limit of 100
+/sample-project/ColumnChartDataSource.m:65:1: long line P3 Line with 103 characters exceeds limit of 100
+/sample-project/ColumnChartDataSource.m:82:1: long line P3 Line with 114 characters exceeds limit of 100
+/sample-project/ColumnChartDataSource.m:86:1: long line P3 Line with 113 characters exceeds limit of 100
+/sample-project/ColumnChartDataSource.m:90:1: long line P3 Line with 116 characters exceeds limit of 100
+/sample-project/ColumnChartDataSource.m:91:1: long line P3 Line with 133 characters exceeds limit of 100
+/sample-project/ColumnChartViewController.m:133:13: collapsible if statements P3 
+/sample-project/ColumnChartViewController.m:26:1: long line P3 Line with 130 characters exceeds limit of 100
+/sample-project/ColumnChartViewController.m:27:1: long line P3 Line with 125 characters exceeds limit of 100
+/sample-project/ColumnChartViewController.m:29:1: long line P3 Line with 135 characters exceeds limit of 100
+/sample-project/ColumnChartViewController.m:33:1: long line P3 Line with 123 characters exceeds limit of 100
+/sample-project/ColumnChartViewController.m:51:1: long line P3 Line with 195 characters exceeds limit of 100
+/sample-project/ColumnChartViewController.m:72:1: long line P3 Line with 154 characters exceeds limit of 100
+/sample-project/ColumnChartViewController.m:90:1: long line P3 Line with 123 characters exceeds limit of 100
+/sample-project/ColumnChartViewController.m:131:1: long line P3 Line with 113 characters exceeds limit of 100
+/sample-project/ColumnChartViewController.m:175:1: long line P3 Line with 195 characters exceeds limit of 100
+/sample-project/ColumnChartViewController.m:219:1: long line P3 Line with 110 characters exceeds limit of 100
+/sample-project/ColumnChartViewController.m:220:1: long line P3 Line with 113 characters exceeds limit of 100
+/sample-project/ColumnChartViewController.m:232:1: long line P3 Line with 123 characters exceeds limit of 100
+/sample-project/ColumnChartViewController.m:234:1: long line P3 Line with 457 characters exceeds limit of 100
+/sample-project/ColumnChartViewController.m:236:1: long line P3 Line with 243 characters exceeds limit of 100
+/sample-project/ColumnChartViewController.m:246:1: long line P3 Line with 373 characters exceeds limit of 100
+/sample-project/ColumnChartViewController.m:250:1: long line P3 Line with 234 characters exceeds limit of 100
+/sample-project/ColumnChartViewController.m:21:1: long method P3 Method with 89 lines exceeds limit of 50
+/sample-project/ColumnChartViewController.m:21:1: high ncss method P2 Method of 53 non-commenting source statements exceeds limit of 30
+/sample-project/ColumnChartViewController.m:205:1: high ncss method P2 Method of 37 non-commenting source statements exceeds limit of 30
+/sample-project/BriefcaseService.m:78:1: long line P3 Line with 152 characters exceeds limit of 100
+/sample-project/BriefcaseService.m:84:1: long line P3 Line with 158 characters exceeds limit of 100
+/sample-project/BriefcaseService.m:87:1: long line P3 Line with 146 characters exceeds limit of 100
+/sample-project/BriefcaseService.m:16:51: unused method parameter P2 
+/sample-project/BriefcaseService.m:46:51: unused method parameter P2 
+/sample-project/BriefcaseService.m:63:55: unused method parameter P2 
+/sample-project/BriefcaseSectionHeaderView.m:32:1: long line P3 Line with 153 characters exceeds limit of 100
+/sample-project/BriefcaseSectionHeaderView.m:35:1: long line P3 Line with 105 characters exceeds limit of 100
+/sample-project/ProductBriefcaseCell.m:25:1: long line P3 Line with 105 characters exceeds limit of 100
+/sample-project/ProductBriefcaseCell.m:59:1: long line P3 Line with 102 characters exceeds limit of 100
+/sample-project/ProductBriefcaseCell.m:77:1: long line P3 Line with 123 characters exceeds limit of 100
+/sample-project/ProductBriefcaseCell.m:78:1: long line P3 Line with 217 characters exceeds limit of 100
+/sample-project/ProductBriefcaseCell.m:80:1: long line P3 Line with 206 characters exceeds limit of 100
+/sample-project/InsightsBriefcaseCell.m:22:1: long line P3 Line with 103 characters exceeds limit of 100
+/sample-project/InsightsBriefcaseCell.m:43:1: long line P3 Line with 103 characters exceeds limit of 100
+/sample-project/InsightsBriefcaseCell.m:46:1: long line P3 Line with 104 characters exceeds limit of 100
+/sample-project/InsightsBriefcaseCell.m:70:1: long line P3 Line with 102 characters exceeds limit of 100
+/sample-project/InsightsBriefcaseCell.m:71:1: long line P3 Line with 101 characters exceeds limit of 100
+/sample-project/InsightsBriefcaseCell.m:72:1: long line P3 Line with 183 characters exceeds limit of 100
+/sample-project/InsightsBriefcaseCell.m:75:1: long line P3 Line with 135 characters exceeds limit of 100
+/sample-project/InsightsBriefcaseCell.m:78:1: long line P3 Line with 145 characters exceeds limit of 100
+/sample-project/InsightsBriefcaseCell.m:79:1: long line P3 Line with 136 characters exceeds limit of 100
+/sample-project/ChannelContentService.m:61:12: inverted logic P3 
+/sample-project/ChannelContentService.m:23:1: long line P3 Line with 142 characters exceeds limit of 100
+/sample-project/ChannelContentService.m:24:1: long line P3 Line with 106 characters exceeds limit of 100
+/sample-project/ChannelContentService.m:25:1: long line P3 Line with 120 characters exceeds limit of 100
+/sample-project/ChannelContentService.m:30:1: long line P3 Line with 131 characters exceeds limit of 100
+/sample-project/ChannelContentService.m:46:1: long line P3 Line with 148 characters exceeds limit of 100
+/sample-project/ChannelContentService.m:48:1: long line P3 Line with 159 characters exceeds limit of 100
+/sample-project/ChannelContentService.m:55:1: long line P3 Line with 160 characters exceeds limit of 100
+/sample-project/ChannelContentService.m:56:1: long line P3 Line with 106 characters exceeds limit of 100
+/sample-project/ChannelContentService.m:57:1: long line P3 Line with 118 characters exceeds limit of 100
+/sample-project/ChannelContentService.m:62:1: long line P3 Line with 157 characters exceeds limit of 100
+/sample-project/ChannelContentService.m:65:1: long line P3 Line with 126 characters exceeds limit of 100
+/sample-project/ChannelContentService.m:80:1: long line P3 Line with 124 characters exceeds limit of 100
+/sample-project/ChannelContentService.m:82:1: long line P3 Line with 150 characters exceeds limit of 100
+/sample-project/ChannelContentService.m:23:69: unused method parameter P2 
+/sample-project/ChannelContentService.m:23:115: unused method parameter P2 
+/sample-project/ChannelContentService.m:46:75: unused method parameter P2 
+/sample-project/ChannelContentService.m:46:113: unused method parameter P2 
+/sample-project/ChannelContentService.m:46:121: unused method parameter P2 
+/sample-project/ChannelContentService.m:55:78: unused method parameter P2 
+/sample-project/ChannelContentService.m:55:133: unused method parameter P2 
+/sample-project/ChannelContentAPIClient.m:11:1: long line P3 Line with 116 characters exceeds limit of 100
+/sample-project/ChannelContentAPIClient.m:28:1: long line P3 Line with 216 characters exceeds limit of 100
+/sample-project/ChannelContentAPIClient.m:32:1: long line P3 Line with 127 characters exceeds limit of 100
+/sample-project/ChannelContentAPIClient.m:36:1: long line P3 Line with 213 characters exceeds limit of 100
+/sample-project/ChannelContentAPIClient.m:40:1: long line P3 Line with 128 characters exceeds limit of 100
+/sample-project/ChannelContentAPIClient.m:28:78: unused method parameter P2 
+/sample-project/ChannelContentAPIClient.m:28:113: unused method parameter P2 
+/sample-project/ChannelContentAPIClient.m:28:158: unused method parameter P2 
+/sample-project/ChannelContentAPIClient.m:28:193: unused method parameter P2 
+/sample-project/ChannelContentAPIClient.m:36:75: unused method parameter P2 
+/sample-project/ChannelContentAPIClient.m:36:110: unused method parameter P2 
+/sample-project/ChannelContentAPIClient.m:36:155: unused method parameter P2 
+/sample-project/ChannelContentAPIClient.m:36:190: unused method parameter P2 
+/sample-project/ContentItem.m:48:1: long line P3 Line with 130 characters exceeds limit of 100
+/sample-project/ContentItem.m:49:1: long line P3 Line with 157 characters exceeds limit of 100
+/sample-project/ContentItem.m:129:1: long line P3 Line with 104 characters exceeds limit of 100
+/sample-project/ContentItem.m:143:1: long line P3 Line with 130 characters exceeds limit of 100
+/sample-project/ContentItem.m:145:1: long line P3 Line with 157 characters exceeds limit of 100
+/sample-project/ContentItem.m:113:10: unnecessary else statement P3 
+/sample-project/API/FundFinderAPIClient.m:25:1: long line P3 Line with 186 characters exceeds limit of 100
+/sample-project/API/FundFinderAPIClient.m:27:1: long line P3 Line with 104 characters exceeds limit of 100
+/sample-project/API/FundFinderAPIClient.m:28:1: long line P3 Line with 121 characters exceeds limit of 100
+/sample-project/API/FundFinderAPIClient.m:25:47: unused method parameter P2 
+/sample-project/API/FundFinderAPIClient.m:25:82: unused method parameter P2 
+/sample-project/API/FundFinderAPIClient.m:25:127: unused method parameter P2 
+/sample-project/API/FundFinderAPIClient.m:25:162: unused method parameter P2 
+/sample-project/FundFinder.m:66:1: long line P3 Line with 117 characters exceeds limit of 100
+/sample-project/FundFinder.m:67:1: long line P3 Line with 109 characters exceeds limit of 100
+/sample-project/FundFinder.m:83:1: long line P3 Line with 115 characters exceeds limit of 100
+/sample-project/FundFinder.m:84:1: long line P3 Line with 107 characters exceeds limit of 100
+/sample-project/FundFinder.m:86:1: long line P3 Line with 106 characters exceeds limit of 100
+/sample-project/FundFinder.m:158:1: long line P3 Line with 164 characters exceeds limit of 100
+/sample-project/FundFinder.m:191:1: long line P3 Line with 107 characters exceeds limit of 100
+/sample-project/FundFinder.m:228:1: long line P3 Line with 114 characters exceeds limit of 100
+/sample-project/FundFinder.m:247:1: long line P3 Line with 180 characters exceeds limit of 100
+/sample-project/FundFinder.m:70:1: high ncss method P2 Method of 41 non-commenting source statements exceeds limit of 30
+/sample-project/FundFinderService.m:28:12: inverted logic P3 
+/sample-project/FundFinderService.m:22:1: long line P3 Line with 137 characters exceeds limit of 100
+/sample-project/FundFinderService.m:33:1: long line P3 Line with 111 characters exceeds limit of 100
+/sample-project/FundFinderService.m:42:1: long line P3 Line with 143 characters exceeds limit of 100
+/sample-project/FundFinderService.m:45:1: long line P3 Line with 132 characters exceeds limit of 100
+/sample-project/FundFinderService.m:47:1: long line P3 Line with 107 characters exceeds limit of 100
+/sample-project/FundFinderService.m:54:1: long line P3 Line with 124 characters exceeds limit of 100
+/sample-project/FundFinderService.m:56:1: long line P3 Line with 156 characters exceeds limit of 100
+/sample-project/FundFinderService.m:22:44: unused method parameter P2 
+/sample-project/FundFinderService.m:22:110: unused method parameter P2 
+/sample-project/FundFinderService.m:42:50: unused method parameter P2 
+/sample-project/FundFinderService.m:42:108: unused method parameter P2 
+/sample-project/FundFinderService.m:42:116: unused method parameter P2 
+/sample-project/FundFinderListing.m:23:1: long line P3 Line with 104 characters exceeds limit of 100
+/sample-project/FundFinderListing.m:36:1: long line P3 Line with 117 characters exceeds limit of 100
+/sample-project/FundFinderListing.m:37:1: long line P3 Line with 111 characters exceeds limit of 100
+/sample-project/FundFinderListing.m:38:1: long line P3 Line with 125 characters exceeds limit of 100
+/sample-project/FundFinderListing.m:39:1: long line P3 Line with 101 characters exceeds limit of 100
+/sample-project/FundFinderListing.m:40:1: long line P3 Line with 103 characters exceeds limit of 100
+/sample-project/ProductsCarouselViewController.m:29:1: long line P3 Line with 120 characters exceeds limit of 100
+/sample-project/ProductsCarouselViewController.m:75:1: long line P3 Line with 106 characters exceeds limit of 100
+/sample-project/ProductsCarouselViewController.m:83:1: long line P3 Line with 107 characters exceeds limit of 100
+/sample-project/ProductsCarouselViewController.m:112:1: long line P3 Line with 119 characters exceeds limit of 100
+/sample-project/ProductsCarouselViewController.m:135:1: long line P3 Line with 109 characters exceeds limit of 100
+/sample-project/ProductsCarouselViewController.m:137:1: long line P3 Line with 106 characters exceeds limit of 100
+/sample-project/ProductsCarouselViewController.m:138:1: long line P3 Line with 108 characters exceeds limit of 100
+/sample-project/ProductsCarouselViewController.m:139:1: long line P3 Line with 121 characters exceeds limit of 100
+/sample-project/ProductsCarouselViewController.m:143:1: long line P3 Line with 126 characters exceeds limit of 100
+/sample-project/ProductsCarouselViewController.m:78:5: parameter reassignment P3 
+/sample-project/ProductsCarouselViewController.m:85:5: too few branches in switch statement P3 
+/sample-project/FeaturesCarouselViewController.m:29:1: long line P3 Line with 122 characters exceeds limit of 100
+/sample-project/FeaturesCarouselViewController.m:65:1: long line P3 Line with 106 characters exceeds limit of 100
+/sample-project/FeaturesCarouselViewController.m:74:1: long line P3 Line with 126 characters exceeds limit of 100
+/sample-project/FeaturesCarouselViewController.m:85:1: long line P3 Line with 108 characters exceeds limit of 100
+/sample-project/FeaturesCarouselViewController.m:120:1: long line P3 Line with 111 characters exceeds limit of 100
+/sample-project/FeaturesCarouselViewController.m:121:1: long line P3 Line with 119 characters exceeds limit of 100
+/sample-project/FeaturesCarouselViewController.m:124:1: long line P3 Line with 143 characters exceeds limit of 100
+/sample-project/FeaturesCarouselViewController.m:131:1: long line P3 Line with 179 characters exceeds limit of 100
+/sample-project/FeaturesCarouselViewController.m:139:1: long line P3 Line with 191 characters exceeds limit of 100
+/sample-project/FeaturesCarouselViewController.m:161:1: long line P3 Line with 109 characters exceeds limit of 100
+/sample-project/FeaturesCarouselViewController.m:163:1: long line P3 Line with 106 characters exceeds limit of 100
+/sample-project/FeaturesCarouselViewController.m:165:1: long line P3 Line with 108 characters exceeds limit of 100
+/sample-project/FeaturesCarouselViewController.m:166:1: long line P3 Line with 121 characters exceeds limit of 100
+/sample-project/FeaturesCarouselViewController.m:170:1: long line P3 Line with 112 characters exceeds limit of 100
+/sample-project/FeaturesCarouselViewController.m:68:5: parameter reassignment P3 
+/sample-project/FeaturesCarouselViewController.m:77:5: parameter reassignment P3 
+/sample-project/SettingsViewController.m:29:15: empty if statement P2 
+/sample-project/SettingsViewController.m:75:1: long line P3 Line with 142 characters exceeds limit of 100
+/sample-project/SettingsViewController.m:89:1: long line P3 Line with 105 characters exceeds limit of 100
+/sample-project/SettingsViewController.m:90:1: long line P3 Line with 118 characters exceeds limit of 100
+/sample-project/SettingsViewController.m:109:1: long line P3 Line with 103 characters exceeds limit of 100
+/sample-project/SettingsViewController.m:118:1: long line P3 Line with 104 characters exceeds limit of 100
+/sample-project/SettingsViewController.m:119:1: long line P3 Line with 125 characters exceeds limit of 100
+/sample-project/SettingsViewController.m:145:1: long line P3 Line with 144 characters exceeds limit of 100
+/sample-project/SettingsViewController.m:36:1: high ncss method P2 Method of 32 non-commenting source statements exceeds limit of 30
+/sample-project/SettingsViewController.m:146:5: too few branches in switch statement P3 
+/sample-project/SettingsViewController.m:151:20: unnecessary else statement P3 
+/sample-project/SettingsViewController.m:108:26: unused method parameter P2 
+/sample-project/PopoverMenuViewController.m:19:1: long line P3 Line with 120 characters exceeds limit of 100
+/sample-project/PopoverMenuViewController.m:58:1: long line P3 Line with 108 characters exceeds limit of 100
+/sample-project/PopoverMenuViewController.m:61:1: long line P3 Line with 132 characters exceeds limit of 100
+/sample-project/PopoverMenuViewController.m:63:1: long line P3 Line with 115 characters exceeds limit of 100
+/sample-project/PopoverMenuViewController.m:64:1: long line P3 Line with 127 characters exceeds limit of 100
+/sample-project/PopoverMenuViewController.m:66:1: long line P3 Line with 115 characters exceeds limit of 100
+/sample-project/PopoverMenuViewController.m:67:1: long line P3 Line with 128 characters exceeds limit of 100
+/sample-project/PopoverMenuViewController.m:93:38: unused method parameter P2 
+/sample-project/PopoverMenuViewController.m:97:31: unused method parameter P2 
+/sample-project/ProspectusViewController.m:21:15: empty if statement P2 
+/sample-project/ProspectusViewController.m:50:1: long line P3 Line with 155 characters exceeds limit of 100
+/sample-project/ProspectusViewController.m:48:26: unused method parameter P2 
+/sample-project/ViewAllHoldingsAPIClient.m:23:1: long line P3 Line with 225 characters exceeds limit of 100
+/sample-project/ViewAllHoldingsAPIClient.m:25:1: long line P3 Line with 131 characters exceeds limit of 100
+/sample-project/ViewAllHoldingsAPIClient.m:26:1: long line P3 Line with 101 characters exceeds limit of 100
+/sample-project/ViewAllHoldingsAPIClient.m:27:1: long line P3 Line with 101 characters exceeds limit of 100
+/sample-project/ViewAllHoldingsAPIClient.m:28:1: long line P3 Line with 121 characters exceeds limit of 100
+/sample-project/ViewAllHoldingsAPIClient.m:23:86: unused method parameter P2 
+/sample-project/ViewAllHoldingsAPIClient.m:23:121: unused method parameter P2 
+/sample-project/ViewAllHoldingsAPIClient.m:23:166: unused method parameter P2 
+/sample-project/ViewAllHoldingsAPIClient.m:23:201: unused method parameter P2 
+/sample-project/ViewAllHoldingsListing.m:29:1: long line P3 Line with 102 characters exceeds limit of 100
+/sample-project/ViewAllHoldingsService.m:29:12: inverted logic P3 
+/sample-project/ViewAllHoldingsService.m:22:1: long line P3 Line with 187 characters exceeds limit of 100
+/sample-project/ViewAllHoldingsService.m:25:1: long line P3 Line with 132 characters exceeds limit of 100
+/sample-project/ViewAllHoldingsService.m:30:1: long line P3 Line with 132 characters exceeds limit of 100
+/sample-project/ViewAllHoldingsService.m:33:1: long line P3 Line with 126 characters exceeds limit of 100
+/sample-project/ViewAllHoldingsService.m:22:85: unused method parameter P2 
+/sample-project/ViewAllHoldingsService.m:22:161: unused method parameter P2 
+/sample-project/AllHoldingsViewController.m:21:15: empty if statement P2 
+/sample-project/AllHoldingsViewController.m:34:1: long line P3 Line with 109 characters exceeds limit of 100
+/sample-project/AllHoldingsViewController.m:63:1: long line P3 Line with 102 characters exceeds limit of 100
+/sample-project/AllHoldingsViewController.m:67:1: long line P3 Line with 107 characters exceeds limit of 100
+/sample-project/AllHoldingsViewController.m:69:1: long line P3 Line with 138 characters exceeds limit of 100
+/sample-project/AllHoldingsViewController.m:94:1: long line P3 Line with 127 characters exceeds limit of 100
+/sample-project/AllHoldingsViewController.m:110:1: long line P3 Line with 146 characters exceeds limit of 100
+/sample-project/AllHoldingsViewController.m:114:1: long line P3 Line with 124 characters exceeds limit of 100
+/sample-project/AllHoldingsViewController.m:117:1: long line P3 Line with 120 characters exceeds limit of 100
+/sample-project/AllHoldingsViewController.m:124:1: long line P3 Line with 129 characters exceeds limit of 100
+/sample-project/AllHoldingsViewController.m:144:1: long line P3 Line with 132 characters exceeds limit of 100
+/sample-project/AllHoldingsListTableCell.m:55:1: long line P3 Line with 115 characters exceeds limit of 100
+/sample-project/AllHoldingsListTableCell.m:60:1: long line P3 Line with 163 characters exceeds limit of 100
+/sample-project/AllHoldingsListTableCell.m:64:1: long line P3 Line with 159 characters exceeds limit of 100
+/sample-project/AllHoldingsListTableCell.m:68:1: long line P3 Line with 163 characters exceeds limit of 100
+/sample-project/AnnualizedBenchmarkReturnsHeaderCell.m:74:1: long line P3 Line with 148 characters exceeds limit of 100
+/sample-project/AnnualizedBenchmarkReturnsHeaderCell.m:83:1: long line P3 Line with 168 characters exceeds limit of 100
+/sample-project/AnnualizedBenchmarkReturnsHeaderCell.m:87:1: long line P3 Line with 150 characters exceeds limit of 100
+/sample-project/AnnualizedBenchmarkReturnsHeaderCell.m:91:1: long line P3 Line with 126 characters exceeds limit of 100
+/sample-project/AnnualizedBenchmarkReturnsHeaderCell.m:92:1: long line P3 Line with 115 characters exceeds limit of 100
+/sample-project/AnnualizedBenchmarkReturnsHeaderCell.m:93:1: long line P3 Line with 113 characters exceeds limit of 100
+/sample-project/AnnualizedBenchmarkReturnsHeaderCell.m:94:1: long line P3 Line with 120 characters exceeds limit of 100
+/sample-project/AnnualizedBenchmarkReturnsHeaderCell.m:101:1: long line P3 Line with 142 characters exceeds limit of 100
+/sample-project/AnnualizedBenchmarkReturnsHeaderCell.m:102:1: long line P3 Line with 119 characters exceeds limit of 100
+/sample-project/AnnualizedBenchmarkReturnsHeaderCell.m:103:1: long line P3 Line with 116 characters exceeds limit of 100
+/sample-project/AnnualizedBenchmarkReturnsHeaderCell.m:104:1: long line P3 Line with 123 characters exceeds limit of 100
+/sample-project/AnnualizedBenchmarkReturnsHeaderCell.m:112:1: long line P3 Line with 168 characters exceeds limit of 100
+/sample-project/AnnualizedBenchmarkReturnsHeaderCell.m:113:1: long line P3 Line with 121 characters exceeds limit of 100
+/sample-project/AnnualizedBenchmarkReturnsHeaderCell.m:114:1: long line P3 Line with 111 characters exceeds limit of 100
+/sample-project/AnnualizedBenchmarkReturnsHeaderCell.m:115:1: long line P3 Line with 118 characters exceeds limit of 100
+/sample-project/AnnualizedBenchmarkReturnsHeaderCell.m:121:1: long line P3 Line with 173 characters exceeds limit of 100
+/sample-project/AnnualizedBenchmarkReturnsHeaderCell.m:125:1: long line P3 Line with 190 characters exceeds limit of 100
+/sample-project/AnnualizedBenchmarkReturnsHeaderCell.m:126:1: long line P3 Line with 121 characters exceeds limit of 100
+/sample-project/AnnualizedBenchmarkReturnsHeaderCell.m:127:1: long line P3 Line with 111 characters exceeds limit of 100
+/sample-project/AnnualizedBenchmarkReturnsHeaderCell.m:128:1: long line P3 Line with 118 characters exceeds limit of 100
+/sample-project/AnnualizedBenchmarkReturnsHeaderCell.m:134:1: long line P3 Line with 195 characters exceeds limit of 100
+/sample-project/AnnualizedBenchmarkReturnsHeaderCell.m:141:1: long line P3 Line with 127 characters exceeds limit of 100
+/sample-project/AnnualizedBenchmarkReturnsHeaderCell.m:142:1: long line P3 Line with 126 characters exceeds limit of 100
+/sample-project/AnnualizedBenchmarkReturnsHeaderCell.m:153:1: long line P3 Line with 126 characters exceeds limit of 100
+/sample-project/AnnualizedBenchmarkReturnsHeaderCell.m:166:1: long line P3 Line with 233 characters exceeds limit of 100
+/sample-project/AnnualizedBenchmarkReturnsHeaderCell.m:187:1: long line P3 Line with 106 characters exceeds limit of 100
+/sample-project/AnnualizedBenchmarkReturnsHeaderCell.m:231:1: long line P3 Line with 112 characters exceeds limit of 100
+/sample-project/AnnualizedBenchmarkReturnsHeaderCell.m:248:1: long line P3 Line with 112 characters exceeds limit of 100
+/sample-project/AnnualizedBenchmarkReturnsHeaderCell.m:267:1: long line P3 Line with 112 characters exceeds limit of 100
+/sample-project/AnnualizedBenchmarkReturnsHeaderCell.m:282:1: long line P3 Line with 112 characters exceeds limit of 100
+/sample-project/AnnualizedBenchmarkReturnsHeaderCell.m:295:1: long line P3 Line with 213 characters exceeds limit of 100
+/sample-project/AnnualizedBenchmarkReturnsHeaderCell.m:320:1: long line P3 Line with 153 characters exceeds limit of 100
+/sample-project/AnnualizedBenchmarkReturnsHeaderCell.m:54:1: long method P3 Method with 111 lines exceeds limit of 50
+/sample-project/AnnualizedBenchmarkReturnsHeaderCell.m:166:1: long method P3 Method with 60 lines exceeds limit of 50
+/sample-project/AnnualizedBenchmarkReturnsHeaderCell.m:54:1: high ncss method P2 Method of 89 non-commenting source statements exceeds limit of 30
+/sample-project/AnnualizedBenchmarkReturnsHeaderCell.m:166:1: high ncss method P2 Method of 45 non-commenting source statements exceeds limit of 30
+/sample-project/BootstrapService.m:29:1: long line P3 Line with 235 characters exceeds limit of 100
+/sample-project/BootstrapService.m:42:1: long line P3 Line with 110 characters exceeds limit of 100
+/sample-project/BootstrapService.m:43:1: long line P3 Line with 141 characters exceeds limit of 100
+/sample-project/AnnualizedBenchmarkReturnsFooterCell.m:28:1: long line P3 Line with 108 characters exceeds limit of 100
+/sample-project/AverageAnnualReturnsFooterCell.m:28:1: long line P3 Line with 108 characters exceeds limit of 100
+/sample-project/AverageAnnualReturnsHeaderCell.m:64:1: long line P3 Line with 148 characters exceeds limit of 100
+/sample-project/AverageAnnualReturnsHeaderCell.m:73:1: long line P3 Line with 150 characters exceeds limit of 100
+/sample-project/AverageAnnualReturnsHeaderCell.m:79:1: long line P3 Line with 168 characters exceeds limit of 100
+/sample-project/AverageAnnualReturnsHeaderCell.m:82:1: long line P3 Line with 126 characters exceeds limit of 100
+/sample-project/AverageAnnualReturnsHeaderCell.m:83:1: long line P3 Line with 115 characters exceeds limit of 100
+/sample-project/AverageAnnualReturnsHeaderCell.m:84:1: long line P3 Line with 113 characters exceeds limit of 100
+/sample-project/AverageAnnualReturnsHeaderCell.m:85:1: long line P3 Line with 120 characters exceeds limit of 100
+/sample-project/AverageAnnualReturnsHeaderCell.m:92:1: long line P3 Line with 142 characters exceeds limit of 100
+/sample-project/AverageAnnualReturnsHeaderCell.m:93:1: long line P3 Line with 119 characters exceeds limit of 100
+/sample-project/AverageAnnualReturnsHeaderCell.m:94:1: long line P3 Line with 116 characters exceeds limit of 100
+/sample-project/AverageAnnualReturnsHeaderCell.m:95:1: long line P3 Line with 123 characters exceeds limit of 100
+/sample-project/AverageAnnualReturnsHeaderCell.m:102:1: long line P3 Line with 103 characters exceeds limit of 100
+/sample-project/AverageAnnualReturnsHeaderCell.m:103:1: long line P3 Line with 108 characters exceeds limit of 100
+/sample-project/AverageAnnualReturnsHeaderCell.m:126:1: long line P3 Line with 233 characters exceeds limit of 100
+/sample-project/AverageAnnualReturnsHeaderCell.m:145:1: long line P3 Line with 106 characters exceeds limit of 100
+/sample-project/AverageAnnualReturnsHeaderCell.m:180:1: long line P3 Line with 113 characters exceeds limit of 100
+/sample-project/AverageAnnualReturnsHeaderCell.m:181:1: long line P3 Line with 113 characters exceeds limit of 100
+/sample-project/AverageAnnualReturnsHeaderCell.m:201:1: long line P3 Line with 113 characters exceeds limit of 100
+/sample-project/AverageAnnualReturnsHeaderCell.m:202:1: long line P3 Line with 113 characters exceeds limit of 100
+/sample-project/AverageAnnualReturnsHeaderCell.m:221:1: long line P3 Line with 143 characters exceeds limit of 100
+/sample-project/AverageAnnualReturnsHeaderCell.m:242:1: long line P3 Line with 101 characters exceeds limit of 100
+/sample-project/AverageAnnualReturnsHeaderCell.m:243:1: long line P3 Line with 102 characters exceeds limit of 100
+/sample-project/AverageAnnualReturnsHeaderCell.m:250:1: long line P3 Line with 157 characters exceeds limit of 100
+/sample-project/AverageAnnualReturnsHeaderCell.m:256:1: long line P3 Line with 157 characters exceeds limit of 100
+/sample-project/AverageAnnualReturnsHeaderCell.m:45:1: long method P3 Method with 80 lines exceeds limit of 50
+/sample-project/AverageAnnualReturnsHeaderCell.m:45:1: high ncss method P2 Method of 64 non-commenting source statements exceeds limit of 30
+/sample-project/AverageAnnualReturnsHeaderCell.m:126:1: high ncss method P2 Method of 34 non-commenting source statements exceeds limit of 30
+/sample-project/StyleMapViewController.m:69:1: long line P3 Line with 104 characters exceeds limit of 100
+/sample-project/StyleMapViewController.m:92:1: long line P3 Line with 102 characters exceeds limit of 100
+/sample-project/StyleMapViewController.m:93:1: long line P3 Line with 131 characters exceeds limit of 100
+/sample-project/StyleMapViewController.m:96:1: long line P3 Line with 153 characters exceeds limit of 100
+/sample-project/StyleMapViewController.m:98:1: long line P3 Line with 185 characters exceeds limit of 100
+/sample-project/FundPerformance.m:44:1: long line P3 Line with 104 characters exceeds limit of 100
+/sample-project/FundPerformance.m:46:1: long line P3 Line with 101 characters exceeds limit of 100
+/sample-project/FundPerformance.m:48:1: long line P3 Line with 126 characters exceeds limit of 100
+/sample-project/FundPerformance.m:63:1: long line P3 Line with 141 characters exceeds limit of 100
+/sample-project/FundPerformance.m:26:33: unused method parameter P2 
+/sample-project/FundPerformance.m:31:32: unused method parameter P2 
+/sample-project/FundPerformanceCell.m:40:1: long line P3 Line with 102 characters exceeds limit of 100
+/sample-project/FundPerformanceCell.m:41:1: long line P3 Line with 132 characters exceeds limit of 100
+/sample-project/FundPerformanceCell.m:47:1: long line P3 Line with 125 characters exceeds limit of 100
+/sample-project/FundPerformanceCell.m:49:1: long line P3 Line with 103 characters exceeds limit of 100
+/sample-project/FundPerformanceCell.m:51:1: long line P3 Line with 162 characters exceeds limit of 100
+/sample-project/FundPerformanceCell.m:68:1: long line P3 Line with 101 characters exceeds limit of 100
+/sample-project/FundPerformanceCell.m:69:1: long line P3 Line with 117 characters exceeds limit of 100
+/sample-project/ActivityIndicatorManager.m:41:1: long line P3 Line with 120 characters exceeds limit of 100
+/sample-project/ActivityIndicatorManager.m:43:1: long line P3 Line with 121 characters exceeds limit of 100
+/sample-project/ActivityIndicatorManager.m:56:1: long line P3 Line with 111 characters exceeds limit of 100
+/sample-project/PopoverViewController.m:21:15: empty if statement P2 
+/sample-project/InsightsFullViewController.m:464:9: collapsible if statements P3 
+/sample-project/InsightsFullViewController.m:64:1: long line P3 Line with 103 characters exceeds limit of 100
+/sample-project/InsightsFullViewController.m:65:1: long line P3 Line with 117 characters exceeds limit of 100
+/sample-project/InsightsFullViewController.m:66:1: long line P3 Line with 120 characters exceeds limit of 100
+/sample-project/InsightsFullViewController.m:67:1: long line P3 Line with 110 characters exceeds limit of 100
+/sample-project/InsightsFullViewController.m:143:1: long line P3 Line with 197 characters exceeds limit of 100
+/sample-project/InsightsFullViewController.m:164:1: long line P3 Line with 130 characters exceeds limit of 100
+/sample-project/InsightsFullViewController.m:165:1: long line P3 Line with 143 characters exceeds limit of 100
+/sample-project/InsightsFullViewController.m:172:1: long line P3 Line with 111 characters exceeds limit of 100
+/sample-project/InsightsFullViewController.m:228:1: long line P3 Line with 108 characters exceeds limit of 100
+/sample-project/InsightsFullViewController.m:237:1: long line P3 Line with 112 characters exceeds limit of 100
+/sample-project/InsightsFullViewController.m:238:1: long line P3 Line with 104 characters exceeds limit of 100
+/sample-project/InsightsFullViewController.m:246:1: long line P3 Line with 109 characters exceeds limit of 100
+/sample-project/InsightsFullViewController.m:253:1: long line P3 Line with 112 characters exceeds limit of 100
+/sample-project/InsightsFullViewController.m:254:1: long line P3 Line with 110 characters exceeds limit of 100
+/sample-project/InsightsFullViewController.m:259:1: long line P3 Line with 143 characters exceeds limit of 100
+/sample-project/InsightsFullViewController.m:264:1: long line P3 Line with 141 characters exceeds limit of 100
+/sample-project/InsightsFullViewController.m:271:1: long line P3 Line with 177 characters exceeds limit of 100
+/sample-project/InsightsFullViewController.m:280:1: long line P3 Line with 179 characters exceeds limit of 100
+/sample-project/InsightsFullViewController.m:281:1: long line P3 Line with 121 characters exceeds limit of 100
+/sample-project/InsightsFullViewController.m:290:1: long line P3 Line with 173 characters exceeds limit of 100
+/sample-project/InsightsFullViewController.m:291:1: long line P3 Line with 131 characters exceeds limit of 100
+/sample-project/InsightsFullViewController.m:296:1: long line P3 Line with 130 characters exceeds limit of 100
+/sample-project/InsightsFullViewController.m:321:1: long line P3 Line with 148 characters exceeds limit of 100
+/sample-project/InsightsFullViewController.m:324:1: long line P3 Line with 117 characters exceeds limit of 100
+/sample-project/InsightsFullViewController.m:327:1: long line P3 Line with 121 characters exceeds limit of 100
+/sample-project/InsightsFullViewController.m:332:1: long line P3 Line with 112 characters exceeds limit of 100
+/sample-project/InsightsFullViewController.m:352:1: long line P3 Line with 112 characters exceeds limit of 100
+/sample-project/InsightsFullViewController.m:368:1: long line P3 Line with 126 characters exceeds limit of 100
+/sample-project/InsightsFullViewController.m:371:1: long line P3 Line with 185 characters exceeds limit of 100
+/sample-project/InsightsFullViewController.m:372:1: long line P3 Line with 125 characters exceeds limit of 100
+/sample-project/InsightsFullViewController.m:373:1: long line P3 Line with 308 characters exceeds limit of 100
+/sample-project/InsightsFullViewController.m:378:1: long line P3 Line with 107 characters exceeds limit of 100
+/sample-project/InsightsFullViewController.m:384:1: long line P3 Line with 112 characters exceeds limit of 100
+/sample-project/InsightsFullViewController.m:387:1: long line P3 Line with 115 characters exceeds limit of 100
+/sample-project/InsightsFullViewController.m:397:1: long line P3 Line with 122 characters exceeds limit of 100
+/sample-project/InsightsFullViewController.m:403:1: long line P3 Line with 119 characters exceeds limit of 100
+/sample-project/InsightsFullViewController.m:407:1: long line P3 Line with 101 characters exceeds limit of 100
+/sample-project/InsightsFullViewController.m:423:1: long line P3 Line with 142 characters exceeds limit of 100
+/sample-project/InsightsFullViewController.m:466:1: long line P3 Line with 121 characters exceeds limit of 100
+/sample-project/InsightsFullViewController.m:467:1: long line P3 Line with 121 characters exceeds limit of 100
+/sample-project/InsightsFullViewController.m:470:1: long line P3 Line with 119 characters exceeds limit of 100
+/sample-project/InsightsFullViewController.m:471:1: long line P3 Line with 119 characters exceeds limit of 100
+/sample-project/InsightsFullViewController.m:479:1: long line P3 Line with 107 characters exceeds limit of 100
+/sample-project/InsightsFullViewController.m:481:1: long line P3 Line with 125 characters exceeds limit of 100
+/sample-project/InsightsFullViewController.m:486:1: long line P3 Line with 107 characters exceeds limit of 100
+/sample-project/InsightsFullViewController.m:488:1: long line P3 Line with 125 characters exceeds limit of 100
+/sample-project/InsightsFullViewController.m:511:1: long line P3 Line with 104 characters exceeds limit of 100
+/sample-project/InsightsFullViewController.m:512:1: long line P3 Line with 118 characters exceeds limit of 100
+/sample-project/InsightsFullViewController.m:535:1: long line P3 Line with 105 characters exceeds limit of 100
+/sample-project/InsightsFullViewController.m:541:1: long line P3 Line with 107 characters exceeds limit of 100
+/sample-project/InsightsFullViewController.m:547:1: long line P3 Line with 125 characters exceeds limit of 100
+/sample-project/InsightsFullViewController.m:548:1: long line P3 Line with 109 characters exceeds limit of 100
+/sample-project/InsightsFullViewController.m:556:1: long line P3 Line with 109 characters exceeds limit of 100
+/sample-project/InsightsFullViewController.m:563:1: long line P3 Line with 111 characters exceeds limit of 100
+/sample-project/InsightsFullViewController.m:564:1: long line P3 Line with 113 characters exceeds limit of 100
+/sample-project/InsightsFullViewController.m:568:1: long line P3 Line with 143 characters exceeds limit of 100
+/sample-project/InsightsFullViewController.m:572:1: long line P3 Line with 141 characters exceeds limit of 100
+/sample-project/InsightsFullViewController.m:580:1: long line P3 Line with 138 characters exceeds limit of 100
+/sample-project/InsightsFullViewController.m:590:1: long line P3 Line with 146 characters exceeds limit of 100
+/sample-project/InsightsFullViewController.m:591:1: long line P3 Line with 120 characters exceeds limit of 100
+/sample-project/InsightsFullViewController.m:599:1: long line P3 Line with 134 characters exceeds limit of 100
+/sample-project/InsightsFullViewController.m:600:1: long line P3 Line with 131 characters exceeds limit of 100
+/sample-project/InsightsFullViewController.m:605:1: long line P3 Line with 130 characters exceeds limit of 100
+/sample-project/InsightsFullViewController.m:621:1: long line P3 Line with 104 characters exceeds limit of 100
+/sample-project/InsightsFullViewController.m:622:1: long line P3 Line with 118 characters exceeds limit of 100
+/sample-project/InsightsFullViewController.m:624:1: long line P3 Line with 136 characters exceeds limit of 100
+/sample-project/InsightsFullViewController.m:627:1: long line P3 Line with 117 characters exceeds limit of 100
+/sample-project/InsightsFullViewController.m:630:1: long line P3 Line with 121 characters exceeds limit of 100
+/sample-project/InsightsFullViewController.m:635:1: long line P3 Line with 112 characters exceeds limit of 100
+/sample-project/InsightsFullViewController.m:657:1: long line P3 Line with 112 characters exceeds limit of 100
+/sample-project/InsightsFullViewController.m:245:1: long method P3 Method with 63 lines exceeds limit of 50
+/sample-project/InsightsFullViewController.m:554:1: long method P3 Method with 64 lines exceeds limit of 50
+/sample-project/InsightsFullViewController.m:118:1: high ncss method P2 Method of 32 non-commenting source statements exceeds limit of 30
+/sample-project/InsightsFullViewController.m:245:1: high ncss method P2 Method of 48 non-commenting source statements exceeds limit of 30
+/sample-project/InsightsFullViewController.m:506:1: high ncss method P2 Method of 34 non-commenting source statements exceeds limit of 30
+/sample-project/InsightsFullViewController.m:554:1: high ncss method P2 Method of 50 non-commenting source statements exceeds limit of 30
+/sample-project/InsightsFullViewController.m:98:74: unused method parameter P2 
+
+[OCLint (http://oclint.org) v0.7dev]
