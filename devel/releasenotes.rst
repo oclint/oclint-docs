@@ -16,10 +16,15 @@ oclint:
 oclint-rules:
 
 * Introduce AST matcher rules
+* Fix #10 - CollapsableIfStatementsRule false positives
+* Fix #16 - MissingBreakInSwitchStatementRule false positive
 
 oclint-reporters:
 
 * Extract reporters module from core module
+* Add PMDReporter
+* Add XMLReporter
+* Add JSONReporter
 
 oclint-xcodebuild:
 

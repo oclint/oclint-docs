@@ -15,7 +15,7 @@ Rules are always welcome.
 More Reporters
 --------------
 
-Reporters are also great welcome. Generic report formats like json and xml is in the current release cycle. We also plan to support major continuous integration systems, e.g. Jenkins and TeamCity.
+Reporters are also great welcome. We also plan to support major continuous integration systems, e.g. Jenkins and TeamCity, by adding reporters and/or implementing plugins.
 
 More Metrics
 ------------

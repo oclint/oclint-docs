@@ -1,11 +1,11 @@
 Writing Custom Reporters
 ========================
 
-Currently we have text and HTML format reporters. To enable extended capabilities, custom reporters are easily implemented for your own supports.
+Currently we have multiple types of reporters, like plain text and HTML. To enable extended capabilities, custom reporters are easily implemented for your own supports.
 
 We have a ``oclint-reporters`` module, and all reporters are recommended to add to this module.
 
-New reporters need to inherit ``Reporter`` interface and implement two methods that it defines.
+New reporters need to inherit ``Reporter`` interface. We will implement two methods that are required by the interface.
 
 First of all, give the new reporter an identifier in ``name`` method. Then give the same name with ``-report-type`` option to ``oclint`` main program in order to use this new reporter later.
 
