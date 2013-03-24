@@ -1,0 +1,530 @@
+<pmd version="oclint-0.7dev">
+<file name="/sample-project/ProductDetailAPIClient.m">
+<violation begincolumn="1" beginline="37" priority="5" rule="long line">
+Line with 115 characters exceeds limit of 100
+</violation>
+</file>
+
+<file name="/sample-project/ProductDetailAPIClient.m">
+<violation begincolumn="1" beginline="38" priority="5" rule="long line">
+Line with 113 characters exceeds limit of 100
+</violation>
+</file>
+
+<file name="/sample-project/ProductDetailAPIClient.m">
+<violation begincolumn="1" beginline="47" priority="5" rule="long line">
+Line with 115 characters exceeds limit of 100
+</violation>
+</file>
+
+<file name="/sample-project/ProductDetailAPIClient.m">
+<violation begincolumn="1" beginline="48" priority="5" rule="long line">
+Line with 121 characters exceeds limit of 100
+</violation>
+</file>
+
+<file name="/sample-project/ProductDetailAPIClient.m">
+<violation begincolumn="54" beginline="37" priority="3" rule="unused method parameter">
+
+</violation>
+</file>
+
+<file name="/sample-project/ProductDetailAPIClient.m">
+<violation begincolumn="89" beginline="37" priority="3" rule="unused method parameter">
+
+</violation>
+</file>
+
+<file name="/sample-project/ProductDetailAPIClient.m">
+<violation begincolumn="54" beginline="38" priority="3" rule="unused method parameter">
+
+</violation>
+</file>
+
+<file name="/sample-project/ProductDetailAPIClient.m">
+<violation begincolumn="89" beginline="38" priority="3" rule="unused method parameter">
+
+</violation>
+</file>
+
+<file name="/sample-project/FundFinderAPIClient.m">
+<violation begincolumn="1" beginline="25" priority="5" rule="long line">
+Line with 186 characters exceeds limit of 100
+</violation>
+</file>
+
+<file name="/sample-project/FundFinderAPIClient.m">
+<violation begincolumn="1" beginline="27" priority="5" rule="long line">
+Line with 104 characters exceeds limit of 100
+</violation>
+</file>
+
+<file name="/sample-project/FundFinderAPIClient.m">
+<violation begincolumn="1" beginline="28" priority="5" rule="long line">
+Line with 121 characters exceeds limit of 100
+</violation>
+</file>
+
+<file name="/sample-project/FundFinderAPIClient.m">
+<violation begincolumn="47" beginline="25" priority="3" rule="unused method parameter">
+
+</violation>
+</file>
+
+<file name="/sample-project/FundFinderAPIClient.m">
+<violation begincolumn="82" beginline="25" priority="3" rule="unused method parameter">
+
+</violation>
+</file>
+
+<file name="/sample-project/FundFinderAPIClient.m">
+<violation begincolumn="127" beginline="25" priority="3" rule="unused method parameter">
+
+</violation>
+</file>
+
+<file name="/sample-project/FundFinderAPIClient.m">
+<violation begincolumn="162" beginline="25" priority="3" rule="unused method parameter">
+
+</violation>
+</file>
+
+<file name="/sample-project/MobileAPIClient.m">
+<violation begincolumn="1" beginline="28" priority="5" rule="long line">
+Line with 166 characters exceeds limit of 100
+</violation>
+</file>
+
+<file name="/sample-project/MobileAPIClient.m">
+<violation begincolumn="1" beginline="46" priority="5" rule="long line">
+Line with 117 characters exceeds limit of 100
+</violation>
+</file>
+
+<file name="/sample-project/ProductListingAPIClient.m">
+<violation begincolumn="1" beginline="34" priority="5" rule="long line">
+Line with 151 characters exceeds limit of 100
+</violation>
+</file>
+
+<file name="/sample-project/ProductListingAPIClient.m">
+<violation begincolumn="1" beginline="37" priority="5" rule="long line">
+Line with 141 characters exceeds limit of 100
+</violation>
+</file>
+
+<file name="/sample-project/ProductListingAPIClient.m">
+<violation begincolumn="1" beginline="38" priority="5" rule="long line">
+Line with 154 characters exceeds limit of 100
+</violation>
+</file>
+
+<file name="/sample-project/ProductListingAPIClient.m">
+<violation begincolumn="1" beginline="41" priority="5" rule="long line">
+Line with 218 characters exceeds limit of 100
+</violation>
+</file>
+
+<file name="/sample-project/ProductListingAPIClient.m">
+<violation begincolumn="1" beginline="42" priority="5" rule="long line">
+Line with 154 characters exceeds limit of 100
+</violation>
+</file>
+
+<file name="/sample-project/ProductListingAPIClient.m">
+<violation begincolumn="1" beginline="45" priority="5" rule="long line">
+Line with 287 characters exceeds limit of 100
+</violation>
+</file>
+
+<file name="/sample-project/ProductListingAPIClient.m">
+<violation begincolumn="1" beginline="47" priority="5" rule="long line">
+Line with 138 characters exceeds limit of 100
+</violation>
+</file>
+
+<file name="/sample-project/ProductListingAPIClient.m">
+<violation begincolumn="1" beginline="50" priority="5" rule="long line">
+Line with 321 characters exceeds limit of 100
+</violation>
+</file>
+
+<file name="/sample-project/ProductListingAPIClient.m">
+<violation begincolumn="1" beginline="59" priority="5" rule="long line">
+Line with 113 characters exceeds limit of 100
+</violation>
+</file>
+
+<file name="/sample-project/ProductListingAPIClient.m">
+<violation begincolumn="1" beginline="60" priority="5" rule="long line">
+Line with 121 characters exceeds limit of 100
+</violation>
+</file>
+
+<file name="/sample-project/ProductListingAPIClient.m">
+<violation begincolumn="79" beginline="37" priority="3" rule="unused method parameter">
+
+</violation>
+</file>
+
+<file name="/sample-project/ProductListingAPIClient.m">
+<violation begincolumn="114" beginline="37" priority="3" rule="unused method parameter">
+
+</violation>
+</file>
+
+<file name="/sample-project/ProductListingAPIClient.m">
+<violation begincolumn="79" beginline="41" priority="3" rule="unused method parameter">
+
+</violation>
+</file>
+
+<file name="/sample-project/ProductListingAPIClient.m">
+<violation begincolumn="114" beginline="41" priority="3" rule="unused method parameter">
+
+</violation>
+</file>
+
+<file name="/sample-project/ProductListingAPIClient.m">
+<violation begincolumn="150" beginline="41" priority="3" rule="unused method parameter">
+
+</violation>
+</file>
+
+<file name="/sample-project/ProductListingAPIClient.m">
+<violation begincolumn="159" beginline="41" priority="3" rule="unused method parameter">
+
+</violation>
+</file>
+
+<file name="/sample-project/ProductListingAPIClient.m">
+<violation begincolumn="194" beginline="41" priority="3" rule="unused method parameter">
+
+</violation>
+</file>
+
+<file name="/sample-project/ProductListingAPIClient.m">
+<violation begincolumn="148" beginline="45" priority="3" rule="unused method parameter">
+
+</violation>
+</file>
+
+<file name="/sample-project/ProductListingAPIClient.m">
+<violation begincolumn="183" beginline="45" priority="3" rule="unused method parameter">
+
+</violation>
+</file>
+
+<file name="/sample-project/ProductListingAPIClient.m">
+<violation begincolumn="219" beginline="45" priority="3" rule="unused method parameter">
+
+</violation>
+</file>
+
+<file name="/sample-project/ProductListingAPIClient.m">
+<violation begincolumn="228" beginline="45" priority="3" rule="unused method parameter">
+
+</violation>
+</file>
+
+<file name="/sample-project/ProductListingAPIClient.m">
+<violation begincolumn="263" beginline="45" priority="3" rule="unused method parameter">
+
+</violation>
+</file>
+
+<file name="/sample-project/ProductListingAPIClient.m">
+<violation begincolumn="182" beginline="50" priority="3" rule="unused method parameter">
+
+</violation>
+</file>
+
+<file name="/sample-project/ProductListingAPIClient.m">
+<violation begincolumn="217" beginline="50" priority="3" rule="unused method parameter">
+
+</violation>
+</file>
+
+<file name="/sample-project/ProductListingAPIClient.m">
+<violation begincolumn="262" beginline="50" priority="3" rule="unused method parameter">
+
+</violation>
+</file>
+
+<file name="/sample-project/ProductListingAPIClient.m">
+<violation begincolumn="297" beginline="50" priority="3" rule="unused method parameter">
+
+</violation>
+</file>
+
+<file name="/sample-project/InsightsAPIClient.m">
+<violation begincolumn="1" beginline="11" priority="5" rule="long line">
+Line with 132 characters exceeds limit of 100
+</violation>
+</file>
+
+<file name="/sample-project/InsightsAPIClient.m">
+<violation begincolumn="1" beginline="12" priority="5" rule="long line">
+Line with 120 characters exceeds limit of 100
+</violation>
+</file>
+
+<file name="/sample-project/InsightsAPIClient.m">
+<violation begincolumn="1" beginline="26" priority="5" rule="long line">
+Line with 192 characters exceeds limit of 100
+</violation>
+</file>
+
+<file name="/sample-project/InsightsAPIClient.m">
+<violation begincolumn="1" beginline="28" priority="5" rule="long line">
+Line with 117 characters exceeds limit of 100
+</violation>
+</file>
+
+<file name="/sample-project/InsightsAPIClient.m">
+<violation begincolumn="1" beginline="29" priority="5" rule="long line">
+Line with 127 characters exceeds limit of 100
+</violation>
+</file>
+
+<file name="/sample-project/InsightsAPIClient.m">
+<violation begincolumn="1" beginline="33" priority="5" rule="long line">
+Line with 258 characters exceeds limit of 100
+</violation>
+</file>
+
+<file name="/sample-project/InsightsAPIClient.m">
+<violation begincolumn="1" beginline="41" priority="5" rule="long line">
+Line with 127 characters exceeds limit of 100
+</violation>
+</file>
+
+<file name="/sample-project/InsightsAPIClient.m">
+<violation begincolumn="1" beginline="45" priority="5" rule="long line">
+Line with 124 characters exceeds limit of 100
+</violation>
+</file>
+
+<file name="/sample-project/InsightsAPIClient.m">
+<violation begincolumn="1" beginline="50" priority="5" rule="long line">
+Line with 128 characters exceeds limit of 100
+</violation>
+</file>
+
+<file name="/sample-project/InsightsAPIClient.m">
+<violation begincolumn="5" beginline="36" priority="5" rule="parameter reassignment">
+
+</violation>
+</file>
+
+<file name="/sample-project/InsightsAPIClient.m">
+<violation begincolumn="5" beginline="37" priority="5" rule="parameter reassignment">
+
+</violation>
+</file>
+
+<file name="/sample-project/InsightsAPIClient.m">
+<violation begincolumn="55" beginline="26" priority="3" rule="unused method parameter">
+
+</violation>
+</file>
+
+<file name="/sample-project/InsightsAPIClient.m">
+<violation begincolumn="90" beginline="26" priority="3" rule="unused method parameter">
+
+</violation>
+</file>
+
+<file name="/sample-project/InsightsAPIClient.m">
+<violation begincolumn="134" beginline="26" priority="3" rule="unused method parameter">
+
+</violation>
+</file>
+
+<file name="/sample-project/InsightsAPIClient.m">
+<violation begincolumn="169" beginline="26" priority="3" rule="unused method parameter">
+
+</violation>
+</file>
+
+<file name="/sample-project/InsightsAPIClient.m">
+<violation begincolumn="121" beginline="33" priority="3" rule="unused method parameter">
+
+</violation>
+</file>
+
+<file name="/sample-project/InsightsAPIClient.m">
+<violation begincolumn="156" beginline="33" priority="3" rule="unused method parameter">
+
+</violation>
+</file>
+
+<file name="/sample-project/InsightsAPIClient.m">
+<violation begincolumn="200" beginline="33" priority="3" rule="unused method parameter">
+
+</violation>
+</file>
+
+<file name="/sample-project/InsightsAPIClient.m">
+<violation begincolumn="235" beginline="33" priority="3" rule="unused method parameter">
+
+</violation>
+</file>
+
+<file name="/sample-project/InsightsAPIClient.m">
+<violation begincolumn="71" beginline="45" priority="3" rule="unused method parameter">
+
+</violation>
+</file>
+
+<file name="/sample-project/InsightsAPIClient.m">
+<violation begincolumn="106" beginline="45" priority="3" rule="unused method parameter">
+
+</violation>
+</file>
+
+<file name="/sample-project/InsightsAPIClient.m">
+<violation begincolumn="29" beginline="46" priority="3" rule="unused method parameter">
+
+</violation>
+</file>
+
+<file name="/sample-project/InsightsAPIClient.m">
+<violation begincolumn="64" beginline="46" priority="3" rule="unused method parameter">
+
+</violation>
+</file>
+
+<file name="/sample-project/ChannelContentAPIClient.m">
+<violation begincolumn="1" beginline="11" priority="5" rule="long line">
+Line with 116 characters exceeds limit of 100
+</violation>
+</file>
+
+<file name="/sample-project/ChannelContentAPIClient.m">
+<violation begincolumn="1" beginline="28" priority="5" rule="long line">
+Line with 216 characters exceeds limit of 100
+</violation>
+</file>
+
+<file name="/sample-project/ChannelContentAPIClient.m">
+<violation begincolumn="1" beginline="32" priority="5" rule="long line">
+Line with 127 characters exceeds limit of 100
+</violation>
+</file>
+
+<file name="/sample-project/ChannelContentAPIClient.m">
+<violation begincolumn="1" beginline="36" priority="5" rule="long line">
+Line with 213 characters exceeds limit of 100
+</violation>
+</file>
+
+<file name="/sample-project/ChannelContentAPIClient.m">
+<violation begincolumn="1" beginline="40" priority="5" rule="long line">
+Line with 128 characters exceeds limit of 100
+</violation>
+</file>
+
+<file name="/sample-project/ChannelContentAPIClient.m">
+<violation begincolumn="78" beginline="28" priority="3" rule="unused method parameter">
+
+</violation>
+</file>
+
+<file name="/sample-project/ChannelContentAPIClient.m">
+<violation begincolumn="113" beginline="28" priority="3" rule="unused method parameter">
+
+</violation>
+</file>
+
+<file name="/sample-project/ChannelContentAPIClient.m">
+<violation begincolumn="158" beginline="28" priority="3" rule="unused method parameter">
+
+</violation>
+</file>
+
+<file name="/sample-project/ChannelContentAPIClient.m">
+<violation begincolumn="193" beginline="28" priority="3" rule="unused method parameter">
+
+</violation>
+</file>
+
+<file name="/sample-project/ChannelContentAPIClient.m">
+<violation begincolumn="75" beginline="36" priority="3" rule="unused method parameter">
+
+</violation>
+</file>
+
+<file name="/sample-project/ChannelContentAPIClient.m">
+<violation begincolumn="110" beginline="36" priority="3" rule="unused method parameter">
+
+</violation>
+</file>
+
+<file name="/sample-project/ChannelContentAPIClient.m">
+<violation begincolumn="155" beginline="36" priority="3" rule="unused method parameter">
+
+</violation>
+</file>
+
+<file name="/sample-project/ChannelContentAPIClient.m">
+<violation begincolumn="190" beginline="36" priority="3" rule="unused method parameter">
+
+</violation>
+</file>
+
+<file name="/sample-project/ViewAllHoldingsAPIClient.m">
+<violation begincolumn="1" beginline="23" priority="5" rule="long line">
+Line with 225 characters exceeds limit of 100
+</violation>
+</file>
+
+<file name="/sample-project/ViewAllHoldingsAPIClient.m">
+<violation begincolumn="1" beginline="25" priority="5" rule="long line">
+Line with 131 characters exceeds limit of 100
+</violation>
+</file>
+
+<file name="/sample-project/ViewAllHoldingsAPIClient.m">
+<violation begincolumn="1" beginline="26" priority="5" rule="long line">
+Line with 101 characters exceeds limit of 100
+</violation>
+</file>
+
+<file name="/sample-project/ViewAllHoldingsAPIClient.m">
+<violation begincolumn="1" beginline="27" priority="5" rule="long line">
+Line with 101 characters exceeds limit of 100
+</violation>
+</file>
+
+<file name="/sample-project/ViewAllHoldingsAPIClient.m">
+<violation begincolumn="1" beginline="28" priority="5" rule="long line">
+Line with 121 characters exceeds limit of 100
+</violation>
+</file>
+
+<file name="/sample-project/ViewAllHoldingsAPIClient.m">
+<violation begincolumn="86" beginline="23" priority="3" rule="unused method parameter">
+
+</violation>
+</file>
+
+<file name="/sample-project/ViewAllHoldingsAPIClient.m">
+<violation begincolumn="121" beginline="23" priority="3" rule="unused method parameter">
+
+</violation>
+</file>
+
+<file name="/sample-project/ViewAllHoldingsAPIClient.m">
+<violation begincolumn="166" beginline="23" priority="3" rule="unused method parameter">
+
+</violation>
+</file>
+
+<file name="/sample-project/ViewAllHoldingsAPIClient.m">
+<violation begincolumn="201" beginline="23" priority="3" rule="unused method parameter">
+
+</violation>
+</file>
+
+</pmd>

@@ -3,7 +3,7 @@ Using oclint-xcodebuild
 
 OCLint recognizes a file called ``compile_commands.json`` to figure out the compiler options for parsing each file. By having a ``compile_commands.json`` file, analyzing projects with a large codebase becomes easier. Since all compiler options are implicitly configured in Xcode workspace/project settings, and we can see what actually happens when we invoke ``xcodebuild`` in terminal, this helper program then try to extract adequate compiler options, convert them into JSON Compilation Database format, and save it into ``compile_commands.json`` file.
 
-.. seealso:: To gain some context about JSON Compilation Database and ``compile_commands.json``, read `using oclint-json-compilation-database <oclint-json.compilation-database.html>`_.
+.. seealso:: To gain some context about JSON Compilation Database and ``compile_commands.json``, read `using oclint-json-compilation-database <oclint-json-compilation-database.html>`_.
 
 Run xcodebuild
 --------------

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<oclint version="0.7dev" url="http://oclint.org">
+   <summary>
+      <property name="number of files">8</property>
+      <property name="files with violations">7</property>
+      <property name="number of priority 1 violations">0</property>
+      <property name="number of priority 2 violations">48</property>
+      <property name="number of priority 3 violations">40</property>
+   </summary>
+   <violations>
+      <violation path="/sample-project/API/ProductDetailAPIClient.m" startline="37" startcolumn="1" endline="37" endcolumn="115" rule="long line" priority="3" message="Line with 115 characters exceeds limit of 100" />
+      <violation path="/sample-project/API/ProductDetailAPIClient.m" startline="38" startcolumn="1" endline="38" endcolumn="113" rule="long line" priority="3" message="Line with 113 characters exceeds limit of 100" />
+      <violation path="/sample-project/API/ProductDetailAPIClient.m" startline="47" startcolumn="1" endline="47" endcolumn="115" rule="long line" priority="3" message="Line with 115 characters exceeds limit of 100" />
+      <violation path="/sample-project/API/ProductDetailAPIClient.m" startline="48" startcolumn="1" endline="48" endcolumn="121" rule="long line" priority="3" message="Line with 121 characters exceeds limit of 100" />
+      <violation path="/sample-project/API/ProductDetailAPIClient.m" startline="37" startcolumn="54" endline="37" endcolumn="78" rule="unused method parameter" priority="2" message="" />
+      <violation path="/sample-project/API/ProductDetailAPIClient.m" startline="37" startcolumn="89" endline="37" endcolumn="92" rule="unused method parameter" priority="2" message="" />
+      <violation path="/sample-project/API/ProductDetailAPIClient.m" startline="38" startcolumn="54" endline="38" endcolumn="78" rule="unused method parameter" priority="2" message="" />
+      <violation path="/sample-project/API/ProductDetailAPIClient.m" startline="38" startcolumn="89" endline="38" endcolumn="98" rule="unused method parameter" priority="2" message="" />
+      <violation path="/sample-project/API/FundFinderAPIClient.m" startline="25" startcolumn="1" endline="25" endcolumn="186" rule="long line" priority="3" message="Line with 186 characters exceeds limit of 100" />
+      <violation path="/sample-project/API/FundFinderAPIClient.m" startline="27" startcolumn="1" endline="27" endcolumn="104" rule="long line" priority="3" message="Line with 104 characters exceeds limit of 100" />
+      <violation path="/sample-project/API/FundFinderAPIClient.m" startline="28" startcolumn="1" endline="28" endcolumn="121" rule="long line" priority="3" message="Line with 121 characters exceeds limit of 100" />
+      <violation path="/sample-project/API/FundFinderAPIClient.m" startline="25" startcolumn="47" endline="25" endcolumn="71" rule="unused method parameter" priority="2" message="" />
+      <violation path="/sample-project/API/FundFinderAPIClient.m" startline="25" startcolumn="82" endline="25" endcolumn="85" rule="unused method parameter" priority="2" message="" />
+      <violation path="/sample-project/API/FundFinderAPIClient.m" startline="25" startcolumn="127" endline="25" endcolumn="151" rule="unused method parameter" priority="2" message="" />
+      <violation path="/sample-project/API/FundFinderAPIClient.m" startline="25" startcolumn="162" endline="25" endcolumn="171" rule="unused method parameter" priority="2" message="" />
+      <violation path="/sample-project/API/MobileAPIClient.m" startline="28" startcolumn="1" endline="28" endcolumn="166" rule="long line" priority="3" message="Line with 166 characters exceeds limit of 100" />
+      <violation path="/sample-project/API/MobileAPIClient.m" startline="46" startcolumn="1" endline="46" endcolumn="117" rule="long line" priority="3" message="Line with 117 characters exceeds limit of 100" />
+      <violation path="/sample-project/API/ProductListingAPIClient.m" startline="34" startcolumn="1" endline="34" endcolumn="151" rule="long line" priority="3" message="Line with 151 characters exceeds limit of 100" />
+      <violation path="/sample-project/API/ProductListingAPIClient.m" startline="37" startcolumn="1" endline="37" endcolumn="141" rule="long line" priority="3" message="Line with 141 characters exceeds limit of 100" />
+      <violation path="/sample-project/API/ProductListingAPIClient.m" startline="38" startcolumn="1" endline="38" endcolumn="154" rule="long line" priority="3" message="Line with 154 characters exceeds limit of 100" />
+      <violation path="/sample-project/API/ProductListingAPIClient.m" startline="41" startcolumn="1" endline="41" endcolumn="218" rule="long line" priority="3" message="Line with 218 characters exceeds limit of 100" />
+      <violation path="/sample-project/API/ProductListingAPIClient.m" startline="42" startcolumn="1" endline="42" endcolumn="154" rule="long line" priority="3" message="Line with 154 characters exceeds limit of 100" />
+      <violation path="/sample-project/API/ProductListingAPIClient.m" startline="45" startcolumn="1" endline="45" endcolumn="287" rule="long line" priority="3" message="Line with 287 characters exceeds limit of 100" />
+      <violation path="/sample-project/API/ProductListingAPIClient.m" startline="47" startcolumn="1" endline="47" endcolumn="138" rule="long line" priority="3" message="Line with 138 characters exceeds limit of 100" />
+      <violation path="/sample-project/API/ProductListingAPIClient.m" startline="50" startcolumn="1" endline="50" endcolumn="321" rule="long line" priority="3" message="Line with 321 characters exceeds limit of 100" />
+      <violation path="/sample-project/API/ProductListingAPIClient.m" startline="59" startcolumn="1" endline="59" endcolumn="113" rule="long line" priority="3" message="Line with 113 characters exceeds limit of 100" />
+      <violation path="/sample-project/API/ProductListingAPIClient.m" startline="60" startcolumn="1" endline="60" endcolumn="121" rule="long line" priority="3" message="Line with 121 characters exceeds limit of 100" />
+      <violation path="/sample-project/API/ProductListingAPIClient.m" startline="37" startcolumn="79" endline="37" endcolumn="103" rule="unused method parameter" priority="2" message="" />
+      <violation path="/sample-project/API/ProductListingAPIClient.m" startline="37" startcolumn="114" endline="37" endcolumn="117" rule="unused method parameter" priority="2" message="" />
+      <violation path="/sample-project/API/ProductListingAPIClient.m" startline="41" startcolumn="79" endline="41" endcolumn="103" rule="unused method parameter" priority="2" message="" />
+      <violation path="/sample-project/API/ProductListingAPIClient.m" startline="41" startcolumn="114" endline="41" endcolumn="117" rule="unused method parameter" priority="2" message="" />
+      <violation path="/sample-project/API/ProductListingAPIClient.m" startline="41" startcolumn="150" endline="41" endcolumn="208" rule="unused method parameter" priority="2" message="" />
+      <violation path="/sample-project/API/ProductListingAPIClient.m" startline="41" startcolumn="159" endline="41" endcolumn="183" rule="unused method parameter" priority="2" message="" />
+      <violation path="/sample-project/API/ProductListingAPIClient.m" startline="41" startcolumn="194" endline="41" endcolumn="203" rule="unused method parameter" priority="2" message="" />
+      <violation path="/sample-project/API/ProductListingAPIClient.m" startline="45" startcolumn="148" endline="45" endcolumn="172" rule="unused method parameter" priority="2" message="" />
+      <violation path="/sample-project/API/ProductListingAPIClient.m" startline="45" startcolumn="183" endline="45" endcolumn="186" rule="unused method parameter" priority="2" message="" />
+      <violation path="/sample-project/API/ProductListingAPIClient.m" startline="45" startcolumn="219" endline="45" endcolumn="277" rule="unused method parameter" priority="2" message="" />
+      <violation path="/sample-project/API/ProductListingAPIClient.m" startline="45" startcolumn="228" endline="45" endcolumn="252" rule="unused method parameter" priority="2" message="" />
+      <violation path="/sample-project/API/ProductListingAPIClient.m" startline="45" startcolumn="263" endline="45" endcolumn="272" rule="unused method parameter" priority="2" message="" />
+      <violation path="/sample-project/API/ProductListingAPIClient.m" startline="50" startcolumn="182" endline="50" endcolumn="206" rule="unused method parameter" priority="2" message="" />
+      <violation path="/sample-project/API/ProductListingAPIClient.m" startline="50" startcolumn="217" endline="50" endcolumn="220" rule="unused method parameter" priority="2" message="" />
+      <violation path="/sample-project/API/ProductListingAPIClient.m" startline="50" startcolumn="262" endline="50" endcolumn="286" rule="unused method parameter" priority="2" message="" />
+      <violation path="/sample-project/API/ProductListingAPIClient.m" startline="50" startcolumn="297" endline="50" endcolumn="306" rule="unused method parameter" priority="2" message="" />
+      <violation path="/sample-project/InsightsAPIClient.m" startline="11" startcolumn="1" endline="11" endcolumn="132" rule="long line" priority="3" message="Line with 132 characters exceeds limit of 100" />
+      <violation path="/sample-project/InsightsAPIClient.m" startline="12" startcolumn="1" endline="12" endcolumn="120" rule="long line" priority="3" message="Line with 120 characters exceeds limit of 100" />
+      <violation path="/sample-project/InsightsAPIClient.m" startline="26" startcolumn="1" endline="26" endcolumn="192" rule="long line" priority="3" message="Line with 192 characters exceeds limit of 100" />
+      <violation path="/sample-project/InsightsAPIClient.m" startline="28" startcolumn="1" endline="28" endcolumn="117" rule="long line" priority="3" message="Line with 117 characters exceeds limit of 100" />
+      <violation path="/sample-project/InsightsAPIClient.m" startline="29" startcolumn="1" endline="29" endcolumn="127" rule="long line" priority="3" message="Line with 127 characters exceeds limit of 100" />
+      <violation path="/sample-project/InsightsAPIClient.m" startline="33" startcolumn="1" endline="33" endcolumn="258" rule="long line" priority="3" message="Line with 258 characters exceeds limit of 100" />
+      <violation path="/sample-project/InsightsAPIClient.m" startline="41" startcolumn="1" endline="41" endcolumn="127" rule="long line" priority="3" message="Line with 127 characters exceeds limit of 100" />
+      <violation path="/sample-project/InsightsAPIClient.m" startline="45" startcolumn="1" endline="45" endcolumn="124" rule="long line" priority="3" message="Line with 124 characters exceeds limit of 100" />
+      <violation path="/sample-project/InsightsAPIClient.m" startline="50" startcolumn="1" endline="50" endcolumn="128" rule="long line" priority="3" message="Line with 128 characters exceeds limit of 100" />
+      <violation path="/sample-project/InsightsAPIClient.m" startline="36" startcolumn="5" endline="36" endcolumn="56" rule="parameter reassignment" priority="3" message="" />
+      <violation path="/sample-project/InsightsAPIClient.m" startline="37" startcolumn="5" endline="37" endcolumn="48" rule="parameter reassignment" priority="3" message="" />
+      <violation path="/sample-project/InsightsAPIClient.m" startline="26" startcolumn="55" endline="26" endcolumn="79" rule="unused method parameter" priority="2" message="" />
+      <violation path="/sample-project/InsightsAPIClient.m" startline="26" startcolumn="90" endline="26" endcolumn="93" rule="unused method parameter" priority="2" message="" />
+      <violation path="/sample-project/InsightsAPIClient.m" startline="26" startcolumn="134" endline="26" endcolumn="158" rule="unused method parameter" priority="2" message="" />
+      <violation path="/sample-project/InsightsAPIClient.m" startline="26" startcolumn="169" endline="26" endcolumn="178" rule="unused method parameter" priority="2" message="" />
+      <violation path="/sample-project/InsightsAPIClient.m" startline="33" startcolumn="121" endline="33" endcolumn="145" rule="unused method parameter" priority="2" message="" />
+      <violation path="/sample-project/InsightsAPIClient.m" startline="33" startcolumn="156" endline="33" endcolumn="159" rule="unused method parameter" priority="2" message="" />
+      <violation path="/sample-project/InsightsAPIClient.m" startline="33" startcolumn="200" endline="33" endcolumn="224" rule="unused method parameter" priority="2" message="" />
+      <violation path="/sample-project/InsightsAPIClient.m" startline="33" startcolumn="235" endline="33" endcolumn="244" rule="unused method parameter" priority="2" message="" />
+      <violation path="/sample-project/InsightsAPIClient.m" startline="45" startcolumn="71" endline="45" endcolumn="95" rule="unused method parameter" priority="2" message="" />
+      <violation path="/sample-project/InsightsAPIClient.m" startline="45" startcolumn="106" endline="45" endcolumn="109" rule="unused method parameter" priority="2" message="" />
+      <violation path="/sample-project/InsightsAPIClient.m" startline="46" startcolumn="29" endline="46" endcolumn="53" rule="unused method parameter" priority="2" message="" />
+      <violation path="/sample-project/InsightsAPIClient.m" startline="46" startcolumn="64" endline="46" endcolumn="73" rule="unused method parameter" priority="2" message="" />
+      <violation path="/sample-project/ChannelContentAPIClient.m" startline="11" startcolumn="1" endline="11" endcolumn="116" rule="long line" priority="3" message="Line with 116 characters exceeds limit of 100" />
+      <violation path="/sample-project/ChannelContentAPIClient.m" startline="28" startcolumn="1" endline="28" endcolumn="216" rule="long line" priority="3" message="Line with 216 characters exceeds limit of 100" />
+      <violation path="/sample-project/ChannelContentAPIClient.m" startline="32" startcolumn="1" endline="32" endcolumn="127" rule="long line" priority="3" message="Line with 127 characters exceeds limit of 100" />
+      <violation path="/sample-project/ChannelContentAPIClient.m" startline="36" startcolumn="1" endline="36" endcolumn="213" rule="long line" priority="3" message="Line with 213 characters exceeds limit of 100" />
+      <violation path="/sample-project/ChannelContentAPIClient.m" startline="40" startcolumn="1" endline="40" endcolumn="128" rule="long line" priority="3" message="Line with 128 characters exceeds limit of 100" />
+      <violation path="/sample-project/ChannelContentAPIClient.m" startline="28" startcolumn="78" endline="28" endcolumn="102" rule="unused method parameter" priority="2" message="" />
+      <violation path="/sample-project/ChannelContentAPIClient.m" startline="28" startcolumn="113" endline="28" endcolumn="116" rule="unused method parameter" priority="2" message="" />
+      <violation path="/sample-project/ChannelContentAPIClient.m" startline="28" startcolumn="158" endline="28" endcolumn="182" rule="unused method parameter" priority="2" message="" />
+      <violation path="/sample-project/ChannelContentAPIClient.m" startline="28" startcolumn="193" endline="28" endcolumn="202" rule="unused method parameter" priority="2" message="" />
+      <violation path="/sample-project/ChannelContentAPIClient.m" startline="36" startcolumn="75" endline="36" endcolumn="99" rule="unused method parameter" priority="2" message="" />
+      <violation path="/sample-project/ChannelContentAPIClient.m" startline="36" startcolumn="110" endline="36" endcolumn="113" rule="unused method parameter" priority="2" message="" />
+      <violation path="/sample-project/ChannelContentAPIClient.m" startline="36" startcolumn="155" endline="36" endcolumn="179" rule="unused method parameter" priority="2" message="" />
+      <violation path="/sample-project/ChannelContentAPIClient.m" startline="36" startcolumn="190" endline="36" endcolumn="199" rule="unused method parameter" priority="2" message="" />
+      <violation path="/sample-project/ViewAllHoldingsAPIClient.m" startline="23" startcolumn="1" endline="23" endcolumn="225" rule="long line" priority="3" message="Line with 225 characters exceeds limit of 100" />
+      <violation path="/sample-project/ViewAllHoldingsAPIClient.m" startline="25" startcolumn="1" endline="25" endcolumn="131" rule="long line" priority="3" message="Line with 131 characters exceeds limit of 100" />
+      <violation path="/sample-project/ViewAllHoldingsAPIClient.m" startline="26" startcolumn="1" endline="26" endcolumn="101" rule="long line" priority="3" message="Line with 101 characters exceeds limit of 100" />
+      <violation path="/sample-project/ViewAllHoldingsAPIClient.m" startline="27" startcolumn="1" endline="27" endcolumn="101" rule="long line" priority="3" message="Line with 101 characters exceeds limit of 100" />
+      <violation path="/sample-project/ViewAllHoldingsAPIClient.m" startline="28" startcolumn="1" endline="28" endcolumn="121" rule="long line" priority="3" message="Line with 121 characters exceeds limit of 100" />
+      <violation path="/sample-project/ViewAllHoldingsAPIClient.m" startline="23" startcolumn="86" endline="23" endcolumn="110" rule="unused method parameter" priority="2" message="" />
+      <violation path="/sample-project/ViewAllHoldingsAPIClient.m" startline="23" startcolumn="121" endline="23" endcolumn="124" rule="unused method parameter" priority="2" message="" />
+      <violation path="/sample-project/ViewAllHoldingsAPIClient.m" startline="23" startcolumn="166" endline="23" endcolumn="190" rule="unused method parameter" priority="2" message="" />
+      <violation path="/sample-project/ViewAllHoldingsAPIClient.m" startline="23" startcolumn="201" endline="23" endcolumn="210" rule="unused method parameter" priority="2" message="" />
+   </violations>
+</oclint>
