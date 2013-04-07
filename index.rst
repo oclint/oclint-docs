@@ -28,7 +28,7 @@ Development
 -----------
 
 * Preparation: `System Requirements <devel/requirements.html>`_ | `Checking Out Code <devel/checkout.html>`_
-* Getting Your Hands Dirty: `Compiling and Testing Code <devel/compiletest.html>`_ | `Writing Rules <devel/rules.html>`_ | `Writing Reporters <devel/reporters.html>`_
+* Getting Your Hands Dirty: `Compiling and Testing Code <devel/compiletest.html>`_ | `Writing Rules <devel/rules.html>`_ | `Writing Reporters <devel/reporters.html>`_ | `Scaffolding <devel/scaffolding.html>`_
 * Others: `Open Projects <devel/openings.html>`_ | `Coding Standards <devel/codingstandards.html>`_ | `Dogfooding <devel/dogfooding.html>`_
 * `Release Notes <devel/releasenotes.html>`_
 

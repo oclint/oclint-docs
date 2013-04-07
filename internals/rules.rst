@@ -9,7 +9,7 @@ Rules that belong to the first category can leverage the abstract class ``Abstra
 
 For rules that are interested in AST, we provide two detail approaches - AST visitor and AST matcher.
 
-In AST visitor approach, by following the `Visitor Pattern <http://en.wikipedia.org/wiki/Visitor_pattern>`_, the entire AST is traversed recursively from the root of the tree. Each node is visited in a `depth-first preorder traversal <http://en.wikipedia.org/wiki/Tree_traversal>`_. The visitor usually returns after all nodes are visited. However, we can interrupt the traversal by intent, for example, when we are only curious about if certain patterns exist rather than how many of them, in this case, whenever that pattern is matched, we could stop the visitor to avoid wasting more resources, so that the performance is improved.
+In AST visitor approach, by following the `Visitor Pattern <http://en.wikipedia.org/wiki/Visitor_pattern>`_, the entire AST is traversed recursively from the root of the tree. Each node is visited in a `depth-first preorder traversal <http://en.wikipedia.org/wiki/Tree_traversal>`_. The visitor usually returns after all nodes are visited. However, we can interrupt the traversal by intent, for example, when we are only curious about if certain patterns exist rather than how many of them, in this case, whenever that pattern is matched, we could stop the visitor to avoid wasting more resources, so that the performance can be improved.
 
 Tree traversal is very mature and powerful, we can achieve almost everything with it. But it's not that intuitive to some extents. So, AST matcher, on the other hand, can help write lightweight code with better readability.
 

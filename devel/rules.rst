@@ -73,10 +73,19 @@ Then whenever a match is found, ``callback`` method is called with that AST node
 .. seealso::
     Again, ``LibASTMatcher`` is provided by Clang, and we would like to suggest you by reading some `related Clang knowledge <clang.html>`_ to have a better understanding.
 
+Creating Rules with Scaffolding
+-------------------------------
+
+Rules scaffolding is a quick way to create custom rules. When we want to create our custom rules and build them along with the OCLint building pipeline, scaffolding is the tool for the job.
+
+We can tell the category, rule type, name, and priority to the scaffold script, or we can leave them with default settings.
+
+Read on `rule scaffolding <scaffolding.html#creating-rules-with-scaffolding>`_ document for details.
+
 Build it and Make it Live
 -------------------------
 
-Now we have our new rule ready. We need to compile it into a dynamic library and link against ``LLVMSupport``, ``clangASTMatchers``, ``OCLintMetric``, ``OCLintUtil``, and ``OCLintCore`` libraries. We also have a CMake macro ``build_dynamic_rule`` to ease this process.
+After coding for our new rule, now we have our new rule ready. We need to compile it into a dynamic library and link against ``LLVMSupport``, ``clangASTMatchers``, ``OCLintMetric``, ``OCLintUtil``, and ``OCLintCore`` libraries. We also have a CMake macro ``build_dynamic_rule`` to ease this process.
 
 We copy the new dynamic library into ``$(/path/to/bin/oclint)/../lib/oclint/rules``, and it will be loaded together with all other rules in this folder.
 
