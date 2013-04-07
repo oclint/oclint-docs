@@ -24,9 +24,6 @@ Create a ``sample.cpp`` file with the content below:
                 j = 0;
             }
         }
-        else {
-            // Do this later!
-        }
         return 0;
     }
 
@@ -103,10 +100,9 @@ By applying OCLint against the above sample, we got the output like this::
     Processing: /path/to/sample.cpp.
     OCLint Report
 
-    Summary: TotalFiles=1 FilesWithViolations=1 P1=0 P2=2 P3=1
+    Summary: TotalFiles=1 FilesWithViolations=1 P1=0 P2=1 P3=1
 
     /path/to/sample.cpp:4:9: collapsible if statements P3
-    /path/to/sample.cpp:13:9: empty else block P2
     /path/to/sample.cpp:9:17: dead code P2
 
     [OCLint (http://oclint.org) v0.7]

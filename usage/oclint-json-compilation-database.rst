@@ -1,7 +1,7 @@
 Using oclint-json-compilation-database
 ======================================
 
-OCLint needs a compilation database to figure out the compiler options for parsing each file, so that it can run more accurate analysis on an intermediate representation of the source code. This document provides instructions about generating ``compile_commands.json`` (JSON Compilation Database), and use ``oclint-json-compilation-database`` for code analysis.
+``oclint-json-compilation-database`` is a helper program that eases running OCLint against a set of source code files. Instead of specifying compiler flags for each file when ``oclint`` is invoked, these compiler flags could be collected and persistently saved into JSON Compilation Database format. ``oclint-json-compilation-database`` fetches necessary information from it and kicks off ``oclint`` with these compiler flags under the hook for code analysis.
 
 JSON Compilation Database
 -------------------------
