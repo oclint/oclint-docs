@@ -13,7 +13,15 @@ From Scratch
 Usage
 -----
 
-* Command Line Usage: `oclint <usage/oclint.html>`_ | `oclint-json-compilation-database <usage/oclint-json-compilation-database.html>`_ | `oclint-xcodebuild <usage/oclint-xcodebuild.html>`_
+* Manual: `oclint <manual/oclint.html>`_ | `oclint-json-compilation-database <manual/oclint-json-compilation-database.html>`_ | `oclint-xcodebuild <manual/oclint-xcodebuild.html>`_
+* User guide of using OCLint with:
+
+  * `CMake <guide/cmake.html>`_
+  * `Bear <guide/bear.html>`_
+  * `xcodebuild <guide/xcodebuild.html>`_
+  * `Xcode IDE <guide/xcode.html>`_
+  * `Jenkins CI <guide/jenkins.html>`_
+
 * Customization: `Rules <customizing/rules.html>`_ | `Reports <customizing/reports.html>`_
 
 OCLint Internals

@@ -46,7 +46,7 @@ There is **no need** to build the code prior to run OCLint against it. However, 
 
 We just took two sequential steps to generate the binary, step 1 compiles the code, and step 2 links. We are only interested in step 1 because that's all compiler flags you need to give to OCLint. Here in this case, the compiler flag is ``-c``, and inspected source file is ``sample.cpp``.
 
-If you cannot pass through this step, don't give up, there are two helper programs `oclint-json-compilation-database <../usage/oclint-json-compilation-database.html>`_ and `oclint-xcodebuild <../usage/oclint-xcodebuild.html>`_ (for Mac Xcode users) could help find the arguments for you.
+If you cannot pass through this step, don't give up, there are two helper programs `oclint-json-compilation-database <../manual/oclint-json-compilation-database.html>`_ and `oclint-xcodebuild <../manual/oclint-xcodebuild.html>`_ (for Mac Xcode users) could help find the arguments for you.
 
 Checking Single File
 --------------------
@@ -69,7 +69,7 @@ To change OCLint behavior, change the ``[options]`` before the source; to alter 
 
     $ oclint -html -o report.html sample.cpp -- -D__STDC_CONSTANT_MACROS -D__STDC_LIMIT_MACROS -I/usr/include -I/usr/local/include -c
 
-For detail about OCLint options and inspect multiple files, see `oclint usage <../usage/oclint.html>`_.
+For detail about OCLint options and inspect multiple files, see `oclint manual <../manual/oclint.html>`_.
 
 Some Thoughts
 ^^^^^^^^^^^^^
@@ -88,9 +88,11 @@ Now, each source file may have different compiler flags. In this case, OCLint us
 
     oclint -p <build-path> [other options]  <source0> [... <sourceN>]
 
-A more handy helper program that comes with OCLint is `oclint-json-compilation-database <../usage/oclint-json-compilation-database.html>`_.
+A more handy helper program that comes with OCLint is `oclint-json-compilation-database <../manual/oclint-json-compilation-database.html>`_.
 
-In addition, if you are working on a Mac with Xcode as IDE, an experimental helper program `oclint-xcodebuild <../usage/oclint-xcodebuild.html>`_ is prepared for you.
+In addition, if you are working on a Mac with Xcode as IDE, you may find `Using OCLint with xcodebuild <../guide/oclint-xcodebuild.html>`_ and `Using OCLint in Xcode` documents are helpful.
+
+We also provide guidance for those who use `CMake <../guide/cmake.html>`_ and `make <../guide/bear.html>`_ as their build system respectively.
 
 Understanding Report
 --------------------
@@ -133,6 +135,6 @@ Basically, you can find the following information in the report:
 
 Read more about `customizing reports <../customizing/reports.html>`_.
 
-We hope you have some feelings about OCLint, you can move on with a comprehensive `usage guide <../usage/index.html>`_. Also feel free to browse the rest content in this documentation for details, `back to index <../index.html>`_ or see `table of contents <../contents.html>`_. Thank you!
+We hope you have some feelings about OCLint, you can move on with comprehensive `manuals <../manual/index.html>`_ and `user guides <../guide/index.html>`_. Also feel free to browse the rest content in this documentation for details, `back to index <../index.html>`_ or see `table of contents <../contents.html>`_. Thank you!
 
 .. _static code analysis: http://en.wikipedia.org/wiki/Static_program_analysis
