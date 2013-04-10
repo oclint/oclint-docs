@@ -9,15 +9,19 @@ Release Notes
 oclint:
 
 * Update LLVM/Clang to 3.3
+* Use clang_rt.profile library for testing
 * Apply Hamcrest concept in all test cases
 * Update build system settings to support more unix-list platforms, including FreeBSD
 * Redesign the RuleBase interface and introduce RuleCarrier
+* Redesign the RuleConfiguration by using std::map
 
 oclint-rules:
 
 * Introduce AST matcher rules
 * Fix #10 - CollapsableIfStatementsRule false positives
 * Fix #16 - MissingBreakInSwitchStatementRule false positive
+* Rule scaffolding
+* Reporter scaffolding
 
 oclint-reporters:
 
@@ -25,6 +29,10 @@ oclint-reporters:
 * Add PMDReporter
 * Add XMLReporter
 * Add JSONReporter
+
+oclint-clang-tooling:
+
+* Extract ClangTooling related frontend code to this module from core module
 
 oclint-xcodebuild:
 
