@@ -3,9 +3,9 @@ Tutorial
 
 This tutorial walks you through the inspection of a piece of small but smelly C++ source code. By the end of this tutorial, you should be able to
 
-* Apply OCLint on a single file
-* Configure OCLint with very basic compiler flags
-* Understand output
+* apply OCLint on a single file
+* configure OCLint with very basic compiler flags
+* understand the output
 
 Throughout this tutorial, we will also lead you to the detail pages if you are interested in certain steps and are willing to know more.
 
@@ -30,9 +30,9 @@ Create a ``sample.cpp`` file with the content below:
 Building Sample Code (Optional)
 -------------------------------
 
-There is **no need** to build the code prior to run OCLint against it. However, since finding the correct arguments becomes one of the most frequently asked questions, this step is trying to help you convert your compiler flags to the ones that OCLint requires.
+There is actually not necessary to build the code prior to run OCLint against it. However, since finding the correct arguments becomes one of the most frequently asked questions, this step is trying to help you convert your compiler flags to the ones that OCLint requires.
 
-.. note:: This step, however, doesn't teach you how to find the correct compiler flags, thus, some level of knowledge about compiler flags is a prerequisite.
+.. note:: This step, however, doesn't intent to show you how to find the correct compiler flags, thus, some level of knowledge about compiler flags is a prerequisite.
 
 .. code-block:: bash
 
@@ -46,7 +46,7 @@ There is **no need** to build the code prior to run OCLint against it. However, 
 
 We just took two sequential steps to generate the binary, step 1 compiles the code, and step 2 links. We are only interested in step 1 because that's all compiler flags you need to give to OCLint. Here in this case, the compiler flag is ``-c``, and inspected source file is ``sample.cpp``.
 
-If you cannot pass through this step, don't give up, there are two helper programs `oclint-json-compilation-database <../manual/oclint-json-compilation-database.html>`_ and `oclint-xcodebuild <../manual/oclint-xcodebuild.html>`_ (for Mac Xcode users) could help find the arguments for you.
+If you cannot pass through this step, don't give up, there are some tools try to help, like `CMake <../guide/cmake.html>`_ and `Bear <../guide/bear.html>`_ (for Make). In addition, we also provide two helper programs `oclint-json-compilation-database <../manual/oclint-json-compilation-database.html>`_ and `oclint-xcodebuild <../guide/oclint-xcodebuild.html>`_ (for Mac Xcode users) could help find the arguments for OCLint.
 
 Checking Single File
 --------------------
