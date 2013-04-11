@@ -84,3 +84,49 @@ Now, the scaffolding is finished, we can refer to `Writing Custom Rules <rules.h
 
 Creating Reporters with Scaffolding
 -----------------------------------
+
+Scaffolding a reporter is very similar to the rule, but much easier, since it only requires the reporter's class name with an optional argument for specifying the reporter's name. We could also get these options by typing ``./scaffoldReporter.py -h``::
+
+    usage: scaffoldReporter.py [-h] [-n REPORTER_NAME] class_name
+
+    positional arguments:
+      class_name            class name of the reporter
+
+    optional arguments:
+      -h, --help            show this help message and exit
+      -n REPORTER_NAME, --name REPORTER_NAME
+
+Let's say we want to create a new ColorfulTextReporter, with this script, we could do
+
+.. code-block:: bash
+
+  ./scaffoldReporter.py ColorfulText -n color
+
+The generated ``ColorfulTextReporter.cpp`` will look like the following:
+
+.. code-block:: cpp
+
+  #include "oclint/Reporter.h"
+
+  class ColorfulTextReporter : public Reporter
+  {
+  public:
+      virtual const string name() const
+      {
+          return "color";
+      }
+
+      virtual void report(Results *results, ostream &out)
+      {
+      }
+  };
+
+  extern "C" Reporter* create()
+  {
+    return new ColorfulTextReporter();
+  }
+
+Sequentially, the ``CMakeLists.txt`` file under ``reporters`` folder will be edited by appending the new reporter.
+
+Now, we can refer to the `Writing Custom Reporters <reporters.html>`_ document to print out the analysis results.
+
