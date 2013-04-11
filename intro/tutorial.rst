@@ -67,37 +67,39 @@ To change OCLint behavior, change the ``[options]`` before the source; to alter 
 
 .. code-block:: bash
 
-    $ oclint -html -o report.html sample.cpp -- -D__STDC_CONSTANT_MACROS -D__STDC_LIMIT_MACROS -I/usr/include -I/usr/local/include -c
+    $ oclint -report-type html -o report.html sample.cpp -- -D__STDC_CONSTANT_MACROS -D__STDC_LIMIT_MACROS -I/usr/include -I/usr/local/include -c
 
-For detail about OCLint options and inspect multiple files, see `oclint manual <../manual/oclint.html>`_.
+For detail about OCLint options, see `oclint manual <../manual/oclint.html>`_.
 
-Some Thoughts
-^^^^^^^^^^^^^
+For Projects with Multiple Files
+--------------------------------
 
-This approach works perfectly if you want to apply OCLint against one single file. The inspection process is quick, and making changes to arguments is easy.
+The approach describe in the previous section works perfectly if you want to apply OCLint against one single file or a few files. The inspection process is fast, and making changes to arguments is easy.
 
-When working on a project with a group of source files, you definitely prefer inspecting the entire project and having one report consists of all results. Well, if they share the same compiler flags, you can do
+While working on a project with a group of source files, you definitely prefer inspecting the entire project and having one report consists of all results.
+
+When they share the same compiler flags, you can still do
 
 .. code-block:: none
 
     oclint [options]  <source0> [... <sourceN>] -- [compiler flags]
 
-Now, each source file may have different compiler flags. In this case, OCLint uses the **compilation database** to know which source files to parse with what compiler flags. It can be considered as a condensed Makefile. So, you can do
+However, each source file may have different compiler flags. In this case, OCLint can recognize the **compilation database** to know the list of source files for analysis, along with the compiler flags used for each time during the compilation phase. It can be considered as a condensed Makefile. So, you can do
 
 .. code-block:: none
 
     oclint -p <build-path> [other options]  <source0> [... <sourceN>]
 
-A more handy helper program that comes with OCLint is `oclint-json-compilation-database <../manual/oclint-json-compilation-database.html>`_.
+A more handy helper program that comes with OCLint is `oclint-json-compilation-database <../manual/oclint-json-compilation-database.html>`_. If you use OCLint to analyze projects, for the most of the time, you will deal with ``oclint-json-compilation-database`` and indirectly talk to ``oclint``.
 
-In addition, if you are working on a Mac with Xcode as IDE, you may find `Using OCLint with xcodebuild <../guide/oclint-xcodebuild.html>`_ and `Using OCLint in Xcode` documents are helpful.
+For people who work on a Mac with Xcode as IDE, you may find `Using OCLint with xcodebuild <../guide/xcodebuild.html>`_ and `Using OCLint in Xcode <../guide/xcode.html>` documents are helpful.
 
-We also provide guidance for those who use `CMake <../guide/cmake.html>`_ and `make <../guide/bear.html>`_ as their build system respectively.
+We also provide guidances for people who use `CMake <../guide/cmake.html>`_ and `make <../guide/bear.html>`_ as their build system respectively.
 
 Understanding Report
 --------------------
 
-By applying OCLint against the above sample, we got the output like this::
+By applying OCLint against the above sample, with the default text reporter, we got the output like this::
 
     Processing: /path/to/sample.cpp.
     OCLint Report
@@ -135,6 +137,6 @@ Basically, you can find the following information in the report:
 
 Read more about `customizing reports <../customizing/reports.html>`_.
 
-We hope you have some feelings about OCLint, you can move on with comprehensive `manuals <../manual/index.html>`_ and `user guides <../guide/index.html>`_. Also feel free to browse the rest content in this documentation for details, `back to index <../index.html>`_ or see `table of contents <../contents.html>`_. Thank you!
+We hope you have some feelings about OCLint, you can move on with comprehensive `manuals <../manual/index.html>`_ and `user guides <../guide/index.html>`_. Also feel free to browse the rest of the content in this documentation for details, `back to index <../index.html>`_ or see `table of contents <../contents.html>`_. Thank you!
 
 .. _static code analysis: http://en.wikipedia.org/wiki/Static_program_analysis

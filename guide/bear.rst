@@ -25,7 +25,7 @@ Generating compile_comamnds.json
 
 By following the instructions on `Bear README <https://github.com/rizsotto/Bear/blob/master/README.md>`_, we could have ``bear`` ready to use.
 
-So now, if want to generate the ``compile_command.json`` for a project using ``make``, we can easily use ``bear`` by
+For example, if want to generate the ``compile_command.json`` for a project using ``make``, we can easily use ``bear`` by
 
 .. code-block:: bash
 
@@ -34,13 +34,13 @@ So now, if want to generate the ``compile_command.json`` for a project using ``m
 Testing Against Bear Itself
 ---------------------------
 
-Even though Bear uses CMake, but we can still apply Bear to itself when we actually call the ``make``. In my case, I will go to ``/Project/Bear/build`` folder and run
+Even though Bear uses CMake, we can still apply Bear to itself when we actually call the ``make``. In my case, I will go to ``/Project/Bear/build`` folder and run
 
 .. code-block:: bash
 
     $ /Projects/Bear/install/bin/bear -b /Projects/Bear/install/lib/x86_64-linux-gnu/libear.so -- make
 
-Bear outputs the ``compile_commands.json`` like the followings (against git code with SHA of cbc579a2ccd110c43de5b2de36ff68d190734abb):
+Bear outputs the ``compile_commands.json`` like the followings (with git SHA ``cbc579a2ccd110c43de5b2de36ff68d190734abb``):
 
 .. code-block:: json
 
@@ -139,4 +139,4 @@ Bear outputs the ``compile_commands.json`` like the followings (against git code
 What's Next
 -----------
 
-The rest of the process is as same as those who use CMake. Please refer to `Using compile_commands.json <cmake.html#using-compile-commands-json>`_ and `Running OCLint <cmake.html#running-oclint>`_ sections in the other document.
+The rest of the process is as same as those who use CMake. Please refer to the `other document <cmake.html#using-compile-commands-json>`_.

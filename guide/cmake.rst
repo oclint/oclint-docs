@@ -13,12 +13,12 @@ Prerequisite
 Background
 ----------
 
-CMake is able to generate JSON Compilation Database file ``compile_commands.json`` with no hassle at all. If a project uses CMake as its build system, as OCLint does, then applying OCLint is a quite easy task.
+CMake is able to generate JSON Compilation Database file ``compile_commands.json`` with no hassle at all. If a project uses CMake as its build system, then applying OCLint is a quite easy task.
 
 Generating compile_comamnds.json
 --------------------------------
 
-Simply add ``-DCMAKE_EXPORT_COMPILE_COMMANDS=ON`` to the ``cmake`` command, like
+Simply add ``-DCMAKE_EXPORT_COMPILE_COMMANDS=ON`` to the existing ``cmake`` command, like
 
 .. code-block:: bash
 
@@ -31,9 +31,17 @@ That's it!
 Using compile_commands.json
 ---------------------------
 
-We can leave the ``compile_commands.json`` file here in the build directory, and use ``-p`` option for ``oclint`` to `specify this file <../manual/oclint.html#compile-command-database>`_.
+We can leave the ``compile_commands.json`` file here in the build directory, and use ``-p`` option to `specify this file <../manual/oclint.html#compilation-database>`_  for ``oclint``.
 
 But in order to use ``oclint-json-compilation-database``, it's required to copy or link this file to our source directory, for example:
+
+* copy the file
+
+.. code-block:: bash
+    
+    cp `pwd`/compile_commands.json /path/to/source-root
+
+* link the file
 
 .. code-block:: bash
 
@@ -56,4 +64,4 @@ In addition, we can use ``oclint-json-compilation-database`` for code analysis. 
 
     oclint-json-compilation-database
 
-For advanced usage, detail instructions can be found in their manuals.
+For advanced usage, detail instructions can be found in `oclint <../manual/oclint.html>`_ and `oclint-json-compilation-database <../manual/oclint-json-compilation-database.html>`_ manuals respectively.

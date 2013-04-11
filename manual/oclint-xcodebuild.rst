@@ -1,7 +1,7 @@
 oclint-xcodebuild Manual
 ========================
 
-``oclint-xcodebuild`` is a helpful program that extracts adequate compiler options from ``xcodebuild`` execution log, converts them into JSON Compilation Database format, and save it into ``compile_commands.json`` file.
+For developers who use Xcode, ``oclint-xcodebuild`` is a helpful program that extracts adequate compiler options from ``xcodebuild`` execution log, converts them into JSON Compilation Database format, and save it into ``compile_commands.json`` file.
 
 .. seealso::
 

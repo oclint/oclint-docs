@@ -55,22 +55,22 @@ More detail on changing the behavior in rules loading process during runtime can
 Compilation Options
 -------------------
 
-OCLint needs to know the specific compiler options for the sources that are being inspected. There are two alternatives, specifying the compiler options or using compile commands database.
+For the sources that are being inspected, OCLint needs to know the compiler options for each of them. These options are the same arguments for actual compilers, like gcc or clang. There are two alternatives for passing the options to OCLint, namely specifying the compiler options directly to OCLint and using compilation database.
 
 Giving Compiler Options
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-Compiler options can be given directly to OCLint for compilation process. It's straight forward that, after all OCLint options and sources, append ``--`` separator followed by all compiler options:
+Compiler options can be given directly to OCLint. It's quite straight forward, after all OCLint options and sources, append ``--`` separator followed by all compiler options:
 
 .. code-block:: none
 
     oclint [oclint options] <source0> [... <sourceN>] -- [compiler options]
 
-For example, if we are compiling a file named by following command:
+For example, if we are compiling a file by the following ``clang`` command:
 
 .. code-block:: bash
 
-    clang -x objective-c -arch armv7 -std=gnu99 -fobjc-arc -O0 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk -g -I./Pods/Headers -c RPActivityIndicatorManager.m
+    clang -x objective-c -arch armv7 -std=gnu99 -fobjc-arc -O0 -isysroot /Developer/SDKs/iPhoneOS6.0.sdk -g -I./Pods/Headers -c RPActivityIndicatorManager.m
 
 (Wow, it's longer than expectation.)
 
@@ -78,20 +78,20 @@ Then when we analyze this code, our OCLint command will be:
 
 .. code-block:: bash
 
-    oclint [oclint options] RPActivityIndicatorManager.m -- -x objective-c -arch armv7 -std=gnu99 -fobjc-arc -O0 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk -g -I./Pods/Headers -c
+    oclint [oclint options] RPActivityIndicatorManager.m -- -x objective-c -arch armv7 -std=gnu99 -fobjc-arc -O0 -isysroot /Developer/SDKs/iPhoneOS6.0.sdk -g -I./Pods/Headers -c
 
-Compile Commands Database
-^^^^^^^^^^^^^^^^^^^^^^^^^
+Compilation Database
+^^^^^^^^^^^^^^^^^^^^
 
 \-p <build-path>
     Choose the build directory in which a file named compile_commands.json exists. When no build path is specified, a search for compile_commands.json will be attempted through all parent paths of the first input file.
 
-OCLint requires this compilation database to understand specific build options for each file. Currently it supports ``compile_commands.json`` file. See `oclint-json-compilation-database <oclint-json-compilation-database.html>`_ for detail. If we are working with Xcode, `oclint-xcodebuild <oclint-xcodebuild.html>`_ can generate the required compile_database.json file with a little of our help.
+If no compiler options are given explicitly, OCLint requires this compilation database to understand specific build options for each source file. Currently it supports ``compile_commands.json`` file. See `oclint-json-compilation-database <oclint-json-compilation-database.html>`_ for detail.
 
-Inspection Options
+Sources Options
 ------------------
 
-Of course, specify all the source files we want to inspect. Multiple files can be analyzed with one invocation.
+We specify the path to all the source files we want to inspect. Multiple files can be analyzed with one invocation.
 
 Report Options
 --------------
@@ -113,15 +113,19 @@ Exit Status Options
 \-max-priority-3 <threshold>
     The max allowed number of priority 3 violations
 
-This option helps in continuous integration and other build systems. When the number of violations in one of these priorities is larger than the maximum tolerance, OCLint will return with an exit status code other than 0 (code zero means normal termination) to notify a high volume of violations. By default, less than 20 priority 3 violations are allowed, 10 violations is maximum for priority 2, and no priority 1 violation can be tolerated. Too many violations result in bad code quality, if that happens, OCLint return with an exit code of 3.
-
-OCLint returns with one of the five exit codes below
+This option helps continuous integration and other build systems. OCLint returns with one of the five exit codes below
 
 * **0** - SUCCESS
 * **1** - RULE_NOT_FOUND
 * **2** - REPORTER_NOT_FOUND
 * **3** - ERROR_WHILE_PROCESSING
 * **4** - VIOLATIONS_EXCEED_THRESHOLD
+
+OCLint always return code zero for success execution with the number of violations under an acceptable range. Exit code other than zero means there are something wrong.
+
+For example, when the compilation process fails, an exit code of 3 will be returned. It means either the compiler options have not been set correctly, or the source code has errors.
+
+When the number of violations in any of the priorities is larger than the maximum tolerance, OCLint returns with an exit status code of 4. By default, less than 20 priority 3 violations are allowed, 10 violations is maximum for priority 2, and no priority 1 violation can be tolerated. Too many violations result in bad code quality, if that happens, OCLint intends to fail the build system.
 
 Other Options
 -------------
