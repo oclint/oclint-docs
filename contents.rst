@@ -6,7 +6,8 @@ OCLint Documentation Contents
 
    intro/overview
    intro/index
-   usage/index
+   manual/index
+   guide/index
    customizing/index
    rules/index
    internals/index

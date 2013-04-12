@@ -34,7 +34,8 @@ Build OCLint
 #. ``./buildMetrics.sh``
 #. ``./buildRules.sh``
 #. ``./buildReporters.sh``
-#. ``./buildRelease.sh clean`` (optional)
+#. ``./buildClangTooling.sh``
+#. ``./buildClangPlugin.sh``
 #. ``./buildRelease.sh``
 #. ``cd ..``
 

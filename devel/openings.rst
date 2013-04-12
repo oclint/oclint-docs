@@ -15,7 +15,7 @@ Rules are always welcome.
 More Reporters
 --------------
 
-Reporters are also great welcome. We also plan to support major continuous integration systems, e.g. Jenkins and TeamCity, by adding reporters and/or implementing plugins.
+Reporters are also great welcome. We also plan to support major continuous integration systems, e.g. TeamCity and CruiseControl, by adding reporters and/or implementing plugins.
 
 More Metrics
 ------------
@@ -29,10 +29,15 @@ Better Build System
 
 Using bash scripts to organize the build system is not as good as letting the build system handles this by itself. We already use CMake in every modules, so now, we need to figure out a way to let CMake handle all projects under the OCLint umbrella.
 
+Package Manager Build
+---------------------
+
+We hope to provide native support for major package mangers, like homebrew for Mac and APT for Debian and its derived distributions.
+
 Xcode Plugin/Addon/Extension
 ----------------------------
 
-We are happy with existing `oclint-xcodebuild <../usage/oclint-xcodebuild.html>`_, but we also want to provide a graphic interface for Xcode users. The idea is either being a Xcode plugin to be able to invoke OCLint inside Xcode, or being a standalone extension to open a Xcode workspace/project, select scheme, target, and other settings, then show source code with inline analysis results.
+We are happy with existing `oclint-xcodebuild <../guide/oclint-xcodebuild.html>`_, but we also want to provide a graphic interface for Xcode users. The idea is either being a Xcode plugin to be able to invoke OCLint inside Xcode, or being a standalone extension to open a Xcode workspace/project, select scheme, target, and other settings, then show source code with inline analysis results.
 
 Control Flow Graphic Engine
 ---------------------------

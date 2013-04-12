@@ -1,9 +1,9 @@
 Related Clang Knowledge Base
 ============================
 
-OCLint uses Clang APIs heavily. This includes Tooling, Abstract Syntax Tree, and Matchers libraries. A certain level of prerequisite knowledge will be great help if you are working on your OCLint fork, especially working on `writing your own rules <rules.html>`_.
+OCLint uses Clang APIs heavily. This includes Tooling, Abstract Syntax Tree, and Matchers libraries. A certain level of prerequisite knowledge will be great helpful when developers work on OCLint, especially for people who `write own custom rules <rules.html>`_.
 
-Here is a list of links that comprehensively explain how these Clang libraries work in order to ease your development.
+Here is a list of links that comprehensively explain how these Clang libraries work, hope these could ease the development.
 
 LibTooling
 ----------

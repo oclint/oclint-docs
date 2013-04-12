@@ -3,7 +3,7 @@ Writing Custom Rules
 
 It's cool to add capability to OCLint by writing your own rules, instead of waiting for us get around to implementing them. You are more welcome to share your rules with the entire community.
 
-.. note:: It might be easier to get started with looking at current rules.
+.. note:: It might be easier to get started with looking at existing rules.
 
 Rules must implement ``RuleBase`` class or its derived abstract classes. Different rules are specialized in different abstract levels, for example, some rules may have to dig very deep into the control flow of the code, and on the contrary, some rules only detect the defects by reading the string of the source code. `Rules module internals <../internals/rules.html>`_ can help pick up the right category when writing rules. Here, we skip that discussion, and directly jump to these different types of rules.
 
@@ -73,10 +73,19 @@ Then whenever a match is found, ``callback`` method is called with that AST node
 .. seealso::
     Again, ``LibASTMatcher`` is provided by Clang, and we would like to suggest you by reading some `related Clang knowledge <clang.html>`_ to have a better understanding.
 
+Creating Rules with Scaffolding
+-------------------------------
+
+Rules scaffolding is a quick way to create custom rules. When we want to create our custom rules and build them along with the OCLint building pipeline, scaffolding is the tool for the job.
+
+We can tell the category, rule type, name, and priority to the scaffold script, or we can leave them with default settings.
+
+Read on `rule scaffolding <scaffolding.html#creating-rules-with-scaffolding>`_ document for details.
+
 Build it and Make it Live
 -------------------------
 
-Now we have our new rule ready. We need to compile it into a dynamic library and link against ``LLVMSupport``, ``clangASTMatchers``, ``OCLintMetric``, ``OCLintUtil``, and ``OCLintCore`` libraries. We also have a CMake macro ``build_dynamic_rule`` to ease this process.
+After coding for our new rule, now we have our new rule ready. We need to compile it into a dynamic library and link against ``LLVMSupport``, ``clangASTMatchers``, ``OCLintMetric``, ``OCLintUtil``, and ``OCLintCore`` libraries. We also have a CMake macro ``build_dynamic_rule`` to ease this process.
 
 We copy the new dynamic library into ``$(/path/to/bin/oclint)/../lib/oclint/rules``, and it will be loaded together with all other rules in this folder.
 
