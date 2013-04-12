@@ -8,10 +8,10 @@ Prerequisite
 
 * `Jenkins CI <http://jenkins-ci.org/>`_
 * `PMD Plugin for Jenkins CI <https://wiki.jenkins-ci.org/display/JENKINS/PMD+Plugin>`_
-* Knowing how to configure Jenkins to run `Conitnuous Integration <http://martinfowler.com/articles/continuousIntegration.html>`_ for the project
+* Knowing how to configure Jenkins to run `conitnuous integration <http://martinfowler.com/articles/continuousIntegration.html>`_ for the project
 * Knowing how to generate ``compile_commands.json`` for the project
 
-  * Read other guides in this section for references
+  * Read other guides in this chapter for references
 
 * `oclint Manual <../manual/oclint.html>`_
 * `oclint-json-compilation-database Manual <../manual/oclint-json-compilation-database.html>`_
@@ -19,9 +19,9 @@ Prerequisite
 Background
 ----------
 
-In the beginning when we designed OCLint, we have always taken continuous integration into consideration. OCLint facilitates this process a lot. It generates the certain type of report as artifact, and it fails your build if any level of violations exceeds the threshold.
+From the very beginning of OCLint project, we have always taken continuous integration into serious consideration. OCLint facilitates this process a lot. It generates the certain type of report as artifact, and it fails your build if any level of violations exceeds the threshold.
 
-In order to utilize the Jenkins, we have introduced the PMD reporter that converts the analysis results into the format very close to PMD reports, so that the PMD plugin inside Jenkins can easily picks up this output, categorizes and renders graphic reports for us.
+In order to utilize the Jenkins CI, we have introduced the PMD reporter that converts the analysis results into the format very close to PMD reports, so that the PMD plugin inside Jenkins can easily picks up this output, categorizes and renders graphic reports for us.
 
 The idea was originally developed by Stephan Esch in his `blog post <http://maplesteve.com/2013/03/10/jenkins-pmd-analysis-for-objective-c-with-oclint>`_ along with his contribution of writing ``PMDReporter`` for us.
 
@@ -46,7 +46,7 @@ Configuring OCLint and PMD Plugin
 * Set up command used for OCLint analysis
 
   * In addition to the script shown in the following screenshot, we may also need to write the ``compile_commands.json`` generation commands in advance.
-  * In some cases, ``oclint`` binary suits our work better than ``oclint-json-compilation-database``
+  * In some cases, ``oclint`` binary suits better than ``oclint-json-compilation-database``
   * We need to set the report type to pmd
   * Give a name to the output artifact, we will need this file in the following step
 

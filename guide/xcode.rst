@@ -13,9 +13,9 @@ Prerequisite
 Background
 ----------
 
-We always want to provide a great user experience for Mac and iOS developers who work largely with Xcode IDE. While we don't have a perfect solution yet, there are many smart approaches in the community. Here is one of them, originally posted in `this blog post <http://gavrix.wordpress.com/2013/02/28/integrating-oclint-in-xcode/>`_, for your reference, and hope to motivate more ideas.
+We always want to provide a great user experience for Mac and iOS developers who work largely with Xcode IDE. While we don't have a perfect solution yet, there are many smart approaches in the community. Here is one of them, originally posted in `this blog <http://gavrix.wordpress.com/2013/02/28/integrating-oclint-in-xcode/>`_. We hope to share it with more developers, and hope to motivate more ideas.
 
-The basic idea behind this approach is to bundle the ``xcodebuild``, ``oclint-xcodebuild``, and ``oclint-json-compilation-database`` together into one Xcode target. When developers ``build`` the project with this target, the script behinds it will capture the ``xcodebuild`` log, extract into ``compile_commands.json``, and start the analysis. The analysis is done, it formats the OCLint output to the one that Xcode can recognize and render the result inline.
+The basic idea behind this approach is to bundle the ``xcodebuild``, ``oclint-xcodebuild``, and ``oclint-json-compilation-database`` together into one Xcode target. When developers ``build`` the project with this target, the script behinds it will capture the ``xcodebuild`` log, extract into ``compile_commands.json``, and start the analysis. When the analysis is done, it formats the OCLint output to the one that Xcode can recognize and render the result inline.
 
 Setting up Target
 -----------------

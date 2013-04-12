@@ -3,7 +3,7 @@ Writing Custom Rules
 
 It's cool to add capability to OCLint by writing your own rules, instead of waiting for us get around to implementing them. You are more welcome to share your rules with the entire community.
 
-.. note:: It might be easier to get started with looking at current rules.
+.. note:: It might be easier to get started with looking at existing rules.
 
 Rules must implement ``RuleBase`` class or its derived abstract classes. Different rules are specialized in different abstract levels, for example, some rules may have to dig very deep into the control flow of the code, and on the contrary, some rules only detect the defects by reading the string of the source code. `Rules module internals <../internals/rules.html>`_ can help pick up the right category when writing rules. Here, we skip that discussion, and directly jump to these different types of rules.
 

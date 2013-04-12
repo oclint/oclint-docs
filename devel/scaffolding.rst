@@ -1,7 +1,7 @@
 Scaffolding
 ===========
 
-Rules and reporters classes are designed by contract, meaning they need to inherit their base classes, and implement pure virtual methods, and their source code follow certain structures. So we could scaffold new rules and reporters by copying their templates and replacing the placeholders. In addition, the scaffolding scripts can ease you work by adding the new rule and reporter to the OCLint build pipeline.
+Rules and reporters classes are designed by contract, meaning they need to inherit their base classes, and implement pure virtual methods, and their source code follow certain structures. So we could scaffold new rules and reporters by copying their templates and replacing the placeholders. In addition, the scaffolding scripts can ease your work by adding the new rule and reporter to the OCLint build pipeline.
 
 This document provides information on how to create rules and reporters with scaffold scripts.
 
