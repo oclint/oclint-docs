@@ -9,6 +9,7 @@ Development
    compiletest
    rules
    reporters
+   scaffolding
    dogfooding
    openings
    clang

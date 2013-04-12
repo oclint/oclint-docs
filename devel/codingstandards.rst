@@ -60,3 +60,6 @@ Should be changed to
     {
         doSomething();
     }
+
+No States in Rules
+------------------

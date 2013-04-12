@@ -109,6 +109,8 @@ So now, we OCLint directory might be like this::
     |-build
     |-googletest
     |-llvm
+    |-oclint-clang-plugin
+    |-oclint-clang-tooling
     |-oclint-core
     |---include
     |---lib
@@ -122,9 +124,11 @@ So now, we OCLint directory might be like this::
     |---include
     |---lib
     |---rules
+    |---template
     |---test
     |-oclint-reporters
     |---reporters
+    |---template
     |---test
     |-oclint-scripts
     |-oclint-xcodebuild
