@@ -9,6 +9,7 @@ From Scratch
 * `Overview <intro/overview.html>`_
 * Getting Ready: `Download <intro/download.html>`_ | `Building <intro/build.html>`_ | `Installation <intro/installation.html>`_
 * `Tutorial <intro/tutorial.html>`_
+* `Directions for Safe Use <intro/safeuse.html>`_
 
 Usage
 -----
