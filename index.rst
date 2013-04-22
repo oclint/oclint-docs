@@ -9,6 +9,7 @@ From Scratch
 * `Overview <intro/overview.html>`_
 * Getting Ready: `Download <intro/download.html>`_ | `Building <intro/build.html>`_ | `Installation <intro/installation.html>`_
 * `Tutorial <intro/tutorial.html>`_
+* `Directions for Safe Use <intro/safeuse.html>`_
 
 Usage
 -----
@@ -21,6 +22,10 @@ Usage
   * `xcodebuild <guide/xcodebuild.html>`_
   * `Xcode IDE <guide/xcode.html>`_
   * `Jenkins CI <guide/jenkins.html>`_
+
+* How-To:
+
+  * `Suppress OCLint Warnings <howto/suppress.html>`_
 
 * Customization: `Rules <customizing/rules.html>`_ | `Reports <customizing/reports.html>`_
 

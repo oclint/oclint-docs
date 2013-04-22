@@ -8,6 +8,7 @@ OCLint Documentation Contents
    intro/index
    manual/index
    guide/index
+   howto/index
    customizing/index
    rules/index
    internals/index

@@ -8,3 +8,4 @@ Introduction
    build
    installation
    tutorial
+   safeuse
