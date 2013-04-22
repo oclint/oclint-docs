@@ -23,6 +23,10 @@ Usage
   * `Xcode IDE <guide/xcode.html>`_
   * `Jenkins CI <guide/jenkins.html>`_
 
+* How-To:
+
+  * `Suppress OCLint Warnings <howto/suppress.html>`_
+
 * Customization: `Rules <customizing/rules.html>`_ | `Reports <customizing/reports.html>`_
 
 OCLint Internals
