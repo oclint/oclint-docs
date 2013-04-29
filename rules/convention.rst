@@ -29,11 +29,11 @@ This rule is defined by the following class: `oclint-rules/rules/convention/Defa
 InvertedLogic
 -------------
 
-**Since: 0.6**
+**Since: 0.4**
 
 An inverted logic is hard to understand.
 
-This rule is defined by the following class: `oclint-rules/rules/convention/InvertedLogic.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/convention/InvertedLogic.cpp>`_
+This rule is defined by the following class: `oclint-rules/rules/convention/InvertedLogicRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/convention/InvertedLogicRule.cpp>`_
 
 **Example:**
 
@@ -111,7 +111,7 @@ ParameterReassignment
 
 Reassigning values to parameters is very problematic in most cases.
 
-This rule is defined by the following class: `oclint-rules/rules/convention/ParameterReassignment.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/convention/ParameterReassignment.cpp>`_
+This rule is defined by the following class: `oclint-rules/rules/convention/ParameterReassignmentRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/convention/ParameterReassignmentRule.cpp>`_
 
 **Example:**
 
@@ -132,7 +132,7 @@ SwitchStatementsShouldHaveDefault
 
 Switch statements should a default statement.
 
-This rule is defined by the following class: `oclint-rules/rules/convention/SwitchStatementsShouldHaveDefault.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/convention/SwitchStatementsShouldHaveDefault.cpp>`_
+This rule is defined by the following class: `oclint-rules/rules/convention/SwitchStatementsShouldHaveDefaultRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/convention/SwitchStatementsShouldHaveDefaultRule.cpp>`_
 
 **Example:**
 
@@ -156,7 +156,7 @@ TooFewBranchesInSwitchStatement
 
 To increase code readability, when a switch consists of only a few branches, it's much better to use if statement.
 
-This rule is defined by the following class: `oclint-rules/rules/convention/TooFewBranchesInSwitchStatement.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/convention/TooFewBranchesInSwitchStatement.cpp>`_
+This rule is defined by the following class: `oclint-rules/rules/convention/TooFewBranchesInSwitchStatementRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/convention/TooFewBranchesInSwitchStatementRule.cpp>`_
 
 **Example:**
 

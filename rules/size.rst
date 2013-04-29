@@ -4,7 +4,7 @@ Size
 CyclomaticComplexity
 --------------------
 
-**Since: 0.6**
+**Since: 0.4**
 
 Cyclomatic complexity is determined by the number of linearly independent paths through a program's source code. In other words, cyclomatic complexity of a method is measured by the number of decision points, like ``if``, ``while``, and ``for`` statements, plus one for the method entry.
 
@@ -111,7 +111,7 @@ LONG_LINE
 LongMethod
 ----------
 
-**Since: 0.6**
+**Since: 0.4**
 
 Long method generally indicates that this method tries to so many things. Each method should do one thing and one thing well.
 
@@ -196,7 +196,7 @@ NESTED_BLOCK_DEPTH
 NPathComplexity
 ---------------
 
-**Since: 0.6**
+**Since: 0.4**
 
 NPath complexity is determined by the number of execution paths through that method. Compared to cyclomatic complexity, NPath complexity has two outstanding characteristics: first, it distinguish between different kinds of control flow structures; second, it takes the various type of acyclic paths in a flow graph into consideration.
 

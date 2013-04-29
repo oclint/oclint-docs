@@ -4,11 +4,11 @@ Unused
 UnusedLocalVariable
 -------------------
 
-**Since: 0.6**
+**Since: 0.4**
 
 This rule detects local variables that are declared, but not used.
 
-This rule is defined by the following class: `oclint-rules/rules/unused/UnusedLocalVariable.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/unused/UnusedLocalVariable.cpp>`_
+This rule is defined by the following class: `oclint-rules/rules/unused/UnusedLocalVariableRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/unused/UnusedLocalVariableRule.cpp>`_
 
 **Example:**
 
@@ -23,11 +23,11 @@ This rule is defined by the following class: `oclint-rules/rules/unused/UnusedLo
 UnusedMethodParameter
 ---------------------
 
-**Since: 0.6**
+**Since: 0.4**
 
 This rule detects parameters that are not used in the method.
 
-This rule is defined by the following class: `oclint-rules/rules/unused/UnusedMethodParameter.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/unused/UnusedMethodParameter.cpp>`_
+This rule is defined by the following class: `oclint-rules/rules/unused/UnusedMethodParameterRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/unused/UnusedMethodParameterRule.cpp>`_
 
 **Example:**
 
