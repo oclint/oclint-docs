@@ -1,0 +1,8 @@
+Unused
+======
+
+UnusedLocalVariable
+-------------------
+
+UnusedMethodParameter
+---------------------
