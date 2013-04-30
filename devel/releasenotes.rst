@@ -18,6 +18,13 @@ oclint:
 oclint-rules:
 
 * Introduce AST matcher rules
+* Suppress warnings for
+
+  * unused method parameters
+  * high cyclomatic complexity
+  * high npath complexity
+  * high ncss value
+
 * Fix #10 - CollapsableIfStatementsRule false positives
 * Fix #16 - MissingBreakInSwitchStatementRule false positive
 * Rule scaffolding
