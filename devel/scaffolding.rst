@@ -61,7 +61,7 @@ The scaffold script will create ``AllSwitchStatementsRule.cpp`` file, and store 
             return "all switch statements";
         }
 
-        virtual const int priority() const
+        virtual int priority() const
         {
             return 3;
         }
