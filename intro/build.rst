@@ -30,13 +30,7 @@ Build OCLint
 ------------
 
 #. ``cd oclint-scripts``
-#. ``./buildCore.sh``
-#. ``./buildMetrics.sh``
-#. ``./buildRules.sh``
-#. ``./buildReporters.sh``
-#. ``./buildClangTooling.sh``
-#. ``./buildClangPlugin.sh``
-#. ``./buildRelease.sh``
+#. ``./buildAll.sh``
 #. ``cd ..``
 
 Verify Your Build
