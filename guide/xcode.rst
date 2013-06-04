@@ -10,12 +10,14 @@ Prerequisite
 * Apple's official `xcodebuild Manual Page <https://developer.apple.com/library/mac/#documentation/Darwin/Reference/ManPages/man1/xcodebuild.1.html>`_
 * `Using OCLint with xcodebuild <xcodebuild.html>`_
 
+or
+
+* `Using OCLint with xctool <xctool.html>`_
+
 Background
 ----------
 
-We always want to provide a great user experience for Mac and iOS developers who work largely with Xcode IDE. While we don't have a perfect solution yet, there are many smart approaches in the community. Here is one of them, originally posted in `this blog <http://gavrix.wordpress.com/2013/02/28/integrating-oclint-in-xcode/>`_. We hope to share it with more developers, and hope to motivate more ideas.
-
-The basic idea behind this approach is to bundle the ``xcodebuild``, ``oclint-xcodebuild``, and ``oclint-json-compilation-database`` together into one Xcode target. When developers ``build`` the project with this target, the script behinds it will capture the ``xcodebuild`` log, extract into ``compile_commands.json``, and start the analysis. When the analysis is done, it formats the OCLint output to the one that Xcode can recognize and render the result inline.
+This idea was originally posted in `this blog <http://gavrix.wordpress.com/2013/02/28/integrating-oclint-in-xcode/>`_. We hope to share it with more developers, and hope to motivate more ideas.
 
 Setting up Target
 -----------------
@@ -33,6 +35,8 @@ Setting up Target
 .. image:: ../_static/guide/xcode_screenshot_3.png
 
 * In the script editor, we could enter the script which does the real work. We can also modify the script from this very `generic version <https://gist.github.com/lqi/5358513>`_. We may need to change the ``xcodebuild`` options to use a particular scheme or target. In addition, based on the `discussions <xcodebuild.html#discussions>`_ we had, we can decide whether to use ``clean`` and ``dry run`` features.
+
+* For ``xctool`` users, the script can be largely simplified to something like `this <https://gist.github.com/lqi/5705477>`_
 
 .. image:: ../_static/guide/xcode_screenshot_4.png
 

@@ -19,6 +19,7 @@ Usage
 
   * `CMake <guide/cmake.html>`_
   * `Bear <guide/bear.html>`_
+  * `xctool <guide/xctool.html>`_
   * `xcodebuild <guide/xcodebuild.html>`_
   * `Xcode IDE <guide/xcode.html>`_
   * `Jenkins CI <guide/jenkins.html>`_
