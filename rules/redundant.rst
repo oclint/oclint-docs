@@ -73,6 +73,26 @@ This rule is defined by the following class: `oclint-rules/rules/redundant/Redun
         return b;   // variable b is returned immediately after its declaration,
     }               // can be simplified to return a * 2;
 
+RedundantNilCheck
+-----------------
+
+**Since: 0.7**
+
+C/C++-style null check in Objective-C like ``foo != nil && [foo bar]`` is redundant, since sending a message to a nil object in this case simply return a false-y value.
+
+This rule is defined by the following class: `oclint-rules/rules/redundant/RedundantLocalVariableRuleRedundantNilCheck.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/redundant/RedundantNilCheck.cpp>`_
+
+**Example:**
+
+.. code-block:: objective-c
+
+    + (void)compare:(A *)obj1 withOther:(A *)obj2
+    {
+        if (obj1 && [obj1 isEqualTo:obj2]) // if ([obj1 isEqualTo:obj2]) is okay
+        {
+        }
+    }
+
 UnnecessaryElseStatement
 ------------------------
 
