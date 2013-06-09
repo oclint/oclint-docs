@@ -20,6 +20,12 @@ This rule is defined by the following class: `oclint-rules/rules/unused/UnusedLo
         return 0;
     }
 
+**Suppress:**
+
+.. code-block:: cpp
+
+    __attribute__((annotate("oclint:suppress[unused local variable]")))
+
 UnusedMethodParameter
 ---------------------
 

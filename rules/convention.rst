@@ -1,6 +1,31 @@
 Convention
 ==========
 
+AvoidBranchingStatementAsLastInLoop
+-----------------------------------
+
+**Since: 0.7**
+
+Having branching statement as the last statement inside a loop is very confusing, and could largely be forgetting of something and turning into a bug.
+
+This rule is defined by the following class: `oclint-rules/rules/convention/AvoidBranchingStatementAsLastInLoopRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/convention/AvoidBranchingStatementAsLastInLoopRule.cpp>`_
+
+**Example:**
+
+.. code-block:: cpp
+
+    void example()
+    {
+        for (int i = 0; i < 10; i++)
+        {
+            if (foo(i))
+            {
+                continue;
+            }
+            break;      // this break is confusing
+        }
+    }
+
 DefaultLabelNotLastInSwitchStatement
 ------------------------------------
 
@@ -52,6 +77,29 @@ This rule is defined by the following class: `oclint-rules/rules/convention/Inve
         }                       // }
 
         return !i ? -1 : 1;     // return i ? 1 : -1;
+    }
+
+JumbledIncrementer
+------------------
+
+**Since: 0.7**
+
+Jumbled incrementers are usually typos. If it's done on purpose, it's very confusing for code readers.
+
+This rule is defined by the following class: `oclint-rules/rules/convention/JumbledIncrementerRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/convention/JumbledIncrementerRule.cpp>`_
+
+**Example:**
+
+.. code-block:: cpp
+
+    void example()
+    {
+        for (int i = 0; i < 10; i++)
+        {
+            for (int j = 0; j < 20; i++ /* what?! */)
+            {
+            }
+        }
     }
 
 MissingBreakInSwitchStatement

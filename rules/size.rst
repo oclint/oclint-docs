@@ -228,3 +228,98 @@ NPATH_COMPLEXITY
 
 Brian A. Nejmeh  (1988). `"NPATH: a measure of execution path complexity and its applications" <http://dl.acm.org/citation.cfm?id=42379>`_. *Communications of the ACM 31 (2) p. 188-200*
 
+TooManyFields
+-------------
+
+**Since: 0.7**
+
+A class with too many fields indicates it does too many things and is lack of proper abstraction. It can be resigned to have fewer fields.
+
+This rule is defined by the following class: `oclint-rules/rules/size/TooManyFieldsRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/size/TooManyFieldsRule.cpp>`_
+
+**Example:**
+
+.. code-block:: cpp
+
+    class c
+    {
+        int a, b;
+        int c;
+        // ...
+        int l;
+        int m, n;
+        // ...
+        int x, y, z;
+
+        void m() {}
+    };
+
+**Thresholds:**
+
+TOO_MANY_FIELDS
+    The reporting threshold for too many fields, default value is 20
+
+TooManyMethods
+--------------
+
+**Since: 0.7**
+
+A class with too many methods indicates it does too many things and hard to read and understand. It usually contains complicated code, and should be refactored.
+
+This rule is defined by the following class: `oclint-rules/rules/size/TooManyMethodsRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/size/TooManyMethodsRule.cpp>`_
+
+**Example:**
+
+.. code-block:: cpp
+
+    class c
+    {
+        int a();
+        int b();
+        int c();
+        // ...
+        int l();
+        int m();
+        int n();
+        // ...
+        int x();
+        int y();
+        int z();
+        int aa();
+        int ab();
+        int ac();
+        int ad();
+        int ae();
+    };
+
+**Thresholds:**
+
+TOO_MANY_METHODS
+    The reporting threshold for too many methods, default value is 30
+
+TooManyParameters
+-----------------
+
+**Since: 0.7**
+
+Methods with too many parameters are hard to understand and maintain, and are thirsty for refactorings, like `Replace Parameter With method <http://www.refactoring.com/catalog/replaceParameterWithMethod.html>`_, `Introduce Parameter Object <http://www.refactoring.com/catalog/introduceParameterObject.html>`_, or `Preserve Whole Object <http://www.refactoring.com/catalog/preserveWholeObject.html>`_.
+
+This rule is defined by the following class: `oclint-rules/rules/size/TooManyParametersRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/size/TooManyParametersRule.cpp>`_
+
+**Example:**
+
+.. code-block:: cpp
+
+    void example(int a, int b, int c, int d, int e, int f,
+        int g, int h, int i, int j, int k, int l)
+    {
+    }
+
+**Thresholds:**
+
+TOO_MANY_PARAMETERS
+    The reporting threshold for too many parameters, default value is 10
+
+**References:**
+
+Fowler, Martin (1999). *Refactoring: Improving the design of existing code.* Addison Wesley.

@@ -7,5 +7,6 @@ User Guide
    cmake
    bear
    xcodebuild
+   xctool
    xcode
    jenkins

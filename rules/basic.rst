@@ -24,6 +24,54 @@ This rule is defined by the following class: `oclint-rules/rules/basic/BitwiseOp
         }
     }
 
+BrokenNilCheck
+---------------
+
+**Since: 0.7**
+
+The broken nil check in Objective-C in some cases returns just the opposite result.
+
+This rule is defined by the following class: `oclint-rules/rules/basic/BrokenNullCheckRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/basic/BrokenNullCheckRule.cpp>`_
+
+**Example:**
+
+.. code-block:: objective-c
+
+    + (void)compare:(A *)obj1 withOther:(A *)obj2
+    {
+        if (obj1 || [obj1 isEqualTo:obj2])
+        {
+        }
+
+        if (!obj1 && ![obj1 isEqualTo:obj2])
+        {
+        }
+    }
+
+BrokenNullCheck
+---------------
+
+**Since: 0.7**
+
+The broken null check itself will crash the program.
+
+This rule is defined by the following class: `oclint-rules/rules/basic/BrokenNullCheckRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/basic/BrokenNullCheckRule.cpp>`_
+
+**Example:**
+
+.. code-block:: cpp
+
+    void m(A *a, B *b)
+    {
+        if (a != NULL || a->bar(b))
+        {
+        }
+
+        if (a == NULL && a->bar(b))
+        {
+        }
+    }
+
 BrokenOddnessCheck
 ------------------
 
@@ -202,6 +250,54 @@ This rule is defined by the following class: `oclint-rules/rules/basic/GotoState
 **References:**
 
 Edsger Dijkstra (March 1968). `"Go To Statement Considered Harmful" <http://www.cs.utexas.edu/users/EWD/ewd02xx/EWD215.PDF>`_. *Communications of the ACM* (PDF) 11 (3): 147–148. doi:10.1145/362929.362947.
+
+MisplacedNilCheck
+-----------------
+
+**Since: 0.7**
+
+The nil check is misplaced. In Objective-C, sending a message to a nil pointer simply does nothing. But code readers may be confused about the misplaced nil check.
+
+This rule is defined by the following class: `oclint-rules/rules/basic/MisplacedNullCheckRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/basic/MisplacedNullCheckRule.cpp>`_
+
+**Example:**
+
+.. code-block:: objective-c
+
+    + (void)compare:(A *)obj1 withOther:(A *)obj2
+    {
+        if ([obj1 isEqualTo:obj2] && obj1)
+        {
+        }
+
+        if (![obj1 isEqualTo:obj2] || obj1 == nil)
+        {
+        }
+    }
+
+MisplacedNullCheck
+------------------
+
+**Since: 0.7**
+
+The null check is misplaced. In C and C++, sending a message to a null pointer could crash the app. When null is misplaced, either the check is useless or it's incorrect.
+
+This rule is defined by the following class: `oclint-rules/rules/basic/MisplacedNullCheckRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/basic/MisplacedNullCheckRule.cpp>`_
+
+**Example:**
+
+.. code-block:: cpp
+
+    void m(A *a, B *b)
+    {
+        if (a->bar(b) && a != NULL) // violation
+        {
+        }
+
+        if (a->bar(b) || !a)        // violation
+        {
+        }
+    }
 
 MultipleUnaryOperator
 ---------------------
