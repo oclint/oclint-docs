@@ -3,6 +3,10 @@ Using OCLint with xcodebuild
 
 This document goes through the happy path of using OCLint to analyze the code quality of a Xcode project with xcodebuild.
 
+.. seealso::
+
+    If you use Facebook's `xctool <https://github.com/facebook/xctool>`_ to build your Xcode projects, please use the `json-compilation-database <xctool.html>`_ reporter to make things much easier. We highly recommend you start to use ``xctool`` as a replacement for ``xcodebuild``.
+
 Prerequisite
 ------------
 
@@ -89,3 +93,7 @@ Save to Repository
 Checking ``compile_commands.json`` into source code repository is not necessary. Instead, always generate a new ``compile_comamnds.json`` when anything changes.
 
 However, we could write the entire process into a bash script, and check in this script. So that, all developers who work on the project can run this script and generate the ``compile_commands.json`` file that works best for his or her local environment.
+
+.. seealso::
+
+    You might also be interested in `using OCLint in Xcode <xcode.html>`_.

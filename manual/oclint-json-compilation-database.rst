@@ -10,8 +10,9 @@ oclint-json-compilation-database Manual
 
 ``oclint-json-compilation-database`` can fetch necessary information from ``compile_commands.json`` and kick off ``oclint`` with these compiler flags under the hook for code analysis. See the usage by typing ``oclint-json-complication-database -help``::
 
-    usage: oclint-json-compilation-database [-h] [-v] [-i INCLUDES] [-e EXCLUDES]
-                                        [oclint_args [oclint_args ...]]
+    usage: oclint-json-compilation-database  [-h] [-v] [-debug] [-i INCLUDES]
+                                             [-e EXCLUDES]
+                                             [oclint_args [oclint_args ...]]
 
     OCLint for JSON Compilation Database (compile_commands.json)
 
@@ -21,6 +22,7 @@ oclint-json-compilation-database Manual
     optional arguments:
       -h, --help            show this help message and exit
       -v                    show invocation command with arguments
+      -debug, --debug       invoke OCLint in debug mode
       -i INCLUDES, -include INCLUDES, --include INCLUDES
                             extract files matching pattern
       -e EXCLUDES, -exclude EXCLUDES, --exclude EXCLUDES
@@ -52,8 +54,10 @@ Debug Options
 
 \-v
     show invocation command with arguments
+\-debug
+    invoke OCLint in debug mode
 
-``oclint-json-compilation-database`` generates ``oclint`` command with corresponding options based on our settings of all filters and OCLint options, and eventually call ``oclint`` for us. Debug options outputs the final ``oclint`` invocation command, it's helpful for debugging purposes, because if we run the generated ``oclint`` command directly in the console, we will get the identical result same as using ``oclint-json-compilation-database``.
+``oclint-json-compilation-database`` generates ``oclint`` command with corresponding options based on our settings of all filters and OCLint options, and eventually call ``oclint`` for us. Debug option ``-v`` outputs the final ``oclint`` invocation command, it's helpful for debugging purposes, because if we run the generated ``oclint`` command directly in the console, we will get the identical result same as using ``oclint-json-compilation-database``. More than that, ``-debug`` outputs deeper message from OCLint invocation. It prints messages that can help understand the overall progress of OCLint analysis.
 
 
 .. _JSON Compilation Database Format Specification: http://clang.llvm.org/docs/JSONCompilationDatabase.html

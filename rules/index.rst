@@ -1,7 +1,7 @@
 Rule Index
 ==========
 
-OCLint |release| includes 42 rules.
+OCLint |release| includes 58 rules.
 
 
 .. toctree::
@@ -10,6 +10,8 @@ OCLint |release| includes 42 rules.
    basic
    convention
    empty
+   migration
+   naming
    redundant
    size
    unused

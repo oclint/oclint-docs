@@ -22,6 +22,12 @@ In case the xcodebuild log is stored in a file with name other than ``xcodebuild
 
     oclint-xcodebuild /path/to/xcodebuild/log
 
+When certain files are compiled by Xcode but we want to exclude them from the compilation database, we could filter them out by
+
+.. code-block:: bash
+
+    oclint-xcodebuild -e <exclude_pattern_regex> -l </path/to/xcodebuild/log>
+
 The ``compile_commands.json`` will be generated to the current working directory.
 
 .. warning:: It's highly recommended to avoid having spaces in your file name or file path. It's a good practice. Meanwhile, even though ``oclint`` itself supports spaces in path, ``oclint-json-compilation-database`` and ``oclint-xcodebuild`` still have issues handling spaces in path.

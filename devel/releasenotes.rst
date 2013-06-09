@@ -4,8 +4,6 @@ Release Notes
 0.7
 ---
 
-*These are in-progress notes for upcoming OCLint 0.7 release.*
-
 oclint:
 
 * Update LLVM/Clang to 3.3
@@ -14,21 +12,58 @@ oclint:
 * Update build system settings to support more unix-list platforms, including FreeBSD
 * Redesign the RuleBase interface and introduce RuleCarrier
 * Redesign the RuleConfiguration by using std::map
+* Improvement to RuleCarrier by following Law of Demeter
+
+oclint-metrics:
+
+* Add references
+* Add unit tests for existing metrics
+* Take care of extern "C"
 
 oclint-rules:
 
 * Introduce AST matcher rules
+* Add references
+* Improvement to StdUtil
+* Rule scaffolding
+* Reporter scaffolding
+* Reconsider priorities for certain rules
 * Suppress warnings for
 
   * unused method parameters
+  * unused local variables
   * high cyclomatic complexity
   * high npath complexity
   * high ncss value
 
-* Fix #10 - CollapsableIfStatementsRule false positives
-* Fix #16 - MissingBreakInSwitchStatementRule false positive
-* Rule scaffolding
-* Reporter scaffolding
+* Improvement to Existing Rules
+
+  * support __objc_bool in related rules
+  * improvement to redundant conditional operator rule
+  * improvement to parameter reassignment rule
+  * improvement to unused local variable rule
+  * improvement to dead code rule
+  * improvement to double negative rule
+  * Fix #10 - CollapsableIfStatementsRule false positives
+  * Fix #16 - MissingBreakInSwitchStatementRule false positive
+  * Fix #34 - False unused local variable warning with try/catch
+
+* New Rules
+
+  * misplaced null/nill check
+  * broken null/nil check
+  * redundant nil check
+  * short variable name
+  * long variable name
+  * too many fields
+  * too many methods
+  * too many parameters
+  * avoid branching statement as last in loop
+  * jumbled incrementer
+  * objective-c number literals
+  * objective-c boxed literals
+  * objective-c container literals
+  * objective-c object subscripting
 
 oclint-reporters:
 
@@ -47,6 +82,13 @@ oclint-xcodebuild:
 * Parse xcodebuild log for CURRENT_WORKING_FOLDER
 * Push source out of CURRENT_WORKING_FOLDER to the bottom of the list
 * Support custom xocdebuild log path
+* Add support to certain projects with white space in their project name or file path
+
+oclint-scripts:
+
+* Automatically delete all builds when buildRelease
+* Extract testAll from ci
+* Extract buildAll from ci
 
 0.6
 ---
