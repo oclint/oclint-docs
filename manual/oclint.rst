@@ -128,6 +128,14 @@ For example, when the compilation process fails, an exit code of 3 will be retur
 
 When the number of violations in any of the priorities is larger than the maximum tolerance, OCLint returns with an exit status code of 5. By default, less than 20 priority 3 violations are allowed, 10 violations is maximum for priority 2, and no priority 1 violation can be tolerated. Too many violations result in bad code quality, if that happens, OCLint intends to fail the build system.
 
+Debug Options
+-------------
+
+\-debug
+    invoke OCLint in debug mode.
+
+If OCLint is built in the debug model, ``-debug`` outputs deeper message from OCLint invocation. It prints messages that can help understand the overall progress of OCLint analysis. Please aware that this is only available when OCLint is built with debug flag on.
+
 Other Options
 -------------
 
