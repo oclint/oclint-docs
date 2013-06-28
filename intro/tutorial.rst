@@ -109,7 +109,7 @@ By applying OCLint against the above sample, with the default text reporter, we 
     /path/to/sample.cpp:4:9: collapsible if statements P3
     /path/to/sample.cpp:9:17: dead code P2
 
-    [OCLint (http://oclint.org) v0.7]
+    [OCLint (http://oclint.org) v0.8]
 
 Basically, you can find the following information in the report:
 
@@ -129,6 +129,12 @@ Basically, you can find the following information in the report:
   * violated rule
   * priority
   * message (if any)
+
+* Compiler diagnostics
+
+  * compiler errors if any
+  * compiler warning if any
+  * clang static analyzer results when it is enabled
 
 * OCLint information
 
