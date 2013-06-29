@@ -8,18 +8,19 @@ See all supported options in OCLint |release| by typing ``oclint -help``::
     USAGE: oclint [options] <source0> [... <sourceN>]
 
     OPTIONS:
-      -R=<directory>              - Add directory to rule loading path
-      -fatal-assembler-warnings   - Consider warnings as error
-      -help                       - Display available options (-help-hidden for more)
-      -max-priority-1=<threshold> - The max allowed number of priority 1 violations
-      -max-priority-2=<threshold> - The max allowed number of priority 2 violations
-      -max-priority-3=<threshold> - The max allowed number of priority 3 violations
-      -o=<path>                   - Write output to <path>
-      -p=<string>                 - Build path
-      -rc=<parameter>=<value>     - Override the default behavior of rules
-      -report-type=<name>         - Change output report type
-      -stats                      - Enable statistics output from program
-      -version                    - Display the version of this program
+      -R=<directory>                - Add directory to rule loading path
+      -enable-clang-static-analyzer - Enable Clang Static Analyzer, and integrate results into OCLint report
+      -fatal-assembler-warnings     - Consider warnings as error
+      -help                         - Display available options (-help-hidden for more)
+      -max-priority-1=<threshold>   - The max allowed number of priority 1 violations
+      -max-priority-2=<threshold>   - The max allowed number of priority 2 violations
+      -max-priority-3=<threshold>   - The max allowed number of priority 3 violations
+      -o=<path>                     - Write output to <path>
+      -p=<string>                   - Build path
+      -rc=<parameter>=<value>       - Override the default behavior of rules
+      -report-type=<name>           - Change output report type
+      -stats                        - Enable statistics output from program (available with Asserts)
+      -version                      - Display the version of this program
 
     -p <build-path> is used to read a compile command database.
 
@@ -127,6 +128,14 @@ OCLint always return code zero for success execution with the number of violatio
 For example, when the compilation process fails, an exit code of 3 will be returned. It means either the compiler options have not been set correctly, or the source code has errors.
 
 When the number of violations in any of the priorities is larger than the maximum tolerance, OCLint returns with an exit status code of 5. By default, less than 20 priority 3 violations are allowed, 10 violations is maximum for priority 2, and no priority 1 violation can be tolerated. Too many violations result in bad code quality, if that happens, OCLint intends to fail the build system.
+
+Clang Static Analyzer Options
+-----------------------------
+
+\-enable-clang-static-analyzer
+    enable Clang Static Analyzer
+
+When Clang Static Analyzer is enabled, OCLint will invoke it under the hook along with the process, collect its results, and emit them with the reporter. Notice that, by invoking Clang Static Analyzer, it will significantly increase the total analysis time.
 
 Debug Options
 -------------

@@ -7,7 +7,7 @@ No matter you have downloaded a pre-compiled binary distribution or have built O
     |-bin
     |-lib
     |---clang
-    |-----3.3
+    |-----3.4
     |-------include
     |-------lib
     |---oclint
