@@ -10,10 +10,6 @@ There are many many cool features that we can provide. At the same time, there a
 
 Alright, let's go with a few -
 
-* Make sure there is no error when compile the code
-
-  * When there are errors in code compilation, ``oclint`` won't conduct any analysis, and will produce empty report in the end
-
 * `No white spaces in file name and path <http://oclint.org/news/2013/03/10/no-space-in-file-name-and-path/>`_
 
   * The existence of white spaces can cause problem when use ``oclint-json-compilation-database`` and ``oclint-xcodebuild``

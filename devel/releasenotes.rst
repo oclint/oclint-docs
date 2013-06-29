@@ -1,6 +1,37 @@
 Release Notes
 =============
 
+0.8
+---
+
+*These are in-progress notes for upcoming OCLint 0.8 release.*
+
+oclint:
+
+* Update LLVM/Clang to 3.4
+* Add oclint namespace
+* Support global analysis
+* Support compiler diagnostics information in result set
+
+oclint-driver:
+
+* New module serves as the frontend driver of OCLint, is derived from Clang libTooling
+* Collect compiler diagnostic information, like errors and warnings
+* Collect Clang Static Analyzer results
+
+oclint-scripts:
+
+* Support building optimized binaries
+* Use all CPU cores to build clang
+
+oclint-json-compilation-database:
+
+* Use oclint binary symlink
+
+oclint-xcodebuild:
+
+* Xcode 5 Support
+
 0.7
 ---
 

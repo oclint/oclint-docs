@@ -30,7 +30,7 @@ Build OCLint
 ------------
 
 #. ``cd oclint-scripts``
-#. ``./buildAll.sh``
+#. ``./buildAll.sh`` release
 #. ``cd ..``
 
 Verify Your Build

@@ -109,12 +109,13 @@ So now, we OCLint directory might be like this::
     |-build
     |-googletest
     |-llvm
-    |-oclint-clang-plugin
-    |-oclint-clang-tooling
     |-oclint-core
     |---include
     |---lib
     |---test
+    |-oclint-driver
+    |---include
+    |---lib
     |-oclint-json-compilation-database
     |-oclint-metrics
     |---include

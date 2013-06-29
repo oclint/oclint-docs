@@ -24,7 +24,11 @@ On the other side, if our work is related to violations, reporters, and surround
 
     ./buildClang.sh release
 
-It takes a while to build LLVM/Clang (probably longer than a cup of coffee time). We can specify ``make -j <number_of_jobs>`` to compile simultaneously.
+It takes a while to build LLVM/Clang (probably much longer than a cup of coffee time). By default, this script builds the code by simultaneously using all the CPU resources. If building on one single core is preferred, e.g. for debugging build system issues, explicitly specify the number of cores to 1, like
+
+.. code-block:: bash
+
+    CPU_CORES=1 ./buildClang.sh
 
 The LLVM/Clang build can be found at ``oclint/build/llvm`` directory, and its installation is located at ``oclint/build/llvm-install`` folder.
 
