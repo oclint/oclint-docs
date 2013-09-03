@@ -87,7 +87,7 @@ Test metrics module with clean build:
 
 .. code-block:: bash
 
-    ./testMetrics clean
+    ./testMetrics.sh clean
 
 Testing Rules Module
 ^^^^^^^^^^^^^^^^^^^^
