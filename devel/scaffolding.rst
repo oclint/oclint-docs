@@ -8,11 +8,11 @@ This document provides information on how to create rules and reporters with sca
 Creating Rules with Scaffolding
 -------------------------------
 
-Creating a custom rule can be done with ``scaffoldRule.py`` script under ``oclint-scripts`` folder.
+Creating a custom rule can be done with ``scaffoldRule`` script under ``oclint-scripts`` folder.
 
-We could get a list of its options by typing ``./scaffoldRule.py -h``::
+We could get a list of its options by typing ``./scaffoldRule -h``::
 
-    usage: scaffoldRule.py [-h]
+    usage: scaffoldRule [-h]
                            [-t {Generic,SourceCodeReader,ASTVisitor,ASTMatcher}]
                            [-c RULE_CATEGORY] [-n RULE_NAME] [-p {1,2,3}]
                            class_name
@@ -38,7 +38,7 @@ For example, if we want to create a controversial rule that extracts all switch 
 
 .. code-block:: bash
 
-    ./scaffoldRule.py AllSwitchStatements -c controversial -t ASTMatcher
+    ./scaffoldRule AllSwitchStatements -c controversial -t ASTMatcher
 
 Notice we would like scaffold script to populate the rule name and assign the default priority to this rule for us.
 
@@ -85,9 +85,9 @@ Now, the scaffolding is finished, we can refer to `Writing Custom Rules <rules.h
 Creating Reporters with Scaffolding
 -----------------------------------
 
-Scaffolding a reporter is very similar to the rule, but much easier, since it only requires the reporter's class name with an optional argument for specifying the reporter's name. We could also get these options by typing ``./scaffoldReporter.py -h``::
+Scaffolding a reporter is very similar to the rule, but much easier, since it only requires the reporter's class name with an optional argument for specifying the reporter's name. We could also get these options by typing ``./scaffoldReporter -h``::
 
-    usage: scaffoldReporter.py [-h] [-n REPORTER_NAME] class_name
+    usage: scaffoldReporter [-h] [-n REPORTER_NAME] class_name
 
     positional arguments:
       class_name            class name of the reporter
@@ -100,7 +100,7 @@ Let's say we want to create a new ColorfulTextReporter, with this script, we cou
 
 .. code-block:: bash
 
-  ./scaffoldReporter.py ColorfulText -n color
+  ./scaffoldReporter ColorfulText -n color
 
 The generated ``ColorfulTextReporter.cpp`` will look like the following:
 
