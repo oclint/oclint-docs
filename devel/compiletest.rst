@@ -14,7 +14,7 @@ We could build LLVM/Clang in debug mode with assertions by
 
 .. code-block:: bash
 
-    ./buildClang.sh
+    ./clang build
 
 Debug mode binaries contain additional data to aid debugging, but lowers program performances. It's recommended to build Clang in debug mode when we work on the analysis engine, metrics, and rules. These debug information may help a lot in some circumstances.
 
@@ -22,13 +22,13 @@ On the other side, if our work is related to violations, reporters, and surround
 
 .. code-block:: bash
 
-    ./buildClang.sh release
+    ./clang build -release
 
-It takes a while to build LLVM/Clang (probably much longer than a cup of coffee time). By default, this script builds the code by simultaneously using all the CPU resources. If building on one single core is preferred, e.g. for debugging build system issues, explicitly specify the number of cores to 1, like
+It takes a while to build LLVM/Clang (probably much longer than a cup of coffee time). By default, this script builds the code by simultaneously using all the CPU resources. But this can be changed by explicitly specifying number of concurrent processes for the compilation, like
 
 .. code-block:: bash
 
-    CPU_CORES=1 ./buildClang.sh
+    ./clang build -j <num>
 
 The LLVM/Clang build can be found at ``oclint/build/llvm`` directory, and its installation is located at ``oclint/build/llvm-install`` folder.
 
@@ -39,23 +39,38 @@ Building Google C++ Testing and Mocking Frameworks is easy:
 
 .. code-block:: bash
 
-    ./buildGoogleTest.sh
+    ./googleTest build
 
 Compiling and Testing OCLint
 ----------------------------
 
 OCLint uses CMake as build system. We can find CMakeLists.txt in each module and its include sub-folders.
 
-There are four scripts, ``testCore.sh``, ``testMetrics.sh``, ``testRules.sh``, and ``testReporters.sh`` for compiling and testing OCLint core module, metrics module, rules module, and reporters module respectively. Core module and metrics module can be compiled independently. However, rules module depends on both core and metrics modules, and reporters module depends on core module.
+``test`` script would compiles and tests OCLint core module, metrics module, rules module, and reporters module. With module name given, the script tests only for the particular module, otherwise, it tries to test all modules. Core module and metrics module can be compiled independently. However, rules module depends on both core and metrics modules, and reporters module depends on core module. When ``test`` script works with all modules, the required sequence is automatically enforced.
 
-Each script has a ``clean`` option to remove old build intermediate files.
+``test`` script has a ``-clean`` option to remove old build intermediate files.
 
-Scripts will show the CMake configuration process, compilation progress, and test results in order. ``testCore.sh`` will generate code coverage report in the end. When something goes wrong, scripts stop immediately with the following return code:
+``test`` script shows the CMake configuration process, compilation progress, and test results in order. It generates code coverage report in the end. When something goes wrong, scripts stop immediately. The possible reason of a failed build could be:
 
-* **1** - CMake configuration failed
-* **2** - Build failed
-* **3** - Test failed
-* **4** - Code coverage failed (for core module only)
+* CMake configuration failed
+* Build failed
+* Test failed
+* Code coverage failed
+
+Testing All Modules
+^^^^^^^^^^^^^^^^^^^
+
+Test every modules:
+
+.. code-block:: bash
+
+    ./test
+
+Test all modules with clean build:
+
+.. code-block:: bash
+
+    ./test -clean
 
 Testing Core Module
 ^^^^^^^^^^^^^^^^^^^
@@ -64,15 +79,13 @@ Test core module:
 
 .. code-block:: bash
 
-    ./testCore.sh
+    ./test core
 
 Test core module with clean build:
 
 .. code-block:: bash
 
-    ./testCore.sh clean
-
-In addition to the test results, code coverage report can be found in ``oclint/build/oclint-core-test/coveragereport`` folder. Please read the report by opening ``index.html`` with your browser.
+    ./test core -clean
 
 Testing Metrics Module
 ^^^^^^^^^^^^^^^^^^^^^^
@@ -81,13 +94,13 @@ Test metrics module:
 
 .. code-block:: bash
 
-    ./testMetrics.sh
+    ./test metrics
 
 Test metrics module with clean build:
 
 .. code-block:: bash
 
-    ./testMetrics clean
+    ./test metrics -clean
 
 Testing Rules Module
 ^^^^^^^^^^^^^^^^^^^^
@@ -96,13 +109,13 @@ Test rules module:
 
 .. code-block:: bash
 
-    ./testRules.sh
+    ./test rules
 
 Test rules module with clean build:
 
 .. code-block:: bash
 
-    ./testRules.sh clean
+    ./test rules -clean
 
 Testing Reporters Module
 ^^^^^^^^^^^^^^^^^^^^^^^^
@@ -111,44 +124,45 @@ Test reporters module:
 
 .. code-block:: bash
 
-    ./testReporters.sh
+    ./test reporters
 
 Test reporters module with clean build:
 
 .. code-block:: bash
 
-    ./testReporters.sh clean
+    ./test reporters -clean
 
 Reviewing Test Results
 ^^^^^^^^^^^^^^^^^^^^^^
 
-We could always go back and review our test results (unless we have cleaned test directory with ``clean`` option or delete that folder manually). There is an easy way to do it with ``showTestResults.sh`` script. It uses ``less`` utility to display the test results on terminal.
+We could always go back and review our test results (unless we have cleaned test directory with ``-clean`` option or delete that folder manually). There is an easy way to do it with ``-show`` option to the ``test`` script.
 
-By default, it shows the test results for core module. We can also explicitly specify ``core`` as an option to it, like
+By default, it shows the test results for all modules. We can also explicitly specify the module name as an option to it. For example, show test result for all modules:
 
 .. code-block:: bash
 
-    ./showTestResults.sh
-    ./showTestResults.sh core
+    ./test -show
+
+Show test results for core module:
+
+.. code-block:: bash
+
+    ./test core -show 
 
 Show test results for metrics module:
 
 .. code-block:: bash
 
-    ./showTestResults.sh metrics
+    ./test metrics -show
 
 Show test results for rules module:
 
 .. code-block:: bash
 
-    ./showTestResults.sh rules
+    ./test rules -show
 
 Show test results for reporters module:
 
 .. code-block:: bash
 
-    ./showTestResults.sh reporters
-
-
-
-
+    ./test reporters -show
