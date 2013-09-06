@@ -8,19 +8,41 @@ For every software products, it's impossible to say they are bug-free or smell-f
 Requirements
 ------------
 
-Always build the local OCLint version, and use it to dogfooding the codebase that this binary is built from. We also need to the latest development version of ``oclint-json-compilation-database`` helper program. Please refer `Building OCLint <../intro/build.html>`_ for instructions. After building binaries and libraries for each module, please remind to call ``buildRelease.sh`` script that automatically gathers all parts from different modules, and assembles them properly in ``oclint-release`` directory.
+We always highly recommend building the local OCLint version, and then use it for dogfooding the very codebase that this binary is built from. We also need to be the latest debug version of OCLint with assertions on.
 
-Dogfooding
-----------
-
-Kick off the dogfooding process by calling ``dogFooding.sh`` script in ``oclint-scripts`` folder, like
+The easiest way of preparing the qualified binary is by running the scripts below. It actually invokes the ``dogFooding`` process automatically when the binary is ready.
 
 .. code-block:: bash
 
     cd oclint-scripts
-    ./dogFooding.sh
+    ./ci -reset
+    ./ci -setup
+
+Dogfooding
+----------
+
+Kick off the dogfooding process by calling ``dogFooding`` script in ``oclint-scripts`` folder, like
+
+.. code-block:: bash
+
+    cd oclint-scripts
+    ./dogFooding
 
 This will use CMake to configure the modules with ``CMAKE_EXPORT_COMPILE_COMMANDS`` on for generating ``compile_commands.json`` files. ``oclint-json-compilation-database`` follows after that to analyze the source code and generate dogfooding reports. It takes a while to finish the entire inspection process. When it's done, the report will be outputted on terminal.
+
+By default, ``dogFooding`` script analyzes all modules. The script could work for one single module by the given module name.
+
+Enabling Clang Static Analyzer
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+During the dogfooding process, it's also possible to enable Clang Static Analyzer to analyze the codebase in addition to OCLint itself.
+
+Pass ``-enable-clang-static-analyzer`` option to the script, and it redirects the message to OCLint for enabling the integrated Clang Static Analyzer.
+
+Reviewing Dogfooding Reports
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+By passing ``-show`` option to the ``dogFooding`` script, it prints out the existing dogfooding reports. Again, by default, it shows all modules, and can be more specific by by given a module name.
 
 .. note::
 
