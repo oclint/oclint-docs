@@ -51,25 +51,23 @@ LLVM/Clang has its own code structure, and the detail information can be found a
 .. code-block:: bash
 
     cd oclint-scripts
-    ./checkoutLLVMClang.sh
+    ./clang checkout
     cd ..
 
-In addition, ``checkoutLLVMClang.sh`` script does more than that:
+In addition, ``clang`` script does more than that:
 
-* First, ``./checkoutLLVMClang.sh update`` can update the existing LLVM/Clang checkout.
-* Second, you can check out a branch codebase other than the trunk codebase by ``./checkoutLLVMClang.sh <branch_name>``
-
-  * We can find the current supported list of branches by ``./checkoutLLVMClang.sh branch``.
+* First, ``./clang update`` can update the existing LLVM/Clang checkout.
+* Second, you can check out a branch codebase other than the trunk codebase by ``./clang checkout -branch <branch_name>``
 
 googltest/googlemock
 --------------------
 
 Google C++ Testing and Mocking Frameworks are used for testing OCLint. OCLint follows `Test Driven Development <http://en.wikipedia.org/wiki/Test-driven_development>`_ (TDD), so checkout them before we work on this codebase and want to make sure the modifications do not break the other pieces of code.
 
-We also provide a script ``checkoutGoogleTest.sh`` with two functions:
+We also provide a script ``googleTest``:
 
-* Check out the code simply by ``./checkoutGoogleTest.sh``
-* Update the codebase by ``./checkoutGoogleTest.sh update``
+* Check out the code simply by ``./googleTest checkout``
+* Update the codebase by ``./googleTest update``
 
 Summary
 -------
@@ -83,8 +81,8 @@ Sum up, to check out all OCLint modules and dependencies, we could execute the f
     git clone https://github.com/oclint/oclint-json-compilation-database.git
     git clone https://github.com/oclint/oclint-xcodebuild.git
     cd oclint-scripts
-    ./checkoutLLVMClang.sh
-    ./checkoutGoogleTest.sh
+    ./clang checkout
+    ./googleTest checkout
     cd .. # back to the root folder of OCLint codebase
 
 To update the entire codebase, we can do:
@@ -98,8 +96,8 @@ To update the entire codebase, we can do:
     cd ../oclint-xcodebuild
     git pull origin master
     cd ../oclint-scripts
-    ./checkoutLLVMClang.sh update
-    ./checkoutGoogleTest.sh update
+    ./clang update
+    ./googleTest update
     cd .. # back to OCLint root directory
 
 So now, we OCLint directory might be like this::
