@@ -38,6 +38,12 @@ Filter Options
 
 Sometimes, we may be interested in only a subset of entire codebase defined in ``compile_commands.json``, and just want to inspect these sources. To do that, we can use filter options to get this subset. Since ``oclint-json-compilation-database`` is written in Python, so the matching pattern needs to follow `Python regular expression syntax`_. In addition, multiple filters can be chained to get the file set we need for analysis.
 
+For example, if files like ``Debug.m``, ``Port.m`` along with all tests files (saved under ``Test`` folder) need to be filtered out, try the following command or something similar:
+
+.. code-block:: none
+
+  oclint-json-compilation-database -e Debug.m -e Port.m -e Test
+
 OCLint Options
 --------------
 
