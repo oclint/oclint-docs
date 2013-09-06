@@ -9,6 +9,7 @@ System Requirements
 -------------------
 
 #. See `LLVM System Requirements`_
+#. `Python`_
 #. `Git`_
 #. `Apache Subversion`_
 #. `CMake`_
@@ -42,3 +43,4 @@ It's highly recommended to `add the bin directory into system PATH <installation
 .. _Apache Subversion: http://subversion.apache.org/
 .. _CMake: http://www.cmake.org/
 .. _Git: http://git-scm.org/
+.. _Python: http://www.python.org/
