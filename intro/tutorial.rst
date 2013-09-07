@@ -30,9 +30,9 @@ Create a ``sample.cpp`` file with the content below:
 Building Sample Code (Optional)
 -------------------------------
 
-There is actually not necessary to build the code prior to run OCLint against it. However, since finding the correct arguments becomes one of the most frequently asked questions, this step is trying to help you convert your compiler flags to the ones that OCLint requires.
+It is actually not necessary to build the code prior to run OCLint against it. However, since finding the correct arguments becomes one of the most frequently asked questions, this step is trying to help convert the compiler flags to the ones that OCLint requires.
 
-.. note:: This step, however, doesn't intent to show you how to find the correct compiler flags, thus, some level of knowledge about compiler flags is a prerequisite.
+.. note:: This step, however, doesn't intent to show how to find the correct compiler flags, thus, some level of knowledge about compiler flags is a prerequisite.
 
 .. code-block:: bash
 
@@ -42,9 +42,9 @@ There is actually not necessary to build the code prior to run OCLint against it
     // Change CC to your favorite compiler that is GCC-compatible, e.g. g++ and clang++
 
     $ ./sample // execute the binary
-    $ echo $? // output of a 0 means the code has been successfully built
+    $ echo $? // output of 0 probably means the code has been successfully built
 
-We just took two sequential steps to generate the binary, step 1 compiles the code, and step 2 links. We are only interested in step 1 because that's all compiler flags you need to give to OCLint. Here in this case, the compiler flag is ``-c``, and inspected source file is ``sample.cpp``.
+We just took two sequential steps to generate the binary, step 1 compiles the code, and step 2 links. We are only interested in step 1 because that's all compiler flags we need to give to OCLint. Here in this case, the compiler flag is ``-c``, and inspected source file is ``sample.cpp``.
 
 If you cannot pass through this step, don't give up, there are some tools try to help, like `CMake <../guide/cmake.html>`_ and `Bear <../guide/bear.html>`_ (for Make). In addition, we also provide two helper programs `oclint-json-compilation-database <../manual/oclint-json-compilation-database.html>`_ and `oclint-xcodebuild <../guide/oclint-xcodebuild.html>`_ (for Mac Xcode users) could help find the arguments for OCLint.
 
@@ -74,23 +74,23 @@ For detail about OCLint options, see `oclint manual <../manual/oclint.html>`_.
 For Projects with Multiple Files
 --------------------------------
 
-The approach describe in the previous section works perfectly if you want to apply OCLint against one single file or a few files. The inspection process is fast, and making changes to arguments is easy.
+The approach describes in the previous section works perfectly when apply the tool to one single file or a few files. The inspection process is fast, and making changes to arguments is easy.
 
-While working on a project with a group of source files, you definitely prefer inspecting the entire project and having one report consists of all results.
+While working on a project with a group of source files, inspecting the entire project and having one report consists of all results are preferred.
 
-When they share the same compiler flags, you can still do
+When all sources share the same compiler flags, we can do
 
 .. code-block:: none
 
     oclint [options]  <source0> [... <sourceN>] -- [compiler flags]
 
-However, each source file may have different compiler flags. In this case, OCLint can recognize the **compilation database** to know the list of source files for analysis, along with the compiler flags used for each time during the compilation phase. It can be considered as a condensed Makefile. So, you can do
+However, each source file may have different compiler flags. In this case, by reading from **compilation database**, OCLint can recognize the list of source files for analysis, along with the compiler flags used for each time during the compilation phase. It can be considered as a condensed Makefile. So, in this case
 
 .. code-block:: none
 
     oclint -p <build-path> [other options]  <source0> [... <sourceN>]
 
-A more handy helper program that comes with OCLint is `oclint-json-compilation-database <../manual/oclint-json-compilation-database.html>`_. If you use OCLint to analyze projects, for the most of the time, you will deal with ``oclint-json-compilation-database`` and indirectly talk to ``oclint``.
+A more handy helper program that comes with OCLint is `oclint-json-compilation-database <../manual/oclint-json-compilation-database.html>`_. If you use OCLint to analyze projects, for the most of the time, you will deal with ``oclint-json-compilation-database`` instead, and indirectly talk to ``oclint``.
 
 For people who work on a Mac with Xcode as IDE, you may find `Using OCLint with xcodebuild <../guide/xcodebuild.html>`_ and `Using OCLint in Xcode <../guide/xcode.html>` documents are helpful.
 
@@ -99,7 +99,7 @@ We also provide guidances for people who use `CMake <../guide/cmake.html>`_ and 
 Understanding Report
 --------------------
 
-By applying OCLint against the above sample, with the default text reporter, we got the output like this::
+By applying OCLint against the above sample, with the default text reporter, the output is similar to this::
 
     Processing: /path/to/sample.cpp.
     OCLint Report
@@ -111,7 +111,7 @@ By applying OCLint against the above sample, with the default text reporter, we 
 
     [OCLint (http://oclint.org) v0.8]
 
-Basically, you can find the following information in the report:
+Basically, the following information can be found in the report:
 
 * Summary
 
@@ -143,6 +143,6 @@ Basically, you can find the following information in the report:
 
 Read more about `customizing reports <../customizing/reports.html>`_.
 
-We hope you have some feelings about OCLint, you can move on with comprehensive `manuals <../manual/index.html>`_ and `user guides <../guide/index.html>`_. Also feel free to browse the rest of the content in this documentation for details, `back to index <../index.html>`_ or see `table of contents <../contents.html>`_. Thank you!
+Next, more detail information can be found with comprehensive `manuals <../manual/index.html>`_ and `user guides <../guide/index.html>`_. In addition, a few `how-to documents <../howto/index.html>`_ can help speed things up a little bit in several aspects.
 
 .. _static code analysis: http://en.wikipedia.org/wiki/Static_program_analysis
