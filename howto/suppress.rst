@@ -17,13 +17,15 @@ There are several methods you could consider to suppress OCLint rule violations:
 
   * Consider `change those rules' thresholds <../customizing/rules.html#rule-thresholds>`_ according to your standard
 
-* If certain rules are really annoying
+* If certain rules are really annoying for your projects
 
+  * `Add these rules into blacklist <selectrules.html>`_
   * `Remove them from the rule search path <../customizing/rules.html#selecting-rules-for-inspection>`_
 
 * If it is a case-by-case thing, and only particular places need to be suppressed
 
-  * Use annotation described `below <suppress.html#annotations>`_
+  * `Use annotations <suppress.html#annotations>`_
+  * `Use !OCLint comment <suppress.html#comment>`_
 
 Annotations
 -----------

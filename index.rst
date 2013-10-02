@@ -26,9 +26,12 @@ Usage
 
 * How-To:
 
+  * `Customize Rule Thresholds <howto/thresholds.html>`_
+  * `Select OCLint Rules for Inspection <howto/selectrules.html>`_
+  * `Pick Up the Right Reporter <howto/selectreporters.html>`_
   * `Suppress OCLint Warnings <howto/suppress.html>`_
-
-* Customization: `Rules <customizing/rules.html>`_ | `Reports <customizing/reports.html>`_
+  * `Preserve Configurations <howto/rcfile.html>`_
+  * `Setup OCLint in MinGW Environment <howto/mingwsetup.html>`_
 
 OCLint Internals
 ----------------
