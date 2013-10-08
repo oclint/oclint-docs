@@ -9,19 +9,38 @@ Release Notes
 oclint:
 
 * Update LLVM/Clang to 3.4
+* Migrate codebase with C++11 standard
+* Port to MinGW environment
 * Add oclint namespace
 * Support global analysis
-* Support compiler diagnostics information in result set
+
+oclint-rules:
+
+* Enhance context-based suppression with generic rule support and scoping
+* Suppress warnings with //!OCLint comment
+* Reduce the sizes of dynamic libraries
+* Support testing C++11 code in unit test cases
+* Bug fixes:
+
+  * Duplicated warnings with matcher rules
+  * Few crashes due to the lack of null checks
+
+oclint-reporters:
+
+* Add endline and endcolumn to PMD reporter
 
 oclint-driver:
 
 * New module serves as the frontend driver of OCLint, is derived from Clang libTooling
 * Collect compiler diagnostic information, like errors and warnings
 * Collect Clang Static Analyzer results
+* Selectively pick up and filter out rules from rule set
+* Configuration persistence (rcfile)
 
 oclint-scripts:
 
-* Support building optimized binaries
+* Hugh improvement to the build scripts
+* Build optimized binaries
 * Use all CPU cores to build clang
 
 oclint-json-compilation-database:
