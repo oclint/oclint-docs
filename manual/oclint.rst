@@ -9,9 +9,11 @@ See all supported options in OCLint |release| by typing ``oclint -help``::
 
     OPTIONS:
       -R=<directory>                - Add directory to rule loading path
+      -disable-rule=<rule name>     - Disable rules
       -enable-clang-static-analyzer - Enable Clang Static Analyzer, and integrate results into OCLint report
-      -fatal-assembler-warnings     - Consider warnings as error
+      -enable-global-analysis       - Compile every source, and analyze across global contexts (depends on number of source files, could results in high memory load)
       -help                         - Display available options (-help-hidden for more)
+      -list-enabled-rules           - List enabled rules
       -max-priority-1=<threshold>   - The max allowed number of priority 1 violations
       -max-priority-2=<threshold>   - The max allowed number of priority 2 violations
       -max-priority-3=<threshold>   - The max allowed number of priority 3 violations
@@ -19,27 +21,27 @@ See all supported options in OCLint |release| by typing ``oclint -help``::
       -p=<string>                   - Build path
       -rc=<parameter>=<value>       - Override the default behavior of rules
       -report-type=<name>           - Change output report type
-      -stats                        - Enable statistics output from program (available with Asserts)
+      -rule=<rule name>             - Explicitly pick rules
       -version                      - Display the version of this program
 
     -p <build-path> is used to read a compile command database.
 
-        For example, it can be a CMake build directory in which a file named
-        compile_commands.json exists (use -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
-        CMake option to get this output). When no build path is specified,
-        a search for compile_commands.json will be attempted through all
-        parent paths of the first input file . See:
-        http://clang.llvm.org/docs/HowToSetupToolingForLLVM.html for an
-        example of setting up Clang Tooling on a source tree.
+      For example, it can be a CMake build directory in which a file named
+      compile_commands.json exists (use -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
+      CMake option to get this output). When no build path is specified,
+      a search for compile_commands.json will be attempted through all
+      parent paths of the first input file . See:
+      http://clang.llvm.org/docs/HowToSetupToolingForLLVM.html for an
+      example of setting up Clang Tooling on a source tree.
 
     <source0> ... specify the paths of source files. These paths are
-        looked up in the compile command database. If the path of a file is
-        absolute, it needs to point into CMake's source tree. If the path is
-        relative, the current working directory needs to be in the CMake
-        source tree and the file must be in a subdirectory of the current
-        working directory. "./" prefixes in the relative files will be
-        automatically removed, but the rest of a relative path must be a
-        suffix of a path in the compile command database.
+      looked up in the compile command database. If the path of a file is
+      absolute, it needs to point into CMake's source tree. If the path is
+      relative, the current working directory needs to be in the CMake
+      source tree and the file must be in a subdirectory of the current
+      working directory. "./" prefixes in the relative files will be
+      automatically removed, but the rest of a relative path must be a
+      suffix of a path in the compile command database.
 
     For more information, please visit http://oclint.org
 
@@ -128,6 +130,14 @@ OCLint always return code zero for success execution with the number of violatio
 For example, when the compilation process fails, an exit code of 3 will be returned. It means either the compiler options have not been set correctly, or the source code has errors.
 
 When the number of violations in any of the priorities is larger than the maximum tolerance, OCLint returns with an exit status code of 5. By default, less than 20 priority 3 violations are allowed, 10 violations is maximum for priority 2, and no priority 1 violation can be tolerated. Too many violations result in bad code quality, if that happens, OCLint intends to fail the build system.
+
+Global Analysis Options
+-----------------------
+
+\-enable-global-analysis
+    enable OCLint global analysis
+
+With global analysis enabled, entire context of all given source code files is hold in the memory, and is available to the current analyzing file. This enables metrics calculation and other analyses that require cross-reference of the other files in the same project, which improves the accuracy of the analysis. However, global analysis results in high memory load, and may end up with long analysis duration, so it's designed for powerful machines and is enabled only by users' intents.
 
 Clang Static Analyzer Options
 -----------------------------
