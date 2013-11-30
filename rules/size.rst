@@ -64,7 +64,7 @@ LongClass
 
 **Since: 0.6**
 
-Long class generally indicates that this class tries to so many things. Each class should do one thing and one thing well.
+Long class generally indicates that this class tries to do many things. Each class should do one thing and that one thing well.
 
 This rule is defined by the following class: `oclint-rules/rules/size/LongClassRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/size/LongClassRule.cpp>`_
 
@@ -90,7 +90,7 @@ LongLine
 
 **Since: 0.6**
 
-When number of characters for one line of code is very long, it largely harm the readability. Break long line of code into multiple lines.
+When the number of characters for one line of code is very high, it largely harms the readability. Break long lines of code into multiple lines.
 
 This rule is defined by the following class: `oclint-rules/rules/size/LongLineRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/size/LongLineRule.cpp>`_
 
@@ -106,14 +106,14 @@ This rule is defined by the following class: `oclint-rules/rules/size/LongLineRu
 **Thresholds:**
 
 LONG_LINE
-    The long line reporting threshold, default value is 100
+    The long line reporting threshold, default value is 100.
 
 LongMethod
 ----------
 
 **Since: 0.4**
 
-Long method generally indicates that this method tries to so many things. Each method should do one thing and one thing well.
+Long method generally indicates that this method tries to do many things. Each method should do one thing and that one thing well.
 
 This rule is defined by the following class: `oclint-rules/rules/size/LongMethodRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/size/LongMethodRule.cpp>`_
 
@@ -131,14 +131,14 @@ This rule is defined by the following class: `oclint-rules/rules/size/LongMethod
 **Thresholds:**
 
 LONG_METHOD
-    The long method reporting threshold, default value is 50
+    The long method reporting threshold, default value is 50.
 
 NcssMethodCount
 ---------------
 
 **Since: 0.6**
 
-This rule counts number of lines for a method by counting Non Commenting Source Statements (NCSS). NCSS only takes actual statements into consideration, in other words, ignores empty statements, empty blocks, closing brackets or semicolons after closing brackets. Meanwhile, statement that is break into multiple lines contribute only one count.
+This rule counts number of lines for a method by counting Non Commenting Source Statements (NCSS). NCSS only takes actual statements into consideration, in other words, ignores empty statements, empty blocks, closing brackets or semicolons after closing brackets. Meanwhile, a statement that is broken into multiple lines contribute only one count.
 
 This rule is defined by the following class: `oclint-rules/rules/size/NcssMethodCountRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/size/NcssMethodCountRule.cpp>`_
 
@@ -159,7 +159,7 @@ This rule is defined by the following class: `oclint-rules/rules/size/NcssMethod
 **Thresholds:**
 
 NCSS_METHOD
-    The high NCSS method reporting threshold, default value is 30
+    The high NCSS method reporting threshold, default value is 30.
 
 **Suppress:**
 
@@ -191,14 +191,14 @@ This rule is defined by the following class: `oclint-rules/rules/size/NestedBloc
 **Thresholds:**
 
 NESTED_BLOCK_DEPTH
-    The depth of a block or compound statement reporting threshold, default value is 5
+    The depth of a block or compound statement reporting threshold, default value is 5.
 
 NPathComplexity
 ---------------
 
 **Since: 0.4**
 
-NPath complexity is determined by the number of execution paths through that method. Compared to cyclomatic complexity, NPath complexity has two outstanding characteristics: first, it distinguish between different kinds of control flow structures; second, it takes the various type of acyclic paths in a flow graph into consideration.
+NPath complexity is determined by the number of execution paths through that method. Compared to cyclomatic complexity, NPath complexity has two outstanding characteristics: first, it distinguishes between different kinds of control flow structures; second, it takes the various type of acyclic paths in a flow graph into consideration.
 
 Based on studies done by the original author in AT&T Bell Lab, an NPath threshold value of 200 has been established for a method.
 
@@ -216,7 +216,7 @@ This rule is defined by the following class: `oclint-rules/rules/size/NPathCompl
 **Thresholds:**
 
 NPATH_COMPLEXITY
-    The NPath complexity reporting threshold, default value is 200
+    The NPath complexity reporting threshold, default value is 200.
 
 **Suppress:**
 
@@ -233,7 +233,7 @@ TooManyFields
 
 **Since: 0.7**
 
-A class with too many fields indicates it does too many things and is lack of proper abstraction. It can be resigned to have fewer fields.
+A class with too many fields indicates it does too many things and lacks proper abstraction. It can be redesigned to have fewer fields.
 
 This rule is defined by the following class: `oclint-rules/rules/size/TooManyFieldsRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/size/TooManyFieldsRule.cpp>`_
 
@@ -257,14 +257,14 @@ This rule is defined by the following class: `oclint-rules/rules/size/TooManyFie
 **Thresholds:**
 
 TOO_MANY_FIELDS
-    The reporting threshold for too many fields, default value is 20
+    The reporting threshold for too many fields, default value is 20.
 
 TooManyMethods
 --------------
 
 **Since: 0.7**
 
-A class with too many methods indicates it does too many things and hard to read and understand. It usually contains complicated code, and should be refactored.
+A class with too many methods indicates it does too many things and is hard to read and understand. It usually contains complicated code, and should be refactored.
 
 This rule is defined by the following class: `oclint-rules/rules/size/TooManyMethodsRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/size/TooManyMethodsRule.cpp>`_
 
@@ -295,7 +295,7 @@ This rule is defined by the following class: `oclint-rules/rules/size/TooManyMet
 **Thresholds:**
 
 TOO_MANY_METHODS
-    The reporting threshold for too many methods, default value is 30
+    The reporting threshold for too many methods, default value is 30.
 
 TooManyParameters
 -----------------
@@ -318,7 +318,7 @@ This rule is defined by the following class: `oclint-rules/rules/size/TooManyPar
 **Thresholds:**
 
 TOO_MANY_PARAMETERS
-    The reporting threshold for too many parameters, default value is 10
+    The reporting threshold for too many parameters, default value is 10.
 
 **References:**
 

@@ -178,7 +178,7 @@ SwitchStatementsShouldHaveDefault
 
 **Since: 0.6**
 
-Switch statements should a default statement.
+Switch statements should have a default statement.
 
 This rule is defined by the following class: `oclint-rules/rules/convention/SwitchStatementsShouldHaveDefaultRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/convention/SwitchStatementsShouldHaveDefaultRule.cpp>`_
 
@@ -202,7 +202,7 @@ TooFewBranchesInSwitchStatement
 
 **Since: 0.6**
 
-To increase code readability, when a switch consists of only a few branches, it's much better to use if statement.
+To increase code readability, when a switch consists of only a few branches, it's much better to use an if statement instead.
 
 This rule is defined by the following class: `oclint-rules/rules/convention/TooFewBranchesInSwitchStatementRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/convention/TooFewBranchesInSwitchStatementRule.cpp>`_
 
@@ -223,6 +223,6 @@ This rule is defined by the following class: `oclint-rules/rules/convention/TooF
 **Thresholds:**
 
 MINIMUM_CASES_IN_SWITCH
-    The reporting threshold for count of case statements in a switch statement, default value is 3
+    The reporting threshold for count of case statements in a switch statement, default value is 3.
 
 
