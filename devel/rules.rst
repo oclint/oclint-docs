@@ -22,7 +22,7 @@ For all rules, we use static constructor to register the rules. A static attribu
 
 Writing generic rules is very flexible, we can do everything we want from the ``ASTContext`` we have. However, since the most of our rules can reuse certain logic to have the work done better, so we recommend the new rules inherent from the abstract classes described below instead of using ``RuleBase`` directly. Don't worry of losing the flexibility, all abstract classes are subclasses of ``RuleBase``, so when we need this type of flexibility, we can still have it.
 
-In addition, certain methods are still pure in these abstract classes, like ``name`` and ``priority`` methods. Plus the static ``RuleSet`` constructor, we still need to implement them in all rules. [Thinking about the paragraph to make it goes smotthier to the next paragraph.] Now, let's look at some abstract rule classes.
+In addition, certain methods are still pure in these abstract classes, like ``name`` and ``priority`` methods. Plus the static ``RuleSet`` constructor, we still need to implement them in all rules. [Thinking about the paragraph to make it go smoother to the next paragraph.] Now, let's look at some abstract rule classes.
 
 Source Code Reader Rules
 ------------------------

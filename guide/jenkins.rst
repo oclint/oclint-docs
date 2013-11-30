@@ -8,7 +8,7 @@ Prerequisite
 
 * `Jenkins CI <http://jenkins-ci.org/>`_
 * `PMD Plugin for Jenkins CI <https://wiki.jenkins-ci.org/display/JENKINS/PMD+Plugin>`_
-* Knowing how to configure Jenkins to run `conitnuous integration <http://martinfowler.com/articles/continuousIntegration.html>`_ for the project
+* Knowing how to configure Jenkins to run `continuous integration <http://martinfowler.com/articles/continuousIntegration.html>`_ for the project
 * Knowing how to generate ``compile_commands.json`` for the project
 
   * Read other guides in this chapter for references
