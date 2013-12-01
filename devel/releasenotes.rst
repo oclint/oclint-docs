@@ -19,6 +19,16 @@ oclint-driver:
 * Collect compiler diagnostic information, like errors and warnings
 * Collect Clang Static Analyzer results
 
+oclint-rules:
+
+* Improvement to Existing Rules
+
+  * SwitchStatementsShouldHaveDefault won't report any longer if switch is fully covered
+
+* New Rules
+
+  * unnecessary default in switch (CoveredSwitchStatementsDontNeedDefault)
+
 oclint-scripts:
 
 * Support building optimized binaries
