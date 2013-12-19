@@ -1,7 +1,7 @@
 Rule Index
 ==========
 
-OCLint |release| includes 58 rules.
+OCLint |release| includes 59 rules.
 
 
 .. toctree::

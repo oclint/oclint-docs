@@ -37,6 +37,16 @@ oclint-driver:
 * Selectively pick up and filter out rules from rule set
 * Configuration persistence (rcfile)
 
+oclint-rules:
+
+* Improvement to Existing Rules
+
+  * SwitchStatementsShouldHaveDefault won't report any longer if switch is fully covered
+
+* New Rules
+
+  * unnecessary default in switch (CoveredSwitchStatementsDontNeedDefault)
+
 oclint-scripts:
 
 * Hugh improvement to the build scripts
@@ -100,7 +110,7 @@ oclint-rules:
 
 * New Rules
 
-  * misplaced null/nill check
+  * misplaced null/nil check
   * broken null/nil check
   * redundant nil check
   * short variable name
@@ -131,7 +141,7 @@ oclint-xcodebuild:
 * Support more major compilers
 * Parse xcodebuild log for CURRENT_WORKING_FOLDER
 * Push source out of CURRENT_WORKING_FOLDER to the bottom of the list
-* Support custom xocdebuild log path
+* Support custom xcodebuild log path
 * Add support to certain projects with white space in their project name or file path
 
 oclint-scripts:

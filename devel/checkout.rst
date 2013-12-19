@@ -35,7 +35,7 @@ Go into the ``OCLINT_HOME`` folder, and check out this repository in there:
 oclint/oclint-xcodebuild
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-Code for ``ocling-xcodebuild`` has been pushed to this repository. Go to the ``OCLINT_HOME`` folder, and check out the code:
+Code for ``oclint-xcodebuild`` has been pushed to this repository. Go to the ``OCLINT_HOME`` folder, and check out the code:
 
 .. code-block:: bash
 
@@ -59,7 +59,7 @@ In addition, ``clang`` script does more than that:
 * First, ``./clang update`` can update the existing LLVM/Clang checkout.
 * Second, you can check out a branch codebase other than the trunk codebase by ``./clang checkout -branch <branch_name>``
 
-googltest/googlemock
+googletest/googlemock
 --------------------
 
 Google C++ Testing and Mocking Frameworks are used for testing OCLint. OCLint follows `Test Driven Development <http://en.wikipedia.org/wiki/Test-driven_development>`_ (TDD), so checkout them before we work on this codebase and want to make sure the modifications do not break the other pieces of code.

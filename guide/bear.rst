@@ -16,7 +16,7 @@ Background
 
 Bear is a very handy tool to generate compilation database during the build process. Bear is a very important supplement especially for those who don't use CMake as build system. Bear can be applied in a wider circumstances, because it injects into the build process, and intercepts the ``exec`` calls to understand the compilation details.
 
-Generating compile_comamnds.json
+Generating compile_commands.json
 --------------------------------
 
 By following the instructions on `Bear README <https://github.com/rizsotto/Bear/blob/master/README.md>`_, we could have ``bear`` ready to use.

@@ -26,6 +26,37 @@ This rule is defined by the following class: `oclint-rules/rules/convention/Avoi
         }
     }
 
+CoveredSwitchStatementsDontNeedDefault
+--------------------------------------
+
+**Since: 0.8**
+
+When a switch statement covers all possible cases, a default label is not needed and should be removed. If the switch is not fully covered, the SwitchStatementsShouldHaveDefault rule will report.
+
+This rule is defined by the following class: `oclint-rules/rules/convention/CoveredSwitchStatementsDontNeedDefaultRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/convention/CoveredSwitchStatementsDontNeedDefaultRule.cpp>`_
+
+**Example:**
+
+.. code-block:: cpp
+
+    typedef enum {
+        value1 = 0,
+        value2 = 1
+    } eValues;
+    
+    void aMethod(eValues a)
+    {
+        switch(a)
+        {
+            case value1:
+                break;
+            case value2:
+                break;
+            default:          // this break is obsolete because all
+                break;        // values of variable a are already covered.
+        }
+    }
+
 DefaultLabelNotLastInSwitchStatement
 ------------------------------------
 
@@ -178,7 +209,7 @@ SwitchStatementsShouldHaveDefault
 
 **Since: 0.6**
 
-Switch statements should a default statement.
+Switch statements should have a default statement.
 
 This rule is defined by the following class: `oclint-rules/rules/convention/SwitchStatementsShouldHaveDefaultRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/convention/SwitchStatementsShouldHaveDefaultRule.cpp>`_
 
@@ -202,7 +233,7 @@ TooFewBranchesInSwitchStatement
 
 **Since: 0.6**
 
-To increase code readability, when a switch consists of only a few branches, it's much better to use if statement.
+To increase code readability, when a switch consists of only a few branches, it's much better to use an if statement instead.
 
 This rule is defined by the following class: `oclint-rules/rules/convention/TooFewBranchesInSwitchStatementRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/convention/TooFewBranchesInSwitchStatementRule.cpp>`_
 
@@ -223,6 +254,6 @@ This rule is defined by the following class: `oclint-rules/rules/convention/TooF
 **Thresholds:**
 
 MINIMUM_CASES_IN_SWITCH
-    The reporting threshold for count of case statements in a switch statement, default value is 3
+    The reporting threshold for count of case statements in a switch statement, default value is 3.
 
 

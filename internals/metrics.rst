@@ -1,7 +1,7 @@
 Metrics Module
 ==============
 
-Metrics module is an isolated library. THis module actually doesn't depend on any other OCLint modules. It means we can use this module separately in other projects that also measure the metrics of the source code.
+Metrics module is an isolated library. This module actually doesn't depend on any other OCLint modules. It means we can use this module separately in other projects that also measure the metrics of the source code.
 
 Cyclomatic Complexity
 ---------------------
@@ -16,7 +16,7 @@ NPath complexity measures the number of acyclic execution paths in a method. It 
 Non Commenting Source Statements
 --------------------------------
 
-Non commeting source statements (NCSS) counts the number of all statements excluding comments, empty statements, empty blocks, closing brackets or semicolons after closing brackets.
+Non commenting source statements (NCSS) counts the number of all statements excluding comments, empty statements, empty blocks, closing brackets or semicolons after closing brackets.
 
 Statement Depth
 ---------------

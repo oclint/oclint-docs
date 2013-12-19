@@ -59,7 +59,7 @@ RedundantLocalVariable
 
 **Since: 0.4**
 
-This rule detects cases where a variable declaration immediately followed by a return of that variable.
+This rule detects cases where a variable declaration is immediately followed by a return of that variable.
 
 This rule is defined by the following class: `oclint-rules/rules/redundant/RedundantLocalVariableRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/redundant/RedundantLocalVariableRule.cpp>`_
 
@@ -78,7 +78,7 @@ RedundantNilCheck
 
 **Since: 0.7**
 
-C/C++-style null check in Objective-C like ``foo != nil && [foo bar]`` is redundant, since sending a message to a nil object in this case simply return a false-y value.
+C/C++-style null check in Objective-C like ``foo != nil && [foo bar]`` is redundant, since sending a message to a nil object in this case simply returns a false-y value.
 
 This rule is defined by the following class: `oclint-rules/rules/redundant/RedundantLocalVariableRuleRedundantNilCheck.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/redundant/RedundantNilCheck.cpp>`_
 
