@@ -13,12 +13,12 @@ Prerequisite
 Background
 ----------
 
-``xctool`` is a drop-in replacement for Apple's ``xcodebuild``, it makes things much easier to build Xcode projects. It eases continuous integration in many ways. ``xctool`` supports generating the report in JSON Compilation Database format, which can be used by OCLint to understand all the compiler flags in order to analyze the code.
+``xctool`` is a drop-in replacement for Apple's ``xcodebuild``. It makes building Xcode projects much easier. It eases continuous integration in many ways as well. ``xctool`` supports generating the report in JSON Compilation Database format, which can be used by OCLint to understand all the compiler flags in order to analyze the code.
 
 Running xctool with json-compilation-database Reporter
 ------------------------------------------------------
 
-Running ``xctool`` is quite straight forward, for example, the command below is simple build the project and generates the ``compile_commands.json`` file under the current folder.
+Running ``xctool`` is quite straight forward. For example, the command below will build the project and generate the ``compile_commands.json`` file under the current folder.
 
 .. code-block:: bash
 

@@ -51,7 +51,7 @@ If you cannot pass through this step, don't give up, there are some tools try to
 Checking Single File
 --------------------
 
-OCLint checks on single file with the following format:
+OCLint checks a single file using the following format:
 
 .. code-block:: none
 
@@ -74,9 +74,9 @@ For detail about OCLint options, see `oclint manual <../manual/oclint.html>`_.
 For Projects with Multiple Files
 --------------------------------
 
-The approach describes in the previous section works perfectly when apply the tool to one single file or a few files. The inspection process is fast, and making changes to arguments is easy.
+The approach described in the previous section works perfectly for a single file or a few files. The inspection process is fast, and making changes to arguments is easy.
 
-While working on a project with a group of source files, inspecting the entire project and having one report consists of all results are preferred.
+While working on a project with a group of source files, inspecting the entire project at once and having a single report is preferred.
 
 When all sources share the same compiler flags, we can do
 
@@ -84,17 +84,17 @@ When all sources share the same compiler flags, we can do
 
     oclint [options]  <source0> [... <sourceN>] -- [compiler flags]
 
-However, each source file may have different compiler flags. In this case, by reading from **compilation database**, OCLint can recognize the list of source files for analysis, along with the compiler flags used for each time during the compilation phase. It can be considered as a condensed Makefile. So, in this case
+However, each source file may have different compiler flags. In this case, by reading from the **compilation database**, OCLint can recognize the list of source files for analysis, along with the compiler flags used for each time during the compilation phase. It can be considered as a condensed Makefile. So, in this case
 
 .. code-block:: none
 
     oclint -p <build-path> [other options]  <source0> [... <sourceN>]
 
-A more handy helper program that comes with OCLint is `oclint-json-compilation-database <../manual/oclint-json-compilation-database.html>`_. If you use OCLint to analyze projects, for the most of the time, you will deal with ``oclint-json-compilation-database`` instead, and indirectly talk to ``oclint``.
+A more handy helper program that comes with OCLint is `oclint-json-compilation-database <../manual/oclint-json-compilation-database.html>`_. If you use OCLint to analyze projects, for most of the time, you will deal with ``oclint-json-compilation-database`` instead, and indirectly talk to ``oclint``.
 
 For people who work on a Mac with Xcode as IDE, you may find `Using OCLint with xcodebuild <../guide/xcodebuild.html>`_ and `Using OCLint in Xcode <../guide/xcode.html>` documents are helpful.
 
-We also provide guidances for people who use `CMake <../guide/cmake.html>`_ and `make <../guide/bear.html>`_ as their build system respectively.
+We also provide guidances for people who use `CMake <../guide/cmake.html>`_ and `make <../guide/bear.html>`_ as their build system.
 
 Understanding Report
 --------------------
