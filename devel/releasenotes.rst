@@ -16,14 +16,38 @@ oclint:
 
 oclint-rules:
 
+* Language specific rules are supported
+* Writing tests by tagging locations
 * Enhance context-based suppression with generic rule support and scoping
 * Suppress warnings with //!OCLint comment
 * Reduce the sizes of dynamic libraries
 * Support testing C++11 code in unit test cases
+* Introduce annotation based attributes
+* Introduce attributeName in addition to rule name for annotation based logics
 * Bug fixes:
 
-  * Duplicated warnings with matcher rules
-  * Few crashes due to the lack of null checks
+* Improvement to Existing Rules
+
+  * SwitchStatementsShouldHaveDefault won't report any longer if switch is fully covered
+  * Additional verbose messages for UnusedLocalVariableRule and UnusedMethodParameterRule
+  * UnusedMethodParameterRule - No more reporting on parameters that are managed by Interface Builder
+  * Fixes #69 - duplicated warnings with matcher rules
+  * Fixes #70 - few crashes due to the lack of null check
+  * Fix #139 - improvement to ShortVariableNameRule
+  * Fix #154 - big improvement to DeadCodeRule
+  * Fix #164 - UnusedLocalVariableRule false positives
+
+* New Rules
+
+  * unnecessary default in switch (CoveredSwitchStatementsDontNeedDefault)
+  * destructor of virtual class (DestructorOfVirtualClass)
+  * must override hash with isEqual for Objective-C (ObjCVerifyIsEqualHash)
+  * protected method for Objective-C (ObjCVerifyProtectedMethod)
+  * subclass must implement for Objective-C (ObjCVerifySubclassMustImplement))
+  * verify must call super for Objective-C (ObjCVerifyMustCallSuper)
+  * ivar assignment outside accessors or init (ObjCAssignIvarOutsideAccessorsRule)
+  * Use early exit/continue to simplify code and reduce indentation (PreferEarlyExit)
+  * unnecessary null check for cxxdealloc (UnnecessaryNullCheckForCXXDeallocRule)
 
 oclint-reporters:
 
@@ -36,22 +60,14 @@ oclint-driver:
 * Collect Clang Static Analyzer results
 * Selectively pick up and filter out rules from rule set
 * Configuration persistence (rcfile)
-
-oclint-rules:
-
-* Improvement to Existing Rules
-
-  * SwitchStatementsShouldHaveDefault won't report any longer if switch is fully covered
-
-* New Rules
-
-  * unnecessary default in switch (CoveredSwitchStatementsDontNeedDefault)
+* Show verbose messages for broken builds
 
 oclint-scripts:
 
 * Hugh improvement to the build scripts
 * Build optimized binaries
 * Use all CPU cores to build clang
+* Scaffolding scripts
 
 oclint-json-compilation-database:
 
