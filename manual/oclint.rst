@@ -55,7 +55,7 @@ Rule Loading Options
 \-rc <parameter>=<value>
     Certain rules have threshold to decide whether to emit violations. These thresholds can be changed by ``-rc`` option with a key-value pair.
 
-More detail on changing the behavior in rules loading process during runtime can be found in `customizing rules <../customizing/rules.html>`_ page.
+More detail on changing the behavior in rules loading process during runtime can be found in `rule selection <../howto/selectrules.html>`_ and `threshold customization <../howto/thresholds.html>`_ pages.
 
 Compilation Options
 -------------------
@@ -106,7 +106,7 @@ Report Options
 \-report-type <name>
     Change output report type, by default, plain text report is used
 
-See `customizing reports <../customizing/reports.html>`_ for detail.
+See `picking up the right reporter <../howto/selectreporters.html>`_ for detail.
 
 Exit Status Options
 -------------------

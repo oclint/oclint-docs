@@ -141,7 +141,7 @@ Basically, the following information can be found in the report:
   * website
   * release version
 
-Read more about `customizing reports <../customizing/reports.html>`_.
+Read more about `picking up the right reporter <../howto/selectreporters.html>`_.
 
 Next, more detail information can be found with comprehensive `manuals <../manual/index.html>`_ and `user guides <../guide/index.html>`_. In addition, a few `how-to documents <../howto/index.html>`_ can help speed things up a little bit in several aspects.
 
