@@ -12,9 +12,6 @@ Development
 Stable
     Latest official release is the most stable version, and meanwhile, is easier to get support from the entire community.
 
-Previous
-    Previous release is the second latest stable version, it's still supported by the community. But it will be archived when next version releases.
-
 Unsupported
     Choosing archived versions without supports.
 
