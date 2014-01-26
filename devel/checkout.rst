@@ -60,7 +60,7 @@ In addition, ``clang`` script does more than that:
 * Second, you can check out a branch codebase other than the trunk codebase by ``./clang checkout -branch <branch_name>``
 
 googletest/googlemock
---------------------
+---------------------
 
 Google C++ Testing and Mocking Frameworks are used for testing OCLint. OCLint follows `Test Driven Development <http://en.wikipedia.org/wiki/Test-driven_development>`_ (TDD), so checkout them before we work on this codebase and want to make sure the modifications do not break the other pieces of code.
 
