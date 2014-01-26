@@ -50,6 +50,8 @@ Rule Loading Options
 
 \-R <directory>
     Rule loading path can be changed by using ``-R`` option. Multiple rule loading paths can be specified to load rules from more than one directories. By default, OCLint searches ``$(/path/to/bin/oclint)/../lib/oclint/rules`` for the dynamic libraries that contain rules.
+\-disable-rule <rule name>
+    This option gives the capability to deactivate rules by their names even though they are loaded into the system. This option can be chained multiple times to further narrow down.
 \-rc <parameter>=<value>
     Certain rules have threshold to decide whether to emit violations. These thresholds can be changed by ``-rc`` option with a key-value pair.
 
