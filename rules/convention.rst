@@ -43,7 +43,7 @@ This rule is defined by the following class: `oclint-rules/rules/convention/Cove
         value1 = 0,
         value2 = 1
     } eValues;
-    
+
     void aMethod(eValues a)
     {
         switch(a)
@@ -82,6 +82,26 @@ This rule is defined by the following class: `oclint-rules/rules/convention/Defa
         }
     }
 
+DestructorOfVirtualClass
+------------------------
+
+**Since: 0.8**
+
+This rule enforces the destructor of a virtual class must be virtual.
+
+This rule is defined by the following class: `oclint-rules/rules/convention/DestructorOfVirtualClassRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/convention/DestructorOfVirtualClassRule.cpp>`_
+
+**Example:**
+
+.. code-block:: cpp
+
+    class Base { // class Base should have a virtual destructor ~Base()
+        public: virtual void f();
+    };
+    class Child : public Base {
+        public: ~Child();  // destructor ~Child() should be virtual
+    };
+
 InvertedLogic
 -------------
 
@@ -108,29 +128,6 @@ This rule is defined by the following class: `oclint-rules/rules/convention/Inve
         }                       // }
 
         return !i ? -1 : 1;     // return i ? 1 : -1;
-    }
-
-JumbledIncrementer
-------------------
-
-**Since: 0.7**
-
-Jumbled incrementers are usually typos. If it's done on purpose, it's very confusing for code readers.
-
-This rule is defined by the following class: `oclint-rules/rules/convention/JumbledIncrementerRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/convention/JumbledIncrementerRule.cpp>`_
-
-**Example:**
-
-.. code-block:: cpp
-
-    void example()
-    {
-        for (int i = 0; i < 10; i++)
-        {
-            for (int j = 0; j < 20; i++ /* what?! */)
-            {
-            }
-        }
     }
 
 MissingBreakInSwitchStatement
@@ -183,6 +180,32 @@ This rule is defined by the following class: `oclint-rules/rules/convention/NonC
         }
     }
 
+ObjCAssignIvarOutsideAccessors
+------------------------------
+
+**Since: 0.8**
+
+This rule prevents assigning an ivar outside of getters, setters, and ``init`` method.
+
+This rule is defined by the following class: `oclint-rules/rules/convention/ObjCAssignIvarOutsideAccessorsRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/convention/ObjCAssignIvarOutsideAccessorsRule.cpp>`_
+
+**Example:**
+
+.. code-block:: objective-c
+
+    @interface Foo : NSObject
+    {
+        int _bar;
+    }
+    @property (assign, nonatomic) int bar;
+    @end
+    @implementation Foo
+    @synthesize bar = _bar;
+    - (void)doSomething {
+        _bar = 3; // access _bar outside its getter, setter or init
+    }
+    @end
+
 ParameterReassignment
 ---------------------
 
@@ -203,6 +226,47 @@ This rule is defined by the following class: `oclint-rules/rules/convention/Para
             a = 0; // reassign parameter a to 0
         }
     }
+
+PreferEarlyExit
+---------------
+
+**Since: 0.8**
+
+Early exits can reduce the indentation of a block of code, so that reader do not have to remember all the previous decisions, therefore, makes it easier to understand the code.
+
+This rule is defined by the following class: `oclint-rules/rules/convention/PreferEarlyExitRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/convention/PreferEarlyExitRule.cpp>`_
+
+**Example:**
+
+.. code-block:: cpp
+
+    int *doSomething(int a) {
+      if (!foo(a) && bar(a) && doOtherThing(a)) {
+        // ... some really long code ....
+      }
+
+      return 0;
+    }
+
+    // is preferred as
+
+    int *doSomething(int a) {
+      if (foo(a)) {
+        return 0;
+      }
+
+      if (!bar(a)) {
+        return 0;
+      }
+
+      if (!doOtherThing(a)) {
+        return 0;
+      }
+
+      // ... some long code ....
+    }
+
+
 
 SwitchStatementsShouldHaveDefault
 ---------------------------------
