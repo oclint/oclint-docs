@@ -119,6 +119,26 @@ This rule is defined by the following class: `oclint-rules/rules/redundant/Unnec
         }                           //
     }
 
+UnnecessaryNullCheckForCXXDealloc
+---------------------------------
+
+**Since: 0.8**
+
+``char* p = 0; delete p;`` is valid. This rule locates unnecessary ``if (p)`` checks.
+
+This rule is defined by the following class: `oclint-rules/rules/redundant/UnnecessaryNullCheckForCXXDeallocRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/redundant/UnnecessaryNullCheckForCXXDeallocRule.cpp>`_
+
+**Example:**
+
+.. code-block:: cpp
+
+    void m(char* c) {
+        if (c != nullptr) { // and be simplified to delete c;
+            delete c;
+        }
+    }
+
+
 UselessParentheses
 ------------------
 
