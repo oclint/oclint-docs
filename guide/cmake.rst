@@ -15,7 +15,7 @@ Background
 
 CMake is able to generate JSON Compilation Database file ``compile_commands.json`` with no hassle at all. If a project uses CMake as its build system, then applying OCLint is a quite easy task.
 
-Generating compile_comamnds.json
+Generating compile_commands.json
 --------------------------------
 
 Simply add ``-DCMAKE_EXPORT_COMPILE_COMMANDS=ON`` to the existing ``cmake`` command, like

@@ -24,7 +24,7 @@ Results
 RuleBase
     Defines the base interface of all rules.
 RuleCarrier
-    As its name implies, it carries the AST of the source code and a violation set. When it is initialized in ``Processor``, it takes an immutable AST context and an empty violation set. Then, it is examined through all rules. Each rule traverses the AST context and focus on a specific aspect. When it finds a matched pattern, a violation will be pushed to violation set. Eventually, a *contaminated* RuleVarrier will return back with all violations for diagnostic.
+    As its name implies, it carries the AST of the source code and a violation set. When it is initialized in ``Processor``, it takes an immutable AST context and an empty violation set. Then, it is examined through all rules. Each rule traverses the AST context and focus on a specific aspect. When it finds a matched pattern, a violation will be pushed to violation set. Eventually, a *contaminated* RuleCarrier will return back with all violations for diagnostic.
 RuleConfiguration
     Statically stores custom thresholds for rules.
 RuleSet

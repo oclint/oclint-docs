@@ -90,7 +90,7 @@ Save to Repository
 
 ``compile_commands.json`` is platform sensitive. Whenever the environment has been changed, for example, upgrading Mac OS, upgrading Xcode version, switch to another SDK, and so on, please remove the existing ``xcodebuild.log`` and ``compile_commands.json``, capture xcodebuild log again with the updated options, and re-generate new ``compile_commands.json``.
 
-Checking ``compile_commands.json`` into source code repository is not necessary. Instead, always generate a new ``compile_comamnds.json`` when anything changes.
+Checking ``compile_commands.json`` into source code repository is not necessary. Instead, always generate a new ``compile_commands.json`` when anything changes.
 
 However, we could write the entire process into a bash script, and check in this script. So that, all developers who work on the project can run this script and generate the ``compile_commands.json`` file that works best for his or her local environment.
 

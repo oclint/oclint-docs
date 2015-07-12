@@ -101,7 +101,7 @@ CollapsibleIfStatements
 
 **Since: 0.6**
 
-This rule detects instances where the conditions of two consecutive if statements can combined into one in order to increase code cleanness and readability.
+This rule detects instances where the conditions of two consecutive if statements can be combined into one in order to increase code cleanness and readability.
 
 This rule is defined by the following class: `oclint-rules/rules/basic/CollapsibleIfStatementsRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/basic/CollapsibleIfStatementsRule.cpp>`_
 
@@ -168,7 +168,7 @@ DeadCode
 
 **Since: 0.4**
 
-Code after ``return``, ``break``, ``continue``, and ``throw`` statements are unreachable and will never be executed.
+Code after ``return``, ``break``, ``continue``, and ``throw`` statements is unreachable and will never be executed.
 
 This rule is defined by the following class: `oclint-rules/rules/basic/DeadCodeRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/basic/DeadCodeRule.cpp>`_
 
