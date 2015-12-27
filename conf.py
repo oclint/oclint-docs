@@ -41,7 +41,7 @@ master_doc = 'contents'
 
 # General information about the project.
 project = u'OCLint'
-copyright = u'Ryuichi Saito, LLC'
+copyright = u'Longyi Qi, Ryuichi Saito'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -184,7 +184,7 @@ latex_elements = {
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
   ('contents', 'OCLint.tex', u'OCLint Documentation',
-   u'Ryuichi Saito', 'manual'),
+   u'Longyi Qi, Ryuichi Saito', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -214,7 +214,7 @@ latex_documents = [
 # (source start file, name, description, authors, manual section).
 man_pages = [
     ('contents', 'oclint', u'OCLint Documentation',
-     [u'Ryuichi Saito'], 1)
+     [u'Longyi Qi, Ryuichi Saito'], 1)
 ]
 
 # If true, show URL addresses after external links.
@@ -228,7 +228,7 @@ man_pages = [
 #  dir menu entry, description, category)
 texinfo_documents = [
   ('contents', 'OCLint', u'OCLint Documentation',
-   u'Ryuichi Saito', 'OCLint', 'One line description of project.',
+   u'Longyi Qi, Ryuichi Saito', 'OCLint', 'One line description of project.',
    'Miscellaneous'),
 ]
 
@@ -246,9 +246,9 @@ texinfo_documents = [
 
 # Bibliographic Dublin Core info.
 epub_title = u'OCLint ' + release + ' Documentation'
-epub_author = u'Ryuichi Saito'
-epub_publisher = u'Ryuichi Saito'
-epub_copyright = u'Ryuichi Saito'
+epub_author = u'Longyi Qi, Ryuichi Saito'
+epub_publisher = u'Longyi Qi, Ryuichi Saito'
+epub_copyright = u'Longyi Qi, Ryuichi Saito'
 
 # The language of the text. It defaults to the language option
 # or en if the language is not set.
