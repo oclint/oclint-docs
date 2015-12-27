@@ -1,16 +1,12 @@
-Customizing Reports
-===================
+Pick Up the Right Reporter
+==========================
 
 OCLint currently supports generating multiple types of reports based on the demands of different use cases. The generation for each report type is handled by a reporter. All reporters are collected in ``oclint-reporters`` module.
-
-.. seealso::
-
-    You can `write your own reporters <../devel/reporters.html>`_ to extend OCLint with more capabilities.
 
 Report Options
 --------------
 
-OCLint uses plain text reporter by default, so usually we don't need to explicitly specify ``-report-type text`` flag. In order to use other reporter, add ``-report-type <report_name>`` to ``oclint`` command.
+In order to use other reporter, add ``-report-type <report name>`` to ``oclint`` command. OCLint uses plain text reporter by default, so usually ``-report-type text`` flag is not necessary unless other report type has been specified in configuration file and needs to be overridden.
 
 Some reports are better to be viewed in places other than the console. For example, web browser is a good place for reading HTML reports, and PMD report has a better visual rendering effect in continuous integration systems like Jenkins. In these cases, ``-o <path>`` option can help redirect the report to a file instead of console.
 
@@ -18,12 +14,12 @@ By combining both options, for example, outputting the result in HTML format to 
 
 .. code-block:: bash
 
-    oclint -report-type html -o oclint_result.html <sources> -- <compiler_flags>
+    oclint -report-type html -o oclint_result.html <sources> -- <compiler flags>
 
 Report Types
 ------------
 
-We currently have the following reporters. The names in the parentheses are the values we are going to use for ``report-type`` option.
+The following reporters are available. The names in the parentheses are the values used for ``report-type`` option.
 
 Plain Text Report (text)
 ^^^^^^^^^^^^^^^^^^^^^^^^
@@ -68,10 +64,20 @@ JSON reporter produces an JSON report of the results.
 PMD Reporter (pmd)
 ^^^^^^^^^^^^^^^^^^
 
-Since many existing continuous integration (CI) systems support `PMD <http://pmd.sourceforge.net/>`_ for Java developers, PMD reporter outputs the XML report that follows the PMD report format. So that these CI systems can pick up the output and render better graphic results.
+Since `PMD <http://pmd.sourceforge.net/>`_  report is supported by many existing continuous integration (CI) for Java developers, PMD reporter outputs the XML report that follows the PMD report format. So that these CI systems can pick up the output and render better graphic results.
 
 `Sample PMD report <../_static/sample-reports/sample-pmd.xml>`_
 
-.. seealso::
+Configuration File
+------------------
 
-    We feel grateful if you could help us `write plugins for continuous integration systems <../devel/openings.html#more-reporters>`_.
+When a type of reporter is selected by the entire team, it's recommended to save it into ``.oclint`` file. For example, producing HTML report can be configured as::
+
+    report-type: html
+    output: oclint.html
+
+
+.. seealso::
+    
+    `Write Own Reporters <../devel/reporters.html>`_
+        Documentation of writing own reporters to extend OCLint with more capabilities.

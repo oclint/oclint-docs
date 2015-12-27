@@ -77,6 +77,21 @@ Simply go through each folder, and install them by
 
     make install clean
 
+Notes for Python 2.6
+^^^^^^^^^^^^^^^^^^^^
+
+``argparse`` module is required, and install it by
+
+.. code-block:: bash
+
+    sudo easy_install argparse
+
+The installation of ``argparse`` module can be checked by
+
+.. code-block:: bash
+
+    python -c "import argparse; print argparse"
+
 .. _libTooling: http://clang.llvm.org/docs/LibTooling.html
 .. _Abstract Syntax Tree: http://en.wikipedia.org/wiki/Abstract_syntax_tree
 .. _LLVM System Requirements: http://llvm.org/docs/GettingStarted.html#requirements

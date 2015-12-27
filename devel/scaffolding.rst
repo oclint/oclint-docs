@@ -12,10 +12,10 @@ Creating a custom rule can be done with ``scaffoldRule`` script under ``oclint-s
 
 We could get a list of its options by typing ``./scaffoldRule -h``::
 
-    usage: scaffoldRule [-h]
-                           [-t {Generic,SourceCodeReader,ASTVisitor,ASTMatcher}]
-                           [-c RULE_CATEGORY] [-n RULE_NAME] [-p {1,2,3}]
-                           class_name
+    usage: scaffoldRule [-h] [-t {Generic,SourceCodeReader,ASTVisitor,ASTMatcher}]
+                        [-c RULE_CATEGORY] [-n RULE_NAME] [-p {1,2,3}] [--test]
+                        [--no-test]
+                        class_name
 
     positional arguments:
       class_name            class name of the rule
@@ -26,6 +26,8 @@ We could get a list of its options by typing ``./scaffoldRule -h``::
       -c RULE_CATEGORY, --category RULE_CATEGORY
       -n RULE_NAME, --name RULE_NAME
       -p {1,2,3}, --priority {1,2,3}
+      --test                Generate a test for the new rule (default)
+      --no-test             Do not generate a test for the new rule
 
 From where, we could specify the class name, along with the name, type, category and priority of the rule.
 
@@ -80,6 +82,8 @@ The scaffold script will create ``AllSwitchStatementsRule.cpp`` file, and store 
 
 In addition, related ``CMakeLists.txt`` files will be edited to ensure the new rule will be built along with other existing rules.
 
+A unit test file for this rule is scaffolded along with this process for testing purposes.
+
 Now, the scaffolding is finished, we can refer to `Writing Custom Rules <rules.html>`_ document to fill in the logic for the rule.
 
 Creating Reporters with Scaffolding
@@ -87,7 +91,8 @@ Creating Reporters with Scaffolding
 
 Scaffolding a reporter is very similar to the rule, but much easier, since it only requires the reporter's class name with an optional argument for specifying the reporter's name. We could also get these options by typing ``./scaffoldReporter -h``::
 
-    usage: scaffoldReporter [-h] [-n REPORTER_NAME] class_name
+    usage: scaffoldReporter [-h] [-n REPORTER_NAME] [--tests] [--no-tests]
+                            class_name
 
     positional arguments:
       class_name            class name of the reporter
@@ -95,6 +100,8 @@ Scaffolding a reporter is very similar to the rule, but much easier, since it on
     optional arguments:
       -h, --help            show this help message and exit
       -n REPORTER_NAME, --name REPORTER_NAME
+      --tests               Generate a test for the new reporter (default)
+      --no-tests            Do not generate a test for the new reporter
 
 Let's say we want to create a new ColorfulTextReporter, with this script, we could do
 
@@ -127,6 +134,8 @@ The generated ``ColorfulTextReporter.cpp`` will look like the following:
   }
 
 Sequentially, the ``CMakeLists.txt`` file under ``reporters`` folder will be edited by appending the new reporter.
+
+A unit test file for this reporter is scaffolded along with this process for testing purposes.
 
 Now, we can refer to the `Writing Custom Reporters <reporters.html>`_ document to print out the analysis results.
 

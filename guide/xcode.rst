@@ -34,7 +34,7 @@ Setting up Target
 
 .. image:: ../_static/guide/xcode_screenshot_3.png
 
-* In the script editor, we could enter the script which does the real work. We can also modify the script from this very `generic version <https://gist.github.com/lqi/5358513>`_. We may need to change the ``xcodebuild`` options to use a particular scheme or target. In addition, based on the `discussions <xcodebuild.html#discussions>`_ we had, we can decide whether to use ``clean`` and ``dry run`` features.
+* In the script editor, we could enter the script which does the real work. We can also modify the script from this very `generic version <https://gist.github.com/gavrix/5054182>`_ and `its folks <https://gist.github.com/gavrix/5054182/forks>`_. We may need to change the ``xcodebuild`` options to use a particular scheme or target. In addition, based on the `discussions <xcodebuild.html#discussions>`_ we had, we can decide whether to use ``clean`` and ``dry run`` features.
 
 * For ``xctool`` users, the script can be largely simplified to something like `this <https://gist.github.com/lqi/5705477>`_
 

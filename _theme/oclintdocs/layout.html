@@ -60,7 +60,7 @@
         <a href='http://oclint.org/news.html'>News</a>
       </li>
       <li>
-        <a href='http://oclint.org/downloads.html'>Downloads</a>
+        <a href='https://github.com/oclint/oclint/releases'>Downloads</a>
       </li>
       <li>
         <a href='{{ pathto('index') }}'>Documentation</a>
@@ -80,9 +80,6 @@
           {% block body %}{% endblock %}
         </div>
         <div class='span3'>
-          <div class="alert sidebar-module">
-            <p>This is the documentation for the development version of OCLint, see the <a href="http://oclint.org/releases.html">Releases</a> page for released documentations.</p>
-          </div>
           <div class="well sidebar-nav">
             {%- if pagename != "search" %}
               <div id="searchbox" style="display: none">
@@ -130,7 +127,9 @@
   </div>
   <hr />
   <div class='footer'>
-    OCLint {{ release }} Documentation &copy; 2010-2013 <a href='http://www.longyiqi.com/' target='_BLANK'>Longyi Qi</a>. All Rights Reserved.
+    OCLint {{ release }} Documentation is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+    <br />
+    Maintained by <a href="http://www.ryuichisaito.com/?ref=oclint">Ryuichi Saito</a>.
     {%- if show_sphinx %}
       {% trans sphinx_version=sphinx_version|e %}Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> {{ sphinx_version }}.{% endtrans %}<br/>
     {%- endif %}

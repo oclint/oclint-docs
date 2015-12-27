@@ -1,24 +1,7 @@
 Download
 ========
 
-All release downloads can be found at `OCLint website download page`_.
-
-Choosing the Right Version
---------------------------
-
-Development
-    OCLint codebase is kept stable by running continuous integrations on various platforms. Thus, it's safe to use the latest development version and get access to new features. However, certain things are under development and may not meet release standard.
-
-Stable
-    Latest official release is the most stable version, and meanwhile, is easier to get support from the entire community.
-
-Previous
-    Previous release is the second latest stable version, it's still supported by the community. But it will be archived when next version releases.
-
-Unsupported
-    Choosing archived versions without supports.
-
-This documentation is updated for OCLint version |release|.
+All release downloads can be found at `OCLint GitHub Releases page`_.
 
 Choosing Pre-Compiled Binaries
 ------------------------------
@@ -39,4 +22,4 @@ With development codebase, all dependencies are caught up to the latest version;
 Read `how to build OCLint <build.html>`_ when the source code is on hand.
 
 
-.. _OCLint website download page: http://oclint.org/downloads.html
+.. _OCLint GitHub Releases page: https://github.com/oclint/oclint/releases

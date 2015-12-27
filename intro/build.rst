@@ -1,9 +1,7 @@
 Building OCLint
 ===============
 
-This page presents you a shortcut of building OCLint release version.
-
-.. note:: If you are looking for compiling and testing OCLint in debug mode for development and testing purposes, please move onto `development <../devel/index.html>`_ section.
+This page presents building OCLint in release mode.
 
 System Requirements
 -------------------
@@ -39,8 +37,11 @@ The following error message is expected::
 
 It's highly recommended to `add the bin directory into system PATH <installation.html>`_.
 
+.. seealso:: If you are looking for compiling and testing OCLint in debug mode for development and testing purposes, please move onto `development <../devel/index.html>`_ section.
+
 .. _LLVM System Requirements: http://llvm.org/docs/GettingStarted.html#requirements
 .. _Apache Subversion: http://subversion.apache.org/
 .. _CMake: http://www.cmake.org/
 .. _Git: http://git-scm.org/
 .. _Python: http://www.python.org/
+

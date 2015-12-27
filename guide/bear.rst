@@ -25,7 +25,7 @@ For example, if want to generate the ``compile_command.json`` for a project usin
 
 .. code-block:: bash
 
-    $ /path/to/bear -- make
+    $ /path/to/bear make
 
 What's Next
 -----------

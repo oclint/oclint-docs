@@ -251,6 +251,26 @@ This rule is defined by the following class: `oclint-rules/rules/basic/GotoState
 
 Edsger Dijkstra (March 1968). `"Go To Statement Considered Harmful" <http://www.cs.utexas.edu/users/EWD/ewd02xx/EWD215.PDF>`_. *Communications of the ACM* (PDF) 11 (3): 147–148. doi:10.1145/362929.362947.
 
+JumbledIncrementer
+------------------
+
+**Since: 0.7**
+
+Jumbled incrementers are usually typos. If it’s done on purpose, it’s very confusing for code readers.
+
+This rule is defined by the following class: `oclint-rules/rules/basic/JumbledIncrementerRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/basic/JumbledIncrementerRule.cpp>`_
+
+**Example:**
+
+.. code-block:: cpp
+
+    void aMethod(int a) {
+        for (int i = 0; i < a; i++) {
+            for (int j = 0; j < a; i++) { // references both 'i' and 'j'
+            }
+        }
+    }
+
 MisplacedNilCheck
 -----------------
 

@@ -26,9 +26,12 @@ Usage
 
 * How-To:
 
+  * `Customize Rule Thresholds <howto/thresholds.html>`_
+  * `Select OCLint Rules for Inspection <howto/selectrules.html>`_
+  * `Pick Up the Right Reporter <howto/selectreporters.html>`_
   * `Suppress OCLint Warnings <howto/suppress.html>`_
-
-* Customization: `Rules <customizing/rules.html>`_ | `Reports <customizing/reports.html>`_
+  * `Preserve Configurations <howto/rcfile.html>`_
+  * `Setup OCLint in MinGW Environment <howto/mingwsetup.html>`_
 
 OCLint Internals
 ----------------
@@ -44,7 +47,6 @@ Development
 * Preparation: `System Requirements <devel/requirements.html>`_ | `Checking Out Code <devel/checkout.html>`_
 * Getting Your Hands Dirty: `Compiling and Testing Code <devel/compiletest.html>`_ | `Writing Rules <devel/rules.html>`_ | `Writing Reporters <devel/reporters.html>`_ | `Scaffolding <devel/scaffolding.html>`_
 * Others: `Open Projects <devel/openings.html>`_ | `Coding Standards <devel/codingstandards.html>`_ | `Dogfooding <devel/dogfooding.html>`_
-* `Release Notes <devel/releasenotes.html>`_
 
 License
 -------
