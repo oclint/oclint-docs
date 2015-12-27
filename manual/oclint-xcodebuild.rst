@@ -7,6 +7,8 @@ For developers who use Xcode, ``oclint-xcodebuild`` is a helpful program that ex
 
     Read Apple's official `xcodebuild Manual Page`_ from Mac Developer Library. To understand how ``oclint-xcodebuild`` can be applied in your workflow, please move onto `Using OCLint with xcodebuild <../guide/xcodebuild.html>`_ document.
 
+    Please also consider using `xcpretty <https://github.com/supermarin/xcpretty>`_.
+
 Running oclint-xcodebuild
 -------------------------
 

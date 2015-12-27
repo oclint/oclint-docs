@@ -7,6 +7,8 @@ This document goes through the happy path of using OCLint to analyze the code qu
 
     If you use Facebook's `xctool <https://github.com/facebook/xctool>`_ to build your Xcode projects, please use the `json-compilation-database <xctool.html>`_ reporter to make things much easier. We highly recommend you start to use ``xctool`` as a replacement for ``xcodebuild``.
 
+    In addition, please also consider using `xcpretty <https://github.com/supermarin/xcpretty>`_ if you use ``xcodebuild``.
+
 Prerequisite
 ------------
 

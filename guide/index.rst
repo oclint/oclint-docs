@@ -8,5 +8,6 @@ User Guide
    bear
    xcodebuild
    xctool
+   xcpretty
    xcode
    jenkins
