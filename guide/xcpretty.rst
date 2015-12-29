@@ -17,13 +17,13 @@ Running ``xcpretty`` is quite straight forward. For example, the command below w
 
 .. code-block:: bash
 
-  xcodebuild [flags] | xcpretty
+  xcodebuild [flags] | xcpretty -r json-compilation-database
 
 If you want to preserve the raw xcodebuild output, then you can do
 
 .. code-block:: bash
 
-  xcodebuild [flags] | tee xcodebuild.log | xcpretty
+  xcodebuild [flags] | tee xcodebuild.log | xcpretty -r json-compilation-database
 
 Running oclint-json-compilation-database
 ----------------------------------------

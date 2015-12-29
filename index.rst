@@ -21,6 +21,7 @@ Usage
   * `Bear <guide/bear.html>`_
   * `xctool <guide/xctool.html>`_
   * `xcodebuild <guide/xcodebuild.html>`_
+  * `xcpretty <guide/xcpretty>`_
   * `Xcode IDE <guide/xcode.html>`_
   * `Jenkins CI <guide/jenkins.html>`_
 

@@ -14,6 +14,10 @@ or
 
 * `Using OCLint with xctool <xctool.html>`_
 
+or
+
+* `Using OCLint with xcpretty <xcpretty.html>`_
+
 Background
 ----------
 
@@ -36,7 +40,9 @@ Setting up Target
 
 * In the script editor, we could enter the script which does the real work. We can also modify the script from this very `generic version <https://gist.github.com/gavrix/5054182>`_ and `its folks <https://gist.github.com/gavrix/5054182/forks>`_. We may need to change the ``xcodebuild`` options to use a particular scheme or target. In addition, based on the `discussions <xcodebuild.html#discussions>`_ we had, we can decide whether to use ``clean`` and ``dry run`` features.
 
-* For ``xctool`` users, the script can be largely simplified to something like `this <https://gist.github.com/lqi/5705477>`_
+* For ``xctool`` users, the script can be largely simplified to something like `this <https://gist.github.com/lqi/5705477>`_.
+
+* For ``xcpretty`` users, the script is also much simplier, check it out from `this gist <https://gist.github.com/ryuichis/755e6297aec13c900cdf>`_.
 
 .. image:: ../_static/guide/xcode_screenshot_4.png
 
@@ -48,9 +54,6 @@ Running Analysis
 .. image:: ../_static/guide/xcode_screenshot_6.png
 
 * Click to build, or use the shortcut ``Command+B``.
-
-.. image:: ../_static/guide/xcode_screenshot_7.png
-
 * When the progress bar scrolls to the very right, the analysis is done, then we can check out the analysis results same as compile warnings.
 
 .. image:: ../_static/guide/xcode_screenshot_8.png

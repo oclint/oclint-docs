@@ -44,20 +44,12 @@ XML Report (xml)
 
 XML reporter produces an XML report of the results.
 
-.. note::
-
-    This XML format is still being refined and is subject to change. 
-
 `Sample XML report <../_static/sample-reports/sample.xml>`_
 
 JSON Reporter (json)
 ^^^^^^^^^^^^^^^^^^^^
 
 JSON reporter produces an JSON report of the results.
-
-.. note::
-
-    This JSON format is still being refined and is subject to change.
 
 `Sample JSON report <../_static/sample-reports/sample.json>`_
 
@@ -67,6 +59,18 @@ PMD Reporter (pmd)
 Since `PMD <http://pmd.sourceforge.net/>`_  report is supported by many existing continuous integration (CI) for Java developers, PMD reporter outputs the XML report that follows the PMD report format. So that these CI systems can pick up the output and render better graphic results.
 
 `Sample PMD report <../_static/sample-reports/sample-pmd.xml>`_
+
+Xcode Reporter (xcode)
+^^^^^^^^^^^^^^^^^^^^^^
+
+Xcode reporter can be used inside Xcode IDE.
+
+.. seealso::
+    Read `this document <../guide/xcode.html>`_ for using OCLint in Xcode.
+
+
+Details of using OCLint
+
 
 Configuration File
 ------------------
@@ -78,6 +82,6 @@ When a type of reporter is selected by the entire team, it's recommended to save
 
 
 .. seealso::
-    
+
     `Write Own Reporters <../devel/reporters.html>`_
         Documentation of writing own reporters to extend OCLint with more capabilities.
