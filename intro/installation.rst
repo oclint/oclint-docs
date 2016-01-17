@@ -7,7 +7,7 @@ Both pre-compiled binary distribution and local build bundle should end up with 
     |-bin
     |-lib
     |---clang
-    |-----3.4
+    |-----3.8.0
     |-------include
     |-------lib
     |---oclint

@@ -7,5 +7,6 @@ Introduction
    download
    build
    installation
+   homebrew
    tutorial
    safeuse
