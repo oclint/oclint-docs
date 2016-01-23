@@ -23,6 +23,7 @@ Usage
   * `xcodebuild <guide/xcodebuild.html>`_
   * `xcpretty <guide/xcpretty>`_
   * `Xcode IDE <guide/xcode.html>`_
+  * `Travis CI <guide/travisci.html>`_
   * `Jenkins CI <guide/jenkins.html>`_
 
 * How-To:

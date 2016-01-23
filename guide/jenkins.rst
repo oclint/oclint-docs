@@ -1,5 +1,5 @@
-Using OCLint with Jenkins
-=========================
+Using OCLint with Jenkins CI
+============================
 
 This document shows how to integrate OCLint into Jenkins CI, and render the graphic report by the cooperation between Jenkins' PMD Plugin and OCLint's PMD reporter.
 
