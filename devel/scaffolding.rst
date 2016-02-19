@@ -68,6 +68,11 @@ The scaffold script will create ``AllSwitchStatementsRule.cpp`` file, and store 
             return 3;
         }
 
+        virtual const string category() const override
+        {
+            return "controversial";
+        }
+
         virtual void callback(const MatchFinder::MatchResult &result)
         {
         }
