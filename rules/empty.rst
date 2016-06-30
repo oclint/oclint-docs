@@ -12,6 +12,7 @@ This rule is defined by the following class: `oclint-rules/rules/empty/EmptyCatc
 
 **Example:**
 
+
 .. code-block:: cpp
 
     void example()
@@ -24,17 +25,19 @@ This rule is defined by the following class: `oclint-rules/rules/empty/EmptyCatc
         {
         }
     }
+        
 
 EmptyDoWhileStatement
 ---------------------
 
 **Since: 0.6**
 
-This rule detects instances where a do-while statement does nothing.
+This rule detects instances where do-while statement does nothing.
 
 This rule is defined by the following class: `oclint-rules/rules/empty/EmptyDoWhileStatementRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/empty/EmptyDoWhileStatementRule.cpp>`_
 
 **Example:**
+
 
 .. code-block:: cpp
 
@@ -44,6 +47,7 @@ This rule is defined by the following class: `oclint-rules/rules/empty/EmptyDoWh
         {                           // empty do-while statement
         } while(1);
     }
+        
 
 EmptyElseBlock
 --------------
@@ -52,9 +56,10 @@ EmptyElseBlock
 
 This rule detects instances where a else statement does nothing.
 
-This rule is defined by the following class: `oclint-rules/rules/empty/EmptyElseStatementRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/empty/EmptyElseStatementRule.cpp>`_
+This rule is defined by the following class: `oclint-rules/rules/empty/EmptyElseBlockRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/empty/EmptyElseBlockRule.cpp>`_
 
 **Example:**
+
 
 .. code-block:: cpp
 
@@ -68,6 +73,7 @@ This rule is defined by the following class: `oclint-rules/rules/empty/EmptyElse
         {
         }
     }
+        
 
 EmptyFinallyStatement
 ---------------------
@@ -79,6 +85,7 @@ This rule detects instances where a finally statement does nothing.
 This rule is defined by the following class: `oclint-rules/rules/empty/EmptyFinallyStatementRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/empty/EmptyFinallyStatementRule.cpp>`_
 
 **Example:**
+
 
 .. code-block:: objective-c
 
@@ -97,6 +104,7 @@ This rule is defined by the following class: `oclint-rules/rules/empty/EmptyFina
         {
         }
     }
+        
 
 EmptyForStatement
 -----------------
@@ -108,6 +116,7 @@ This rule detects instances where a for statement does nothing.
 This rule is defined by the following class: `oclint-rules/rules/empty/EmptyForStatementRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/empty/EmptyForStatementRule.cpp>`_
 
 **Example:**
+
 
 .. code-block:: objective-c
 
@@ -121,6 +130,7 @@ This rule is defined by the following class: `oclint-rules/rules/empty/EmptyForS
         {
         }
     }
+        
 
 EmptyIfStatement
 ----------------
@@ -133,6 +143,7 @@ This rule is defined by the following class: `oclint-rules/rules/empty/EmptyIfSt
 
 **Example:**
 
+
 .. code-block:: cpp
 
     void example(int a)
@@ -141,6 +152,7 @@ This rule is defined by the following class: `oclint-rules/rules/empty/EmptyIfSt
         {
         }
     }
+        
 
 EmptySwitchStatement
 --------------------
@@ -153,6 +165,7 @@ This rule is defined by the following class: `oclint-rules/rules/empty/EmptySwit
 
 **Example:**
 
+
 .. code-block:: cpp
 
     void example(int i)
@@ -161,6 +174,7 @@ This rule is defined by the following class: `oclint-rules/rules/empty/EmptySwit
         {
         }
     }
+        
 
 EmptyTryStatement
 -----------------
@@ -172,6 +186,7 @@ This rule detects instances where a try statement is empty.
 This rule is defined by the following class: `oclint-rules/rules/empty/EmptyTryStatementRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/empty/EmptyTryStatementRule.cpp>`_
 
 **Example:**
+
 
 .. code-block:: cpp
 
@@ -185,6 +200,7 @@ This rule is defined by the following class: `oclint-rules/rules/empty/EmptyTryS
             cout << "Exception is caught!";
         }
     }
+        
 
 EmptyWhileStatement
 -------------------
@@ -197,6 +213,7 @@ This rule is defined by the following class: `oclint-rules/rules/empty/EmptyWhil
 
 **Example:**
 
+
 .. code-block:: cpp
 
     void example(int a)
@@ -205,3 +222,8 @@ This rule is defined by the following class: `oclint-rules/rules/empty/EmptyWhil
         {
         }
     }
+        
+
+
+.. Generated on Wed Jun 29 21:59:34 2016
+

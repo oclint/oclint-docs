@@ -1,18 +1,21 @@
 Size
 ====
 
-CyclomaticComplexity
---------------------
+HighCyclomaticComplexity
+------------------------
 
 **Since: 0.4**
+
 
 Cyclomatic complexity is determined by the number of linearly independent paths through a program's source code. In other words, cyclomatic complexity of a method is measured by the number of decision points, like ``if``, ``while``, and ``for`` statements, plus one for the method entry.
 
 The experiments McCabe, the author of cyclomatic complexity, conclude that methods in the 3 to 7 complexity range are quite well structured. He also suggest the cyclomatic complexity of 10 is a reasonable upper limit.
+        
 
 This rule is defined by the following class: `oclint-rules/rules/size/CyclomaticComplexityRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/size/CyclomaticComplexityRule.cpp>`_
 
 **Example:**
+
 
 .. code-block:: cpp
 
@@ -43,11 +46,12 @@ This rule is defined by the following class: `oclint-rules/rules/size/Cyclomatic
                 break;
         }
     }
+        
 
 **Thresholds:**
 
 CYCLOMATIC_COMPLEXITY
-    The cyclomatic complexity reporting threshold, default value is 10
+    The cyclomatic complexity reporting threshold, default value is 10.
 
 **Suppress:**
 
@@ -55,10 +59,11 @@ CYCLOMATIC_COMPLEXITY
 
     __attribute__((annotate("oclint:suppress[high cyclomatic complexity]")))
 
+
 **References:**
 
 McCabe (December 1976). `"A Complexity Measure" <http://www.literateprogramming.com/mccabe.pdf>`_. *IEEE Transactions on Software Engineering: 308–320*
-
+        
 LongClass
 ---------
 
@@ -70,6 +75,7 @@ This rule is defined by the following class: `oclint-rules/rules/size/LongClassR
 
 **Example:**
 
+
 .. code-block:: cpp
 
     class Foo
@@ -79,11 +85,12 @@ This rule is defined by the following class: `oclint-rules/rules/size/LongClassR
             // 1001 lines of code
         }
     }
+        
 
 **Thresholds:**
 
 LONG_CLASS
-    The class size reporting threshold, default value is 1000
+    The class size reporting threshold, default value is 1000.
 
 LongLine
 --------
@@ -96,12 +103,14 @@ This rule is defined by the following class: `oclint-rules/rules/size/LongLineRu
 
 **Example:**
 
+
 .. code-block:: cpp
 
     void example()
     {
         int a012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789;
     }
+        
 
 **Thresholds:**
 
@@ -119,6 +128,7 @@ This rule is defined by the following class: `oclint-rules/rules/size/LongMethod
 
 **Example:**
 
+
 .. code-block:: cpp
 
     void example()
@@ -127,14 +137,15 @@ This rule is defined by the following class: `oclint-rules/rules/size/LongMethod
         cout << "hello world";
         // repeat 48 times
     }
+        
 
 **Thresholds:**
 
 LONG_METHOD
     The long method reporting threshold, default value is 50.
 
-NcssMethodCount
----------------
+HighNcssMethod
+--------------
 
 **Since: 0.6**
 
@@ -143,6 +154,7 @@ This rule counts number of lines for a method by counting Non Commenting Source 
 This rule is defined by the following class: `oclint-rules/rules/size/NcssMethodCountRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/size/NcssMethodCountRule.cpp>`_
 
 **Example:**
+
 
 .. code-block:: cpp
 
@@ -155,6 +167,7 @@ This rule is defined by the following class: `oclint-rules/rules/size/NcssMethod
         {
         }
     }
+        
 
 **Thresholds:**
 
@@ -167,8 +180,8 @@ NCSS_METHOD
 
     __attribute__((annotate("oclint:suppress[high ncss method]")))
 
-NestedBlockDepth
-----------------
+DeepNestedBlock
+---------------
 
 **Since: 0.6**
 
@@ -177,6 +190,7 @@ This rule indicates blocks nested more deeply than the upper limit.
 This rule is defined by the following class: `oclint-rules/rules/size/NestedBlockDepthRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/size/NestedBlockDepthRule.cpp>`_
 
 **Example:**
+
 
 .. code-block:: cpp
 
@@ -187,24 +201,28 @@ This rule is defined by the following class: `oclint-rules/rules/size/NestedBloc
             }
         }
     }
+        
 
 **Thresholds:**
 
 NESTED_BLOCK_DEPTH
     The depth of a block or compound statement reporting threshold, default value is 5.
 
-NPathComplexity
----------------
+HighNPathComplexity
+-------------------
 
 **Since: 0.4**
+
 
 NPath complexity is determined by the number of execution paths through that method. Compared to cyclomatic complexity, NPath complexity has two outstanding characteristics: first, it distinguishes between different kinds of control flow structures; second, it takes the various type of acyclic paths in a flow graph into consideration.
 
 Based on studies done by the original author in AT&T Bell Lab, an NPath threshold value of 200 has been established for a method.
+        
 
 This rule is defined by the following class: `oclint-rules/rules/size/NPathComplexityRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/size/NPathComplexityRule.cpp>`_
 
 **Example:**
+
 
 .. code-block:: cpp
 
@@ -212,6 +230,7 @@ This rule is defined by the following class: `oclint-rules/rules/size/NPathCompl
     {
         // complicated code that is hard to understand
     }
+        
 
 **Thresholds:**
 
@@ -224,10 +243,11 @@ NPATH_COMPLEXITY
 
     __attribute__((annotate("oclint:suppress[high npath complexity]")))
 
+
 **References:**
 
 Brian A. Nejmeh  (1988). `"NPATH: a measure of execution path complexity and its applications" <http://dl.acm.org/citation.cfm?id=42379>`_. *Communications of the ACM 31 (2) p. 188-200*
-
+        
 TooManyFields
 -------------
 
@@ -238,6 +258,7 @@ A class with too many fields indicates it does too many things and lacks proper 
 This rule is defined by the following class: `oclint-rules/rules/size/TooManyFieldsRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/size/TooManyFieldsRule.cpp>`_
 
 **Example:**
+
 
 .. code-block:: cpp
 
@@ -253,6 +274,7 @@ This rule is defined by the following class: `oclint-rules/rules/size/TooManyFie
 
         void m() {}
     };
+        
 
 **Thresholds:**
 
@@ -269,6 +291,7 @@ A class with too many methods indicates it does too many things and is hard to r
 This rule is defined by the following class: `oclint-rules/rules/size/TooManyMethodsRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/size/TooManyMethodsRule.cpp>`_
 
 **Example:**
+
 
 .. code-block:: cpp
 
@@ -291,6 +314,7 @@ This rule is defined by the following class: `oclint-rules/rules/size/TooManyMet
         int ad();
         int ae();
     };
+        
 
 **Thresholds:**
 
@@ -308,18 +332,25 @@ This rule is defined by the following class: `oclint-rules/rules/size/TooManyPar
 
 **Example:**
 
+
 .. code-block:: cpp
 
     void example(int a, int b, int c, int d, int e, int f,
         int g, int h, int i, int j, int k, int l)
     {
     }
+        
 
 **Thresholds:**
 
 TOO_MANY_PARAMETERS
     The reporting threshold for too many parameters, default value is 10.
 
+
 **References:**
 
 Fowler, Martin (1999). *Refactoring: Improving the design of existing code.* Addison Wesley.
+        
+
+.. Generated on Wed Jun 29 21:59:34 2016
+

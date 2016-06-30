@@ -6,6 +6,7 @@ RedundantConditionalOperator
 
 **Since: 0.6**
 
+
 This rule detects three types of redundant conditional operators:
 
 #. true expression and false expression are returning true/false or false/true respectively;
@@ -13,10 +14,12 @@ This rule detects three types of redundant conditional operators:
 #. true expression and false expression are the same variable expression.
 
 They are usually introduced by mistake, and should be simplified.
+        
 
 This rule is defined by the following class: `oclint-rules/rules/redundant/RedundantConditionalOperatorRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/redundant/RedundantConditionalOperatorRule.cpp>`_
 
 **Example:**
+
 
 .. code-block:: cpp
 
@@ -28,6 +31,7 @@ This rule is defined by the following class: `oclint-rules/rules/redundant/Redun
         float f1 = a > b ? 1.0 : 1.00;      // equally constant: float f1 = 1.0;
         int i2 = a > b ? c : c;             // same variable: int i2 = c;
     }
+        
 
 RedundantIfStatement
 --------------------
@@ -39,6 +43,7 @@ This rule detects unnecessary if statements.
 This rule is defined by the following class: `oclint-rules/rules/redundant/RedundantIfStatementRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/redundant/RedundantIfStatementRule.cpp>`_
 
 **Example:**
+
 
 .. code-block:: cpp
 
@@ -53,6 +58,7 @@ This rule is defined by the following class: `oclint-rules/rules/redundant/Redun
             return false;
         }                       // the entire method can be simplified to return a == b;
     }
+        
 
 RedundantLocalVariable
 ----------------------
@@ -65,6 +71,7 @@ This rule is defined by the following class: `oclint-rules/rules/redundant/Redun
 
 **Example:**
 
+
 .. code-block:: cpp
 
     int example(int a)
@@ -72,6 +79,7 @@ This rule is defined by the following class: `oclint-rules/rules/redundant/Redun
         int b = a * 2;
         return b;   // variable b is returned immediately after its declaration,
     }               // can be simplified to return a * 2;
+        
 
 RedundantNilCheck
 -----------------
@@ -80,9 +88,10 @@ RedundantNilCheck
 
 C/C++-style null check in Objective-C like ``foo != nil && [foo bar]`` is redundant, since sending a message to a nil object in this case simply returns a false-y value.
 
-This rule is defined by the following class: `oclint-rules/rules/redundant/RedundantLocalVariableRuleRedundantNilCheck.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/redundant/RedundantNilCheck.cpp>`_
+This rule is defined by the following class: `oclint-rules/rules/redundant/RedundantNilCheckRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/redundant/RedundantNilCheckRule.cpp>`_
 
 **Example:**
+
 
 .. code-block:: objective-c
 
@@ -92,6 +101,7 @@ This rule is defined by the following class: `oclint-rules/rules/redundant/Redun
         {
         }
     }
+        
 
 UnnecessaryElseStatement
 ------------------------
@@ -103,6 +113,7 @@ When an if statement block ends with a return statement, or all branches in the 
 This rule is defined by the following class: `oclint-rules/rules/redundant/UnnecessaryElseStatementRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/redundant/UnnecessaryElseStatementRule.cpp>`_
 
 **Example:**
+
 
 .. code-block:: cpp
 
@@ -118,9 +129,10 @@ This rule is defined by the following class: `oclint-rules/rules/redundant/Unnec
             cout << "a is not 1."   // cout << "a is not 1."
         }                           //
     }
+        
 
-UnnecessaryNullCheckForCXXDealloc
----------------------------------
+UnnecessaryNullCheckForDealloc
+------------------------------
 
 **Since: 0.8**
 
@@ -130,6 +142,7 @@ This rule is defined by the following class: `oclint-rules/rules/redundant/Unnec
 
 **Example:**
 
+
 .. code-block:: cpp
 
     void m(char* c) {
@@ -137,7 +150,7 @@ This rule is defined by the following class: `oclint-rules/rules/redundant/Unnec
             delete c;
         }
     }
-
+        
 
 UselessParentheses
 ------------------
@@ -150,6 +163,7 @@ This rule is defined by the following class: `oclint-rules/rules/redundant/Usele
 
 **Example:**
 
+
 .. code-block:: cpp
 
     int example(int a)
@@ -161,3 +175,8 @@ This rule is defined by the following class: `oclint-rules/rules/redundant/Usele
         }
         return (0);         // return 0;
     }
+        
+
+
+.. Generated on Wed Jun 29 21:59:34 2016
+

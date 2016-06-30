@@ -12,6 +12,7 @@ This rule is defined by the following class: `oclint-rules/rules/convention/Avoi
 
 **Example:**
 
+
 .. code-block:: cpp
 
     void example()
@@ -25,7 +26,38 @@ This rule is defined by the following class: `oclint-rules/rules/convention/Avoi
             break;      // this break is confusing
         }
     }
+        
 
+BaseClassDestructorShouldBeVirtualOrProtected
+---------------------------------------------
+
+**Since: 0.10.2**
+
+Make base class destructors public and virtual, or protected and nonvirtual
+
+This rule is defined by the following class: `oclint-rules/rules/convention/BaseClassDestructorShouldBeVirtualOrProtectedRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/convention/BaseClassDestructorShouldBeVirtualOrProtectedRule.cpp>`_
+
+**Example:**
+
+
+.. code-block:: cpp
+
+    class Base
+    {
+    public:
+        ~Base(); // this should be either protected or virtual
+    }
+    class C : public Base
+    {
+        virtual ~C();
+    }
+        
+
+
+**References:**
+
+Sutter & Alexandrescu (November 2004). `"C++ Coding Standards: 101 Rules, Guidelines, and Best Practices" <http://gotw.ca/publications/c++cs.htm>`_. *Addison-Wesley Professional*
+        
 CoveredSwitchStatementsDontNeedDefault
 --------------------------------------
 
@@ -36,6 +68,7 @@ When a switch statement covers all possible cases, a default label is not needed
 This rule is defined by the following class: `oclint-rules/rules/convention/CoveredSwitchStatementsDontNeedDefaultRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/convention/CoveredSwitchStatementsDontNeedDefaultRule.cpp>`_
 
 **Example:**
+
 
 .. code-block:: cpp
 
@@ -56,6 +89,7 @@ This rule is defined by the following class: `oclint-rules/rules/convention/Cove
                 break;        // values of variable a are already covered.
         }
     }
+        
 
 DefaultLabelNotLastInSwitchStatement
 ------------------------------------
@@ -67,6 +101,7 @@ It is very confusing when default label is not the last label in a switch statem
 This rule is defined by the following class: `oclint-rules/rules/convention/DefaultLabelNotLastInSwitchStatementRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/convention/DefaultLabelNotLastInSwitchStatementRule.cpp>`_
 
 **Example:**
+
 
 .. code-block:: cpp
 
@@ -81,6 +116,7 @@ This rule is defined by the following class: `oclint-rules/rules/convention/Defa
                 break;
         }
     }
+        
 
 DestructorOfVirtualClass
 ------------------------
@@ -93,6 +129,7 @@ This rule is defined by the following class: `oclint-rules/rules/convention/Dest
 
 **Example:**
 
+
 .. code-block:: cpp
 
     class Base { // class Base should have a virtual destructor ~Base()
@@ -101,6 +138,7 @@ This rule is defined by the following class: `oclint-rules/rules/convention/Dest
     class Child : public Base {
         public: ~Child();  // destructor ~Child() should be virtual
     };
+        
 
 InvertedLogic
 -------------
@@ -112,6 +150,7 @@ An inverted logic is hard to understand.
 This rule is defined by the following class: `oclint-rules/rules/convention/InvertedLogicRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/convention/InvertedLogicRule.cpp>`_
 
 **Example:**
+
 
 .. code-block:: cpp
 
@@ -129,6 +168,7 @@ This rule is defined by the following class: `oclint-rules/rules/convention/Inve
 
         return !i ? -1 : 1;     // return i ? 1 : -1;
     }
+        
 
 MissingBreakInSwitchStatement
 -----------------------------
@@ -137,9 +177,10 @@ MissingBreakInSwitchStatement
 
 A switch statement without a break statement has a very large chance to contribute a bug.
 
-This rule is defined by the following class: `oclint-rules/rules/convention/MissingBreakInSwitchStatement.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/convention/MissingBreakInSwitchStatement.cpp>`_
+This rule is defined by the following class: `oclint-rules/rules/convention/MissingBreakInSwitchStatementRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/convention/MissingBreakInSwitchStatementRule.cpp>`_
 
 **Example:**
+
 
 .. code-block:: cpp
 
@@ -154,17 +195,19 @@ This rule is defined by the following class: `oclint-rules/rules/convention/Miss
                 break;
         }
     }
+        
 
 NonCaseLabelInSwitchStatement
 -----------------------------
 
 **Since: 0.6**
 
-It is very confusing when default label is not the last label in a switch statement.
+It is very confusing when label becomes part of the switch statement.
 
 This rule is defined by the following class: `oclint-rules/rules/convention/NonCaseLabelInSwitchStatementRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/convention/NonCaseLabelInSwitchStatementRule.cpp>`_
 
 **Example:**
+
 
 .. code-block:: cpp
 
@@ -179,9 +222,10 @@ This rule is defined by the following class: `oclint-rules/rules/convention/NonC
                 break;
         }
     }
+        
 
-ObjCAssignIvarOutsideAccessors
-------------------------------
+IvarAssignmentOutsideAccessorsOrInit
+------------------------------------
 
 **Since: 0.8**
 
@@ -190,6 +234,7 @@ This rule prevents assigning an ivar outside of getters, setters, and ``init`` m
 This rule is defined by the following class: `oclint-rules/rules/convention/ObjCAssignIvarOutsideAccessorsRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/convention/ObjCAssignIvarOutsideAccessorsRule.cpp>`_
 
 **Example:**
+
 
 .. code-block:: objective-c
 
@@ -205,6 +250,7 @@ This rule is defined by the following class: `oclint-rules/rules/convention/ObjC
         _bar = 3; // access _bar outside its getter, setter or init
     }
     @end
+        
 
 ParameterReassignment
 ---------------------
@@ -217,6 +263,7 @@ This rule is defined by the following class: `oclint-rules/rules/convention/Para
 
 **Example:**
 
+
 .. code-block:: cpp
 
     void example(int a)
@@ -226,9 +273,10 @@ This rule is defined by the following class: `oclint-rules/rules/convention/Para
             a = 0; // reassign parameter a to 0
         }
     }
+        
 
-PreferEarlyExit
----------------
+UseEarlyExitsAndContinue
+------------------------
 
 **Since: 0.8**
 
@@ -237,6 +285,7 @@ Early exits can reduce the indentation of a block of code, so that reader do not
 This rule is defined by the following class: `oclint-rules/rules/convention/PreferEarlyExitRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/convention/PreferEarlyExitRule.cpp>`_
 
 **Example:**
+
 
 .. code-block:: cpp
 
@@ -265,8 +314,7 @@ This rule is defined by the following class: `oclint-rules/rules/convention/Pref
 
       // ... some long code ....
     }
-
-
+        
 
 SwitchStatementsShouldHaveDefault
 ---------------------------------
@@ -278,6 +326,7 @@ Switch statements should have a default statement.
 This rule is defined by the following class: `oclint-rules/rules/convention/SwitchStatementsShouldHaveDefaultRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/convention/SwitchStatementsShouldHaveDefaultRule.cpp>`_
 
 **Example:**
+
 
 .. code-block:: cpp
 
@@ -291,6 +340,7 @@ This rule is defined by the following class: `oclint-rules/rules/convention/Swit
             // should have a default
         }
     }
+        
 
 TooFewBranchesInSwitchStatement
 -------------------------------
@@ -303,6 +353,7 @@ This rule is defined by the following class: `oclint-rules/rules/convention/TooF
 
 **Example:**
 
+
 .. code-block:: cpp
 
     void example(int a)
@@ -314,10 +365,13 @@ This rule is defined by the following class: `oclint-rules/rules/convention/TooF
                 break;
         } // Better to use an if statement and check if variable a equals 1.
     }
+        
 
 **Thresholds:**
 
 MINIMUM_CASES_IN_SWITCH
     The reporting threshold for count of case statements in a switch statement, default value is 3.
 
+
+.. Generated on Wed Jun 29 21:59:34 2016
 

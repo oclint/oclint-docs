@@ -12,6 +12,7 @@ This rule is defined by the following class: `oclint-rules/rules/basic/BitwiseOp
 
 **Example:**
 
+
 .. code-block:: cpp
 
     void example(int a, int b)
@@ -23,30 +24,7 @@ This rule is defined by the following class: `oclint-rules/rules/basic/BitwiseOp
         {
         }
     }
-
-BrokenNilCheck
----------------
-
-**Since: 0.7**
-
-The broken nil check in Objective-C in some cases returns just the opposite result.
-
-This rule is defined by the following class: `oclint-rules/rules/basic/BrokenNullCheckRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/basic/BrokenNullCheckRule.cpp>`_
-
-**Example:**
-
-.. code-block:: objective-c
-
-    + (void)compare:(A *)obj1 withOther:(A *)obj2
-    {
-        if (obj1 || [obj1 isEqualTo:obj2])
-        {
-        }
-
-        if (!obj1 && ![obj1 isEqualTo:obj2])
-        {
-        }
-    }
+    
 
 BrokenNullCheck
 ---------------
@@ -58,6 +36,7 @@ The broken null check itself will crash the program.
 This rule is defined by the following class: `oclint-rules/rules/basic/BrokenNullCheckRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/basic/BrokenNullCheckRule.cpp>`_
 
 **Example:**
+
 
 .. code-block:: cpp
 
@@ -71,6 +50,33 @@ This rule is defined by the following class: `oclint-rules/rules/basic/BrokenNul
         {
         }
     }
+    
+
+BrokenNilCheck
+--------------
+
+**Since: 0.7**
+
+The broken nil check in Objective-C in some cases returns just the opposite result.
+
+This rule is defined by the following class: `oclint-rules/rules/basic/BrokenNullCheckRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/basic/BrokenNullCheckRule.cpp>`_
+
+**Example:**
+
+
+.. code-block:: objective-c
+
+    + (void)compare:(A *)obj1 withOther:(A *)obj2
+    {
+        if (obj1 || [obj1 isEqualTo:obj2])
+        {
+        }
+
+        if (!obj1 && ![obj1 isEqualTo:obj2])
+        {
+        }
+    }
+    
 
 BrokenOddnessCheck
 ------------------
@@ -82,6 +88,7 @@ Checking oddness by ``x % 2 == 1`` won't work for negative numbers. Use ``x & 1 
 This rule is defined by the following class: `oclint-rules/rules/basic/BrokenOddnessCheckRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/basic/BrokenOddnessCheckRule.cpp>`_
 
 **Example:**
+
 
 .. code-block:: cpp
 
@@ -95,6 +102,7 @@ This rule is defined by the following class: `oclint-rules/rules/basic/BrokenOdd
         {
         }
     }
+    
 
 CollapsibleIfStatements
 -----------------------
@@ -106,6 +114,7 @@ This rule detects instances where the conditions of two consecutive if statement
 This rule is defined by the following class: `oclint-rules/rules/basic/CollapsibleIfStatementsRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/basic/CollapsibleIfStatementsRule.cpp>`_
 
 **Example:**
+
 
 .. code-block:: cpp
 
@@ -119,6 +128,7 @@ This rule is defined by the following class: `oclint-rules/rules/basic/Collapsib
             }
         }
     }
+    
 
 ConstantConditionalOperator
 ---------------------------
@@ -131,12 +141,14 @@ This rule is defined by the following class: `oclint-rules/rules/basic/ConstantC
 
 **Example:**
 
+
 .. code-block:: cpp
 
     void example()
     {
         int a = 1 == 1 ? 1 : 0;     // 1 == 1 is actually always true
     }
+    
 
 ConstantIfExpression
 --------------------
@@ -148,6 +160,7 @@ ConstantIfExpression
 This rule is defined by the following class: `oclint-rules/rules/basic/ConstantIfExpressionRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/basic/ConstantIfExpressionRule.cpp>`_
 
 **Example:**
+
 
 .. code-block:: cpp
 
@@ -162,6 +175,7 @@ This rule is defined by the following class: `oclint-rules/rules/basic/ConstantI
             bar();
         }
     }
+    
 
 DeadCode
 --------
@@ -173,6 +187,7 @@ Code after ``return``, ``break``, ``continue``, and ``throw`` statements is unre
 This rule is defined by the following class: `oclint-rules/rules/basic/DeadCodeRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/basic/DeadCodeRule.cpp>`_
 
 **Example:**
+
 
 .. code-block:: objective-c
 
@@ -186,6 +201,7 @@ This rule is defined by the following class: `oclint-rules/rules/basic/DeadCodeR
         return;
         int i2;                     // dead code
     }
+    
 
 DoubleNegative
 --------------
@@ -198,6 +214,7 @@ This rule is defined by the following class: `oclint-rules/rules/basic/DoubleNeg
 
 **Example:**
 
+
 .. code-block:: cpp
 
     void example()
@@ -205,6 +222,7 @@ This rule is defined by the following class: `oclint-rules/rules/basic/DoubleNeg
         int b1 = !!1;
         int b2 = ~~1;
     }
+    
 
 ForLoopShouldBeWhileLoop
 ------------------------
@@ -217,6 +235,7 @@ This rule is defined by the following class: `oclint-rules/rules/basic/ForLoopSh
 
 **Example:**
 
+
 .. code-block:: cpp
 
     void example(int a)
@@ -226,6 +245,7 @@ This rule is defined by the following class: `oclint-rules/rules/basic/ForLoopSh
             foo(a);
         }
     }
+    
 
 GotoStatement
 -------------
@@ -238,19 +258,22 @@ This rule is defined by the following class: `oclint-rules/rules/basic/GotoState
 
 **Example:**
 
+
 .. code-block:: cpp
 
     void example()
     {
         A:
             a();
-        goto A;     // Considered Harmful, Considered Silly, Considered Stupid... ;)
+        goto A;     // Considered Harmful
     }
+    
+
 
 **References:**
 
 Edsger Dijkstra (March 1968). `"Go To Statement Considered Harmful" <http://www.cs.utexas.edu/users/EWD/ewd02xx/EWD215.PDF>`_. *Communications of the ACM* (PDF) 11 (3): 147–148. doi:10.1145/362929.362947.
-
+    
 JumbledIncrementer
 ------------------
 
@@ -262,6 +285,7 @@ This rule is defined by the following class: `oclint-rules/rules/basic/JumbledIn
 
 **Example:**
 
+
 .. code-block:: cpp
 
     void aMethod(int a) {
@@ -270,30 +294,7 @@ This rule is defined by the following class: `oclint-rules/rules/basic/JumbledIn
             }
         }
     }
-
-MisplacedNilCheck
------------------
-
-**Since: 0.7**
-
-The nil check is misplaced. In Objective-C, sending a message to a nil pointer simply does nothing. But code readers may be confused about the misplaced nil check.
-
-This rule is defined by the following class: `oclint-rules/rules/basic/MisplacedNullCheckRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/basic/MisplacedNullCheckRule.cpp>`_
-
-**Example:**
-
-.. code-block:: objective-c
-
-    + (void)compare:(A *)obj1 withOther:(A *)obj2
-    {
-        if ([obj1 isEqualTo:obj2] && obj1)
-        {
-        }
-
-        if (![obj1 isEqualTo:obj2] || obj1 == nil)
-        {
-        }
-    }
+    
 
 MisplacedNullCheck
 ------------------
@@ -305,6 +306,7 @@ The null check is misplaced. In C and C++, sending a message to a null pointer c
 This rule is defined by the following class: `oclint-rules/rules/basic/MisplacedNullCheckRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/basic/MisplacedNullCheckRule.cpp>`_
 
 **Example:**
+
 
 .. code-block:: cpp
 
@@ -318,6 +320,33 @@ This rule is defined by the following class: `oclint-rules/rules/basic/Misplaced
         {
         }
     }
+    
+
+MisplacedNilCheck
+-----------------
+
+**Since: 0.7**
+
+The nil check is misplaced. In Objective-C, sending a message to a nil pointer simply does nothing. But code readers may be confused about the misplaced nil check.
+
+This rule is defined by the following class: `oclint-rules/rules/basic/MisplacedNilCheckRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/basic/MisplacedNilCheckRule.cpp>`_
+
+**Example:**
+
+
+.. code-block:: objective-c
+
+    + (void)compare:(A *)obj1 withOther:(A *)obj2
+    {
+        if ([obj1 isEqualTo:obj2] && obj1)
+        {
+        }
+
+        if (![obj1 isEqualTo:obj2] || obj1 == nil)
+        {
+        }
+    }
+    
 
 MultipleUnaryOperator
 ---------------------
@@ -330,12 +359,14 @@ This rule is defined by the following class: `oclint-rules/rules/basic/MultipleU
 
 **Example:**
 
+
 .. code-block:: cpp
 
     void example()
     {
         int b = -(+(!(~1)));
     }
+    
 
 ReturnFromFinallyBlock
 ----------------------
@@ -347,6 +378,7 @@ Returning from a finally block is not recommended.
 This rule is defined by the following class: `oclint-rules/rules/basic/ReturnFromFinallyBlockRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/basic/ReturnFromFinallyBlockRule.cpp>`_
 
 **Example:**
+
 
 .. code-block:: objective-c
 
@@ -365,6 +397,7 @@ This rule is defined by the following class: `oclint-rules/rules/basic/ReturnFro
             return;         // this can discard exceptions.
         }
     }
+    
 
 ThrowExceptionFromFinallyBlock
 ------------------------------
@@ -376,6 +409,7 @@ Throwing exceptions within a ``finally`` block may mask other exceptions or code
 This rule is defined by the following class: `oclint-rules/rules/basic/ThrowExceptionFromFinallyBlockRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/basic/ThrowExceptionFromFinallyBlockRule.cpp>`_
 
 **Example:**
+
 
 .. code-block:: objective-c
 
@@ -390,4 +424,8 @@ This rule is defined by the following class: `oclint-rules/rules/basic/ThrowExce
             [ex2 raise];                             // this throws an exception, too
         }
     }
+    
+
+
+.. Generated on Wed Jun 29 21:59:34 2016
 

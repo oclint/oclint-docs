@@ -12,6 +12,7 @@ This rule is defined by the following class: `oclint-rules/rules/unused/UnusedLo
 
 **Example:**
 
+
 .. code-block:: cpp
 
     int example(int a)
@@ -19,6 +20,7 @@ This rule is defined by the following class: `oclint-rules/rules/unused/UnusedLo
         int i;          // variable i is declared, but not used
         return 0;
     }
+    
 
 **Suppress:**
 
@@ -37,16 +39,21 @@ This rule is defined by the following class: `oclint-rules/rules/unused/UnusedMe
 
 **Example:**
 
+
 .. code-block:: cpp
 
     int example(int a)  // parameter a is not used
     {
         return 0;
     }
+    
 
 **Suppress:**
 
 .. code-block:: cpp
 
     __attribute__((annotate("oclint:suppress[unused method parameter]")))
+
+
+.. Generated on Wed Jun 29 21:59:34 2016
 

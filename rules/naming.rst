@@ -12,12 +12,14 @@ This rule is defined by the following class: `oclint-rules/rules/naming/LongVari
 
 **Example:**
 
+
 .. code-block:: cpp
 
     void aMethod()
     {
         int reallyReallyLongIntegerName;
     }
+    
 
 **Thresholds:**
 
@@ -35,15 +37,20 @@ This rule is defined by the following class: `oclint-rules/rules/naming/ShortVar
 
 **Example:**
 
+
 .. code-block:: cpp
 
     void aMethod(int i)  // i is short
     {
         int ii;          // ii is short
     }
+    
 
 **Thresholds:**
 
 SHORT_VARIABLE_NAME
     The short variable name reporting threshold, default value is 3.
+
+
+.. Generated on Wed Jun 29 21:59:34 2016
 

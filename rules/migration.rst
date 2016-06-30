@@ -1,8 +1,8 @@
 Migration
 =========
 
-ObjCBoxedExpressions
---------------------
+ReplaceWithBoxedExpression
+--------------------------
 
 **Since: 0.7**
 
@@ -11,6 +11,7 @@ This rule locates the places that can be migrated to the new Objective-C literal
 This rule is defined by the following class: `oclint-rules/rules/migration/ObjCBoxedExpressionsRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/migration/ObjCBoxedExpressionsRule.cpp>`_
 
 **Example:**
+
 
 .. code-block:: objective-c
 
@@ -22,9 +23,10 @@ This rule is defined by the following class: `oclint-rules/rules/migration/ObjCB
         NSString *env = [NSString stringWithUTF8String:getenv("PATH")];
         // NSString *env = @(getenv("PATH"));
     }
+        
 
-ObjCContainerLiterals
----------------------
+ReplaceWithContainerLiteral
+---------------------------
 
 **Since: 0.7**
 
@@ -33,6 +35,7 @@ This rule locates the places that can be migrated to the new Objective-C literal
 This rule is defined by the following class: `oclint-rules/rules/migration/ObjCContainerLiteralsRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/migration/ObjCContainerLiteralsRule.cpp>`_
 
 **Example:**
+
 
 .. code-block:: objective-c
 
@@ -44,9 +47,10 @@ This rule is defined by the following class: `oclint-rules/rules/migration/ObjCC
         NSDictionary *d = [NSDictionary dictionaryWithObjects:@[@2,@4] forKeys:@[@1,@3]];
         // NSDictionary *d = @{ @1 : @2, @3 : @4 };
     }
+        
 
-ObjCNSNumberLiterals
---------------------
+ReplaceWithNumberLiteral
+------------------------
 
 **Since: 0.7**
 
@@ -55,6 +59,7 @@ This rule locates the places that can be migrated to the new Objective-C literal
 This rule is defined by the following class: `oclint-rules/rules/migration/ObjCNSNumberLiteralsRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/migration/ObjCNSNumberLiteralsRule.cpp>`_
 
 **Example:**
+
 
 .. code-block:: objective-c
 
@@ -66,9 +71,10 @@ This rule is defined by the following class: `oclint-rules/rules/migration/ObjCN
         NSNumber *yesBool = [NSNumber numberWithBool:YES];
         // NSNumber *yesBool = @YES;
     }
+        
 
-ObjCObjectSubscripting
-----------------------
+ReplaceWithObjectSubscripting
+-----------------------------
 
 **Since: 0.7**
 
@@ -77,6 +83,7 @@ This rule locates the places that can be migrated to the new Objective-C literal
 This rule is defined by the following class: `oclint-rules/rules/migration/ObjCObjectSubscriptingRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/migration/ObjCObjectSubscriptingRule.cpp>`_
 
 **Example:**
+
 
 .. code-block:: objective-c
 
@@ -88,3 +95,8 @@ This rule is defined by the following class: `oclint-rules/rules/migration/ObjCO
         id item = [d objectForKey:@1];
         // id item = d[@1];
     }
+        
+
+
+.. Generated on Wed Jun 29 21:59:34 2016
+

@@ -1,8 +1,8 @@
 Cocoa
 =====
 
-ObjCVerifyIsEqualHash
----------------------
+MustOverrideHashWithIsEqual
+---------------------------
 
 **Since: 0.8**
 
@@ -11,6 +11,7 @@ When ``isEqual`` method is overridden, ``hash`` method must be overridden, too.
 This rule is defined by the following class: `oclint-rules/rules/cocoa/ObjCVerifyIsEqualHashRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/cocoa/ObjCVerifyIsEqualHashRule.cpp>`_
 
 **Example:**
+
 
 .. code-block:: objective-c
 
@@ -25,9 +26,10 @@ This rule is defined by the following class: `oclint-rules/rules/cocoa/ObjCVerif
     */
 
     @end
+    
 
-ObjCVerifyMustCallSuper
------------------------
+MustCallSuper
+-------------
 
 **Since: 0.8**
 
@@ -36,6 +38,7 @@ When a method is declared with ``__attribute__((annotate("oclint:enforce[must ca
 This rule is defined by the following class: `oclint-rules/rules/cocoa/ObjCVerifyMustCallSuperRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/cocoa/ObjCVerifyMustCallSuperRule.cpp>`_
 
 **Example:**
+
 
 .. code-block:: objective-c
 
@@ -53,9 +56,37 @@ This rule is defined by the following class: `oclint-rules/rules/cocoa/ObjCVerif
     }
 
     @end
+    
 
-ObjCVerifyProtectedMethod
--------------------------
+VerifyProhibitedCall
+--------------------
+
+**Since: 0.10.1**
+
+When a method is declared with ``__attribute__((annotate("oclint:enforce[prohibited call]")))`` annotation, all of its usages will be prohibited.
+
+This rule is defined by the following class: `oclint-rules/rules/cocoa/ObjCVerifyProhibitedCallRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/cocoa/ObjCVerifyProhibitedCallRule.cpp>`_
+
+**Example:**
+
+
+.. code-block:: objective-c
+
+    @interface A : NSObject
+    - (void)foo __attribute__((annotate("oclint:enforce[prohibited call]")));
+    @end
+
+    @implementation A
+    - (void)foo {
+    }
+    - (void)bar {
+        [self foo]; // calling method `foo` is prohibited.
+    }
+    @end
+    
+
+VerifyProtectedMethod
+---------------------
 
 **Since: 0.8**
 
@@ -64,6 +95,7 @@ Even though there is no ``protected`` in Objective-C language level, in a design
 This rule is defined by the following class: `oclint-rules/rules/cocoa/ObjCVerifyProtectedMethodRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/cocoa/ObjCVerifyProtectedMethodRule.cpp>`_
 
 **Example:**
+
 
 .. code-block:: objective-c
 
@@ -80,9 +112,10 @@ This rule is defined by the following class: `oclint-rules/rules/cocoa/ObjCVerif
         [self.a foo]; // calling protected method foo from outside A and its subclasses
     }
     @end
+    
 
-ObjCVerifySubclassMustImplement
--------------------------------
+SubclassMustImplement
+---------------------
 
 **Since: 0.8**
 
@@ -91,6 +124,7 @@ Due to the Objective-C language tries to postpone making decisions to the runtim
 This rule is defined by the following class: `oclint-rules/rules/cocoa/ObjCVerifySubclassMustImplementRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/cocoa/ObjCVerifySubclassMustImplementRule.cpp>`_
 
 **Example:**
+
 
 .. code-block:: objective-c
 
@@ -111,3 +145,8 @@ This rule is defined by the following class: `oclint-rules/rules/cocoa/ObjCVerif
     */
 
     @end
+    
+
+
+.. Generated on Wed Jun 29 21:59:34 2016
+
