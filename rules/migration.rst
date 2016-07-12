@@ -1,10 +1,12 @@
 Migration
 =========
 
-ReplaceWithBoxedExpression
---------------------------
+UseBoxedExpression
+------------------
 
 **Since: 0.7**
+
+**Name: use boxed expression**
 
 This rule locates the places that can be migrated to the new Objective-C literals with boxed expressions.
 
@@ -25,10 +27,12 @@ This rule is defined by the following class: `oclint-rules/rules/migration/ObjCB
     }
         
 
-ReplaceWithContainerLiteral
----------------------------
+UseContainerLiteral
+-------------------
 
 **Since: 0.7**
+
+**Name: use container literal**
 
 This rule locates the places that can be migrated to the new Objective-C literals with container literals.
 
@@ -49,10 +53,12 @@ This rule is defined by the following class: `oclint-rules/rules/migration/ObjCC
     }
         
 
-ReplaceWithNumberLiteral
-------------------------
+UseNumberLiteral
+----------------
 
 **Since: 0.7**
+
+**Name: use number literal**
 
 This rule locates the places that can be migrated to the new Objective-C literals with number literals.
 
@@ -73,10 +79,12 @@ This rule is defined by the following class: `oclint-rules/rules/migration/ObjCN
     }
         
 
-ReplaceWithObjectSubscripting
------------------------------
+UseObjectSubscripting
+---------------------
 
 **Since: 0.7**
+
+**Name: use object subscripting**
 
 This rule locates the places that can be migrated to the new Objective-C literals with object subscripting.
 
@@ -98,5 +106,5 @@ This rule is defined by the following class: `oclint-rules/rules/migration/ObjCO
         
 
 
-.. Generated on Wed Jun 29 21:59:34 2016
+.. Generated on Tue Jul 12 07:21:26 2016
 

@@ -6,6 +6,8 @@ RedundantConditionalOperator
 
 **Since: 0.6**
 
+**Name: redundant conditional operator**
+
 
 This rule detects three types of redundant conditional operators:
 
@@ -38,6 +40,8 @@ RedundantIfStatement
 
 **Since: 0.4**
 
+**Name: redundant if statement**
+
 This rule detects unnecessary if statements.
 
 This rule is defined by the following class: `oclint-rules/rules/redundant/RedundantIfStatementRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/redundant/RedundantIfStatementRule.cpp>`_
@@ -65,6 +69,8 @@ RedundantLocalVariable
 
 **Since: 0.4**
 
+**Name: redundant local variable**
+
 This rule detects cases where a variable declaration is immediately followed by a return of that variable.
 
 This rule is defined by the following class: `oclint-rules/rules/redundant/RedundantLocalVariableRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/redundant/RedundantLocalVariableRule.cpp>`_
@@ -85,6 +91,8 @@ RedundantNilCheck
 -----------------
 
 **Since: 0.7**
+
+**Name: redundant nil check**
 
 C/C++-style null check in Objective-C like ``foo != nil && [foo bar]`` is redundant, since sending a message to a nil object in this case simply returns a false-y value.
 
@@ -107,6 +115,8 @@ UnnecessaryElseStatement
 ------------------------
 
 **Since: 0.6**
+
+**Name: unnecessary else statement**
 
 When an if statement block ends with a return statement, or all branches in the if statement block end with return statements, then the else statement is unnecessary. The code in the else statement can be run without being in the block.
 
@@ -136,6 +146,8 @@ UnnecessaryNullCheckForDealloc
 
 **Since: 0.8**
 
+**Name: unnecessary null check for dealloc**
+
 ``char* p = 0; delete p;`` is valid. This rule locates unnecessary ``if (p)`` checks.
 
 This rule is defined by the following class: `oclint-rules/rules/redundant/UnnecessaryNullCheckForCXXDeallocRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/redundant/UnnecessaryNullCheckForCXXDeallocRule.cpp>`_
@@ -156,6 +168,8 @@ UselessParentheses
 ------------------
 
 **Since: 0.6**
+
+**Name: useless parentheses**
 
 This rule detects useless parentheses.
 
@@ -178,5 +192,5 @@ This rule is defined by the following class: `oclint-rules/rules/redundant/Usele
         
 
 
-.. Generated on Wed Jun 29 21:59:34 2016
+.. Generated on Tue Jul 12 07:21:26 2016
 

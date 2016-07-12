@@ -6,6 +6,8 @@ BitwiseOperatorInConditional
 
 **Since: 0.6**
 
+**Name: bitwise operator in conditional**
+
 Checks for bitwise operations in conditionals. Although being written on purpose in some rare cases, bitwise operations are considered to be too "smart". Smart code is not easy to understand.
 
 This rule is defined by the following class: `oclint-rules/rules/basic/BitwiseOperatorInConditionalRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/basic/BitwiseOperatorInConditionalRule.cpp>`_
@@ -30,6 +32,8 @@ BrokenNullCheck
 ---------------
 
 **Since: 0.7**
+
+**Name: broken null check**
 
 The broken null check itself will crash the program.
 
@@ -57,6 +61,8 @@ BrokenNilCheck
 
 **Since: 0.7**
 
+**Name: broken nil check**
+
 The broken nil check in Objective-C in some cases returns just the opposite result.
 
 This rule is defined by the following class: `oclint-rules/rules/basic/BrokenNullCheckRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/basic/BrokenNullCheckRule.cpp>`_
@@ -82,6 +88,8 @@ BrokenOddnessCheck
 ------------------
 
 **Since: 0.6**
+
+**Name: broken oddness check**
 
 Checking oddness by ``x % 2 == 1`` won't work for negative numbers. Use ``x & 1 == 1``, or ``x % 2 != 0`` instead.
 
@@ -109,6 +117,8 @@ CollapsibleIfStatements
 
 **Since: 0.6**
 
+**Name: collapsible if statements**
+
 This rule detects instances where the conditions of two consecutive if statements can be combined into one in order to increase code cleanness and readability.
 
 This rule is defined by the following class: `oclint-rules/rules/basic/CollapsibleIfStatementsRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/basic/CollapsibleIfStatementsRule.cpp>`_
@@ -135,6 +145,8 @@ ConstantConditionalOperator
 
 **Since: 0.6**
 
+**Name: constant conditional operator**
+
 ``conditional operator`` whose conditionals are always true or always false are confusing.
 
 This rule is defined by the following class: `oclint-rules/rules/basic/ConstantConditionalOperatorRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/basic/ConstantConditionalOperatorRule.cpp>`_
@@ -154,6 +166,8 @@ ConstantIfExpression
 --------------------
 
 **Since: 0.2**
+
+**Name: constant if expression**
 
 ``if`` statements whose conditionals are always true or always false are confusing.
 
@@ -182,6 +196,8 @@ DeadCode
 
 **Since: 0.4**
 
+**Name: dead code**
+
 Code after ``return``, ``break``, ``continue``, and ``throw`` statements is unreachable and will never be executed.
 
 This rule is defined by the following class: `oclint-rules/rules/basic/DeadCodeRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/basic/DeadCodeRule.cpp>`_
@@ -208,6 +224,8 @@ DoubleNegative
 
 **Since: 0.6**
 
+**Name: double negative**
+
 There is no point in using a double negative, it is always positive.
 
 This rule is defined by the following class: `oclint-rules/rules/basic/DoubleNegativeRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/basic/DoubleNegativeRule.cpp>`_
@@ -228,6 +246,8 @@ ForLoopShouldBeWhileLoop
 ------------------------
 
 **Since: 0.6**
+
+**Name: for loop should be while loop**
 
 Under certain circumstances, some ``for`` loops can be simplified to while loops to make code more concise.
 
@@ -252,6 +272,8 @@ GotoStatement
 
 **Since: 0.6**
 
+**Name: goto statement**
+
 `"Go To Statement Considered Harmful" <http://www.cs.utexas.edu/users/EWD/ewd02xx/EWD215.PDF>`_
 
 This rule is defined by the following class: `oclint-rules/rules/basic/GotoStatementRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/basic/GotoStatementRule.cpp>`_
@@ -272,12 +294,16 @@ This rule is defined by the following class: `oclint-rules/rules/basic/GotoState
 
 **References:**
 
-Edsger Dijkstra (March 1968). `"Go To Statement Considered Harmful" <http://www.cs.utexas.edu/users/EWD/ewd02xx/EWD215.PDF>`_. *Communications of the ACM* (PDF) 11 (3): 147–148. doi:10.1145/362929.362947.
+Edsger Dijkstra (March 1968). `"Go To Statement Considered Harmful"
+<http://www.cs.utexas.edu/users/EWD/ewd02xx/EWD215.PDF>`_.
+*Communications of the ACM* (PDF) 11 (3): 147–148. doi:10.1145/362929.362947.
     
 JumbledIncrementer
 ------------------
 
 **Since: 0.7**
+
+**Name: jumbled incrementer**
 
 Jumbled incrementers are usually typos. If it’s done on purpose, it’s very confusing for code readers.
 
@@ -301,7 +327,9 @@ MisplacedNullCheck
 
 **Since: 0.7**
 
-The null check is misplaced. In C and C++, sending a message to a null pointer could crash the app. When null is misplaced, either the check is useless or it's incorrect.
+**Name: misplaced null check**
+
+The null check is misplaced. In C and C++, sending a message to a null pointer could crash the program. When null is misplaced, either the check is useless or it's incorrect.
 
 This rule is defined by the following class: `oclint-rules/rules/basic/MisplacedNullCheckRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/basic/MisplacedNullCheckRule.cpp>`_
 
@@ -327,9 +355,11 @@ MisplacedNilCheck
 
 **Since: 0.7**
 
+**Name: misplaced nil check**
+
 The nil check is misplaced. In Objective-C, sending a message to a nil pointer simply does nothing. But code readers may be confused about the misplaced nil check.
 
-This rule is defined by the following class: `oclint-rules/rules/basic/MisplacedNilCheckRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/basic/MisplacedNilCheckRule.cpp>`_
+This rule is defined by the following class: `oclint-rules/rules/basic/MisplacedNullCheckRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/basic/MisplacedNullCheckRule.cpp>`_
 
 **Example:**
 
@@ -353,6 +383,8 @@ MultipleUnaryOperator
 
 **Since: 0.6**
 
+**Name: multiple unary operator**
+
 Multiple unary operator can always be confusing and should be simplified.
 
 This rule is defined by the following class: `oclint-rules/rules/basic/MultipleUnaryOperatorRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/basic/MultipleUnaryOperatorRule.cpp>`_
@@ -373,7 +405,9 @@ ReturnFromFinallyBlock
 
 **Since: 0.6**
 
-Returning from a finally block is not recommended.
+**Name: return from finally block**
+
+Returning from a ``finally`` block is not recommended.
 
 This rule is defined by the following class: `oclint-rules/rules/basic/ReturnFromFinallyBlockRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/basic/ReturnFromFinallyBlockRule.cpp>`_
 
@@ -404,6 +438,8 @@ ThrowExceptionFromFinallyBlock
 
 **Since: 0.6**
 
+**Name: throw exception from finally block**
+
 Throwing exceptions within a ``finally`` block may mask other exceptions or code defects.
 
 This rule is defined by the following class: `oclint-rules/rules/basic/ThrowExceptionFromFinallyBlockRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/basic/ThrowExceptionFromFinallyBlockRule.cpp>`_
@@ -427,5 +463,5 @@ This rule is defined by the following class: `oclint-rules/rules/basic/ThrowExce
     
 
 
-.. Generated on Wed Jun 29 21:59:34 2016
+.. Generated on Tue Jul 12 07:21:26 2016
 

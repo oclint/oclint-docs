@@ -6,6 +6,8 @@ AvoidBranchingStatementAsLastInLoop
 
 **Since: 0.7**
 
+**Name: avoid branching statement as last in loop**
+
 Having branching statement as the last statement inside a loop is very confusing, and could largely be forgetting of something and turning into a bug.
 
 This rule is defined by the following class: `oclint-rules/rules/convention/AvoidBranchingStatementAsLastInLoopRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/convention/AvoidBranchingStatementAsLastInLoopRule.cpp>`_
@@ -28,12 +30,14 @@ This rule is defined by the following class: `oclint-rules/rules/convention/Avoi
     }
         
 
-BaseClassDestructorShouldBeVirtualOrProtected
----------------------------------------------
+ProblematicBaseClassDestructor
+------------------------------
 
 **Since: 0.10.2**
 
-Make base class destructors public and virtual, or protected and nonvirtual
+**Name: base class destructor should be virtual or protected**
+
+Make base class destructor public and virtual, or protected and nonvirtual
 
 This rule is defined by the following class: `oclint-rules/rules/convention/BaseClassDestructorShouldBeVirtualOrProtectedRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/convention/BaseClassDestructorShouldBeVirtualOrProtectedRule.cpp>`_
 
@@ -56,12 +60,16 @@ This rule is defined by the following class: `oclint-rules/rules/convention/Base
 
 **References:**
 
-Sutter & Alexandrescu (November 2004). `"C++ Coding Standards: 101 Rules, Guidelines, and Best Practices" <http://gotw.ca/publications/c++cs.htm>`_. *Addison-Wesley Professional*
+Sutter & Alexandrescu (November 2004).
+`"C++ Coding Standards: 101 Rules, Guidelines, and Best Practices"
+<http://gotw.ca/publications/c++cs.htm>`_. *Addison-Wesley Professional*
         
-CoveredSwitchStatementsDontNeedDefault
---------------------------------------
+UnnecessaryDefaultStatement
+---------------------------
 
 **Since: 0.8**
+
+**Name: unnecessary default statement in covered switch statement**
 
 When a switch statement covers all possible cases, a default label is not needed and should be removed. If the switch is not fully covered, the SwitchStatementsShouldHaveDefault rule will report.
 
@@ -91,10 +99,12 @@ This rule is defined by the following class: `oclint-rules/rules/convention/Cove
     }
         
 
-DefaultLabelNotLastInSwitchStatement
-------------------------------------
+IllplacedDefaultLabel
+---------------------
 
 **Since: 0.6**
+
+**Name: ill-placed default label in switch statement**
 
 It is very confusing when default label is not the last label in a switch statement.
 
@@ -123,6 +133,8 @@ DestructorOfVirtualClass
 
 **Since: 0.8**
 
+**Name: destructor of virtual class**
+
 This rule enforces the destructor of a virtual class must be virtual.
 
 This rule is defined by the following class: `oclint-rules/rules/convention/DestructorOfVirtualClassRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/convention/DestructorOfVirtualClassRule.cpp>`_
@@ -144,6 +156,8 @@ InvertedLogic
 -------------
 
 **Since: 0.4**
+
+**Name: inverted logic**
 
 An inverted logic is hard to understand.
 
@@ -175,6 +189,8 @@ MissingBreakInSwitchStatement
 
 **Since: 0.6**
 
+**Name: missing break in switch statement**
+
 A switch statement without a break statement has a very large chance to contribute a bug.
 
 This rule is defined by the following class: `oclint-rules/rules/convention/MissingBreakInSwitchStatementRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/convention/MissingBreakInSwitchStatementRule.cpp>`_
@@ -202,6 +218,8 @@ NonCaseLabelInSwitchStatement
 
 **Since: 0.6**
 
+**Name: non case label in switch statement**
+
 It is very confusing when label becomes part of the switch statement.
 
 This rule is defined by the following class: `oclint-rules/rules/convention/NonCaseLabelInSwitchStatementRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/convention/NonCaseLabelInSwitchStatementRule.cpp>`_
@@ -224,10 +242,12 @@ This rule is defined by the following class: `oclint-rules/rules/convention/NonC
     }
         
 
-IvarAssignmentOutsideAccessorsOrInit
-------------------------------------
+AssignIvarOutsideAccessors
+--------------------------
 
 **Since: 0.8**
+
+**Name: ivar assignment outside accessors or init**
 
 This rule prevents assigning an ivar outside of getters, setters, and ``init`` method.
 
@@ -257,6 +277,8 @@ ParameterReassignment
 
 **Since: 0.6**
 
+**Name: parameter reassignment**
+
 Reassigning values to parameters is very problematic in most cases.
 
 This rule is defined by the following class: `oclint-rules/rules/convention/ParameterReassignmentRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/convention/ParameterReassignmentRule.cpp>`_
@@ -275,10 +297,12 @@ This rule is defined by the following class: `oclint-rules/rules/convention/Para
     }
         
 
-UseEarlyExitsAndContinue
-------------------------
+PreferEarlyExit
+---------------
 
 **Since: 0.8**
+
+**Name: prefer early exits and continue**
 
 Early exits can reduce the indentation of a block of code, so that reader do not have to remember all the previous decisions, therefore, makes it easier to understand the code.
 
@@ -316,10 +340,12 @@ This rule is defined by the following class: `oclint-rules/rules/convention/Pref
     }
         
 
-SwitchStatementsShouldHaveDefault
----------------------------------
+MissingDefaultStatement
+-----------------------
 
 **Since: 0.6**
+
+**Name: missing default in switch statements**
 
 Switch statements should have a default statement.
 
@@ -347,6 +373,8 @@ TooFewBranchesInSwitchStatement
 
 **Since: 0.6**
 
+**Name: too few branches in switch statement**
+
 To increase code readability, when a switch consists of only a few branches, it's much better to use an if statement instead.
 
 This rule is defined by the following class: `oclint-rules/rules/convention/TooFewBranchesInSwitchStatementRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/convention/TooFewBranchesInSwitchStatementRule.cpp>`_
@@ -373,5 +401,5 @@ MINIMUM_CASES_IN_SWITCH
     The reporting threshold for count of case statements in a switch statement, default value is 3.
 
 
-.. Generated on Wed Jun 29 21:59:34 2016
+.. Generated on Tue Jul 12 07:21:26 2016
 

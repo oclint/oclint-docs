@@ -6,6 +6,8 @@ EmptyCatchStatement
 
 **Since: 0.6**
 
+**Name: empty catch statement**
+
 This rule detects instances where an exception is caught, but nothing is done about it.
 
 This rule is defined by the following class: `oclint-rules/rules/empty/EmptyCatchStatementRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/empty/EmptyCatchStatementRule.cpp>`_
@@ -32,6 +34,8 @@ EmptyDoWhileStatement
 
 **Since: 0.6**
 
+**Name: empty do/while statement**
+
 This rule detects instances where do-while statement does nothing.
 
 This rule is defined by the following class: `oclint-rules/rules/empty/EmptyDoWhileStatementRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/empty/EmptyDoWhileStatementRule.cpp>`_
@@ -53,6 +57,8 @@ EmptyElseBlock
 --------------
 
 **Since: 0.6**
+
+**Name: empty else block**
 
 This rule detects instances where a else statement does nothing.
 
@@ -79,6 +85,8 @@ EmptyFinallyStatement
 ---------------------
 
 **Since: 0.6**
+
+**Name: empty finally statement**
 
 This rule detects instances where a finally statement does nothing.
 
@@ -111,6 +119,8 @@ EmptyForStatement
 
 **Since: 0.6**
 
+**Name: empty for statement**
+
 This rule detects instances where a for statement does nothing.
 
 This rule is defined by the following class: `oclint-rules/rules/empty/EmptyForStatementRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/empty/EmptyForStatementRule.cpp>`_
@@ -137,6 +147,8 @@ EmptyIfStatement
 
 **Since: 0.2**
 
+**Name: empty if statement**
+
 This rule detects instances where a condition is checked, but nothing is done about it.
 
 This rule is defined by the following class: `oclint-rules/rules/empty/EmptyIfStatementRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/empty/EmptyIfStatementRule.cpp>`_
@@ -159,6 +171,8 @@ EmptySwitchStatement
 
 **Since: 0.6**
 
+**Name: empty switch statement**
+
 This rule detects instances where a switch statement does nothing.
 
 This rule is defined by the following class: `oclint-rules/rules/empty/EmptySwitchStatementRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/empty/EmptySwitchStatementRule.cpp>`_
@@ -180,6 +194,8 @@ EmptyTryStatement
 -----------------
 
 **Since: 0.6**
+
+**Name: empty try statement**
 
 This rule detects instances where a try statement is empty.
 
@@ -207,6 +223,8 @@ EmptyWhileStatement
 
 **Since: 0.6**
 
+**Name: empty while statement**
+
 This rule detects instances where a while statement does nothing.
 
 This rule is defined by the following class: `oclint-rules/rules/empty/EmptyWhileStatementRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/empty/EmptyWhileStatementRule.cpp>`_
@@ -225,5 +243,5 @@ This rule is defined by the following class: `oclint-rules/rules/empty/EmptyWhil
         
 
 
-.. Generated on Wed Jun 29 21:59:34 2016
+.. Generated on Tue Jul 12 07:21:26 2016
 

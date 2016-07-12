@@ -6,6 +6,8 @@ LongVariableName
 
 **Since: 0.7**
 
+**Name: long variable name**
+
 Variables with long names harm readability.
 
 This rule is defined by the following class: `oclint-rules/rules/naming/LongVariableNameRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/naming/LongVariableNameRule.cpp>`_
@@ -31,6 +33,8 @@ ShortVariableName
 
 **Since: 0.7**
 
+**Name: short variable name**
+
 A variable with a short name is hard to understand what it stands for. Variable with name, but the name has number of characters less than the threshold will be emitted.
 
 This rule is defined by the following class: `oclint-rules/rules/naming/ShortVariableNameRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/naming/ShortVariableNameRule.cpp>`_
@@ -52,5 +56,5 @@ SHORT_VARIABLE_NAME
     The short variable name reporting threshold, default value is 3.
 
 
-.. Generated on Wed Jun 29 21:59:34 2016
+.. Generated on Tue Jul 12 07:21:26 2016
 
