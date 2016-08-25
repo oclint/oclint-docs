@@ -48,3 +48,12 @@ OCLint is pre-installed on OS X images, however, not on linux images, so we prov
 
 An example can be found at this `github repository <https://github.com/ryuichis/oclint-cpp-travis-ci-examples>`_.
 
+C++/qmake
+---------
+
+OCLint working with `qmake` is described in 
+`a Travis C++ tutorial <https://github.com/richelbilderbeek/travis_cpp_tutorial>`_.
+  
+A simple examples can be found 
+`here <https://github.com/richelbilderbeek/travis_qmake_gcc_cpp98_oclint>`_, 
+which is a minimal C++ project that is checked by OCLint and checked by Travis CI.
