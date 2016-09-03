@@ -38,6 +38,11 @@ A few directories are supposed to be in the system ``PATH`` already, to mention 
 
 Dependency libraries are required to be put into appropriate directory, because ``oclint`` executable searches ``$(/path/to/bin/oclint)/../lib/clang``, ``$(/path/to/bin/oclint)/../lib/oclint/rules`` and ``$(/path/to/bin/oclint)/../lib/oclint/reporters`` for builtin headers and dynamic libraries by default.
 
+Option 3: Homebrew Tap
+---------------------------------------
+
+Mac OS X users can install `our homebrew tap <homebrew.html>`_
+
 Verifying Installation
 ----------------------
 
