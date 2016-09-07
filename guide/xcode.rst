@@ -34,7 +34,7 @@ Setting up Target
 
 .. image:: ../_static/guide/xcode_screenshot_2.png
 
-* Add a new build phase in the target we just created. Choose ``And Run Script`` for the phase type.
+* Add a new build phase in the target we just created. Choose ``Add Run Script`` for the phase type.
 
 .. image:: ../_static/guide/xcode_screenshot_3.png
 
