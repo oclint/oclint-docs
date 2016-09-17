@@ -46,7 +46,7 @@ It is actually not necessary to build the code prior to run OCLint against it. H
 
 We just took two sequential steps to generate the binary, step 1 compiles the code, and step 2 links. We are only interested in step 1 because that's all compiler flags we need to give to OCLint. Here in this case, the compiler flag is ``-c``, and inspected source file is ``sample.cpp``.
 
-If you cannot pass through this step, don't give up, there are some tools try to help, like `CMake <../guide/cmake.html>`_ and `Bear <../guide/bear.html>`_ (for Make). In addition, we also provide two helper programs `oclint-json-compilation-database <../manual/oclint-json-compilation-database.html>`_ and `oclint-xcodebuild <../guide/oclint-xcodebuild.html>`_ (for Mac Xcode users) could help find the arguments for OCLint.
+If you cannot pass through this step, don't give up, there are some tools try to help, like `CMake <../guide/cmake.html>`_ and `Bear <../guide/bear.html>`_ (for Make). In addition, we also provide two helper programs `oclint-json-compilation-database <../manual/oclint-json-compilation-database.html>`_ and `oclint-xcodebuild <../guide/oclint-xcodebuild.html>`_ (for Xcode users) could help find the arguments for OCLint.
 
 Checking Single File
 --------------------

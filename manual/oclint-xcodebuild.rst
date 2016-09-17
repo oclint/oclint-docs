@@ -40,6 +40,6 @@ In addition, this will redirect the JSON Compilation Database output to the path
 
 .. warning:: It's highly recommended to avoid having spaces in your file name or file path. It's a good practice. Meanwhile, even though ``oclint`` itself supports spaces in path, ``oclint-json-compilation-database`` and ``oclint-xcodebuild`` still have issues handling spaces in path.
 
-.. note:: ``oclint-xcodebuild`` is still an experimental project. The success of it depends on various things, e.g. Mac OS X version, the Xcode version and project settings. However, since developers who use Xcode are familiar with Apple's manner of supporting only the latest version and one previous version, so ``oclint-xcodebuild`` tries to follow this convention. Your feedback is warmly welcome to help improve this helper program.
+.. note:: ``oclint-xcodebuild`` is still an experimental project. The success of it depends on various things, e.g. macOS version, the Xcode version and project settings. However, since developers who use Xcode are familiar with Apple's manner of supporting only the latest version and one previous version, so ``oclint-xcodebuild`` tries to follow this convention. Your feedback is warmly welcome to help improve this helper program.
 
 .. _xcodebuild Manual Page: https://developer.apple.com/library/mac/#documentation/Darwin/Reference/ManPages/man1/xcodebuild.1.html

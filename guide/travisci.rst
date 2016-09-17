@@ -24,7 +24,7 @@ An example can be found at this `github repository <https://github.com/ryuichis/
 C++/CMake
 ---------
 
-OCLint is pre-installed on OS X images, however, not on linux images, so we provide a script to automate the installation and set it up for you. Feel free to review the `contents of the script <https://raw.githubusercontent.com/ryuichis/oclint-cpp-travis-ci-examples/master/oclint-ci-install.sh>`_ before using it.
+OCLint is pre-installed on macOS images, however, not on linux images, so we provide a script to automate the installation and set it up for you. Feel free to review the `contents of the script <https://raw.githubusercontent.com/ryuichis/oclint-cpp-travis-ci-examples/master/oclint-ci-install.sh>`_ before using it.
 
 .. code-block:: yaml
 

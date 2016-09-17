@@ -20,7 +20,7 @@ OCLint is far from finished but is being continuously improved in many aspects, 
 
 OCLint started as a `research project <http://www.cs.uh.edu/news-events/thesis-defenses/2012/04.02-lQi.html>`_ at the `University of Houston`_. Since then, OCLint has been rewritten and grown to be a 100% open source project. OCLint is designed to serve both academia and industry. Our goal is to spread the importance of code quality, and to make OCLint a must-have tool for developers who program in C, C++ and Objective-C languages.
 
-OCLint is compatible with Mac OS X, major BSD and Linux variants. Porting to Windows is experimental with community effort.
+OCLint is compatible with macOS, major BSD and Linux variants. Porting to Windows is experimental with community effort.
 
 Get Started
 -----------

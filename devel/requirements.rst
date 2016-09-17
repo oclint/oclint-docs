@@ -1,7 +1,7 @@
 System Requirements
 ===================
 
-OCLint can be compiled on all unix-like systems, theoretically. Latest Mac OS X, FreeBSD, and major Linux distributions are tested and recommended.
+OCLint can be compiled on all unix-like systems, theoretically. Latest macOS, FreeBSD, and major Linux distributions are tested and recommended.
 
 LLVM System Requirements
 ------------------------
@@ -22,10 +22,10 @@ Some tools are emphasized here, you may want to double check and make sure the t
 Extra Notes
 -----------
 
-Notes for Mac OS X
-^^^^^^^^^^^^^^^^^^
+Notes for macOS
+^^^^^^^^^^^^^^^
 
-`Homebrew`_ is highly recommended for Mac OS X users. When we have ``homebrew`` installed, we can simply get all the dependencies by
+`Homebrew`_ is highly recommended for macOS users. When we have ``homebrew`` installed, we can simply get all the dependencies by
 
 .. code-block:: bash
 

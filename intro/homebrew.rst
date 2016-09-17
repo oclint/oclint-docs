@@ -1,7 +1,7 @@
 Homebrew
 ========
 
-Mac OS X users can install and update OCLint from our `homebrew tap <https://github.com/oclint/homebrew-formulae>`_.
+macOS users can install and update OCLint from our `homebrew tap <https://github.com/oclint/homebrew-formulae>`_.
 
 Installing OCLint
 -----------------

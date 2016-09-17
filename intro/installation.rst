@@ -44,7 +44,7 @@ Dependency libraries are required to be put into appropriate directory, because 
 Option 3: Homebrew Tap
 ---------------------------------------
 
-Mac OS X users can install `our homebrew tap <homebrew.html>`_
+macOS users can install `our homebrew tap <homebrew.html>`_
 
 Verifying Installation
 ----------------------
