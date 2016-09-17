@@ -32,6 +32,15 @@ It takes a while to build LLVM/Clang (probably much longer than a cup of coffee 
 
 The LLVM/Clang build can be found at ``oclint/build/llvm`` directory, and its installation is located at ``oclint/build/llvm-install`` folder.
 
+Building countly-cpp
+--------------------
+
+We provide a script to build countly-cpp without hassle. Again, you only need this if you build OCLint with analytics enabled.
+
+.. code-block:: bash
+
+    ./countly build
+
 Building googletest/googlemock
 ------------------------------
 
@@ -147,7 +156,7 @@ Show test results for core module:
 
 .. code-block:: bash
 
-    ./test core -show 
+    ./test core -show
 
 Show test results for metrics module:
 
