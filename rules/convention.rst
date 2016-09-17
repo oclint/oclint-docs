@@ -99,7 +99,7 @@ This rule is defined by the following class: `oclint-rules/rules/convention/Cove
     }
         
 
-IllplacedDefaultLabel
+MisplacedDefaultLabel
 ---------------------
 
 **Since: 0.6**
@@ -401,5 +401,5 @@ MINIMUM_CASES_IN_SWITCH
     The reporting threshold for count of case statements in a switch statement, default value is 3.
 
 
-.. Generated on Tue Jul 12 07:21:26 2016
+.. Generated on Sat Sep 17 05:15:13 2016
 

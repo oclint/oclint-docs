@@ -30,12 +30,12 @@ This rule is defined by the following class: `oclint-rules/rules/cocoa/ObjCVerif
     @end
     
 
-MissingCallingBaseMethod
-------------------------
+MissingCallToBaseMethod
+-----------------------
 
 **Since: 0.8**
 
-**Name: missing calling base method**
+**Name: missing call to base method**
 
 When a method is declared with ``__attribute__((annotate("oclint:enforce[base method]")))`` annotation, all of its implementations (including its own and its sub classes) must call the method implementation in super class.
 
@@ -158,5 +158,5 @@ This rule is defined by the following class: `oclint-rules/rules/cocoa/ObjCVerif
     
 
 
-.. Generated on Tue Jul 12 07:21:26 2016
+.. Generated on Sat Sep 17 05:15:13 2016
 
