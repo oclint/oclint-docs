@@ -7,12 +7,15 @@ Both pre-compiled binary distribution and local build bundle should end up with 
     |-bin
     |-lib
     |---clang
-    |-----3.8.0
+    |-----<llvm/clang version>
     |-------include
     |-------lib
     |---oclint
     |-----rules
     |-----reporters
+    |-include
+    |---c++
+    |-----v1
 
 Even without installation, ``oclint`` is able to be invoked directly from ``bin`` directory now.
 
@@ -41,7 +44,7 @@ Dependency libraries are required to be put into appropriate directory, because 
 Option 3: Homebrew Tap
 ---------------------------------------
 
-Mac OS X users can install `our homebrew tap <homebrew.html>`_
+macOS users can install `our homebrew tap <homebrew.html>`_
 
 Verifying Installation
 ----------------------

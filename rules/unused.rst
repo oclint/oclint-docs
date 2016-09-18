@@ -6,6 +6,8 @@ UnusedLocalVariable
 
 **Since: 0.4**
 
+**Name: unused local variable**
+
 This rule detects local variables that are declared, but not used.
 
 This rule is defined by the following class: `oclint-rules/rules/unused/UnusedLocalVariableRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/unused/UnusedLocalVariableRule.cpp>`_
@@ -33,6 +35,8 @@ UnusedMethodParameter
 
 **Since: 0.4**
 
+**Name: unused method parameter**
+
 This rule detects parameters that are not used in the method.
 
 This rule is defined by the following class: `oclint-rules/rules/unused/UnusedMethodParameterRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/unused/UnusedMethodParameterRule.cpp>`_
@@ -55,5 +59,5 @@ This rule is defined by the following class: `oclint-rules/rules/unused/UnusedMe
     __attribute__((annotate("oclint:suppress[unused method parameter]")))
 
 
-.. Generated on Wed Jun 29 21:59:34 2016
+.. Generated on Sat Sep 17 05:15:13 2016
 

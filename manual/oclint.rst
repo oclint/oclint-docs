@@ -5,43 +5,54 @@ When we invoke OCLint, it normally does rule loading, compilation, analysis, and
 
 See all supported options in OCLint |release| by typing ``oclint -help``::
 
-    USAGE: oclint [options] <source0> [... <sourceN>]
+    USAGE: oclint [subcommand] [options] <source0> [... <sourceN>]
 
     OPTIONS:
-      -R=<directory>                - Add directory to rule loading path
-      -disable-rule=<rule name>     - Disable rules
-      -enable-clang-static-analyzer - Enable Clang Static Analyzer, and integrate results into OCLint report
-      -enable-global-analysis       - Compile every source, and analyze across global contexts (depends on number of source files, could results in high memory load)
-      -help                         - Display available options (-help-hidden for more)
-      -list-enabled-rules           - List enabled rules
-      -max-priority-1=<threshold>   - The max allowed number of priority 1 violations
-      -max-priority-2=<threshold>   - The max allowed number of priority 2 violations
-      -max-priority-3=<threshold>   - The max allowed number of priority 3 violations
-      -o=<path>                     - Write output to <path>
-      -p=<string>                   - Build path
-      -rc=<parameter>=<value>       - Override the default behavior of rules
-      -report-type=<name>           - Change output report type
-      -rule=<rule name>             - Explicitly pick rules
-      -version                      - Display the version of this program
+
+    Generic Options:
+
+    -help                         - Display available options (-help-hidden for more)
+    -help-list                    - Display list of available options (-help-list-hidden for more)
+    -version                      - Display the version of this program
+
+    OCLint options:
+
+    -R=<directory>                - Add directory to rule loading path
+    -allow-duplicated-violations  - Allow duplicated violations in the OCLint report
+    -disable-rule=<rule name>     - Disable rules
+    -enable-clang-static-analyzer - Enable Clang Static Analyzer, and integrate results into OCLint report
+    -enable-global-analysis       - Compile every source, and analyze across global contexts (depends on number of source files, could results in high memory load)
+    -extra-arg=<string>           - Additional argument to append to the compiler command line
+    -extra-arg-before=<string>    - Additional argument to prepend to the compiler command line
+    -list-enabled-rules           - List enabled rules
+    -max-priority-1=<threshold>   - The max allowed number of priority 1 violations
+    -max-priority-2=<threshold>   - The max allowed number of priority 2 violations
+    -max-priority-3=<threshold>   - The max allowed number of priority 3 violations
+    -no-analytics                 - Disable the anonymous analytics
+    -o=<path>                     - Write output to <path>
+    -p=<string>                   - Build path
+    -rc=<parameter>=<value>       - Override the default behavior of rules
+    -report-type=<name>           - Change output report type
+    -rule=<rule name>             - Explicitly pick rules
 
     -p <build-path> is used to read a compile command database.
 
-      For example, it can be a CMake build directory in which a file named
-      compile_commands.json exists (use -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
-      CMake option to get this output). When no build path is specified,
-      a search for compile_commands.json will be attempted through all
-      parent paths of the first input file . See:
-      http://clang.llvm.org/docs/HowToSetupToolingForLLVM.html for an
-      example of setting up Clang Tooling on a source tree.
+    For example, it can be a CMake build directory in which a file named
+    compile_commands.json exists (use -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
+    CMake option to get this output). When no build path is specified,
+    a search for compile_commands.json will be attempted through all
+    parent paths of the first input file . See:
+    http://clang.llvm.org/docs/HowToSetupToolingForLLVM.html for an
+    example of setting up Clang Tooling on a source tree.
 
     <source0> ... specify the paths of source files. These paths are
-      looked up in the compile command database. If the path of a file is
-      absolute, it needs to point into CMake's source tree. If the path is
-      relative, the current working directory needs to be in the CMake
-      source tree and the file must be in a subdirectory of the current
-      working directory. "./" prefixes in the relative files will be
-      automatically removed, but the rest of a relative path must be a
-      suffix of a path in the compile command database.
+    looked up in the compile command database. If the path of a file is
+    absolute, it needs to point into CMake's source tree. If the path is
+    relative, the current working directory needs to be in the CMake
+    source tree and the file must be in a subdirectory of the current
+    working directory. "./" prefixes in the relative files will be
+    automatically removed, but the rest of a relative path must be a
+    suffix of a path in the compile command database.
 
     For more information, please visit http://oclint.org
 
@@ -155,10 +166,14 @@ Debug Options
 \-debug
     invoke OCLint in debug mode.
 
-If OCLint is built in the debug model, ``-debug`` outputs deeper message from OCLint invocation. It prints messages that can help understand the overall progress of OCLint analysis. Please aware that this is only available when OCLint is built with debug flag on.
+If OCLint is built in the debug model, ``-debug`` outputs deeper message from OCLint invocation. It prints messages that can help understand the overall progress of OCLint analysis.
+
+.. note:: Please aware that this is only available when OCLint is built with debug flag on.
 
 Other Options
 -------------
 
+\-no-analytics
+    Disable the anonymous analytics.
 \-version
     Show version information about OCLint, LLVM and some environment variables.

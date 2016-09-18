@@ -59,6 +59,17 @@ In addition, ``clang`` script does more than that:
 * First, ``./clang update`` can update the existing LLVM/Clang checkout.
 * Second, you can check out a branch codebase other than the trunk codebase by ``./clang checkout -branch <branch_name>``
 
+countly-cpp
+-----------
+
+We use countly-cpp for sending analytics collections, so you only need this if you build OCLint with analytics enabled.
+
+.. code-block:: bash
+
+    cd oclint-scripts
+    ./countly checkout
+    cd ..
+
 googletest/googlemock
 ---------------------
 
@@ -82,6 +93,7 @@ Sum up, to check out all OCLint modules and dependencies, we could execute the f
     git clone https://github.com/oclint/oclint-xcodebuild.git
     cd oclint-scripts
     ./clang checkout
+    ./countly checkout
     ./googleTest checkout
     cd .. # back to the root folder of OCLint codebase
 
@@ -105,6 +117,7 @@ So now, we OCLint directory might be like this::
     oclint
     |-README
     |-build
+    |-countly
     |-googletest
     |-llvm
     |-oclint-core

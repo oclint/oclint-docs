@@ -6,6 +6,8 @@ AvoidDefaultArgumentsOnVirtualMethods
 
 **Since: 0.10.1**
 
+**Name: avoid default arguments on virtual methods**
+
 Giving virtual functions default argument initializers tends to defeat polymorphism and introduce unnecessary complexity into a class hierarchy.
 
 This rule is defined by the following class: `oclint-rules/rules/design/AvoidDefaultArgumentsOnVirtualMethodsRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/design/AvoidDefaultArgumentsOnVirtualMethodsRule.cpp>`_
@@ -41,6 +43,8 @@ AvoidPrivateStaticMembers
 
 **Since: 0.10.1**
 
+**Name: avoid private static members**
+
 Having static members is easier to harm encapsulation.
 
 This rule is defined by the following class: `oclint-rules/rules/design/AvoidPrivateStaticMembersRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/design/AvoidPrivateStaticMembersRule.cpp>`_
@@ -61,5 +65,5 @@ This rule is defined by the following class: `oclint-rules/rules/design/AvoidPri
         
 
 
-.. Generated on Wed Jun 29 21:59:34 2016
+.. Generated on Sat Sep 17 05:15:13 2016
 

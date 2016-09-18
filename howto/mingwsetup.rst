@@ -81,7 +81,7 @@ The following error message is expected::
         Manual for OCLint main binary
 
     `Building OCLint in Unix-Like Environment <../intro/build.html>`_
-        Documentation of building OCLint on Linux and Mac
+        Documentation of building OCLint on Linux and macOS
 
     `Testing OCLint in Unix-Like Environment <../devel/compiletest.html>`_
-        Documentation of compiling and testing OCLint on Linux and Mac
+        Documentation of compiling and testing OCLint on Linux and macOS

@@ -1,10 +1,12 @@
 Cocoa
 =====
 
-MustOverrideHashWithIsEqual
----------------------------
+MissingHashMethod
+-----------------
 
 **Since: 0.8**
+
+**Name: missing hash method**
 
 When ``isEqual`` method is overridden, ``hash`` method must be overridden, too.
 
@@ -28,12 +30,14 @@ This rule is defined by the following class: `oclint-rules/rules/cocoa/ObjCVerif
     @end
     
 
-MustCallSuper
--------------
+MissingCallToBaseMethod
+-----------------------
 
 **Since: 0.8**
 
-When a method is declared with ``__attribute__((annotate("oclint:enforce[must call super]")))`` annotation, all of its implementations (including its own and its sub classes) must call the method implementation in super class.
+**Name: missing call to base method**
+
+When a method is declared with ``__attribute__((annotate("oclint:enforce[base method]")))`` annotation, all of its implementations (including its own and its sub classes) must call the method implementation in super class.
 
 This rule is defined by the following class: `oclint-rules/rules/cocoa/ObjCVerifyMustCallSuperRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/cocoa/ObjCVerifyMustCallSuperRule.cpp>`_
 
@@ -43,7 +47,7 @@ This rule is defined by the following class: `oclint-rules/rules/cocoa/ObjCVerif
 .. code-block:: objective-c
 
     @interface UIView (OCLintStaticChecks)
-    - (void)layoutSubviews __attribute__((annotate("oclint:enforce[must call super]")));
+    - (void)layoutSubviews __attribute__((annotate("oclint:enforce[base method]")));
     @end
 
     @interface CustomView : UIView
@@ -58,12 +62,14 @@ This rule is defined by the following class: `oclint-rules/rules/cocoa/ObjCVerif
     @end
     
 
-VerifyProhibitedCall
---------------------
+CallingProhibitedMethod
+-----------------------
 
 **Since: 0.10.1**
 
-When a method is declared with ``__attribute__((annotate("oclint:enforce[prohibited call]")))`` annotation, all of its usages will be prohibited.
+**Name: calling prohibited method**
+
+When a method is declared with ``__attribute__((annotate("oclint:enforce[prohibited method]")))`` annotation, all of its usages will be prohibited.
 
 This rule is defined by the following class: `oclint-rules/rules/cocoa/ObjCVerifyProhibitedCallRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/cocoa/ObjCVerifyProhibitedCallRule.cpp>`_
 
@@ -73,7 +79,7 @@ This rule is defined by the following class: `oclint-rules/rules/cocoa/ObjCVerif
 .. code-block:: objective-c
 
     @interface A : NSObject
-    - (void)foo __attribute__((annotate("oclint:enforce[prohibited call]")));
+    - (void)foo __attribute__((annotate("oclint:enforce[prohibited method]")));
     @end
 
     @implementation A
@@ -85,10 +91,12 @@ This rule is defined by the following class: `oclint-rules/rules/cocoa/ObjCVerif
     @end
     
 
-VerifyProtectedMethod
----------------------
+CallingProtectedMethod
+----------------------
 
 **Since: 0.8**
+
+**Name: calling protected method**
 
 Even though there is no ``protected`` in Objective-C language level, in a design's perspective, we sometimes hope to enforce a method only be used inside the class itself or by its subclass. This rule mimics the ``protected`` behavior, and alerts developers when a method is called outside its access scope.
 
@@ -114,12 +122,14 @@ This rule is defined by the following class: `oclint-rules/rules/cocoa/ObjCVerif
     @end
     
 
-SubclassMustImplement
----------------------
+MissingAbstractMethodImplementation
+-----------------------------------
 
 **Since: 0.8**
 
-Due to the Objective-C language tries to postpone making decisions to the runtime as much as possible, an abstract method is okay to be declared but without implementations. This rule tries to verify the subclass implement the correct abstract method.
+**Name: missing abstract method implementation**
+
+Due to the Objective-C language tries to postpone the decision makings to the runtime as much as possible, an abstract method is okay to be declared but without implementations. This rule tries to verify the subclass implement the correct abstract method.
 
 This rule is defined by the following class: `oclint-rules/rules/cocoa/ObjCVerifySubclassMustImplementRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/cocoa/ObjCVerifySubclassMustImplementRule.cpp>`_
 
@@ -130,7 +140,7 @@ This rule is defined by the following class: `oclint-rules/rules/cocoa/ObjCVerif
 
     @interface Parent
 
-    - (void)anAbstractMethod __attribute__((annotate("oclint:enforce[subclass must implement]")));
+    - (void)anAbstractMethod __attribute__((annotate("oclint:enforce[abstract method]")));
 
     @end
 
@@ -148,5 +158,5 @@ This rule is defined by the following class: `oclint-rules/rules/cocoa/ObjCVerif
     
 
 
-.. Generated on Wed Jun 29 21:59:34 2016
+.. Generated on Sat Sep 17 05:15:13 2016
 
