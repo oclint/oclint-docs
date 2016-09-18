@@ -51,9 +51,34 @@ An example can be found at this `github repository <https://github.com/ryuichis/
 C++/qmake
 ---------
 
-OCLint working with `qmake` is described in 
+Travis, qmake and OCLint go together fine.
+
+Here is a complete `travis.yml` of a minimal project, consisting out of a single Qt Project (`.pro`) file and a single `main.cpp` file:
+
+.. code-block:: yaml
+
+    language: cpp
+    compiler: gcc
+    sudo: required
+
+    install:
+      # install prerequisites of OCLint
+      - sudo add-apt-repository ppa:ubuntu-toolchain-r/test --yes
+      - sudo apt-get update -qq 
+      - sudo apt-get install -qq libstdc++6-4.7-dev  
+      # install OCLint
+      - wget https://github.com/oclint/oclint/releases/download/v0.10.3/oclint-0.10.3-x86_64-linux-3.13.0-74-generic.tar.gz
+      - tar -zxf oclint-0.10.3-x86_64-linux-3.13.0-74-generic.tar.gz
+
+    script: 
+      # Build the only .pro file in the folder (not necessary for OCLint)
+      - qmake
+      - make
+      # OCLint
+      - ./oclint-0.10.3/bin/oclint main.cpp -- -c
+
+The example above can be found 
+`here <https://github.com/richelbilderbeek/travis_qmake_gcc_cpp98_oclint>`_, where it is explained in more detail.
+
+Other examples can be found in 
 `a Travis C++ tutorial <https://github.com/richelbilderbeek/travis_cpp_tutorial>`_.
-  
-A simple examples can be found 
-`here <https://github.com/richelbilderbeek/travis_qmake_gcc_cpp98_oclint>`_, 
-which is a minimal C++ project that is checked by OCLint and checked by Travis CI.
