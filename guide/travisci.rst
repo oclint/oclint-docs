@@ -67,15 +67,14 @@ Here is a complete `travis.yml` of a minimal project, consisting out of a single
       - sudo apt-get update -qq 
       - sudo apt-get install -qq libstdc++6-4.7-dev  
       # install OCLint
-      - wget https://github.com/oclint/oclint/releases/download/v0.10.3/oclint-0.10.3-x86_64-linux-3.13.0-74-generic.tar.gz
-      - tar -zxf oclint-0.10.3-x86_64-linux-3.13.0-74-generic.tar.gz
+      - if [ $TRAVIS_OS_NAME == linux ]; then eval "$(curl -sL https://raw.githubusercontent.com/ryuichis/oclint-cpp-travis-ci-examples/master/oclint-ci-install.sh)"; fi
 
     script: 
       # Build the only .pro file in the folder (not necessary for OCLint)
       - qmake
       - make
       # OCLint
-      - ./oclint-0.10.3/bin/oclint main.cpp -- -c
+      - oclint main.cpp -- -c
 
 The example above can be found 
 `here <https://github.com/richelbilderbeek/travis_qmake_gcc_cpp98_oclint>`_, where it is explained in more detail.
