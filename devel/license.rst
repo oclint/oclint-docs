@@ -1,7 +1,7 @@
 Modified BSD License
 ====================
 
-Copyright (C) 2010-2014 Longyi Qi, 2015-2016 Ryuichi Saito, LLC. All rights reserved.
+Copyright (C) 2010-2014 Longyi Qi, 2015-2017 Ryuichi Saito, LLC. All rights reserved.
 
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 
