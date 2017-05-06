@@ -31,20 +31,23 @@ Following code snippet is an example for the ``.bashrc`` or ``.bash_profile`` fi
     OCLINT_HOME=/path/to/oclint-release
     export PATH=$OCLINT_HOME/bin:$PATH
 
-Option 2: Copying OCLint to System PATH
+Option 2: Homebrew Tap
+---------------------------------------
+
+macOS users can install `our homebrew tap <homebrew.html>`_
+
+Option 3: Copying OCLint to System PATH
 ---------------------------------------
 
 A few directories are supposed to be in the system ``PATH`` already, to mention a few, ``/usr/local/bin``, ``/usr/bin``, ``/bin``, etc. Therefore, it's also possible to copy the OCLint binaries into one of these folders, and move the dependencies over. As an example, presumes ``/usr/local/bin`` is in the ``PATH`` (may require root permission).
 
 #. ``cp bin/oclint* /usr/local/bin/``
 #. ``cp -rp lib/* /usr/local/lib/``
+#. ``cp -rp include/* /usr/local/include/``
 
-Dependency libraries are required to be put into appropriate directory, because ``oclint`` executable searches ``$(/path/to/bin/oclint)/../lib/clang``, ``$(/path/to/bin/oclint)/../lib/oclint/rules`` and ``$(/path/to/bin/oclint)/../lib/oclint/reporters`` for builtin headers and dynamic libraries by default.
+Dependency libraries are required to be put into appropriate directory, because ``oclint`` executable searches ``$(/path/to/bin/oclint)/../lib/clang``, ``$(/path/to/bin/oclint)/../include/c++``, ``$(/path/to/bin/oclint)/../lib/oclint/rules`` and ``$(/path/to/bin/oclint)/../lib/oclint/reporters`` for builtin headers and dynamic libraries by default.
 
-Option 3: Homebrew Tap
----------------------------------------
-
-macOS users can install `our homebrew tap <homebrew.html>`_
+.. warning:: Since you are making changes to the system PATH directly, please be advised that it may break the dependencies for other tools or system libraries. If you don't have confidence, please use other installation options.
 
 Verifying Installation
 ----------------------
