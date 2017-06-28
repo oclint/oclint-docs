@@ -137,10 +137,11 @@ This option helps continuous integration and other build systems. OCLint returns
 * **3** - ERROR_WHILE_PROCESSING
 * **4** - ERROR_WHILE_REPORTING
 * **5** - VIOLATIONS_EXCEED_THRESHOLD
+* **6** - COMPILATION_ERRORS
 
 OCLint always return code zero for success execution with the number of violations under an acceptable range. Exit code other than zero means there are something wrong.
 
-For example, when the compilation process fails, an exit code of 3 will be returned. It means either the compiler options have not been set correctly, or the source code has errors.
+For example, when the compilation process fails, an exit code of 3 will be returned. It may means the compiler options have not been set correctly. When the source code has errors, the exit code will be 6.
 
 When the number of violations in any of the priorities is larger than the maximum tolerance, OCLint returns with an exit status code of 5. By default, less than 20 priority 3 violations are allowed, 10 violations is maximum for priority 2, and no priority 1 violation can be tolerated. Too many violations result in bad code quality, if that happens, OCLint intends to fail the build system.
 
