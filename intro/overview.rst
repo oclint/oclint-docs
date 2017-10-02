@@ -25,7 +25,7 @@ OCLint is compatible with macOS, major BSD and Linux variants. Porting to Window
 Get Started
 -----------
 
-There is a large change that pre-compiled binaries are ready to `download <download.html>`_.
+There is a good chance that pre-compiled binaries are ready to `download <download.html>`_.
 
 It's also quite easy to start with `getting the source code <download.html>`_ and `building it <build.html>`_ locally in a specific environment.
 
