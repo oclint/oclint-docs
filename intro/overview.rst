@@ -37,4 +37,4 @@ Please also consider `getting involved`_ in the OCLint community. All kinds of c
 .. _static code analysis: http://en.wikipedia.org/wiki/Static_program_analysis
 .. _abstract syntax tree: http://en.wikipedia.org/wiki/Abstract_syntax_tree
 .. _University of Houston: http://www.uh.edu
-.. _getting involved: http://oclint.org/community.html
+.. _getting involved: https://github.com/oclint
