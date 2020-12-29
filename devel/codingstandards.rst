@@ -12,7 +12,7 @@ Although there is no restricted rules to be followed in all instances, it's stil
 Naming Convention
 -----------------
 
-In general, use `camel case <http://en.wikipedia.org/wiki/CamelCase>`_.
+In general, use `camel case <https://en.wikipedia.org/wiki/CamelCase>`_.
 
 Class names
     Should be nouns and start with an upper case letter, like ``EmptyIfStatementRule``.

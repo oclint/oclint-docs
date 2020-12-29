@@ -56,7 +56,7 @@ JSON reporter produces an JSON report of the results.
 PMD Reporter (pmd)
 ^^^^^^^^^^^^^^^^^^
 
-Since `PMD <http://pmd.sourceforge.net/>`_  report is supported by many existing continuous integration (CI) for Java developers, PMD reporter outputs the XML report that follows the PMD report format. So that these CI systems can pick up the output and render better graphic results.
+Since `PMD <https://pmd.github.io/>`_  report is supported by many existing continuous integration (CI) for Java developers, PMD reporter outputs the XML report that follows the PMD report format. So that these CI systems can pick up the output and render better graphic results.
 
 `Sample PMD report <../_static/sample-reports/sample-pmd.xml>`_
 

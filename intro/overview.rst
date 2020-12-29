@@ -34,7 +34,7 @@ Get Involved
 
 Please also consider `getting involved`_ in the OCLint community. All kinds of contributions, like giving feedback, starting a discussion, filing issues, requesting new features, best of all, submitting a patch or two, are sincerely appreciated.
 
-.. _static code analysis: http://en.wikipedia.org/wiki/Static_program_analysis
-.. _abstract syntax tree: http://en.wikipedia.org/wiki/Abstract_syntax_tree
-.. _University of Houston: http://www.uh.edu
+.. _static code analysis: https://en.wikipedia.org/wiki/Static_program_analysis
+.. _abstract syntax tree: https://en.wikipedia.org/wiki/Abstract_syntax_tree
+.. _University of Houston: https://www.uh.edu
 .. _getting involved: https://github.com/oclint

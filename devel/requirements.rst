@@ -64,12 +64,12 @@ The installation of ``argparse`` module can be checked by
 
     python -c "import argparse; print argparse"
 
-.. _libTooling: http://clang.llvm.org/docs/LibTooling.html
-.. _Abstract Syntax Tree: http://en.wikipedia.org/wiki/Abstract_syntax_tree
-.. _LLVM System Requirements: http://llvm.org/docs/GettingStarted.html#requirements
-.. _Apache Subversion: http://subversion.apache.org/
-.. _Git: http://git-scm.com/
-.. _CMake: http://www.cmake.org/
-.. _LTP GCOV Extension: http://ltp.sourceforge.net/coverage/lcov.php
-.. _Homebrew: http://mxcl.github.com/homebrew/
+.. _libTooling: https://clang.llvm.org/docs/LibTooling.html
+.. _Abstract Syntax Tree: https://en.wikipedia.org/wiki/Abstract_syntax_tree
+.. _LLVM System Requirements: https://llvm.org/docs/GettingStarted.html#requirements
+.. _Apache Subversion: https://subversion.apache.org/
+.. _Git: https://git-scm.com/
+.. _CMake: https://www.cmake.org/
+.. _LTP GCOV Extension: https://ltp.sourceforge.net/coverage/lcov.php
+.. _Homebrew: https://brew.sh/
 .. _OpenSSL: https://www.openssl.org/
