@@ -1,6 +1,36 @@
 Convention
 ==========
 
+AssignIvarOutsideAccessors
+--------------------------
+
+**Since: 0.8**
+
+**Name: ivar assignment outside accessors or init**
+
+This rule prevents assigning an ivar outside of getters, setters, and ``init`` method.
+
+This rule is defined by the following class: `oclint-rules/rules/convention/ObjCAssignIvarOutsideAccessorsRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/convention/ObjCAssignIvarOutsideAccessorsRule.cpp>`_
+
+**Example:**
+
+
+.. code-block:: objective-c
+
+    @interface Foo : NSObject
+    {
+        int _bar;
+    }
+    @property (assign, nonatomic) int bar;
+    @end
+    @implementation Foo
+    @synthesize bar = _bar;
+    - (void)doSomething {
+        _bar = 3; // access _bar outside its getter, setter or init
+    }
+    @end
+        
+
 AvoidBranchingStatementAsLastInLoop
 -----------------------------------
 
@@ -8,7 +38,7 @@ AvoidBranchingStatementAsLastInLoop
 
 **Name: avoid branching statement as last in loop**
 
-Having branching statement as the last statement inside a loop is very confusing, and could largely be forgetting of something and turning into a bug.
+Having branching statement as the last statement inside a loop is likely a bug.
 
 This rule is defined by the following class: `oclint-rules/rules/convention/AvoidBranchingStatementAsLastInLoopRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/convention/AvoidBranchingStatementAsLastInLoopRule.cpp>`_
 
@@ -26,104 +56,6 @@ This rule is defined by the following class: `oclint-rules/rules/convention/Avoi
                 continue;
             }
             break;      // this break is confusing
-        }
-    }
-        
-
-ProblematicBaseClassDestructor
-------------------------------
-
-**Since: 0.10.2**
-
-**Name: base class destructor should be virtual or protected**
-
-Make base class destructor public and virtual, or protected and nonvirtual
-
-This rule is defined by the following class: `oclint-rules/rules/convention/BaseClassDestructorShouldBeVirtualOrProtectedRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/convention/BaseClassDestructorShouldBeVirtualOrProtectedRule.cpp>`_
-
-**Example:**
-
-
-.. code-block:: cpp
-
-    class Base
-    {
-    public:
-        ~Base(); // this should be either protected or virtual
-    }
-    class C : public Base
-    {
-        virtual ~C();
-    }
-        
-
-
-**References:**
-
-Sutter & Alexandrescu (November 2004).
-`"C++ Coding Standards: 101 Rules, Guidelines, and Best Practices"
-<http://gotw.ca/publications/c++cs.htm>`_. *Addison-Wesley Professional*
-        
-UnnecessaryDefaultStatement
----------------------------
-
-**Since: 0.8**
-
-**Name: unnecessary default statement in covered switch statement**
-
-When a switch statement covers all possible cases, a default label is not needed and should be removed. If the switch is not fully covered, the SwitchStatementsShouldHaveDefault rule will report.
-
-This rule is defined by the following class: `oclint-rules/rules/convention/CoveredSwitchStatementsDontNeedDefaultRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/convention/CoveredSwitchStatementsDontNeedDefaultRule.cpp>`_
-
-**Example:**
-
-
-.. code-block:: cpp
-
-    typedef enum {
-        value1 = 0,
-        value2 = 1
-    } eValues;
-
-    void aMethod(eValues a)
-    {
-        switch(a)
-        {
-            case value1:
-                break;
-            case value2:
-                break;
-            default:          // this break is obsolete because all
-                break;        // values of variable a are already covered.
-        }
-    }
-        
-
-MisplacedDefaultLabel
----------------------
-
-**Since: 0.6**
-
-**Name: ill-placed default label in switch statement**
-
-It is very confusing when default label is not the last label in a switch statement.
-
-This rule is defined by the following class: `oclint-rules/rules/convention/DefaultLabelNotLastInSwitchStatementRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/convention/DefaultLabelNotLastInSwitchStatementRule.cpp>`_
-
-**Example:**
-
-
-.. code-block:: cpp
-
-    void example(int a)
-    {
-        switch (a) {
-            case 1:
-                break;
-            default:  // the default case should be last
-                break;
-            case 2:
-                break;
         }
     }
         
@@ -184,6 +116,35 @@ This rule is defined by the following class: `oclint-rules/rules/convention/Inve
     }
         
 
+MisplacedDefaultLabel
+---------------------
+
+**Since: 0.6**
+
+**Name: ill-placed default label in switch statement**
+
+It is very confusing when default label is not the last label in a switch statement.
+
+This rule is defined by the following class: `oclint-rules/rules/convention/DefaultLabelNotLastInSwitchStatementRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/convention/DefaultLabelNotLastInSwitchStatementRule.cpp>`_
+
+**Example:**
+
+
+.. code-block:: cpp
+
+    void example(int a)
+    {
+        switch (a) {
+            case 1:
+                break;
+            default:  // the default case should be last
+                break;
+            case 2:
+                break;
+        }
+    }
+        
+
 MissingBreakInSwitchStatement
 -----------------------------
 
@@ -191,7 +152,7 @@ MissingBreakInSwitchStatement
 
 **Name: missing break in switch statement**
 
-A switch statement without a break statement has a very large chance to contribute a bug.
+A switch case without a break statement is likely a bug.
 
 This rule is defined by the following class: `oclint-rules/rules/convention/MissingBreakInSwitchStatementRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/convention/MissingBreakInSwitchStatementRule.cpp>`_
 
@@ -209,6 +170,34 @@ This rule is defined by the following class: `oclint-rules/rules/convention/Miss
                 // do something
             default:
                 break;
+        }
+    }
+        
+
+MissingDefaultStatement
+-----------------------
+
+**Since: 0.6**
+
+**Name: missing default in switch statements**
+
+Switch statements should have a default statement.
+
+This rule is defined by the following class: `oclint-rules/rules/convention/SwitchStatementsShouldHaveDefaultRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/convention/SwitchStatementsShouldHaveDefaultRule.cpp>`_
+
+**Example:**
+
+
+.. code-block:: cpp
+
+    void example(int a)
+    {
+        switch (a) {
+            case 1:
+                break;
+            case 2:
+                break;
+            // should have a default
         }
     }
         
@@ -240,36 +229,6 @@ This rule is defined by the following class: `oclint-rules/rules/convention/NonC
                 break;
         }
     }
-        
-
-AssignIvarOutsideAccessors
---------------------------
-
-**Since: 0.8**
-
-**Name: ivar assignment outside accessors or init**
-
-This rule prevents assigning an ivar outside of getters, setters, and ``init`` method.
-
-This rule is defined by the following class: `oclint-rules/rules/convention/ObjCAssignIvarOutsideAccessorsRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/convention/ObjCAssignIvarOutsideAccessorsRule.cpp>`_
-
-**Example:**
-
-
-.. code-block:: objective-c
-
-    @interface Foo : NSObject
-    {
-        int _bar;
-    }
-    @property (assign, nonatomic) int bar;
-    @end
-    @implementation Foo
-    @synthesize bar = _bar;
-    - (void)doSomething {
-        _bar = 3; // access _bar outside its getter, setter or init
-    }
-    @end
         
 
 ParameterReassignment
@@ -340,34 +299,40 @@ This rule is defined by the following class: `oclint-rules/rules/convention/Pref
     }
         
 
-MissingDefaultStatement
------------------------
+ProblematicBaseClassDestructor
+------------------------------
 
-**Since: 0.6**
+**Since: 0.10.2**
 
-**Name: missing default in switch statements**
+**Name: base class destructor should be virtual or protected**
 
-Switch statements should have a default statement.
+Make base class destructor public and virtual, or protected and nonvirtual
 
-This rule is defined by the following class: `oclint-rules/rules/convention/SwitchStatementsShouldHaveDefaultRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/convention/SwitchStatementsShouldHaveDefaultRule.cpp>`_
+This rule is defined by the following class: `oclint-rules/rules/convention/BaseClassDestructorShouldBeVirtualOrProtectedRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/convention/BaseClassDestructorShouldBeVirtualOrProtectedRule.cpp>`_
 
 **Example:**
 
 
 .. code-block:: cpp
 
-    void example(int a)
+    class Base
     {
-        switch (a) {
-            case 1:
-                break;
-            case 2:
-                break;
-            // should have a default
-        }
+    public:
+        ~Base(); // this should be either protected or virtual
+    }
+    class C : public Base
+    {
+        virtual ~C();
     }
         
 
+
+**References:**
+
+Sutter & Alexandrescu (November 2004).
+`"C++ Coding Standards: 101 Rules, Guidelines, and Best Practices"
+<http://gotw.ca/publications/c++cs.htm>`_. *Addison-Wesley Professional*
+        
 TooFewBranchesInSwitchStatement
 -------------------------------
 
@@ -400,6 +365,41 @@ This rule is defined by the following class: `oclint-rules/rules/convention/TooF
 MINIMUM_CASES_IN_SWITCH
     The reporting threshold for count of case statements in a switch statement, default value is 3.
 
+UnnecessaryDefaultStatement
+---------------------------
 
-.. Generated on Sat Sep 17 05:15:13 2016
+**Since: 0.8**
+
+**Name: unnecessary default statement in covered switch statement**
+
+When a switch statement covers all possible cases, a default label is not needed and should be removed. If the switch is not fully covered, the SwitchStatementsShouldHaveDefault rule will report.
+
+This rule is defined by the following class: `oclint-rules/rules/convention/CoveredSwitchStatementsDontNeedDefaultRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/convention/CoveredSwitchStatementsDontNeedDefaultRule.cpp>`_
+
+**Example:**
+
+
+.. code-block:: cpp
+
+    typedef enum {
+        value1 = 0,
+        value2 = 1
+    } eValues;
+
+    void aMethod(eValues a)
+    {
+        switch(a)
+        {
+            case value1:
+                break;
+            case value2:
+                break;
+            default:          // this break is obsolete because all
+                break;        // values of variable a are already covered.
+        }
+    }
+        
+
+
+.. Generated on Wed Dec 30 09:22:10 2020
 

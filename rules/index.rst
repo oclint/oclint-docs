@@ -1,7 +1,7 @@
 Rule Index
 ==========
 
-OCLint |release| includes 71 rules.
+OCLint |release| includes 72 rules.
 
 .. toctree::
    :maxdepth: 2
@@ -9,6 +9,7 @@ OCLint |release| includes 71 rules.
    basic
    cocoa
    convention
+   cuda
    design
    empty
    migration
@@ -17,5 +18,5 @@ OCLint |release| includes 71 rules.
    size
    unused
 
-.. Generated on Sat Sep 17 05:15:13 2016
+.. Generated on Wed Dec 30 09:22:10 2020
 

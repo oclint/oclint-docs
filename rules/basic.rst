@@ -28,34 +28,6 @@ This rule is defined by the following class: `oclint-rules/rules/basic/BitwiseOp
     }
     
 
-BrokenNullCheck
----------------
-
-**Since: 0.7**
-
-**Name: broken null check**
-
-The broken null check itself will crash the program.
-
-This rule is defined by the following class: `oclint-rules/rules/basic/BrokenNullCheckRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/basic/BrokenNullCheckRule.cpp>`_
-
-**Example:**
-
-
-.. code-block:: cpp
-
-    void m(A *a, B *b)
-    {
-        if (a != NULL || a->bar(b))
-        {
-        }
-
-        if (a == NULL && a->bar(b))
-        {
-        }
-    }
-    
-
 BrokenNilCheck
 --------------
 
@@ -84,6 +56,34 @@ This rule is defined by the following class: `oclint-rules/rules/basic/BrokenNul
     }
     
 
+BrokenNullCheck
+---------------
+
+**Since: 0.7**
+
+**Name: broken null check**
+
+The broken null check itself will crash the program.
+
+This rule is defined by the following class: `oclint-rules/rules/basic/BrokenNullCheckRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/basic/BrokenNullCheckRule.cpp>`_
+
+**Example:**
+
+
+.. code-block:: cpp
+
+    void m(A *a, B *b)
+    {
+        if (a != NULL || a->bar(b))
+        {
+        }
+
+        if (a == NULL && a->bar(b))
+        {
+        }
+    }
+    
+
 BrokenOddnessCheck
 ------------------
 
@@ -91,7 +91,7 @@ BrokenOddnessCheck
 
 **Name: broken oddness check**
 
-Checking oddness by ``x % 2 == 1`` won't work for negative numbers. Use ``x & 1 == 1``, or ``x % 2 != 0`` instead.
+Checking oddness by ``x % 2 == 1`` won't work for negative numbers. Use ``x & 1 == 1`` or ``x % 2 != 0`` instead.
 
 This rule is defined by the following class: `oclint-rules/rules/basic/BrokenOddnessCheckRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/basic/BrokenOddnessCheckRule.cpp>`_
 
@@ -249,7 +249,7 @@ ForLoopShouldBeWhileLoop
 
 **Name: for loop should be while loop**
 
-Under certain circumstances, some ``for`` loops can be simplified to while loops to make code more concise.
+Under certain circumstances, some ``for`` loops can be simplified to ``while`` loops to make code more concise.
 
 This rule is defined by the following class: `oclint-rules/rules/basic/ForLoopShouldBeWhileLoopRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/basic/ForLoopShouldBeWhileLoopRule.cpp>`_
 
@@ -274,7 +274,7 @@ GotoStatement
 
 **Name: goto statement**
 
-`"Go To Statement Considered Harmful" <http://www.cs.utexas.edu/users/EWD/ewd02xx/EWD215.PDF>`_
+`"Go To Statement Considered Harmful" <https://www.cs.utexas.edu/users/EWD/ewd02xx/EWD215.PDF>`_
 
 This rule is defined by the following class: `oclint-rules/rules/basic/GotoStatementRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/basic/GotoStatementRule.cpp>`_
 
@@ -295,7 +295,7 @@ This rule is defined by the following class: `oclint-rules/rules/basic/GotoState
 **References:**
 
 Edsger Dijkstra (March 1968). `"Go To Statement Considered Harmful"
-<http://www.cs.utexas.edu/users/EWD/ewd02xx/EWD215.PDF>`_.
+<https://www.cs.utexas.edu/users/EWD/ewd02xx/EWD215.PDF>`_.
 *Communications of the ACM* (PDF) 11 (3): 147–148. doi:10.1145/362929.362947.
     
 JumbledIncrementer
@@ -318,34 +318,6 @@ This rule is defined by the following class: `oclint-rules/rules/basic/JumbledIn
         for (int i = 0; i < a; i++) {
             for (int j = 0; j < a; i++) { // references both 'i' and 'j'
             }
-        }
-    }
-    
-
-MisplacedNullCheck
-------------------
-
-**Since: 0.7**
-
-**Name: misplaced null check**
-
-The null check is misplaced. In C and C++, sending a message to a null pointer could crash the program. When null is misplaced, either the check is useless or it's incorrect.
-
-This rule is defined by the following class: `oclint-rules/rules/basic/MisplacedNullCheckRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/basic/MisplacedNullCheckRule.cpp>`_
-
-**Example:**
-
-
-.. code-block:: cpp
-
-    void m(A *a, B *b)
-    {
-        if (a->bar(b) && a != NULL) // violation
-        {
-        }
-
-        if (a->bar(b) || !a)        // violation
-        {
         }
     }
     
@@ -373,6 +345,34 @@ This rule is defined by the following class: `oclint-rules/rules/basic/Misplaced
         }
 
         if (![obj1 isEqualTo:obj2] || obj1 == nil)
+        {
+        }
+    }
+    
+
+MisplacedNullCheck
+------------------
+
+**Since: 0.7**
+
+**Name: misplaced null check**
+
+The null check is misplaced. In C and C++, sending a message to a null pointer could crash the program. When null is misplaced, either the check is useless or it's incorrect.
+
+This rule is defined by the following class: `oclint-rules/rules/basic/MisplacedNullCheckRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/basic/MisplacedNullCheckRule.cpp>`_
+
+**Example:**
+
+
+.. code-block:: cpp
+
+    void m(A *a, B *b)
+    {
+        if (a->bar(b) && a != NULL) // violation
+        {
+        }
+
+        if (a->bar(b) || !a)        // violation
         {
         }
     }
@@ -463,5 +463,5 @@ This rule is defined by the following class: `oclint-rules/rules/basic/ThrowExce
     
 
 
-.. Generated on Sat Sep 17 05:15:13 2016
+.. Generated on Wed Dec 30 09:22:10 2020
 

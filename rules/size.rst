@@ -1,6 +1,36 @@
 Size
 ====
 
+DeepNestedBlock
+---------------
+
+**Since: 0.6**
+
+**Name: deep nested block**
+
+This rule indicates nested blocks deeper than the threshold.
+
+This rule is defined by the following class: `oclint-rules/rules/size/NestedBlockDepthRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/size/NestedBlockDepthRule.cpp>`_
+
+**Example:**
+
+
+.. code-block:: cpp
+
+    if (1)
+    {               // 1
+        {           // 2
+            {       // 3
+            }
+        }
+    }
+        
+
+**Thresholds:**
+
+NESTED_BLOCK_DEPTH
+    The depth of a block or compound statement reporting threshold, default value is 5.
+
 HighCyclomaticComplexity
 ------------------------
 
@@ -11,11 +41,11 @@ HighCyclomaticComplexity
 
 Cyclomatic complexity is determined by the number of linearly independent paths
 through a program's source code. In other words, cyclomatic complexity of a method
-is measured by the number of decision points, like ``if``, ``while``, and ``for`` statements,
-plus one for the method entry.
+is measured by the number of decision points, like ``if``, ``while``, and ``for``
+statements, plus one for the method entry.
 
-The experiments McCabe, the author of cyclomatic complexity, conclude that
-methods in the 3 to 7 complexity range are quite well structured. He also suggest
+The McCabe 1976 paper concludes that methods in the 3 to 7 complexity range
+are quite well structured. It is also suggested that
 the cyclomatic complexity of 10 is a reasonable upper limit.
         
 
@@ -72,6 +102,91 @@ CYCLOMATIC_COMPLEXITY
 McCabe (December 1976). `"A Complexity Measure" <http://www.literateprogramming.com/mccabe.pdf>`_.
 *IEEE Transactions on Software Engineering: 308–320*
         
+HighNPathComplexity
+-------------------
+
+**Since: 0.4**
+
+**Name: high npath complexity**
+
+
+NPath complexity is determined by the number of execution paths through that method.
+Compared to cyclomatic complexity, NPath complexity has two outstanding characteristics:
+first, it distinguishes between different kinds of control flow structures;
+second, it takes the various type of acyclic paths in a flow graph into consideration.
+
+Based on studies done by the original author in AT&T Bell Lab,
+an NPath threshold value of 200 has been established for a method.
+        
+
+This rule is defined by the following class: `oclint-rules/rules/size/NPathComplexityRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/size/NPathComplexityRule.cpp>`_
+
+**Example:**
+
+
+.. code-block:: cpp
+
+    void example()
+    {
+        // complicated code that is hard to understand
+    }
+        
+
+**Thresholds:**
+
+NPATH_COMPLEXITY
+    The NPath complexity reporting threshold, default value is 200.
+
+**Suppress:**
+
+.. code-block:: cpp
+
+    __attribute__((annotate("oclint:suppress[high npath complexity]")))
+
+
+**References:**
+
+Brian A. Nejmeh  (1988). `"NPATH: a measure of execution path complexity and its applications"
+<https://dl.acm.org/doi/10.1145/42372.42379>`_. *Communications of the ACM 31 (2) p. 188-200*
+        
+HighNcssMethod
+--------------
+
+**Since: 0.6**
+
+**Name: high ncss method**
+
+This rule counts the Non-Commenting Source Statements (NCSS) of a method. NCSS only takes actual statements into consideration. In other words, it ignores empty statements, empty blocks, closing brackets, semicolons after closing brackets, and others. Meanwhile, a statement that is broken into multiple lines is counted only once.
+
+This rule is defined by the following class: `oclint-rules/rules/size/NcssMethodCountRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/size/NcssMethodCountRule.cpp>`_
+
+**Example:**
+
+
+.. code-block:: cpp
+
+    void example()          // 1
+    {
+        if (1)              // 2
+        {
+        }
+        else                // 3
+        {
+        }
+    }
+        
+
+**Thresholds:**
+
+NCSS_METHOD
+    The high NCSS method reporting threshold, default value is 30.
+
+**Suppress:**
+
+.. code-block:: cpp
+
+    __attribute__((annotate("oclint:suppress[high ncss method]")))
+
 LongClass
 ---------
 
@@ -79,7 +194,7 @@ LongClass
 
 **Name: long class**
 
-Long class generally indicates that this class tries to do many things. Each class should do one thing and that one thing well.
+Long class generally indicates that it does too many things. Each class should be cohesive: does one thing and that one thing well.
 
 This rule is defined by the following class: `oclint-rules/rules/size/LongClassRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/size/LongClassRule.cpp>`_
 
@@ -109,7 +224,7 @@ LongLine
 
 **Name: long line**
 
-When the number of characters for one line of code is very high, it largely harms the readability. Break long lines of code into multiple lines.
+Long lines are hard to read. Break them into multiple lines.
 
 This rule is defined by the following class: `oclint-rules/rules/size/LongLineRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/size/LongLineRule.cpp>`_
 
@@ -158,121 +273,6 @@ This rule is defined by the following class: `oclint-rules/rules/size/LongMethod
 LONG_METHOD
     The long method reporting threshold, default value is 50.
 
-HighNcssMethod
---------------
-
-**Since: 0.6**
-
-**Name: high ncss method**
-
-This rule counts number of lines for a method by counting Non Commenting Source Statements (NCSS). NCSS only takes actual statements into consideration, in other words, ignores empty statements, empty blocks, closing brackets or semicolons after closing brackets. Meanwhile, a statement that is broken into multiple lines contribute only one count.
-
-This rule is defined by the following class: `oclint-rules/rules/size/NcssMethodCountRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/size/NcssMethodCountRule.cpp>`_
-
-**Example:**
-
-
-.. code-block:: cpp
-
-    void example()          // 1
-    {
-        if (1)              // 2
-        {
-        }
-        else                // 3
-        {
-        }
-    }
-        
-
-**Thresholds:**
-
-NCSS_METHOD
-    The high NCSS method reporting threshold, default value is 30.
-
-**Suppress:**
-
-.. code-block:: cpp
-
-    __attribute__((annotate("oclint:suppress[high ncss method]")))
-
-DeepNestedBlock
----------------
-
-**Since: 0.6**
-
-**Name: deep nested block**
-
-This rule indicates blocks nested more deeply than the upper limit.
-
-This rule is defined by the following class: `oclint-rules/rules/size/NestedBlockDepthRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/size/NestedBlockDepthRule.cpp>`_
-
-**Example:**
-
-
-.. code-block:: cpp
-
-    if (1)
-    {               // 1
-        {           // 2
-            {       // 3
-            }
-        }
-    }
-        
-
-**Thresholds:**
-
-NESTED_BLOCK_DEPTH
-    The depth of a block or compound statement reporting threshold, default value is 5.
-
-HighNPathComplexity
--------------------
-
-**Since: 0.4**
-
-**Name: high npath complexity**
-
-
-NPath complexity is determined by the number of execution paths through that method.
-Compared to cyclomatic complexity, NPath complexity has two outstanding characteristics:
-first, it distinguishes between different kinds of control flow structures;
-second, it takes the various type of acyclic paths in a flow graph into consideration.
-
-Based on studies done by the original author in AT&T Bell Lab,
-an NPath threshold value of 200 has been established for a method.
-        
-
-This rule is defined by the following class: `oclint-rules/rules/size/NPathComplexityRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/size/NPathComplexityRule.cpp>`_
-
-**Example:**
-
-
-.. code-block:: cpp
-
-    void example()
-    {
-        // complicated code that is hard to understand
-    }
-        
-
-**Thresholds:**
-
-NPATH_COMPLEXITY
-    The NPath complexity reporting threshold, default value is 200.
-
-**Suppress:**
-
-.. code-block:: cpp
-
-    __attribute__((annotate("oclint:suppress[high npath complexity]")))
-
-
-**References:**
-
-Brian A. Nejmeh  (1988). `"NPATH: a measure of execution path complexity and its applications"
-<http://dl.acm.org/citation.cfm?id=42379>`_. *Communications of the ACM 31 (2) p. 188-200*
-        
 TooManyFields
 -------------
 
@@ -357,7 +357,7 @@ TooManyParameters
 
 **Name: too many parameters**
 
-Methods with too many parameters are hard to understand and maintain, and are thirsty for refactorings, like `Replace Parameter With method <http://www.refactoring.com/catalog/replaceParameterWithMethod.html>`_, `Introduce Parameter Object <http://www.refactoring.com/catalog/introduceParameterObject.html>`_, or `Preserve Whole Object <http://www.refactoring.com/catalog/preserveWholeObject.html>`_.
+Methods with too many parameters are hard to understand and maintain, and are thirsty for refactorings, like `Replace Parameter With method <https://www.refactoring.com/catalog/replaceParameterWithMethod.html>`_, `Introduce Parameter Object <https://www.refactoring.com/catalog/introduceParameterObject.html>`_, or `Preserve Whole Object <https://www.refactoring.com/catalog/preserveWholeObject.html>`_.
 
 This rule is defined by the following class: `oclint-rules/rules/size/TooManyParametersRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/size/TooManyParametersRule.cpp>`_
 
@@ -383,5 +383,5 @@ TOO_MANY_PARAMETERS
 Fowler, Martin (1999). *Refactoring: Improving the design of existing code.* Addison Wesley.
         
 
-.. Generated on Sat Sep 17 05:15:13 2016
+.. Generated on Wed Dec 30 09:22:10 2020
 

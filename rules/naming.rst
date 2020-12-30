@@ -35,7 +35,7 @@ ShortVariableName
 
 **Name: short variable name**
 
-A variable with a short name is hard to understand what it stands for. Variable with name, but the name has number of characters less than the threshold will be emitted.
+A variable with a short name is hard to understand what it stands for.
 
 This rule is defined by the following class: `oclint-rules/rules/naming/ShortVariableNameRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/naming/ShortVariableNameRule.cpp>`_
 
@@ -56,5 +56,5 @@ SHORT_VARIABLE_NAME
     The short variable name reporting threshold, default value is 3.
 
 
-.. Generated on Sat Sep 17 05:15:13 2016
+.. Generated on Wed Dec 30 09:22:10 2020
 
