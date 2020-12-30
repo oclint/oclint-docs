@@ -21,7 +21,7 @@ Usage
   * `Bear <guide/bear.html>`_
   * `xctool <guide/xctool.html>`_
   * `xcodebuild <guide/xcodebuild.html>`_
-  * `xcpretty <guide/xcpretty>`_
+  * `xcpretty <guide/xcpretty.html>`_
   * `Xcode IDE <guide/xcode.html>`_
   * `Travis CI <guide/travisci.html>`_
   * `Jenkins CI <guide/jenkins.html>`_
@@ -54,4 +54,3 @@ License
 -------
 
 * `Modified BSD License <devel/license.html>`_
-
