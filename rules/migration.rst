@@ -8,7 +8,7 @@ UseBoxedExpression
 
 **Name: use boxed expression**
 
-This rule locates the places that can be migrated to the new Objective-C literals with boxed expressions.
+This rule locates the places that can be migrated to the Objective-C literals with boxed expressions.
 
 This rule is defined by the following class: `oclint-rules/rules/migration/ObjCBoxedExpressionsRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/migration/ObjCBoxedExpressionsRule.cpp>`_
 
@@ -34,7 +34,7 @@ UseContainerLiteral
 
 **Name: use container literal**
 
-This rule locates the places that can be migrated to the new Objective-C literals with container literals.
+This rule locates the places that can be migrated to the Objective-C container literals.
 
 This rule is defined by the following class: `oclint-rules/rules/migration/ObjCContainerLiteralsRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/migration/ObjCContainerLiteralsRule.cpp>`_
 
@@ -60,7 +60,7 @@ UseNumberLiteral
 
 **Name: use number literal**
 
-This rule locates the places that can be migrated to the new Objective-C literals with number literals.
+This rule locates the places that can be migrated to the Objective-C number literals.
 
 This rule is defined by the following class: `oclint-rules/rules/migration/ObjCNSNumberLiteralsRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/migration/ObjCNSNumberLiteralsRule.cpp>`_
 
@@ -86,7 +86,7 @@ UseObjectSubscripting
 
 **Name: use object subscripting**
 
-This rule locates the places that can be migrated to the new Objective-C literals with object subscripting.
+This rule locates the places that can be migrated to the Objective-C literals with object subscripting.
 
 This rule is defined by the following class: `oclint-rules/rules/migration/ObjCObjectSubscriptingRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/migration/ObjCObjectSubscriptingRule.cpp>`_
 
@@ -106,5 +106,5 @@ This rule is defined by the following class: `oclint-rules/rules/migration/ObjCO
         
 
 
-.. Generated on Sat Sep 17 05:15:13 2016
+.. Generated on Wed Dec 30 09:22:10 2020
 

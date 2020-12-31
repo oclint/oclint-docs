@@ -21,7 +21,7 @@ or
 Background
 ----------
 
-This idea was originally posted in `this blog <http://gavrix.wordpress.com/2013/02/28/integrating-oclint-in-xcode/>`_. We hope to share it with more developers, and hope to motivate more ideas.
+This idea was originally posted in `this blog <https://gavrix.wordpress.com/2013/02/28/integrating-oclint-in-xcode/>`_. We hope to share it with more developers, and hope to motivate more ideas.
 
 Setting up Target
 -----------------

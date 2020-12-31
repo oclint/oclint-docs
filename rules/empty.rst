@@ -60,7 +60,7 @@ EmptyElseBlock
 
 **Name: empty else block**
 
-This rule detects instances where a else statement does nothing.
+This rule detects instances where an else statement does nothing.
 
 This rule is defined by the following class: `oclint-rules/rules/empty/EmptyElseBlockRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/empty/EmptyElseBlockRule.cpp>`_
 
@@ -243,5 +243,5 @@ This rule is defined by the following class: `oclint-rules/rules/empty/EmptyWhil
         
 
 
-.. Generated on Sat Sep 17 05:15:13 2016
+.. Generated on Wed Dec 30 09:22:10 2020
 

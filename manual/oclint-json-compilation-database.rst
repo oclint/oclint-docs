@@ -68,7 +68,7 @@ Debug Options
 More than that, if OCLint is built in the debug model, ``-debug`` outputs deeper message from OCLint invocation. It prints messages that can help understand the overall progress of OCLint analysis. Please aware that this is only available when OCLint is built with debug flag on.
 
 
-.. _JSON Compilation Database Format Specification: http://clang.llvm.org/docs/JSONCompilationDatabase.html
-.. _CMake Documentation: http://www.cmake.org/cmake/help/documentation.html
-.. _Python regular expression syntax: http://docs.python.org/2/library/re.html#re-syntax
+.. _JSON Compilation Database Format Specification: https://clang.llvm.org/docs/JSONCompilationDatabase.html
+.. _CMake Documentation: https://www.cmake.org/cmake/help/documentation.html
+.. _Python regular expression syntax: https://docs.python.org/2/library/re.html#re-syntax
 

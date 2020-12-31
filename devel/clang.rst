@@ -8,19 +8,19 @@ Here is a list of links that comprehensively explain how these Clang libraries w
 LibTooling
 ----------
 
-* `http://clang.llvm.org/docs/LibTooling.html <http://clang.llvm.org/docs/LibTooling.html>`_
-* `http://clang.llvm.org/docs/IntroductionToTheClangAST.html <http://clang.llvm.org/docs/IntroductionToTheClangAST.html>`_
-* `http://clang.llvm.org/docs/JSONCompilationDatabase.html <http://clang.llvm.org/docs/JSONCompilationDatabase.html>`_
+* `https://clang.llvm.org/docs/LibTooling.html <https://clang.llvm.org/docs/LibTooling.html>`_
+* `https://clang.llvm.org/docs/IntroductionToTheClangAST.html <https://clang.llvm.org/docs/IntroductionToTheClangAST.html>`_
+* `https://clang.llvm.org/docs/JSONCompilationDatabase.html <https://clang.llvm.org/docs/JSONCompilationDatabase.html>`_
 
 Clang AST
 ---------
 
-* `http://clang.llvm.org/docs/IntroductionToTheClangAST.html <http://clang.llvm.org/docs/IntroductionToTheClangAST.html>`_
-* `http://clang.llvm.org/docs/RAVFrontendAction.html <http://clang.llvm.org/docs/RAVFrontendAction.html>`_
+* `https://clang.llvm.org/docs/IntroductionToTheClangAST.html <https://clang.llvm.org/docs/IntroductionToTheClangAST.html>`_
+* `https://clang.llvm.org/docs/RAVFrontendAction.html <https://clang.llvm.org/docs/RAVFrontendAction.html>`_
 
 LibASTMatchers
 --------------
 
-* `http://clang.llvm.org/docs/LibASTMatchers.html <http://clang.llvm.org/docs/LibASTMatchers.html>`_
-* `http://clang.llvm.org/docs/LibASTMatchersTutorial.html <http://clang.llvm.org/docs/LibASTMatchersTutorial.html>`_
-* `http://clang.llvm.org/docs/LibASTMatchersReference.html <http://clang.llvm.org/docs/LibASTMatchersReference.html>`_
+* `https://clang.llvm.org/docs/LibASTMatchers.html <https://clang.llvm.org/docs/LibASTMatchers.html>`_
+* `https://clang.llvm.org/docs/LibASTMatchersTutorial.html <https://clang.llvm.org/docs/LibASTMatchersTutorial.html>`_
+* `https://clang.llvm.org/docs/LibASTMatchersReference.html <https://clang.llvm.org/docs/LibASTMatchersReference.html>`_

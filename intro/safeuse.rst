@@ -1,7 +1,7 @@
 Directions to Safe Use
 ======================
 
-We are drafting this document by following the suggestions from `Andy Hunt's proposal <http://blog.toolshed.com/2013/04/directions-for-safe-use.html>`_.
+We are drafting this document by following the suggestions from `Andy Hunt's proposal <https://blog.toolshed.com/2013/04/directions-for-safe-use.html>`_.
 
 There are many many cool features that we can provide. At the same time, there are restrictions that we currently don't have a solution but only workarounds. We, as contributors, would like to be honest about the flaws in our tool. We hope these directions to safe use could be beneficial for both OCLint users and contributors -
 
@@ -10,7 +10,7 @@ There are many many cool features that we can provide. At the same time, there a
 
 Alright, let's go with a few -
 
-* `No white spaces in file name and path <http://oclint.org/news/2013/03/10/no-space-in-file-name-and-path/>`_
+* `No white spaces in file name and path <https://oclint.org/news/2013/03/10/no-space-in-file-name-and-path.html>`_
 
   * The existence of white spaces can cause problem when use ``oclint-json-compilation-database`` and ``oclint-xcodebuild``
 

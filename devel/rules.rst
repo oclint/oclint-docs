@@ -33,7 +33,7 @@ Source Code Reader Rules
 AST Visitor Rules
 -----------------
 
-The majority of the existing rules inherit ``AbstractASTVisitorRule`` class. It follows the `visitor pattern <http://en.wikipedia.org/wiki/Visitor_pattern>`_. In our rules, we only write methods for the type of nodes that we are interested. For example, when we want to inspect all if statement, we should write
+The majority of the existing rules inherit ``AbstractASTVisitorRule`` class. It follows the `visitor pattern <https://en.wikipedia.org/wiki/Visitor_pattern>`_. In our rules, we only write methods for the type of nodes that we are interested. For example, when we want to inspect all if statement, we should write
 
 .. code-block:: c++
 

@@ -1,7 +1,7 @@
 Using OCLint with Bear
 ======================
 
-This document shows how to apply OCLint to the projects which use `Make <http://en.wikipedia.org/wiki/Make_(software)>`_ and other build systems in unix-like operating systems.
+This document shows how to apply OCLint to the projects which use `Make <https://en.wikipedia.org/wiki/Make_(software)>`_ and other build systems in unix-like operating systems.
 
 Prerequisite
 ------------

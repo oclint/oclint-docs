@@ -12,4 +12,3 @@ OCLint Documentation Contents
    rules/index
    internals/index
    devel/index
-   devel/license

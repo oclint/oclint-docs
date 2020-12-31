@@ -6,7 +6,7 @@ This document shows how to apply OCLint to the projects which use CMake as build
 Prerequisite
 ------------
 
-* `CMake <http://www.cmake.org/>`_
+* `CMake <https://www.cmake.org/>`_
 * `oclint Manual <../manual/oclint.html>`_
 * `oclint-json-compilation-database Manual <../manual/oclint-json-compilation-database.html>`_
 
@@ -38,7 +38,7 @@ But in order to use ``oclint-json-compilation-database``, it's required to copy 
 * copy the file
 
 .. code-block:: bash
-    
+
     cp `pwd`/compile_commands.json /path/to/source-root
 
 * link the file

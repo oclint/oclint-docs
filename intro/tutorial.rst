@@ -145,4 +145,4 @@ Read more about `picking up the right reporter <../howto/selectreporters.html>`_
 
 Next, more detail information can be found with comprehensive `manuals <../manual/index.html>`_ and `user guides <../guide/index.html>`_. In addition, a few `how-to documents <../howto/index.html>`_ can help speed things up a little bit in several aspects.
 
-.. _static code analysis: http://en.wikipedia.org/wiki/Static_program_analysis
+.. _static code analysis: https://en.wikipedia.org/wiki/Static_program_analysis

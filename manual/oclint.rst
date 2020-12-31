@@ -42,7 +42,7 @@ See all supported options in OCLint |release| by typing ``oclint -help``::
     CMake option to get this output). When no build path is specified,
     a search for compile_commands.json will be attempted through all
     parent paths of the first input file . See:
-    http://clang.llvm.org/docs/HowToSetupToolingForLLVM.html for an
+    https://clang.llvm.org/docs/HowToSetupToolingForLLVM.html for an
     example of setting up Clang Tooling on a source tree.
 
     <source0> ... specify the paths of source files. These paths are
@@ -54,7 +54,7 @@ See all supported options in OCLint |release| by typing ``oclint -help``::
     automatically removed, but the rest of a relative path must be a
     suffix of a path in the compile command database.
 
-    For more information, please visit http://oclint.org
+    For more information, please visit https://oclint.org
 
 Rule Loading Options
 --------------------

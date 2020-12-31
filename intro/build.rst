@@ -40,9 +40,9 @@ It's highly recommended to `add the bin directory into system PATH <installation
 
 .. seealso:: If you are looking for compiling and testing OCLint in debug mode for development and testing purposes, please move onto `development <../devel/index.html>`_ section.
 
-.. _LLVM System Requirements: http://llvm.org/docs/GettingStarted.html#requirements
-.. _Apache Subversion: http://subversion.apache.org/
-.. _CMake: http://www.cmake.org/
-.. _Git: http://git-scm.org/
-.. _Python: http://www.python.org/
+.. _LLVM System Requirements: https://llvm.org/docs/GettingStarted.html#requirements
+.. _Apache Subversion: https://subversion.apache.org/
+.. _CMake: https://www.cmake.org/
+.. _Git: https://git-scm.org/
+.. _Python: https://www.python.org/
 .. _OpenSSL: https://www.openssl.org/

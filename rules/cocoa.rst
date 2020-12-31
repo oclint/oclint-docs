@@ -1,67 +1,6 @@
 Cocoa
 =====
 
-MissingHashMethod
------------------
-
-**Since: 0.8**
-
-**Name: missing hash method**
-
-When ``isEqual`` method is overridden, ``hash`` method must be overridden, too.
-
-This rule is defined by the following class: `oclint-rules/rules/cocoa/ObjCVerifyIsEqualHashRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/cocoa/ObjCVerifyIsEqualHashRule.cpp>`_
-
-**Example:**
-
-
-.. code-block:: objective-c
-
-    @implementation BaseObject
-
-    - (BOOL)isEqual:(id)obj {
-        return YES;
-    }
-
-    /*
-    - (int)hash is missing; If you override isEqual you must override hash too.
-    */
-
-    @end
-    
-
-MissingCallToBaseMethod
------------------------
-
-**Since: 0.8**
-
-**Name: missing call to base method**
-
-When a method is declared with ``__attribute__((annotate("oclint:enforce[base method]")))`` annotation, all of its implementations (including its own and its sub classes) must call the method implementation in super class.
-
-This rule is defined by the following class: `oclint-rules/rules/cocoa/ObjCVerifyMustCallSuperRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/cocoa/ObjCVerifyMustCallSuperRule.cpp>`_
-
-**Example:**
-
-
-.. code-block:: objective-c
-
-    @interface UIView (OCLintStaticChecks)
-    - (void)layoutSubviews __attribute__((annotate("oclint:enforce[base method]")));
-    @end
-
-    @interface CustomView : UIView
-    @end
-
-    @implementation CustomView
-
-    - (void)layoutSubviews {
-        // [super layoutSubviews]; is enforced here
-    }
-
-    @end
-    
-
 CallingProhibitedMethod
 -----------------------
 
@@ -129,7 +68,7 @@ MissingAbstractMethodImplementation
 
 **Name: missing abstract method implementation**
 
-Due to the Objective-C language tries to postpone the decision makings to the runtime as much as possible, an abstract method is okay to be declared but without implementations. This rule tries to verify the subclass implement the correct abstract method.
+While Objective-C language allows abstract methods to be declared without implementations, this rule tries to verify if the subclass implements the correct abstract methods.
 
 This rule is defined by the following class: `oclint-rules/rules/cocoa/ObjCVerifySubclassMustImplementRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/cocoa/ObjCVerifySubclassMustImplementRule.cpp>`_
 
@@ -157,6 +96,67 @@ This rule is defined by the following class: `oclint-rules/rules/cocoa/ObjCVerif
     @end
     
 
+MissingCallToBaseMethod
+-----------------------
 
-.. Generated on Sat Sep 17 05:15:13 2016
+**Since: 0.8**
+
+**Name: missing call to base method**
+
+When a method is declared with ``__attribute__((annotate("oclint:enforce[base method]")))`` annotation, all of its implementations (including its own and its subclasses) must call the method implementation in super class.
+
+This rule is defined by the following class: `oclint-rules/rules/cocoa/ObjCVerifyMustCallSuperRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/cocoa/ObjCVerifyMustCallSuperRule.cpp>`_
+
+**Example:**
+
+
+.. code-block:: objective-c
+
+    @interface UIView (OCLintStaticChecks)
+    - (void)layoutSubviews __attribute__((annotate("oclint:enforce[base method]")));
+    @end
+
+    @interface CustomView : UIView
+    @end
+
+    @implementation CustomView
+
+    - (void)layoutSubviews {
+        // [super layoutSubviews]; is enforced here
+    }
+
+    @end
+    
+
+MissingHashMethod
+-----------------
+
+**Since: 0.8**
+
+**Name: missing hash method**
+
+When ``isEqual`` method is overridden, ``hash`` method must be overridden, too.
+
+This rule is defined by the following class: `oclint-rules/rules/cocoa/ObjCVerifyIsEqualHashRule.cpp <https://github.com/oclint/oclint/blob/master/oclint-rules/rules/cocoa/ObjCVerifyIsEqualHashRule.cpp>`_
+
+**Example:**
+
+
+.. code-block:: objective-c
+
+    @implementation BaseObject
+
+    - (BOOL)isEqual:(id)obj {
+        return YES;
+    }
+
+    /*
+    - (int)hash is missing; If you override isEqual you must override hash too.
+    */
+
+    @end
+    
+
+
+.. Generated on Wed Dec 30 09:22:10 2020
 

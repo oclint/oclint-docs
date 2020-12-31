@@ -46,7 +46,7 @@ Code for ``oclint-xcodebuild`` has been pushed to this repository. Go to the ``O
 LLVM/Clang Codebase
 -------------------
 
-LLVM/Clang has its own code structure, and the detail information can be found at Clang's `Get Started <http://clang.llvm.org/get_started.html>`_ page. We also provide a script that checks out all LLVM/Clang repositories into correct location.
+LLVM/Clang has its own code structure, and the detail information can be found at Clang's `Get Started <https://clang.llvm.org/get_started.html>`_ page. We also provide a script that checks out all LLVM/Clang repositories into correct location.
 
 .. code-block:: bash
 
@@ -73,7 +73,7 @@ We use countly-cpp for sending analytics collections, so you only need this if y
 googletest/googlemock
 ---------------------
 
-Google C++ Testing and Mocking Frameworks are used for testing OCLint. OCLint follows `Test Driven Development <http://en.wikipedia.org/wiki/Test-driven_development>`_ (TDD), so checkout them before we work on this codebase and want to make sure the modifications do not break the other pieces of code.
+Google C++ Testing and Mocking Frameworks are used for testing OCLint. OCLint follows `Test Driven Development <https://en.wikipedia.org/wiki/Test-driven_development>`_ (TDD), so checkout them before we work on this codebase and want to make sure the modifications do not break the other pieces of code.
 
 We also provide a script ``googleTest``:
 
