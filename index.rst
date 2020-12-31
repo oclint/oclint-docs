@@ -53,4 +53,4 @@ Development
 License
 -------
 
-* `Modified BSD License <devel/license.html>`_
+* `Modified BSD License <https://github.com/oclint/oclint/blob/master/LICENSE>`_
