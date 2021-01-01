@@ -11,7 +11,6 @@ System Requirements
 #. `Git`_
 #. `Apache Subversion`_
 #. `CMake`_
-#. `OpenSSL`_ (only for analytics-enabled build)
 
 Building OCLint
 ---------------
@@ -45,4 +44,3 @@ It's highly recommended to `add the bin directory into system PATH <installation
 .. _CMake: https://www.cmake.org/
 .. _Git: https://git-scm.org/
 .. _Python: https://www.python.org/
-.. _OpenSSL: https://www.openssl.org/
