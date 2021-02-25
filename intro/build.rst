@@ -11,6 +11,7 @@ System Requirements
 #. `Git`_
 #. `Apache Subversion`_
 #. `CMake`_
+#. `Ninja`_
 
 Building OCLint
 ---------------
@@ -44,3 +45,4 @@ It's highly recommended to `add the bin directory into system PATH <installation
 .. _CMake: https://www.cmake.org/
 .. _Git: https://git-scm.org/
 .. _Python: https://www.python.org/
+.. _Ninja: https://ninja-build.org/
