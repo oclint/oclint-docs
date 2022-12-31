@@ -9,6 +9,13 @@
 {%- endblock %}
 
 {%- block extrahead %}
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5FWGVV8VBL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-5FWGVV8VBL');
+</script>
 <meta charset='utf-8'>
 <style type='text/css'>
 /*<![CDATA[*/
@@ -32,21 +39,6 @@
   div.warning { background-color: #FFE4E4; border: 1px solid #F66; }
 /*]]>*/
 </style>
-
-<script type="text/javascript">
-//<![CDATA[
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-26647611-1']);
-  _gaq.push(['_setDomainName', 'oclint.org']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-//]]>
-</script>
 {% endblock %}
 
 {%- block content %}
